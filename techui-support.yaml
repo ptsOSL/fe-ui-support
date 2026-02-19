@@ -1,0 +1,14 @@
+# ADAravis.aravisCamera:                          # Ibek identification string for support module
+#   - file: "ADAravis/ADAravis_summary.bob"       # Path to bob file
+#     prefix: "$(P)$(R)"                          # Prefixes required from Ibek configuration
+#     type: "embedded"
+#   - file: "ADAravis/ADAravis_detail.bob"
+#     prefix: "$(P)$(R)"
+#     type: "related"
+
+dlsPLC.vacValveDebounce:
+  - file: "dlsPLC/vacuumValve.bob"
+    prefix: "$(device)"
+    type: "related"
+
+# FE.??:
