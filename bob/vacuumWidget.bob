@@ -52,7 +52,7 @@
     <actions>
       <action type="open_display">
         <description>Open Display</description>
-        <file>../mks937a/mks937aGauge.opi</file>
+        <file>acc-ui-support/bob/mks937a/mks937aGauge.bob</file>
         <macros>
           <NOIMG>0</NOIMG>
         </macros>
@@ -83,7 +83,7 @@
     <actions>
       <action type="open_display">
         <description>Open Display</description>
-        <file>../mks937a/mks937aGauge.opi</file>
+        <file>acc-ui-support/bob/mks937a/mks937aGauge.bob</file>
         <macros>
           <NOIMG>0</NOIMG>
         </macros>
@@ -116,7 +116,7 @@
     <actions>
       <action type="open_display">
         <description>Open Display</description>
-        <file>../mks937a/mks937aGauge.opi</file>
+        <file>acc-ui-support/bob/mks937a/mks937aGauge.bob</file>
         <macros>
           <NOIMG>0</NOIMG>
         </macros>
@@ -1268,7 +1268,7 @@
     <actions>
       <action type="open_display">
         <description>Open Display</description>
-        <file>../mks937a/mks937aGauge.bob</file>
+        <file>acc-ui-support/bob/mks937a/mks937aGauge.bob</file>
         <macros>
           <NOIMG>0</NOIMG>
         </macros>
