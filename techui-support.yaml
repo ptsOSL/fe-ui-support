@@ -1,3 +1,13 @@
+# This file is used to define what support module screens can be found in this repo. It is used by
+# techui-builder to automatically generate screens. The auto-generated screens are built by defining
+# what IOC they should be built for. The ibek configuration for this ioc in the k8s services repo
+# eg i19-services/services/bl19i-di-cam-02/config/ioc.yaml is then consulted to find what support
+# modules the IOC uses. techui-builder then finds the screens for these support modules which are
+# either located here or in another ui-support repo. This file is used by techui-builder as way of
+# knowing what screens are in this repo and what configuration they require.
+#
+# Example config:
+#
 # ADAravis.aravisCamera:                          # Ibek identification string for support module
 #   - file: "ADAravis/ADAravis_summary.bob"       # Path to bob file
 #     prefix: "$(P)$(R)"                          # Prefixes required from Ibek configuration
@@ -5,10 +15,3 @@
 #   - file: "ADAravis/ADAravis_detail.bob"
 #     prefix: "$(P)$(R)"
 #     type: "related"
-
-dlsPLC.vacValveDebounce:
-  - file: "dlsPLC/vacuumValve.bob"
-    prefix: "$(device)"
-    type: "related"
-
-# FE.??:
