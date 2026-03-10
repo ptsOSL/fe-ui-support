@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>Eurotherm - $(eurotherm)</name>
+	<x>602</x>
+	<y>84</y>
+	<width>344</width>
+	<height>617</height>
+	<background_color>
+		<color name="Canvas" red="200" green="200" blue="200"></color>
+	</background_color>
+	<grid_step_x>5</grid_step_x>
+	<grid_step_y>5</grid_step_y>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<x>10</x>
+		<y>50</y>
+		<width>326</width>
+		<height>196</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>0</name>
+		<x>30</x>
+		<width>321</width>
+		<height>31</height>
+		<style>3</style>
+		<foreground_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</foreground_color>
+		<line_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</line_color>
+		<transparent>true</transparent>
+		<widget type="rectangle" version="2.0.0">
+			<name>EDM Rectangle</name>
+			<width>317</width>
+			<height>31</height>
+			<line_width>1</line_width>
+			<line_color>
+				<color name="Grey 75%" red="192" green="192" blue="192"></color>
+			</line_color>
+			<background_color>
+				<color name="Grey 75%" red="192" green="192" blue="192"></color>
+			</background_color>
+		</widget>
+		<widget type="polyline" version="2.0.0">
+			<name>EDM Line</name>
+			<y>3</y>
+			<width>317</width>
+			<height>25</height>
+			<points>
+				<point x="0.0" y="24.0"></point>
+				<point x="316.0" y="24.0"></point>
+				<point x="316.0" y="0.0"></point>
+			</points>
+			<line_width>1</line_width>
+			<line_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</line_color>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>EDM Label</name>
+			<text>Eurotherm - $(eurotherm)</text>
+			<y>3</y>
+			<width>316</width>
+			<height>24</height>
+			<font>
+				<font family="liberation sans" style="BOLD" size="16.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="CO title" red="169" green="210" blue="240"></color>
+			</background_color>
+			<transparent>false</transparent>
+			<horizontal_alignment>1</horizontal_alignment>
+			<vertical_alignment>1</vertical_alignment>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="polyline" version="2.0.0">
+			<name>EDM Line</name>
+			<y>3</y>
+			<width>317</width>
+			<height>25</height>
+			<points>
+				<point x="0.0" y="24.0"></point>
+				<point x="0.0" y="0.0"></point>
+				<point x="316.0" y="0.0"></point>
+			</points>
+			<line_width>1</line_width>
+			<line_color>
+				<color name="Grey 90%" red="230" green="230" blue="230"></color>
+			</line_color>
+		</widget>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>1</name>
+		<width>51</width>
+		<height>32</height>
+		<style>3</style>
+		<foreground_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</foreground_color>
+		<line_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</line_color>
+		<transparent>true</transparent>
+		<widget type="ellipse" version="2.0.0">
+			<name>EDM Ellipse</name>
+			<x>1</x>
+			<y>1</y>
+			<width>50</width>
+			<height>31</height>
+			<line_width>2</line_width>
+			<line_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</line_color>
+			<background_color>
+				<color name="CG title" red="158" green="207" blue="207"></color>
+			</background_color>
+			<transparent>true</transparent>
+		</widget>
+		<widget type="ellipse" version="2.0.0">
+			<name>EDM Ellipse</name>
+			<width>50</width>
+			<height>31</height>
+			<line_width>2</line_width>
+			<line_color>
+				<color name="Grey 90%" red="230" green="230" blue="230"></color>
+			</line_color>
+			<background_color>
+				<color name="CG title" red="158" green="207" blue="207"></color>
+			</background_color>
+			<transparent>true</transparent>
+		</widget>
+		<widget type="ellipse" version="2.0.0">
+			<name>EDM Ellipse</name>
+			<x>1</x>
+			<y>1</y>
+			<width>50</width>
+			<height>30</height>
+			<line_color>
+				<color name="CO title" red="169" green="210" blue="240"></color>
+			</line_color>
+			<background_color>
+				<color name="CO title" red="169" green="210" blue="240"></color>
+			</background_color>
+		</widget>
+		<widget type="ellipse" version="2.0.0">
+			<name>EDM Ellipse</name>
+			<x>11</x>
+			<y>5</y>
+			<width>6</width>
+			<height>5</height>
+			<line_width>2</line_width>
+			<line_color>
+				<color name="Grey 90%" red="230" green="230" blue="230"></color>
+			</line_color>
+			<background_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</background_color>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>EDM Label</name>
+			<text>Setup</text>
+			<width>50</width>
+			<height>30</height>
+			<font>
+				<font family="liberation sans" style="BOLD" size="14.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</background_color>
+			<horizontal_alignment>1</horizontal_alignment>
+			<vertical_alignment>1</vertical_alignment>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM Exit Button</name>
+		<actions>
+			<action type="close_display">
+				<description>Close display</description>
+			</action>
+		</actions>
+		<text>EXIT</text>
+		<x>260</x>
+		<y>585</y>
+		<width>66</width>
+		<height>26</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="18.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Exit: FG" red="192" green="0" blue="192"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Controller Mode</text>
+		<x>10</x>
+		<y>40</y>
+		<width>101</width>
+		<height>14</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<x>10</x>
+		<y>275</y>
+		<width>326</width>
+		<height>111</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Device Settings</text>
+		<x>10</x>
+		<y>265</y>
+		<height>14</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM Text Update</name>
+		<pv_name>$(eurotherm):CONF:MODE</pv_name>
+		<x>235</x>
+		<y>165</y>
+		<width>86</width>
+		<height>26</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM Message Button</name>
+		<actions execute_as_one="true">
+			<action type="write_pv">
+				<description>Write PV</description>
+				<pv_name>$(pv_name)</pv_name>
+				<value>1</value>
+			</action>
+		</actions>
+		<pv_name>$(eurotherm):CONF:SETMODE.PROC</pv_name>
+		<text>conf mode</text>
+		<x>140</x>
+		<y>130</y>
+		<width>86</width>
+		<height>26</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<rules>
+			<rule name="OnOffBackgroundRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="widget.getValue() == 1">
+					<value>
+						<color name="Grey 75%" red="192" green="192" blue="192"></color>
+					</value>
+				</exp>
+				<exp bool_exp="true">
+					<value>
+						<color name="Controller: BG" red="205" green="205" blue="205"></color>
+					</value>
+				</exp>
+				<pv_name>$(eurotherm):CONF:SETMODE.PROC</pv_name>
+			</rule>
+		</rules>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM Message Button</name>
+		<actions execute_as_one="true">
+			<action type="write_pv">
+				<description>Write PV</description>
+				<pv_name>$(pv_name)</pv_name>
+				<value>1</value>
+			</action>
+		</actions>
+		<pv_name>$(eurotherm):CONF:CLEARMODE.PROC</pv_name>
+		<text>operation</text>
+		<x>235</x>
+		<y>130</y>
+		<width>86</width>
+		<height>26</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<rules>
+			<rule name="OnOffBackgroundRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="widget.getValue() == 1">
+					<value>
+						<color name="Grey 75%" red="192" green="192" blue="192"></color>
+					</value>
+				</exp>
+				<exp bool_exp="true">
+					<value>
+						<color name="Controller: BG" red="205" green="205" blue="205"></color>
+					</value>
+				</exp>
+				<pv_name>$(eurotherm):CONF:CLEARMODE.PROC</pv_name>
+			</rule>
+		</rules>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM Message Button</name>
+		<actions execute_as_one="true">
+			<action type="write_pv">
+				<description>Write PV</description>
+				<pv_name>$(pv_name)</pv_name>
+				<value>1</value>
+			</action>
+		</actions>
+		<pv_name>$(eurotherm):CONF:MODE.PROC</pv_name>
+		<text>read</text>
+		<x>140</x>
+		<y>165</y>
+		<width>86</width>
+		<height>26</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<rules>
+			<rule name="OnOffBackgroundRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="widget.getValue() == 1">
+					<value>
+						<color name="Grey 75%" red="192" green="192" blue="192"></color>
+					</value>
+				</exp>
+				<exp bool_exp="true">
+					<value>
+						<color name="Controller: BG" red="205" green="205" blue="205"></color>
+					</value>
+				</exp>
+				<pv_name>$(eurotherm):CONF:MODE.PROC</pv_name>
+			</rule>
+		</rules>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Set Mode:</text>
+		<x>20</x>
+		<y>130</y>
+		<width>75</width>
+		<font>
+			<font family="liberation sans" style="BOLD" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Read Mode:</text>
+		<x>20</x>
+		<y>170</y>
+		<width>75</width>
+		<font>
+			<font family="liberation sans" style="BOLD" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Device Address:</text>
+		<x>20</x>
+		<y>205</y>
+		<width>105</width>
+		<font>
+			<font family="liberation sans" style="BOLD" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM Text Update</name>
+		<pv_name>$(eurotherm):ADDR</pv_name>
+		<x>235</x>
+		<y>205</y>
+		<width>86</width>
+		<height>26</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textentry" version="3.0.0">
+		<name>EDM Text Entry</name>
+		<pv_name>$(eurotherm):ADDR:DEVICE</pv_name>
+		<x>140</x>
+		<y>200</y>
+		<width>86</width>
+		<height>36</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Controller: FG" red="0" green="0" blue="192"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Blue" red="0" green="0" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<x>10</x>
+		<y>405</y>
+		<width>326</width>
+		<height>176</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Direct Comms</text>
+		<x>10</x>
+		<y>395</y>
+		<width>92</width>
+		<height>14</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textentry" version="3.0.0">
+		<name>EDM Text Entry</name>
+		<pv_name>$(eurotherm):ADDR:WR</pv_name>
+		<x>140</x>
+		<y>490</y>
+		<width>91</width>
+		<height>36</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Controller: FG" red="0" green="0" blue="192"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Blue" red="0" green="0" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="textentry" version="3.0.0">
+		<name>EDM Text Entry</name>
+		<pv_name>$(eurotherm):ADDR:RD</pv_name>
+		<x>140</x>
+		<y>535</y>
+		<width>91</width>
+		<height>36</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Controller: FG" red="0" green="0" blue="192"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Blue" red="0" green="0" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM Text Update</name>
+		<pv_name>$(eurotherm):ADDR:RESP</pv_name>
+		<x>235</x>
+		<y>535</y>
+		<width>91</width>
+		<height>36</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM Text Update</name>
+		<pv_name>$(eurotherm):CONF:DECP</pv_name>
+		<x>235</x>
+		<y>315</y>
+		<width>86</width>
+		<height>26</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM Message Button</name>
+		<actions execute_as_one="true">
+			<action type="write_pv">
+				<description>Write PV</description>
+				<pv_name>$(pv_name)</pv_name>
+				<value>1</value>
+			</action>
+		</actions>
+		<pv_name>$(eurotherm):CONF:READ.PROC</pv_name>
+		<text>read</text>
+		<x>140</x>
+		<y>285</y>
+		<width>86</width>
+		<height>26</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<rules>
+			<rule name="OnOffBackgroundRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="widget.getValue() == 1">
+					<value>
+						<color name="Grey 75%" red="192" green="192" blue="192"></color>
+					</value>
+				</exp>
+				<exp bool_exp="true">
+					<value>
+						<color name="Controller: BG" red="205" green="205" blue="205"></color>
+					</value>
+				</exp>
+				<pv_name>$(eurotherm):CONF:READ.PROC</pv_name>
+			</rule>
+		</rules>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="combo" version="2.0.0">
+		<name>EDM menu button</name>
+		<pv_name>$(eurotherm):CONF:SET:DECP</pv_name>
+		<x>140</x>
+		<y>315</y>
+		<width>86</width>
+		<height>26</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Controller: FG" red="0" green="0" blue="192"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<rules>
+			<rule name="visibleRule" prop_id="visible" out_exp="false">
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp; pv0&lt;1.0">
+					<value>false</value>
+				</exp>
+				<exp bool_exp="true">
+					<value>true</value>
+				</exp>
+				<pv_name>$(eurotherm):CONF:MODE</pv_name>
+			</rule>
+		</rules>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM Text Update</name>
+		<pv_name>$(eurotherm):CONF:RREGU</pv_name>
+		<x>235</x>
+		<y>345</y>
+		<width>86</width>
+		<height>26</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="combo" version="2.0.0">
+		<name>EDM menu button</name>
+		<pv_name>$(eurotherm):CONF:SET:RREGU</pv_name>
+		<x>140</x>
+		<y>345</y>
+		<width>86</width>
+		<height>26</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Controller: FG" red="0" green="0" blue="192"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<rules>
+			<rule name="visibleRule" prop_id="visible" out_exp="false">
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp; pv0&lt;1.0">
+					<value>false</value>
+				</exp>
+				<exp bool_exp="true">
+					<value>true</value>
+				</exp>
+				<pv_name>$(eurotherm):CONF:MODE</pv_name>
+			</rule>
+		</rules>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Decimal places:</text>
+		<x>15</x>
+		<y>315</y>
+		<width>105</width>
+		<font>
+			<font family="liberation sans" style="BOLD" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Ramp Rate Limit
+Time Units:</text>
+		<x>15</x>
+		<y>340</y>
+		<width>105</width>
+		<height>35</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Write Command:</text>
+		<x>20</x>
+		<y>500</y>
+		<width>105</width>
+		<font>
+			<font family="liberation sans" style="BOLD" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Read Setting:</text>
+		<x>20</x>
+		<y>540</y>
+		<width>105</width>
+		<font>
+			<font family="liberation sans" style="BOLD" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Write and read ASCII commands directly
+to the Eurotherm controller unit.
+Available commands are listed in the device
+Communications Manual.</text>
+		<x>25</x>
+		<y>415</y>
+		<width>290</width>
+		<height>65</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>In configuration mode the device settings can be 
+modified. In this mode the furnace output is not active.
+DISABLE ALL polling/scanning while operating
+in configuration mode!!!</text>
+		<x>20</x>
+		<y>60</y>
+		<width>305</width>
+		<height>65</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+</display>

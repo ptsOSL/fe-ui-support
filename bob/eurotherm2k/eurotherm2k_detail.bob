@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>Eurotherm2K Detail</name>
+	<background_color>
+		<color name="Canvas" red="200" green="200" blue="200"></color>
+	</background_color>
+	<grid_step_x>5</grid_step_x>
+	<grid_step_y>5</grid_step_y>
+	<widget typeId="org.csstudio.opibuilder.widgets.detailpanel" version="1.0.0">
+		<widget_type>Detail Panel</widget_type>
+		<font>
+			<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+		</font>
+		<background_color>
+			<color blue="200" green="200" name="Canvas" red="200"></color>
+		</background_color>
+		<foreground_color>
+			<color blue="0" green="0" name="Text: FG" red="0"></color>
+		</foreground_color>
+		<color_odd_row_back>
+			<color blue="205" green="205" name="Controller: BG" red="205"></color>
+		</color_odd_row_back>
+		<color_even_row_back>
+			<color blue="200" green="200" name="Canvas" red="200"></color>
+		</color_even_row_back>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<width>360</width>
+		<vert_divider_pos>160</vert_divider_pos>
+		<widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+			<widget_type>Grouping Container</widget_type>
+			<font>
+				<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+			</font>
+			<background_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</background_color>
+			<foreground_color>
+				<color blue="0" green="0" name="Text: FG" red="0"></color>
+			</foreground_color>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<border_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</border_color>
+			<border_style>0</border_style>
+			<widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+				<widget_type>Linking Container</widget_type>
+				<border_style>0</border_style>
+				<resize_behaviour>1</resize_behaviour>
+				<font>
+					<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+				</font>
+				<background_color>
+					<color blue="200" green="200" name="Canvas" red="200"></color>
+				</background_color>
+				<foreground_color>
+					<color blue="0" green="0" name="Text: FG" red="0"></color>
+				</foreground_color>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+				<opi_file>eurotherm2k_embed_box.opi</opi_file>
+				<name>auto(boyembed)</name>
+				<macros>
+					<include_parent_macros>true</include_parent_macros>
+				</macros>
+				<width>365</width>
+				<height>84</height>
+			</widget>
+			<height>86</height>
+		</widget>
+		<widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+			<widget_type>Grouping Container</widget_type>
+			<font>
+				<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+			</font>
+			<background_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</background_color>
+			<foreground_color>
+				<color blue="0" green="0" name="Text: FG" red="0"></color>
+			</foreground_color>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<border_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</border_color>
+			<border_style>0</border_style>
+			<widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+				<widget_type>Menu Button</widget_type>
+				<forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+				<font>
+					<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+				</font>
+				<background_color>
+					<color blue="205" green="205" name="Controller: BG" red="205"></color>
+				</background_color>
+				<foreground_color>
+					<color blue="192" green="0" name="Controller: FG" red="0"></color>
+				</foreground_color>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+				<height>25</height>
+				<actions_from_pv>True</actions_from_pv>
+				<width>200</width>
+				<x>0</x>
+				<name>auto(enum|Enable)</name>
+				<pv_name>$(P)$(Q):DISABLE</pv_name>
+			</widget>
+			<height>27</height>
+		</widget>
+		<widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+			<widget_type>Grouping Container</widget_type>
+			<font>
+				<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+			</font>
+			<background_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</background_color>
+			<foreground_color>
+				<color blue="0" green="0" name="Text: FG" red="0"></color>
+			</foreground_color>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<border_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</border_color>
+			<border_style>0</border_style>
+			<widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
+				<widget_type>Text Input</widget_type>
+				<forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+				<show_units>false</show_units>
+				<horizontal_alignment>1</horizontal_alignment>
+				<font>
+					<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+				</font>
+				<background_color>
+					<color blue="205" green="205" name="Controller: BG" red="205"></color>
+				</background_color>
+				<foreground_color>
+					<color blue="192" green="0" name="Controller: FG" red="0"></color>
+				</foreground_color>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+				<height>25</height>
+				<width>100</width>
+				<x>0</x>
+				<name>auto(demand|Set Point)</name>
+				<pv_name>$(P)$(Q):SP</pv_name>
+			</widget>
+			<widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+				<widget_type>Text Update</widget_type>
+				<forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+				<horizontal_alignment>1</horizontal_alignment>
+				<font>
+					<opifont.name fontName="Arial" height="11" style="1">Default Bold</opifont.name>
+				</font>
+				<background_color>
+					<color blue="64" green="64" name="Monitor: BG" red="64"></color>
+				</background_color>
+				<foreground_color>
+					<color blue="96" green="255" name="Monitor: FG" red="96"></color>
+				</foreground_color>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+				<height>25</height>
+				<width>100</width>
+				<x>100</x>
+				<name>auto(readback|Set Point)</name>
+				<pv_name>$(P)$(Q):SP:RBV</pv_name>
+			</widget>
+			<height>27</height>
+		</widget>
+		<widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+			<widget_type>Grouping Container</widget_type>
+			<font>
+				<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+			</font>
+			<background_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</background_color>
+			<foreground_color>
+				<color blue="0" green="0" name="Text: FG" red="0"></color>
+			</foreground_color>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<border_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</border_color>
+			<border_style>0</border_style>
+			<widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
+				<widget_type>Text Input</widget_type>
+				<forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+				<show_units>false</show_units>
+				<horizontal_alignment>1</horizontal_alignment>
+				<font>
+					<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+				</font>
+				<background_color>
+					<color blue="205" green="205" name="Controller: BG" red="205"></color>
+				</background_color>
+				<foreground_color>
+					<color blue="192" green="0" name="Controller: FG" red="0"></color>
+				</foreground_color>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+				<height>25</height>
+				<width>100</width>
+				<x>0</x>
+				<name>auto(demand|Ramp Rate)</name>
+				<pv_name>$(P)$(Q):RR</pv_name>
+			</widget>
+			<widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+				<widget_type>Text Update</widget_type>
+				<forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+				<horizontal_alignment>1</horizontal_alignment>
+				<font>
+					<opifont.name fontName="Arial" height="11" style="1">Default Bold</opifont.name>
+				</font>
+				<background_color>
+					<color blue="64" green="64" name="Monitor: BG" red="64"></color>
+				</background_color>
+				<foreground_color>
+					<color blue="96" green="255" name="Monitor: FG" red="96"></color>
+				</foreground_color>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+				<height>25</height>
+				<width>100</width>
+				<x>100</x>
+				<name>auto(readback|Ramp Rate)</name>
+				<pv_name>$(P)$(Q):RR:RBV</pv_name>
+			</widget>
+			<height>27</height>
+		</widget>
+		<widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+			<widget_type>Grouping Container</widget_type>
+			<font>
+				<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+			</font>
+			<background_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</background_color>
+			<foreground_color>
+				<color blue="0" green="0" name="Text: FG" red="0"></color>
+			</foreground_color>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<border_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</border_color>
+			<border_style>0</border_style>
+			<widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
+				<widget_type>Text Input</widget_type>
+				<forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+				<show_units>false</show_units>
+				<horizontal_alignment>1</horizontal_alignment>
+				<font>
+					<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+				</font>
+				<background_color>
+					<color blue="205" green="205" name="Controller: BG" red="205"></color>
+				</background_color>
+				<foreground_color>
+					<color blue="192" green="0" name="Controller: FG" red="0"></color>
+				</foreground_color>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+				<height>25</height>
+				<width>100</width>
+				<x>0</x>
+				<name>auto(demand|Output)</name>
+				<pv_name>$(P)$(Q):O</pv_name>
+			</widget>
+			<widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+				<widget_type>Text Update</widget_type>
+				<forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+				<horizontal_alignment>1</horizontal_alignment>
+				<font>
+					<opifont.name fontName="Arial" height="11" style="1">Default Bold</opifont.name>
+				</font>
+				<background_color>
+					<color blue="64" green="64" name="Monitor: BG" red="64"></color>
+				</background_color>
+				<foreground_color>
+					<color blue="96" green="255" name="Monitor: FG" red="96"></color>
+				</foreground_color>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+				<height>25</height>
+				<width>100</width>
+				<x>100</x>
+				<name>auto(readback|Output)</name>
+				<pv_name>$(P)$(Q):O:RBV</pv_name>
+			</widget>
+			<height>27</height>
+		</widget>
+		<widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+			<widget_type>Grouping Container</widget_type>
+			<font>
+				<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+			</font>
+			<background_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</background_color>
+			<foreground_color>
+				<color blue="0" green="0" name="Text: FG" red="0"></color>
+			</foreground_color>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<border_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</border_color>
+			<border_style>0</border_style>
+			<widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+				<widget_type>Menu Button</widget_type>
+				<forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+				<font>
+					<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+				</font>
+				<background_color>
+					<color blue="205" green="205" name="Controller: BG" red="205"></color>
+				</background_color>
+				<foreground_color>
+					<color blue="192" green="0" name="Controller: FG" red="0"></color>
+				</foreground_color>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+				<height>25</height>
+				<actions_from_pv>True</actions_from_pv>
+				<width>100</width>
+				<x>0</x>
+				<name>auto(enum|Mode)</name>
+				<pv_name>$(P)$(Q):MAN</pv_name>
+			</widget>
+			<widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+				<widget_type>Text Update</widget_type>
+				<forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+				<horizontal_alignment>1</horizontal_alignment>
+				<font>
+					<opifont.name fontName="Arial" height="11" style="1">Default Bold</opifont.name>
+				</font>
+				<background_color>
+					<color blue="64" green="64" name="Monitor: BG" red="64"></color>
+				</background_color>
+				<foreground_color>
+					<color blue="96" green="255" name="Monitor: FG" red="96"></color>
+				</foreground_color>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+				<height>25</height>
+				<width>100</width>
+				<x>100</x>
+				<name>auto(readback|Mode)</name>
+				<pv_name>$(P)$(Q):MAN:RBV</pv_name>
+			</widget>
+			<height>27</height>
+		</widget>
+		<widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+			<widget_type>Grouping Container</widget_type>
+			<font>
+				<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+			</font>
+			<background_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</background_color>
+			<foreground_color>
+				<color blue="0" green="0" name="Text: FG" red="0"></color>
+			</foreground_color>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<border_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</border_color>
+			<border_style>0</border_style>
+			<widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+				<widget_type>Menu Button</widget_type>
+				<forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+				<font>
+					<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+				</font>
+				<background_color>
+					<color blue="205" green="205" name="Controller: BG" red="205"></color>
+				</background_color>
+				<foreground_color>
+					<color blue="192" green="0" name="Controller: FG" red="0"></color>
+				</foreground_color>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+				<height>25</height>
+				<actions_from_pv>True</actions_from_pv>
+				<width>200</width>
+				<x>0</x>
+				<name>auto(enum|Update)</name>
+				<pv_name>$(P)$(Q):UPDATE.SCAN</pv_name>
+			</widget>
+			<height>27</height>
+		</widget>
+		<widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+			<widget_type>Grouping Container</widget_type>
+			<font>
+				<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+			</font>
+			<background_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</background_color>
+			<foreground_color>
+				<color blue="0" green="0" name="Text: FG" red="0"></color>
+			</foreground_color>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<border_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</border_color>
+			<border_style>0</border_style>
+			<widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+				<widget_type>Text Update</widget_type>
+				<forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+				<horizontal_alignment>1</horizontal_alignment>
+				<font>
+					<opifont.name fontName="Arial" height="11" style="1">Default Bold</opifont.name>
+				</font>
+				<background_color>
+					<color blue="64" green="64" name="Monitor: BG" red="64"></color>
+				</background_color>
+				<foreground_color>
+					<color blue="96" green="255" name="Monitor: FG" red="96"></color>
+				</foreground_color>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+				<height>25</height>
+				<width>200</width>
+				<x>0</x>
+				<name>auto(readback|Temperature)</name>
+				<pv_name>$(P)$(Q):PV:RBV</pv_name>
+			</widget>
+			<height>27</height>
+		</widget>
+		<widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+			<widget_type>Grouping Container</widget_type>
+			<font>
+				<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+			</font>
+			<background_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</background_color>
+			<foreground_color>
+				<color blue="0" green="0" name="Text: FG" red="0"></color>
+			</foreground_color>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<border_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</border_color>
+			<border_style>0</border_style>
+			<widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
+				<widget_type>Text Input</widget_type>
+				<forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+				<show_units>false</show_units>
+				<horizontal_alignment>1</horizontal_alignment>
+				<font>
+					<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+				</font>
+				<background_color>
+					<color blue="205" green="205" name="Controller: BG" red="205"></color>
+				</background_color>
+				<foreground_color>
+					<color blue="192" green="0" name="Controller: FG" red="0"></color>
+				</foreground_color>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+				<height>25</height>
+				<width>100</width>
+				<x>0</x>
+				<name>auto(demand|Proportional Gain)</name>
+				<pv_name>$(P)$(Q):P</pv_name>
+			</widget>
+			<widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+				<widget_type>Text Update</widget_type>
+				<forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+				<horizontal_alignment>1</horizontal_alignment>
+				<font>
+					<opifont.name fontName="Arial" height="11" style="1">Default Bold</opifont.name>
+				</font>
+				<background_color>
+					<color blue="64" green="64" name="Monitor: BG" red="64"></color>
+				</background_color>
+				<foreground_color>
+					<color blue="96" green="255" name="Monitor: FG" red="96"></color>
+				</foreground_color>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+				<height>25</height>
+				<width>100</width>
+				<x>100</x>
+				<name>auto(readback|Proportional Gain)</name>
+				<pv_name>$(P):P:RBV</pv_name>
+			</widget>
+			<height>27</height>
+		</widget>
+		<widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+			<widget_type>Grouping Container</widget_type>
+			<font>
+				<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+			</font>
+			<background_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</background_color>
+			<foreground_color>
+				<color blue="0" green="0" name="Text: FG" red="0"></color>
+			</foreground_color>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<border_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</border_color>
+			<border_style>0</border_style>
+			<widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
+				<widget_type>Text Input</widget_type>
+				<forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+				<show_units>false</show_units>
+				<horizontal_alignment>1</horizontal_alignment>
+				<font>
+					<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+				</font>
+				<background_color>
+					<color blue="205" green="205" name="Controller: BG" red="205"></color>
+				</background_color>
+				<foreground_color>
+					<color blue="192" green="0" name="Controller: FG" red="0"></color>
+				</foreground_color>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+				<height>25</height>
+				<width>100</width>
+				<x>0</x>
+				<name>auto(demand|Integral Gain)</name>
+				<pv_name>$(P)$(Q):I</pv_name>
+			</widget>
+			<widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+				<widget_type>Text Update</widget_type>
+				<forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+				<horizontal_alignment>1</horizontal_alignment>
+				<font>
+					<opifont.name fontName="Arial" height="11" style="1">Default Bold</opifont.name>
+				</font>
+				<background_color>
+					<color blue="64" green="64" name="Monitor: BG" red="64"></color>
+				</background_color>
+				<foreground_color>
+					<color blue="96" green="255" name="Monitor: FG" red="96"></color>
+				</foreground_color>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+				<height>25</height>
+				<width>100</width>
+				<x>100</x>
+				<name>auto(readback|Integral Gain)</name>
+				<pv_name>$(P):I:RBV</pv_name>
+			</widget>
+			<height>27</height>
+		</widget>
+		<widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+			<widget_type>Grouping Container</widget_type>
+			<font>
+				<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+			</font>
+			<background_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</background_color>
+			<foreground_color>
+				<color blue="0" green="0" name="Text: FG" red="0"></color>
+			</foreground_color>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<border_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</border_color>
+			<border_style>0</border_style>
+			<widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
+				<widget_type>Text Input</widget_type>
+				<forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+				<show_units>false</show_units>
+				<horizontal_alignment>1</horizontal_alignment>
+				<font>
+					<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+				</font>
+				<background_color>
+					<color blue="205" green="205" name="Controller: BG" red="205"></color>
+				</background_color>
+				<foreground_color>
+					<color blue="192" green="0" name="Controller: FG" red="0"></color>
+				</foreground_color>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+				<height>25</height>
+				<width>100</width>
+				<x>0</x>
+				<name>auto(demand|Differential Gain)</name>
+				<pv_name>$(P)$(Q):D</pv_name>
+			</widget>
+			<widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+				<widget_type>Text Update</widget_type>
+				<forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+				<horizontal_alignment>1</horizontal_alignment>
+				<font>
+					<opifont.name fontName="Arial" height="11" style="1">Default Bold</opifont.name>
+				</font>
+				<background_color>
+					<color blue="64" green="64" name="Monitor: BG" red="64"></color>
+				</background_color>
+				<foreground_color>
+					<color blue="96" green="255" name="Monitor: FG" red="96"></color>
+				</foreground_color>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+				<height>25</height>
+				<width>100</width>
+				<x>100</x>
+				<name>auto(readback|Differential Gain)</name>
+				<pv_name>$(P):D:RBV</pv_name>
+			</widget>
+			<height>27</height>
+		</widget>
+		<widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+			<widget_type>Grouping Container</widget_type>
+			<font>
+				<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+			</font>
+			<background_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</background_color>
+			<foreground_color>
+				<color blue="0" green="0" name="Text: FG" red="0"></color>
+			</foreground_color>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<border_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</border_color>
+			<border_style>0</border_style>
+			<widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+				<widget_type>Menu Button</widget_type>
+				<forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+				<font>
+					<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+				</font>
+				<background_color>
+					<color blue="205" green="205" name="Controller: BG" red="205"></color>
+				</background_color>
+				<foreground_color>
+					<color blue="192" green="0" name="Controller: FG" red="0"></color>
+				</foreground_color>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+				<height>25</height>
+				<actions_from_pv>True</actions_from_pv>
+				<width>200</width>
+				<x>0</x>
+				<name>auto(enum|PID Update)</name>
+				<pv_name>$(P)$(Q):PID.SCAN</pv_name>
+			</widget>
+			<height>27</height>
+		</widget>
+		<widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+			<widget_type>Grouping Container</widget_type>
+			<font>
+				<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+			</font>
+			<background_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</background_color>
+			<foreground_color>
+				<color blue="0" green="0" name="Text: FG" red="0"></color>
+			</foreground_color>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<border_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</border_color>
+			<border_style>0</border_style>
+			<widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+				<widget_type>Text Update</widget_type>
+				<forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+				<horizontal_alignment>1</horizontal_alignment>
+				<font>
+					<opifont.name fontName="Arial" height="11" style="1">Default Bold</opifont.name>
+				</font>
+				<background_color>
+					<color blue="64" green="64" name="Monitor: BG" red="64"></color>
+				</background_color>
+				<foreground_color>
+					<color blue="96" green="255" name="Monitor: FG" red="96"></color>
+				</foreground_color>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+				<height>25</height>
+				<width>200</width>
+				<x>0</x>
+				<name>auto(readback|Error)</name>
+				<pv_name>$(P):ERR</pv_name>
+			</widget>
+			<height>27</height>
+		</widget>
+		<widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+			<widget_type>Grouping Container</widget_type>
+			<font>
+				<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+			</font>
+			<background_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</background_color>
+			<foreground_color>
+				<color blue="0" green="0" name="Text: FG" red="0"></color>
+			</foreground_color>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<border_color>
+				<color blue="200" green="200" name="Canvas" red="200"></color>
+			</border_color>
+			<border_style>0</border_style>
+			<widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+				<widget_type>Action Button</widget_type>
+				<font>
+					<opifont.name fontName="Arial" height="11" style="0">Default</opifont.name>
+				</font>
+				<background_color>
+					<color blue="205" green="205" name="Controller: BG" red="205"></color>
+				</background_color>
+				<foreground_color>
+					<color blue="0" green="0" name="Text: FG" red="0"></color>
+				</foreground_color>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+				<height>25</height>
+				<actions>
+					<action type="WRITE_PV">
+						<pv_name>$(pv_name)</pv_name>
+						<value>1</value>
+						<timeout>10</timeout>
+						<description>Clear Error</description>
+					</action>
+				</actions>
+				<width>200</width>
+				<x>0</x>
+				<name>auto(command|Clear Error)</name>
+				<pv_name>$(P):ERR</pv_name>
+			</widget>
+			<height>27</height>
+		</widget>
+		<row_0_row_name></row_0_row_name>
+		<row_0_row_height>86</row_0_row_height>
+		<row_0_row_tooltip></row_0_row_tooltip>
+		<row_0_row_mode>1</row_0_row_mode>
+		<row_count>14</row_count>
+		<row_1_row_name>Enable</row_1_row_name>
+		<row_1_row_height>27</row_1_row_height>
+		<row_1_row_tooltip>Enable</row_1_row_tooltip>
+		<row_1_row_mode>3</row_1_row_mode>
+		<row_2_row_name>Set Point</row_2_row_name>
+		<row_2_row_height>27</row_2_row_height>
+		<row_2_row_tooltip>Set Point</row_2_row_tooltip>
+		<row_2_row_mode>3</row_2_row_mode>
+		<row_3_row_name>Ramp Rate</row_3_row_name>
+		<row_3_row_height>27</row_3_row_height>
+		<row_3_row_tooltip>Ramp Rate</row_3_row_tooltip>
+		<row_3_row_mode>3</row_3_row_mode>
+		<row_4_row_name>Output</row_4_row_name>
+		<row_4_row_height>27</row_4_row_height>
+		<row_4_row_tooltip>Output</row_4_row_tooltip>
+		<row_4_row_mode>3</row_4_row_mode>
+		<row_5_row_name>Mode</row_5_row_name>
+		<row_5_row_height>27</row_5_row_height>
+		<row_5_row_tooltip>Mode</row_5_row_tooltip>
+		<row_5_row_mode>3</row_5_row_mode>
+		<row_6_row_name>Update</row_6_row_name>
+		<row_6_row_height>27</row_6_row_height>
+		<row_6_row_tooltip>Update</row_6_row_tooltip>
+		<row_6_row_mode>3</row_6_row_mode>
+		<row_7_row_name>Temperature</row_7_row_name>
+		<row_7_row_height>27</row_7_row_height>
+		<row_7_row_tooltip>Temperature</row_7_row_tooltip>
+		<row_7_row_mode>3</row_7_row_mode>
+		<row_8_row_name>Proportional Gain</row_8_row_name>
+		<row_8_row_height>27</row_8_row_height>
+		<row_8_row_tooltip>Proportional Gain</row_8_row_tooltip>
+		<row_8_row_mode>3</row_8_row_mode>
+		<row_9_row_name>Integral Gain</row_9_row_name>
+		<row_9_row_height>27</row_9_row_height>
+		<row_9_row_tooltip>Integral Gain</row_9_row_tooltip>
+		<row_9_row_mode>3</row_9_row_mode>
+		<row_10_row_name>Differential Gain</row_10_row_name>
+		<row_10_row_height>27</row_10_row_height>
+		<row_10_row_tooltip>Differential Gain</row_10_row_tooltip>
+		<row_10_row_mode>3</row_10_row_mode>
+		<row_11_row_name>PID Update</row_11_row_name>
+		<row_11_row_height>27</row_11_row_height>
+		<row_11_row_tooltip>PID Update</row_11_row_tooltip>
+		<row_11_row_mode>3</row_11_row_mode>
+		<row_12_row_name>Error</row_12_row_name>
+		<row_12_row_height>27</row_12_row_height>
+		<row_12_row_tooltip>Error</row_12_row_tooltip>
+		<row_12_row_mode>3</row_12_row_mode>
+		<row_13_row_name>Clear Error</row_13_row_name>
+		<row_13_row_height>27</row_13_row_height>
+		<row_13_row_tooltip>Clear Error</row_13_row_tooltip>
+		<row_13_row_mode>3</row_13_row_mode>
+		<height>451</height>
+	</widget>
+</display>
