@@ -356,7 +356,7 @@ $(pv_value)</tooltip>
 			<action type="open_display">
 				<description>Open Display</description>
 				<file>dlsPLC_genericDeviceInterlocks.bob</file>
-				<target>window</target>
+				<target>standalone</target>
 			</action>
 		</actions>
 		<text>Interlocks</text>

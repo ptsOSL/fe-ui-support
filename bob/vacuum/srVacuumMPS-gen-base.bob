@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<width>92</width>
+	<height>205</height>
+	<background_color>
+		<color name="Canvas" red="200" green="200" blue="200"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>5</grid_step_x>
+	<grid_step_y>5</grid_step_y>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<width>92</width>
+		<height>40</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Cell $(cell)$(girder)</text>
+		<x>27</x>
+		<y>4</y>
+		<width>106</width>
+		<height>14</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>IMG</text>
+		<x>2</x>
+		<y>23</y>
+		<width>22</width>
+		<height>14</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>IONP</text>
+		<x>28</x>
+		<y>23</y>
+		<width>29</width>
+		<height>14</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>MPS</text>
+		<x>61</x>
+		<y>23</y>
+		<width>26</width>
+		<height>14</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="symbol" version="2.0.0">
+		<name>$(img1)</name>
+		<pv_name>$(name):STA</pv_name>
+		<symbols>
+			<symbol>../mks937a/mks937aImg-symbol-34.png</symbol>
+		</symbols>
+		<x>2</x>
+		<y>47</y>
+		<width>24</width>
+		<height>24</height>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../mks937a/mks937aImg.bob</file>
+				<macros>
+					<device>$(img1)</device>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<rules>
+			<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+				<exp bool_exp="pvSev0==3">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+					<expression>1</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+					<expression>2</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+					<expression>3</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+					<expression>4</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+					<expression>5</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+					<expression>6</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+					<expression>7</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+					<expression>8</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+					<expression>9</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=9.0&amp;&amp;pv0&lt;10.0">
+					<expression>10</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=10.0&amp;&amp;pv0&lt;11.0">
+					<expression>11</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=11.0&amp;&amp;pv0&lt;12.0">
+					<expression>12</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=12.0&amp;&amp;pv0&lt;13.0">
+					<expression>13</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=13.0&amp;&amp;pv0&lt;14.0">
+					<expression>14</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=14.0&amp;&amp;pv0&lt;15.0">
+					<expression>15</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=15.0&amp;&amp;pv0&lt;16.0">
+					<expression>16</expression>
+				</exp>
+				<exp bool_exp="true">
+					<expression>0</expression>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+			<rule name="visibility_rule" prop_id="visible" out_exp="false">
+				<exp bool_exp="(1&amp;pv0)==1">
+					<value>true</value>
+				</exp>
+				<exp bool_exp="(1&amp;pv0)!=1">
+					<value>false</value>
+				</exp>
+				<pv_name>$(mask)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="symbol" version="2.0.0">
+		<name>$(ionp1)</name>
+		<pv_name>$(name):STA</pv_name>
+		<symbols>
+			<symbol>../digitelMpc/digitelMpcIonp-symbol-34.png</symbol>
+		</symbols>
+		<x>30</x>
+		<y>46</y>
+		<width>26</width>
+		<height>26</height>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../digitelMpc/digitelMpcIonp2sp.bob</file>
+				<macros>
+					<device>$(ionp1)</device>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<rules>
+			<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+				<exp bool_exp="pvSev0==3">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+					<expression>1</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+					<expression>2</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+					<expression>3</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+					<expression>4</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+					<expression>5</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+					<expression>6</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+					<expression>7</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+					<expression>8</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+					<expression>9</expression>
+				</exp>
+				<exp bool_exp="true">
+					<expression>0</expression>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+			<rule name="visibility_rule" prop_id="visible" out_exp="false">
+				<exp bool_exp="(1&amp;pv0)==1">
+					<value>true</value>
+				</exp>
+				<exp bool_exp="(1&amp;pv0)!=1">
+					<value>false</value>
+				</exp>
+				<pv_name>$(mask)</pv_name>
+			</rule>
+			<rule name="sp_wrong_warning" prop_id="border_color" out_exp="false">
+				<exp bool_exp="pv1==1 &amp;&amp; pv0==0">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pv1==0 || pv0==1">
+					<value>&lt;color blue="200" green="200" name="Canvas" red="200"/&gt;</value>
+				</exp>
+				<pv_name>$(name):CORRECT_SP</pv_name>
+				<pv_name>sim://ramp(0,1,1,0.5)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="led" version="2.0.0">
+		<name>LED</name>
+		<pv_name>SR$(cell)C-MP-VSILK-01:SIGNAL.B$(mpsBit1)</pv_name>
+		<x>61</x>
+		<y>46</y>
+		<width>26</width>
+		<height>26</height>
+		<off_color>
+			<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+		</off_color>
+		<on_color>
+			<color name="Green LED: On" red="0" green="255" blue="0"></color>
+		</on_color>
+		<foreground_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<line_color>
+			<color red="150" green="150" blue="150"></color>
+		</line_color>
+		<square>true</square>
+		<actions></actions>
+		<rules>
+			<rule name="visibility_rule" prop_id="visible" out_exp="false">
+				<exp bool_exp="(1&amp;pv0)==1">
+					<value>true</value>
+				</exp>
+				<exp bool_exp="(1&amp;pv0)!=1">
+					<value>false</value>
+				</exp>
+				<pv_name>$(mask)</pv_name>
+			</rule>
+		</rules>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="symbol" version="2.0.0">
+		<name>$(img2)</name>
+		<pv_name>$(name):STA</pv_name>
+		<symbols>
+			<symbol>../mks937a/mks937aImg-symbol-34.png</symbol>
+		</symbols>
+		<x>1</x>
+		<y>83</y>
+		<width>24</width>
+		<height>24</height>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../mks937a/mks937aImg.bob</file>
+				<macros>
+					<device>$(img2)</device>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<rules>
+			<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+				<exp bool_exp="pvSev0==3">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+					<expression>1</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+					<expression>2</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+					<expression>3</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+					<expression>4</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+					<expression>5</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+					<expression>6</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+					<expression>7</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+					<expression>8</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+					<expression>9</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=9.0&amp;&amp;pv0&lt;10.0">
+					<expression>10</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=10.0&amp;&amp;pv0&lt;11.0">
+					<expression>11</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=11.0&amp;&amp;pv0&lt;12.0">
+					<expression>12</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=12.0&amp;&amp;pv0&lt;13.0">
+					<expression>13</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=13.0&amp;&amp;pv0&lt;14.0">
+					<expression>14</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=14.0&amp;&amp;pv0&lt;15.0">
+					<expression>15</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=15.0&amp;&amp;pv0&lt;16.0">
+					<expression>16</expression>
+				</exp>
+				<exp bool_exp="true">
+					<expression>0</expression>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+			<rule name="visibility_rule" prop_id="visible" out_exp="false">
+				<exp bool_exp="(2&amp;pv0)==2">
+					<value>true</value>
+				</exp>
+				<exp bool_exp="(2&amp;pv0)!=2">
+					<value>false</value>
+				</exp>
+				<pv_name>$(mask)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="symbol" version="2.0.0">
+		<name>$(ionp2)</name>
+		<pv_name>$(name):STA</pv_name>
+		<symbols>
+			<symbol>../digitelMpc/digitelMpcIonp-symbol-34.png</symbol>
+		</symbols>
+		<x>30</x>
+		<y>82</y>
+		<width>26</width>
+		<height>26</height>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../digitelMpc/digitelMpcIonp2sp.bob</file>
+				<macros>
+					<device>$(ionp2)</device>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<rules>
+			<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+				<exp bool_exp="pvSev0==3">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+					<expression>1</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+					<expression>2</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+					<expression>3</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+					<expression>4</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+					<expression>5</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+					<expression>6</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+					<expression>7</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+					<expression>8</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+					<expression>9</expression>
+				</exp>
+				<exp bool_exp="true">
+					<expression>0</expression>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+			<rule name="visibility_rule" prop_id="visible" out_exp="false">
+				<exp bool_exp="(2&amp;pv0)==2">
+					<value>true</value>
+				</exp>
+				<exp bool_exp="(2&amp;pv0)!=2">
+					<value>false</value>
+				</exp>
+				<pv_name>$(mask)</pv_name>
+			</rule>
+			<rule name="sp_wrong_warning" prop_id="border_color" out_exp="false">
+				<exp bool_exp="pv1==1 &amp;&amp; pv0==0">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pv1==0 || pv0==1">
+					<value>&lt;color blue="200" green="200" name="Canvas" red="200"/&gt;</value>
+				</exp>
+				<pv_name>$(name):CORRECT_SP</pv_name>
+				<pv_name>sim://ramp(0,1,1,0.5)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="led" version="2.0.0">
+		<name>LED_1</name>
+		<pv_name>SR$(cell)C-MP-VSILK-01:SIGNAL.B$(mpsBit2)</pv_name>
+		<x>61</x>
+		<y>82</y>
+		<width>26</width>
+		<height>26</height>
+		<off_color>
+			<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+		</off_color>
+		<on_color>
+			<color name="Green LED: On" red="0" green="255" blue="0"></color>
+		</on_color>
+		<foreground_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<line_color>
+			<color red="150" green="150" blue="150"></color>
+		</line_color>
+		<square>true</square>
+		<actions></actions>
+		<rules>
+			<rule name="visibility_rule" prop_id="visible" out_exp="false">
+				<exp bool_exp="(2&amp;pv0)==2">
+					<value>true</value>
+				</exp>
+				<exp bool_exp="(2&amp;pv0)!=2">
+					<value>false</value>
+				</exp>
+				<pv_name>$(mask)</pv_name>
+			</rule>
+		</rules>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="symbol" version="2.0.0">
+		<name>$(img3)</name>
+		<pv_name>$(name):STA</pv_name>
+		<symbols>
+			<symbol>../mks937a/mks937aImg-symbol-34.png</symbol>
+		</symbols>
+		<x>1</x>
+		<y>119</y>
+		<width>24</width>
+		<height>24</height>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../mks937a/mks937aImg.bob</file>
+				<macros>
+					<device>$(img3)</device>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<rules>
+			<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+				<exp bool_exp="pvSev0==3">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+					<expression>1</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+					<expression>2</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+					<expression>3</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+					<expression>4</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+					<expression>5</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+					<expression>6</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+					<expression>7</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+					<expression>8</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+					<expression>9</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=9.0&amp;&amp;pv0&lt;10.0">
+					<expression>10</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=10.0&amp;&amp;pv0&lt;11.0">
+					<expression>11</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=11.0&amp;&amp;pv0&lt;12.0">
+					<expression>12</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=12.0&amp;&amp;pv0&lt;13.0">
+					<expression>13</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=13.0&amp;&amp;pv0&lt;14.0">
+					<expression>14</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=14.0&amp;&amp;pv0&lt;15.0">
+					<expression>15</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=15.0&amp;&amp;pv0&lt;16.0">
+					<expression>16</expression>
+				</exp>
+				<exp bool_exp="true">
+					<expression>0</expression>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+			<rule name="visibility_rule" prop_id="visible" out_exp="false">
+				<exp bool_exp="(4&amp;pv0)==4">
+					<value>true</value>
+				</exp>
+				<exp bool_exp="(4&amp;pv0)!=4">
+					<value>false</value>
+				</exp>
+				<pv_name>$(mask)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="symbol" version="2.0.0">
+		<name>$(ionp3)</name>
+		<pv_name>$(name):STA</pv_name>
+		<symbols>
+			<symbol>../digitelMpc/digitelMpcIonp-symbol-34.png</symbol>
+		</symbols>
+		<x>30</x>
+		<y>118</y>
+		<width>26</width>
+		<height>26</height>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../digitelMpc/digitelMpcIonp2sp.bob</file>
+				<macros>
+					<device>$(ionp3)</device>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<rules>
+			<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+				<exp bool_exp="pvSev0==3">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+					<expression>1</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+					<expression>2</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+					<expression>3</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+					<expression>4</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+					<expression>5</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+					<expression>6</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+					<expression>7</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+					<expression>8</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+					<expression>9</expression>
+				</exp>
+				<exp bool_exp="true">
+					<expression>0</expression>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+			<rule name="visibility_rule" prop_id="visible" out_exp="false">
+				<exp bool_exp="(4&amp;pv0)==4">
+					<value>true</value>
+				</exp>
+				<exp bool_exp="(4&amp;pv0)!=4">
+					<value>false</value>
+				</exp>
+				<pv_name>$(mask)</pv_name>
+			</rule>
+			<rule name="sp_wrong_warning" prop_id="border_color" out_exp="false">
+				<exp bool_exp="pv1==1 &amp;&amp; pv0==0">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pv1==0 || pv0==1">
+					<value>&lt;color blue="200" green="200" name="Canvas" red="200"/&gt;</value>
+				</exp>
+				<pv_name>$(name):CORRECT_SP</pv_name>
+				<pv_name>sim://ramp(0,1,1,0.5)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="led" version="2.0.0">
+		<name>LED_2</name>
+		<pv_name>SR$(cell)C-MP-VSILK-01:SIGNAL.B$(mpsBit3)</pv_name>
+		<x>61</x>
+		<y>118</y>
+		<width>26</width>
+		<height>26</height>
+		<off_color>
+			<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+		</off_color>
+		<on_color>
+			<color name="Green LED: On" red="0" green="255" blue="0"></color>
+		</on_color>
+		<foreground_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<line_color>
+			<color red="150" green="150" blue="150"></color>
+		</line_color>
+		<square>true</square>
+		<actions></actions>
+		<rules>
+			<rule name="visibility_rule" prop_id="visible" out_exp="false">
+				<exp bool_exp="(4&amp;pv0)==4">
+					<value>true</value>
+				</exp>
+				<exp bool_exp="(4&amp;pv0)!=4">
+					<value>false</value>
+				</exp>
+				<pv_name>$(mask)</pv_name>
+			</rule>
+		</rules>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="symbol" version="2.0.0">
+		<name>$(img4)</name>
+		<pv_name>$(name):STA</pv_name>
+		<symbols>
+			<symbol>../mks937a/mks937aImg-symbol-34.png</symbol>
+		</symbols>
+		<x>2</x>
+		<y>154</y>
+		<width>24</width>
+		<height>24</height>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../mks937a/mks937aImg.bob</file>
+				<macros>
+					<device>$(img4)</device>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<rules>
+			<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+				<exp bool_exp="pvSev0==3">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+					<expression>1</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+					<expression>2</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+					<expression>3</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+					<expression>4</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+					<expression>5</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+					<expression>6</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+					<expression>7</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+					<expression>8</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+					<expression>9</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=9.0&amp;&amp;pv0&lt;10.0">
+					<expression>10</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=10.0&amp;&amp;pv0&lt;11.0">
+					<expression>11</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=11.0&amp;&amp;pv0&lt;12.0">
+					<expression>12</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=12.0&amp;&amp;pv0&lt;13.0">
+					<expression>13</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=13.0&amp;&amp;pv0&lt;14.0">
+					<expression>14</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=14.0&amp;&amp;pv0&lt;15.0">
+					<expression>15</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=15.0&amp;&amp;pv0&lt;16.0">
+					<expression>16</expression>
+				</exp>
+				<exp bool_exp="true">
+					<expression>0</expression>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+			<rule name="visibility_rule" prop_id="visible" out_exp="false">
+				<exp bool_exp="(8&amp;pv0)==8">
+					<value>true</value>
+				</exp>
+				<exp bool_exp="(8&amp;pv0)!=8">
+					<value>false</value>
+				</exp>
+				<pv_name>$(mask)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="symbol" version="2.0.0">
+		<name>$(ionp4)</name>
+		<pv_name>$(name):STA</pv_name>
+		<symbols>
+			<symbol>../digitelMpc/digitelMpcIonp-symbol-34.png</symbol>
+		</symbols>
+		<x>30</x>
+		<y>153</y>
+		<width>26</width>
+		<height>26</height>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../digitelMpc/digitelMpcIonp2sp.bob</file>
+				<macros>
+					<device>$(ionp4)</device>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<rules>
+			<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+				<exp bool_exp="pvSev0==3">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+					<expression>1</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+					<expression>2</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+					<expression>3</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+					<expression>4</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+					<expression>5</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+					<expression>6</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+					<expression>7</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+					<expression>8</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+					<expression>9</expression>
+				</exp>
+				<exp bool_exp="true">
+					<expression>0</expression>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+			<rule name="visibility_rule" prop_id="visible" out_exp="false">
+				<exp bool_exp="(8&amp;pv0)==8">
+					<value>true</value>
+				</exp>
+				<exp bool_exp="(8&amp;pv0)!=8">
+					<value>false</value>
+				</exp>
+				<pv_name>$(mask)</pv_name>
+			</rule>
+			<rule name="sp_wrong_warning" prop_id="border_color" out_exp="false">
+				<exp bool_exp="pv1==1 &amp;&amp; pv0==0">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pv1==0 || pv0==1">
+					<value>&lt;color blue="200" green="200" name="Canvas" red="200"/&gt;</value>
+				</exp>
+				<pv_name>$(name):CORRECT_SP</pv_name>
+				<pv_name>sim://ramp(0,1,1,0.5)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="led" version="2.0.0">
+		<name>LED_3</name>
+		<pv_name>SR$(cell)C-MP-VSILK-01:SIGNAL.B$(mpsBit4)</pv_name>
+		<x>61</x>
+		<y>153</y>
+		<width>26</width>
+		<height>26</height>
+		<off_color>
+			<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+		</off_color>
+		<on_color>
+			<color name="Green LED: On" red="0" green="255" blue="0"></color>
+		</on_color>
+		<foreground_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<line_color>
+			<color red="150" green="150" blue="150"></color>
+		</line_color>
+		<square>true</square>
+		<actions></actions>
+		<rules>
+			<rule name="visibility_rule" prop_id="visible" out_exp="false">
+				<exp bool_exp="(8&amp;pv0)==8">
+					<value>true</value>
+				</exp>
+				<exp bool_exp="(8&amp;pv0)!=8">
+					<value>false</value>
+				</exp>
+				<pv_name>$(mask)</pv_name>
+			</rule>
+		</rules>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM Text Update</name>
+		<pv_name>SR$(cell)A-VA-VALVE-01:MODE</pv_name>
+		<x>2</x>
+		<y>182</y>
+		<width>90</width>
+		<height>23</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</border_color>
+	</widget>
+</display>

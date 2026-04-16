@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>SR Cell - Insertion Device - Vacuum Control Racks</name>
+	<x>163</x>
+	<y>140</y>
+	<width>257</width>
+	<height>64</height>
+	<background_color>
+		<color name="Wid-alt/Anno-sec" red="174" green="174" blue="174"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>8</grid_step_x>
+	<grid_step_y>8</grid_step_y>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<width>257</width>
+		<height>64</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>24VDC POWER
+POWER SUPPLY</text>
+		<width>256</width>
+		<height>32</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="White" red="255" green="255" blue="255"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse_6</name>
+		<macros>
+			<pv_name>$(device):$(status_prefix)</pv_name>
+		</macros>
+		<x>18</x>
+		<y>10</y>
+		<width>17</width>
+		<height>17</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../../../dlsPLC/NX102_powerSupply_standalone.opi</file>
+				<macros>
+					<device>$(device):1</device>
+					<device_suffix></device_suffix>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse_6</name>
+		<macros>
+			<pv_name>$(device):$(status_prefix)</pv_name>
+		</macros>
+		<x>18</x>
+		<y>38</y>
+		<width>17</width>
+		<height>17</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../../../dlsPLC/NX102_powerSupply_standalone.opi</file>
+				<macros>
+					<device>$(device):2</device>
+					<device_suffix></device_suffix>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>76</x>
+		<y>32</y>
+		<width>9</width>
+		<height>9</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 25%" red="64" green="64" blue="64"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>100</x>
+		<y>32</y>
+		<width>9</width>
+		<height>9</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 25%" red="64" green="64" blue="64"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>124</x>
+		<y>32</y>
+		<width>9</width>
+		<height>9</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 25%" red="64" green="64" blue="64"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>148</x>
+		<y>32</y>
+		<width>9</width>
+		<height>9</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 25%" red="64" green="64" blue="64"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>172</x>
+		<y>32</y>
+		<width>9</width>
+		<height>9</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 25%" red="64" green="64" blue="64"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+</display>

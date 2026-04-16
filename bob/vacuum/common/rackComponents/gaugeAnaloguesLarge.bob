@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>SR Cell - Insertion Device - Vacuum Control Racks</name>
+	<x>1105</x>
+	<y>140</y>
+	<width>130</width>
+	<height>360</height>
+	<background_color>
+		<color name="Text: FG" red="0" green="0" blue="0"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>8</grid_step_x>
+	<grid_step_y>8</grid_step_y>
+	<widget type="progressbar" version="2.0.0">
+		<name>Progress Bar_1</name>
+		<pv_name>$(GCTLR):C2_RAW</pv_name>
+		<x>75</x>
+		<y>38</y>
+		<width>55</width>
+		<height>319</height>
+		<fill_color>
+			<color name="Major" red="255" green="0" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</background_color>
+		<horizontal>false</horizontal>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<limits_from_pv>false</limits_from_pv>
+		<maximum>0.036</maximum>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Label_1</name>
+		<text>2</text>
+		<x>75</x>
+		<width>55</width>
+		<height>39</height>
+		<font>
+			<font family="Liberation Sans" style="BOLD" size="36.0"></font>
+		</font>
+		<foreground_color>
+			<color name="White" red="255" green="255" blue="255"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>Progress Bar</name>
+		<pv_name>$(GCTLR):C1_RAW</pv_name>
+		<y>38</y>
+		<width>55</width>
+		<height>319</height>
+		<fill_color>
+			<color name="Green LED: On" red="0" green="255" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</background_color>
+		<horizontal>false</horizontal>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<limits_from_pv>false</limits_from_pv>
+		<maximum>0.036</maximum>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Label</name>
+		<text>1</text>
+		<width>55</width>
+		<height>39</height>
+		<font>
+			<font family="Liberation Sans" style="BOLD" size="36.0"></font>
+		</font>
+		<foreground_color>
+			<color name="White" red="255" green="255" blue="255"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+</display>

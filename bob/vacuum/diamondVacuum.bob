@@ -1,0 +1,5584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>Diamond Vacuum</name>
+	<x>815</x>
+	<y>60</y>
+	<width>864</width>
+	<height>950</height>
+	<background_color>
+		<color name="Canvas" red="200" green="200" blue="200"></color>
+	</background_color>
+	<grid_step_x>8</grid_step_x>
+	<grid_step_y>8</grid_step_y>
+	<widget type="picture" version="2.0.0">
+		<name>EDM Png</name>
+		<file>./wholeMachine2.png</file>
+		<x>8</x>
+		<y>40</y>
+		<width>819</width>
+		<height>751</height>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<x>202</x>
+		<y>135</y>
+		<width>67</width>
+		<height>155</height>
+		<points>
+			<point x="4.0" y="151.0"></point>
+			<point x="63.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</line_color>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<x>242</x>
+		<y>96</y>
+		<width>107</width>
+		<height>134</height>
+		<points>
+			<point x="4.0" y="130.0"></point>
+			<point x="103.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</line_color>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<x>176</x>
+		<y>191</y>
+		<width>27</width>
+		<height>167</height>
+		<points>
+			<point x="4.0" y="163.0"></point>
+			<point x="23.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</line_color>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<macros>
+			<pv_name>FE22I-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>147</x>
+		<y>265</y>
+		<width>31</width>
+		<height>163</height>
+		<points>
+			<point x="27.0" y="159.0"></point>
+			<point x="4.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<x>114</x>
+		<y>434</y>
+		<width>108</width>
+		<height>136</height>
+		<points>
+			<point x="104.0" y="132.0"></point>
+			<point x="4.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</line_color>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<x>120</x>
+		<y>346</y>
+		<width>72</width>
+		<height>160</height>
+		<points>
+			<point x="68.0" y="156.0"></point>
+			<point x="4.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</line_color>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<macros>
+			<pv_name>FE19I-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>133</x>
+		<y>523</y>
+		<width>135</width>
+		<height>102</height>
+		<points>
+			<point x="131.0" y="98.0"></point>
+			<point x="4.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<macros>
+			<pv_name>FE18I-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>173</x>
+		<y>600</y>
+		<width>151</width>
+		<height>65</height>
+		<points>
+			<point x="147.0" y="61.0"></point>
+			<point x="4.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<x>227</x>
+		<y>661</y>
+		<width>169</width>
+		<height>29</height>
+		<points>
+			<point x="165.0" y="25.0"></point>
+			<point x="4.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</line_color>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<macros>
+			<pv_name>FE16I-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>303</x>
+		<y>688</y>
+		<width>166</width>
+		<height>33</height>
+		<points>
+			<point x="4.0" y="29.0"></point>
+			<point x="162.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<x>467</x>
+		<y>648</y>
+		<width>134</width>
+		<height>104</height>
+		<points>
+			<point x="4.0" y="100.0"></point>
+			<point x="130.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</line_color>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<macros>
+			<pv_name>FE15I-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>382</x>
+		<y>677</y>
+		<width>155</width>
+		<height>69</height>
+		<points>
+			<point x="4.0" y="65.0"></point>
+			<point x="151.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<x>636</x>
+		<y>538</y>
+		<width>65</width>
+		<height>156</height>
+		<points>
+			<point x="4.0" y="152.0"></point>
+			<point x="61.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</line_color>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<macros>
+			<pv_name>FE12I-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>556</x>
+		<y>597</y>
+		<width>105</width>
+		<height>138</height>
+		<points>
+			<point x="4.0" y="134.0"></point>
+			<point x="101.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<x>702</x>
+		<y>473</y>
+		<width>24</width>
+		<height>160</height>
+		<points>
+			<point x="4.0" y="156.0"></point>
+			<point x="20.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</line_color>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<x>725</x>
+		<y>402</y>
+		<width>32</width>
+		<height>159</height>
+		<points>
+			<point x="28.0" y="155.0"></point>
+			<point x="4.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</line_color>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<x>680</x>
+		<y>261</y>
+		<width>108</width>
+		<height>132</height>
+		<points>
+			<point x="104.0" y="128.0"></point>
+			<point x="4.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</line_color>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<x>711</x>
+		<y>325</y>
+		<width>71</width>
+		<height>156</height>
+		<points>
+			<point x="67.0" y="152.0"></point>
+			<point x="4.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</line_color>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<macros>
+			<pv_name>FE06I-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>578</x>
+		<y>166</y>
+		<width>151</width>
+		<height>65</height>
+		<points>
+			<point x="147.0" y="61.0"></point>
+			<point x="4.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<macros>
+			<pv_name>FE07I-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>636</x>
+		<y>208</y>
+		<width>133</width>
+		<height>99</height>
+		<points>
+			<point x="129.0" y="95.0"></point>
+			<point x="4.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<x>504</x>
+		<y>139</y>
+		<width>172</width>
+		<height>28</height>
+		<points>
+			<point x="168.0" y="24.0"></point>
+			<point x="4.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</line_color>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<macros>
+			<pv_name>FE04I-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>435</x>
+		<y>111</y>
+		<width>164</width>
+		<height>31</height>
+		<points>
+			<point x="4.0" y="27.0"></point>
+			<point x="160.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<macros>
+			<pv_name>FE03I-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>363</x>
+		<y>85</y>
+		<width>152</width>
+		<height>69</height>
+		<points>
+			<point x="4.0" y="65.0"></point>
+			<point x="148.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<macros>
+			<pv_name>FE02I-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>305</x>
+		<y>80</y>
+		<width>122</width>
+		<height>101</height>
+		<points>
+			<point x="4.0" y="97.0"></point>
+			<point x="118.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<macros>
+			<pv_name>BS-VA-SPACE-02:STA</pv_name>
+		</macros>
+		<x>202</x>
+		<y>274</y>
+		<width>14</width>
+		<height>68</height>
+		<points>
+			<point x="10.0" y="64.0"></point>
+			<point x="4.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<macros>
+			<pv_name>BS-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>201</x>
+		<y>322</y>
+		<width>44</width>
+		<height>78</height>
+		<points>
+			<point x="40.0" y="74.0"></point>
+			<point x="4.0" y="4.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<macros>
+			<pv_name>LB-VA-SPACE-99:STA</pv_name>
+		</macros>
+		<x>362</x>
+		<y>296</y>
+		<width>8</width>
+		<height>63</height>
+		<points>
+			<point x="4.0" y="4.0"></point>
+			<point x="4.0" y="59.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>SR18C-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>165</x>
+		<y>129</y>
+		<width>572</width>
+		<height>572</height>
+		<start_angle>228.0</start_angle>
+		<total_angle>14.0</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>SR17C-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>165</x>
+		<y>129</y>
+		<width>572</width>
+		<height>572</height>
+		<start_angle>242.0</start_angle>
+		<total_angle>16.5</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>SR16C-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>165</x>
+		<y>129</y>
+		<width>572</width>
+		<height>572</height>
+		<start_angle>258.5</start_angle>
+		<total_angle>14.5</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>SR20C-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>165</x>
+		<y>129</y>
+		<width>572</width>
+		<height>572</height>
+		<start_angle>198.0</start_angle>
+		<total_angle>15.0</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>SR15C-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>165</x>
+		<y>129</y>
+		<width>572</width>
+		<height>572</height>
+		<start_angle>273.0</start_angle>
+		<total_angle>14.5</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>SR13C-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>165</x>
+		<y>129</y>
+		<width>572</width>
+		<height>572</height>
+		<start_angle>302.0</start_angle>
+		<total_angle>16.0</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>SR14C-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>165</x>
+		<y>129</y>
+		<width>572</width>
+		<height>572</height>
+		<start_angle>287.5</start_angle>
+		<total_angle>14.5</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>SR12C-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>165</x>
+		<y>129</y>
+		<width>572</width>
+		<height>572</height>
+		<start_angle>318.0</start_angle>
+		<total_angle>15.0</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>SR11C-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>165</x>
+		<y>129</y>
+		<width>572</width>
+		<height>572</height>
+		<start_angle>333.0</start_angle>
+		<total_angle>14.5</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>SR10C-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>165</x>
+		<y>129</y>
+		<width>572</width>
+		<height>572</height>
+		<start_angle>347.5</start_angle>
+		<total_angle>14.5</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>SR09C-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>165</x>
+		<y>129</y>
+		<width>572</width>
+		<height>572</height>
+		<start_angle>2.0</start_angle>
+		<total_angle>16.0</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>SR08C-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>165</x>
+		<y>129</y>
+		<width>572</width>
+		<height>572</height>
+		<start_angle>18.0</start_angle>
+		<total_angle>15.0</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>SR07C-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>165</x>
+		<y>129</y>
+		<width>572</width>
+		<height>572</height>
+		<start_angle>33.0</start_angle>
+		<total_angle>14.5</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>SR06C-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>165</x>
+		<y>129</y>
+		<width>572</width>
+		<height>572</height>
+		<start_angle>47.5</start_angle>
+		<total_angle>14.5</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>SR05C-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>165</x>
+		<y>129</y>
+		<width>572</width>
+		<height>572</height>
+		<start_angle>62.0</start_angle>
+		<total_angle>16.0</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>SR04C-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>165</x>
+		<y>129</y>
+		<width>572</width>
+		<height>572</height>
+		<start_angle>78.0</start_angle>
+		<total_angle>15.0</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>SR03C-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>165</x>
+		<y>129</y>
+		<width>572</width>
+		<height>572</height>
+		<start_angle>93.0</start_angle>
+		<total_angle>14.5</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>SR02C-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>165</x>
+		<y>129</y>
+		<width>572</width>
+		<height>572</height>
+		<start_angle>107.5</start_angle>
+		<total_angle>14.0</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>SR24C-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>165</x>
+		<y>129</y>
+		<width>572</width>
+		<height>572</height>
+		<start_angle>137.5</start_angle>
+		<total_angle>14.5</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>SR23C-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>165</x>
+		<y>129</y>
+		<width>572</width>
+		<height>572</height>
+		<start_angle>152.0</start_angle>
+		<total_angle>15.0</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>SR01C-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>165</x>
+		<y>129</y>
+		<width>572</width>
+		<height>572</height>
+		<start_angle>121.5</start_angle>
+		<total_angle>16.0</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>SR22C-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>165</x>
+		<y>129</y>
+		<width>572</width>
+		<height>572</height>
+		<start_angle>167.0</start_angle>
+		<total_angle>15.0</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>SR21C-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>165</x>
+		<y>129</y>
+		<width>572</width>
+		<height>572</height>
+		<start_angle>182.0</start_angle>
+		<total_angle>16.0</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>SR19C-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>165</x>
+		<y>129</y>
+		<width>572</width>
+		<height>572</height>
+		<start_angle>213.0</start_angle>
+		<total_angle>15.0</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<y>832</y>
+		<width>865</width>
+		<height>121</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Diamond Vacuum</text>
+		<width>864</width>
+		<height>32</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="VA title" red="202" green="223" blue="159"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM Exit Button</name>
+		<actions>
+			<action type="close_display">
+				<description>Close display</description>
+			</action>
+		</actions>
+		<text>Exit</text>
+		<x>792</x>
+		<y>800</y>
+		<width>65</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Exit: FG" red="192" green="0" blue="192"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>./diamondVacCtrl.bob</file>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>Racks</text>
+		<x>368</x>
+		<y>800</y>
+		<width>65</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>./linacVacuum.bob</file>
+				<macros>
+					<dom>LI</dom>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>Linac</text>
+		<x>360</x>
+		<y>248</y>
+		<width>61</width>
+		<height>26</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>./lbVacuum.bob</file>
+				<macros>
+					<dom>LB</dom>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>L to B</text>
+		<x>376</x>
+		<y>320</y>
+		<width>57</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<macros>
+			<pv_name>LI-VA-SPACE-99:STA</pv_name>
+		</macros>
+		<x>328</x>
+		<y>237</y>
+		<width>49</width>
+		<height>77</height>
+		<points>
+			<point x="4.0" y="4.0"></point>
+			<point x="45.0" y="73.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>./bsVacuum.bob</file>
+				<macros>
+					<dom>BS</dom>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>B to SR</text>
+		<x>220</x>
+		<y>267</y>
+		<width>61</width>
+		<height>26</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>./boosterVacuum.bob</file>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>Booster</text>
+		<x>277</x>
+		<y>372</y>
+		<width>61</width>
+		<height>26</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>BR-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>241</x>
+		<y>334</y>
+		<width>146</width>
+		<height>146</height>
+		<start_angle>196.0</start_angle>
+		<total_angle>180.0</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="White" red="255" green="255" blue="255"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="arc" version="2.0.0">
+		<name>EDM arc</name>
+		<macros>
+			<pv_name>BR-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>227</x>
+		<y>294</y>
+		<width>146</width>
+		<height>146</height>
+		<start_angle>17.0</start_angle>
+		<total_angle>180.0</total_angle>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="White" red="255" green="255" blue="255"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="foreground_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>&lt;color blue="255" green="255" name="Invalid" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>&lt;color blue="0" green="241" name="Minor" red="255"/&gt;</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<macros>
+			<pv_name>BR-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>358</x>
+		<y>339</y>
+		<width>24</width>
+		<height>58</height>
+		<points>
+			<point x="4.0" y="4.0"></point>
+			<point x="20.0" y="54.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<macros>
+			<pv_name>BR-VA-SPACE-01:STA</pv_name>
+		</macros>
+		<x>233</x>
+		<y>379</y>
+		<width>23</width>
+		<height>51</height>
+		<points>
+			<point x="4.0" y="4.0"></point>
+			<point x="19.0" y="47.0"></point>
+		</points>
+		<line_width>8</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>srRfStraightVacuumn-1-makeup-3.bob</file>
+				<macros>
+					<cell>17</cell>
+					<pcell>16</pcell>
+					<ncell>18</ncell>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>RF</text>
+		<x>116</x>
+		<y>634</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>./diamondVacuumIocs.bob</file>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>IOCs</text>
+		<x>224</x>
+		<y>800</y>
+		<width>65</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>./diamondVacuumPlcs.bob</file>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>PLCs</text>
+		<x>296</x>
+		<y>800</y>
+		<width>65</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>./srVacuumValves.bob</file>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>Valves</text>
+		<x>80</x>
+		<y>800</y>
+		<width>65</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>./diamondVacuumOverview.bob</file>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>Summary</text>
+		<x>440</x>
+		<y>800</y>
+		<width>73</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>./srTsps.bob</file>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>TSPs</text>
+		<x>8</x>
+		<y>800</y>
+		<width>65</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>./srRgas.bob</file>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>RGAs</text>
+		<x>152</x>
+		<y>800</y>
+		<width>65</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 10 I</command>
+			</action>
+		</actions>
+		<text>FE</text>
+		<x>784</x>
+		<y>578</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 02 I</command>
+			</action>
+		</actions>
+		<text>FE</text>
+		<x>447</x>
+		<y>37</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 03 I</command>
+			</action>
+		</actions>
+		<text>FE</text>
+		<x>586</x>
+		<y>78</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 16 I</command>
+			</action>
+		</actions>
+		<text>FEI</text>
+		<x>174</x>
+		<y>689</y>
+		<width>31</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 04 I</command>
+			</action>
+		</actions>
+		<text>FE</text>
+		<x>668</x>
+		<y>114</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 18 I</command>
+			</action>
+		</actions>
+		<text>FEI</text>
+		<x>55</x>
+		<y>565</y>
+		<width>34</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 22 I</command>
+			</action>
+		</actions>
+		<text>FEI</text>
+		<x>60</x>
+		<y>224</y>
+		<width>31</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>bash -c "./idVacuum.sh 04 SR04I ID_Vacuum.edl"</command>
+			</action>
+		</actions>
+		<text>ID</text>
+		<x>692</x>
+		<y>114</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Dark Brown" red="128" green="96" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="2.0.0">
+		<name>EDM related display</name>
+		<x>762</x>
+		<y>172</y>
+		<width>25</width>
+		<height>25</height>
+		<line_width>0</line_width>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>bash -c "./idVacuum.sh 05 SR05I ID_Vacuum.edl"</command>
+			</action>
+		</actions>
+		<text></text>
+	</widget>
+	<widget type="action_button" version="2.0.0">
+		<name>EDM related display</name>
+		<x>795</x>
+		<y>350</y>
+		<width>25</width>
+		<height>25</height>
+		<line_width>0</line_width>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>bash -c "./idVacuum.sh 07 SR07I ID_Vacuum3.edl"</command>
+			</action>
+		</actions>
+		<text></text>
+	</widget>
+	<widget type="action_button" version="2.0.0">
+		<name>EDM related display</name>
+		<x>806</x>
+		<y>438</y>
+		<width>25</width>
+		<height>25</height>
+		<line_width>0</line_width>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>bash -c "./idVacuum.sh 08 SR08I ID_Vacuum.edl"</command>
+			</action>
+		</actions>
+		<text></text>
+	</widget>
+	<widget type="action_button" version="2.0.0">
+		<name>EDM related display</name>
+		<x>790</x>
+		<y>527</y>
+		<width>25</width>
+		<height>25</height>
+		<line_width>0</line_width>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>bash -c "./idVacuum.sh 09 SR09I ID_Vacuum.edl"</command>
+			</action>
+		</actions>
+		<text></text>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>bash -c "./idVacuum.sh 10 SR10I ID_Vacuum.edl"</command>
+			</action>
+		</actions>
+		<text>ID</text>
+		<x>808</x>
+		<y>578</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Dark Brown" red="128" green="96" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>bash -c "./idVacuum.sh 11 SR11I ID_Vacuum.edl"</command>
+			</action>
+		</actions>
+		<text>ID</text>
+		<x>746</x>
+		<y>647</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Dark Brown" red="128" green="96" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>./scwVacuum.bob</file>
+				<macros>
+					<cell>12</cell>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>ID</text>
+		<x>674</x>
+		<y>701</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Dark Brown" red="128" green="96" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>./scwVacuum.bob</file>
+				<macros>
+					<cell>15</cell>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>ID</text>
+		<x>366</x>
+		<y>756</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Dark Brown" red="128" green="96" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>bash -c "./idVacuum.sh 16 SR16I ID_Vacuum.edl"</command>
+			</action>
+		</actions>
+		<text>ID</text>
+		<x>234</x>
+		<y>689</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Dark Brown" red="128" green="96" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>bash -c "./idVacuum.sh 18 SR18I ID_Vacuum.edl"</command>
+			</action>
+		</actions>
+		<text>ID</text>
+		<x>116</x>
+		<y>565</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Dark Brown" red="128" green="96" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>bash -c "./idVacuum.sh 19 SR19I ID_Vacuum.edl"</command>
+			</action>
+		</actions>
+		<text>ID</text>
+		<x>80</x>
+		<y>483</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Dark Brown" red="128" green="96" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="2.0.0">
+		<name>EDM related display</name>
+		<x>74</x>
+		<y>397</y>
+		<width>25</width>
+		<height>25</height>
+		<line_width>0</line_width>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>bash -c "./idVacuum.sh 20 SR20I ID_Vacuum.edl"</command>
+			</action>
+		</actions>
+		<text></text>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>bash -c "./idVacuum.sh 22 SR22I ID_Vacuum.edl"</command>
+			</action>
+		</actions>
+		<text>ID</text>
+		<x>120</x>
+		<y>224</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Dark Brown" red="128" green="96" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>bash -c "./idVacuum.sh 23 SR23I ID_Vacuum4.edl"</command>
+			</action>
+		</actions>
+		<text>ID</text>
+		<x>175</x>
+		<y>158</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Dark Brown" red="128" green="96" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>bash -c "./idVacuum.sh 24 SR24I ID_Vacuum.edl"</command>
+			</action>
+		</actions>
+		<text>ID</text>
+		<x>249</x>
+		<y>107</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Dark Brown" red="128" green="96" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>bash -c "./idVacuum.sh 02 SR02I ID_Vacuum.edl"</command>
+			</action>
+		</actions>
+		<text>ID</text>
+		<x>472</x>
+		<y>37</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Dark Brown" red="128" green="96" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>bash -c "./idVacuum.sh 03 SR03I ID_Vacuum.edl"</command>
+			</action>
+		</actions>
+		<text>ID</text>
+		<x>610</x>
+		<y>78</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Dark Brown" red="128" green="96" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 06 I</command>
+			</action>
+		</actions>
+		<text>FE</text>
+		<x>786</x>
+		<y>241</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 15 I</command>
+			</action>
+		</actions>
+		<text>FE</text>
+		<x>342</x>
+		<y>756</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM Text Update</name>
+		<pv_name>SR-VA-MIMG-01:PDYN</pv_name>
+		<x>519</x>
+		<y>1447</y>
+		<width>66</width>
+		<height>26</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 25%" red="64" green="64" blue="64"></color>
+		</background_color>
+		<format>2</format>
+		<precision>1</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<border_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>bash -c "./idVacuum.sh 13 SR13I ID_Vacuum.edl"</command>
+			</action>
+		</actions>
+		<text>IDI</text>
+		<x>540</x>
+		<y>762</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Dark Brown" red="128" green="96" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<x>530</x>
+		<y>75</y>
+		<width>31</width>
+		<height>31</height>
+		<line_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>03</text>
+		<x>535</x>
+		<y>82</y>
+		<width>19</width>
+		<height>18</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<x>613</x>
+		<y>111</y>
+		<width>31</width>
+		<height>31</height>
+		<line_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>04</text>
+		<x>618</x>
+		<y>118</y>
+		<width>19</width>
+		<height>18</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<x>683</x>
+		<y>169</y>
+		<width>31</width>
+		<height>31</height>
+		<line_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>05</text>
+		<x>688</x>
+		<y>176</y>
+		<width>19</width>
+		<height>18</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<x>731</x>
+		<y>238</y>
+		<width>31</width>
+		<height>31</height>
+		<line_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>06</text>
+		<x>736</x>
+		<y>245</y>
+		<width>20</width>
+		<height>18</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<x>764</x>
+		<y>323</y>
+		<width>31</width>
+		<height>31</height>
+		<line_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>07</text>
+		<x>769</x>
+		<y>330</y>
+		<width>20</width>
+		<height>18</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<x>774</x>
+		<y>411</y>
+		<width>31</width>
+		<height>31</height>
+		<line_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>08</text>
+		<x>779</x>
+		<y>418</y>
+		<width>20</width>
+		<height>18</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<x>759</x>
+		<y>500</y>
+		<width>31</width>
+		<height>31</height>
+		<line_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>09</text>
+		<x>764</x>
+		<y>507</y>
+		<width>20</width>
+		<height>18</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<x>725</x>
+		<y>575</y>
+		<width>31</width>
+		<height>31</height>
+		<line_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>10</text>
+		<x>730</x>
+		<y>582</y>
+		<width>20</width>
+		<height>18</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<x>668</x>
+		<y>644</y>
+		<width>31</width>
+		<height>31</height>
+		<line_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>11</text>
+		<x>673</x>
+		<y>651</y>
+		<width>20</width>
+		<height>18</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<x>595</x>
+		<y>698</y>
+		<width>31</width>
+		<height>31</height>
+		<line_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>12</text>
+		<x>600</x>
+		<y>705</y>
+		<width>19</width>
+		<height>18</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<x>513</x>
+		<y>730</y>
+		<width>31</width>
+		<height>31</height>
+		<line_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>13</text>
+		<x>518</x>
+		<y>737</y>
+		<width>19</width>
+		<height>18</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<x>427</x>
+		<y>740</y>
+		<width>31</width>
+		<height>31</height>
+		<line_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>14</text>
+		<x>433</x>
+		<y>747</y>
+		<width>19</width>
+		<height>18</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<x>339</x>
+		<y>724</y>
+		<width>31</width>
+		<height>31</height>
+		<line_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>15</text>
+		<x>345</x>
+		<y>731</y>
+		<width>19</width>
+		<height>18</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<x>258</x>
+		<y>686</y>
+		<width>31</width>
+		<height>31</height>
+		<line_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>16</text>
+		<x>263</x>
+		<y>693</y>
+		<width>20</width>
+		<height>18</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<x>190</x>
+		<y>631</y>
+		<width>31</width>
+		<height>31</height>
+		<line_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>17</text>
+		<x>195</x>
+		<y>638</y>
+		<width>20</width>
+		<height>18</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<x>142</x>
+		<y>562</y>
+		<width>31</width>
+		<height>31</height>
+		<line_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>18</text>
+		<x>147</x>
+		<y>569</y>
+		<width>20</width>
+		<height>18</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<x>107</x>
+		<y>480</y>
+		<width>31</width>
+		<height>31</height>
+		<line_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>19</text>
+		<x>112</x>
+		<y>487</y>
+		<width>20</width>
+		<height>18</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<x>99</x>
+		<y>394</y>
+		<width>31</width>
+		<height>31</height>
+		<line_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>20</text>
+		<x>105</x>
+		<y>401</y>
+		<width>19</width>
+		<height>18</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<x>112</x>
+		<y>301</y>
+		<width>31</width>
+		<height>31</height>
+		<line_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>21</text>
+		<x>118</x>
+		<y>308</y>
+		<width>19</width>
+		<height>18</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<x>148</x>
+		<y>221</y>
+		<width>31</width>
+		<height>31</height>
+		<line_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>22</text>
+		<x>154</x>
+		<y>228</y>
+		<width>18</width>
+		<height>18</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<x>202</x>
+		<y>155</y>
+		<width>31</width>
+		<height>31</height>
+		<line_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>23</text>
+		<x>208</x>
+		<y>162</y>
+		<width>18</width>
+		<height>18</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<x>275</x>
+		<y>104</y>
+		<width>31</width>
+		<height>31</height>
+		<line_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>24</text>
+		<x>281</x>
+		<y>111</y>
+		<width>18</width>
+		<height>18</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<x>360</x>
+		<y>68</y>
+		<width>31</width>
+		<height>31</height>
+		<line_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>01</text>
+		<x>365</x>
+		<y>75</y>
+		<width>20</width>
+		<height>18</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<x>443</x>
+		<y>62</y>
+		<width>31</width>
+		<height>31</height>
+		<line_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>02</text>
+		<x>448</x>
+		<y>69</y>
+		<width>19</width>
+		<height>18</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 23 B</command>
+			</action>
+		</actions>
+		<text>FEB</text>
+		<x>145</x>
+		<y>158</y>
+		<width>31</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 21 I</command>
+			</action>
+		</actions>
+		<text>FEI</text>
+		<x>32</x>
+		<y>304</y>
+		<width>34</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 20 I</command>
+			</action>
+		</actions>
+		<text>FE</text>
+		<x>50</x>
+		<y>397</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 19 I</command>
+			</action>
+		</actions>
+		<text>FE</text>
+		<x>56</x>
+		<y>483</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="2.0.0">
+		<name>EDM shell command</name>
+		<x>164</x>
+		<y>634</y>
+		<width>25</width>
+		<height>25</height>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 17 I</command>
+			</action>
+		</actions>
+		<text></text>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 12 I</command>
+			</action>
+		</actions>
+		<text>FE</text>
+		<x>650</x>
+		<y>701</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 11 I</command>
+			</action>
+		</actions>
+		<text>FE</text>
+		<x>723</x>
+		<y>647</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 09 I</command>
+			</action>
+		</actions>
+		<text>FE</text>
+		<x>814</x>
+		<y>503</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 07 I</command>
+			</action>
+		</actions>
+		<text>FE</text>
+		<x>819</x>
+		<y>326</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 24 I</command>
+			</action>
+		</actions>
+		<text>FE</text>
+		<x>225</x>
+		<y>107</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>0</name>
+		<x>216</x>
+		<y>840</y>
+		<width>433</width>
+		<height>105</height>
+		<style>3</style>
+		<foreground_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</foreground_color>
+		<line_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</line_color>
+		<transparent>true</transparent>
+		<widget type="rectangle" version="2.0.0">
+			<name>EDM Rectangle</name>
+			<x>72</x>
+			<y>32</y>
+			<width>361</width>
+			<height>73</height>
+			<line_width>1</line_width>
+			<line_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</line_color>
+			<background_color>
+				<color name="Grey 75%" red="192" green="192" blue="192"></color>
+			</background_color>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>0</name>
+			<width>433</width>
+			<height>105</height>
+			<style>3</style>
+			<foreground_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</foreground_color>
+			<line_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</line_color>
+			<transparent>true</transparent>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<y>32</y>
+				<width>73</width>
+				<height>73</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>Units</text>
+				<y>88</y>
+				<width>72</width>
+				<height>16</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="12.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<transparent>false</transparent>
+				<horizontal_alignment>1</horizontal_alignment>
+				<vertical_alignment>1</vertical_alignment>
+				<border_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>Storage</text>
+				<y>64</y>
+				<width>72</width>
+				<height>16</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="12.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<transparent>false</transparent>
+				<horizontal_alignment>1</horizontal_alignment>
+				<vertical_alignment>1</vertical_alignment>
+				<border_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>Booster</text>
+				<y>40</y>
+				<width>72</width>
+				<height>16</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="12.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<transparent>false</transparent>
+				<horizontal_alignment>1</horizontal_alignment>
+				<vertical_alignment>1</vertical_alignment>
+				<border_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</border_color>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>0</name>
+				<x>72</x>
+				<width>361</width>
+				<height>105</height>
+				<style>3</style>
+				<foreground_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</foreground_color>
+				<line_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</line_color>
+				<transparent>true</transparent>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<width>73</width>
+					<height>105</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 75%" red="192" green="192" blue="192"></color>
+					</background_color>
+					<transparent>true</transparent>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>Dynamic
+Pressure</text>
+					<x>144</x>
+					<width>72</width>
+					<height>32</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="12.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</foreground_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<transparent>false</transparent>
+					<horizontal_alignment>1</horizontal_alignment>
+					<vertical_alignment>1</vertical_alignment>
+					<border_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</border_color>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>DC Current</text>
+					<x>72</x>
+					<width>72</width>
+					<height>32</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="12.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</foreground_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<transparent>false</transparent>
+					<horizontal_alignment>1</horizontal_alignment>
+					<vertical_alignment>1</vertical_alignment>
+					<border_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</border_color>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>Mean IMG
+Pressure</text>
+					<width>72</width>
+					<height>32</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="12.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</foreground_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<transparent>false</transparent>
+					<horizontal_alignment>1</horizontal_alignment>
+					<vertical_alignment>1</vertical_alignment>
+					<border_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</border_color>
+				</widget>
+				<widget type="textupdate" version="2.0.0">
+					<name>EDM TextInput</name>
+					<pv_name>BR01C-DI-DCCT-01:SIGNAL</pv_name>
+					<x>78</x>
+					<y>40</y>
+					<width>60</width>
+					<height>16</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="12.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+					</foreground_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<show_units>false</show_units>
+					<horizontal_alignment>1</horizontal_alignment>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>mbar</text>
+					<x>8</x>
+					<y>88</y>
+					<width>56</width>
+					<height>16</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="12.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Text: FG" red="0" green="0" blue="0"></color>
+					</foreground_color>
+					<background_color>
+						<color name="White" red="255" green="255" blue="255"></color>
+					</background_color>
+					<horizontal_alignment>1</horizontal_alignment>
+					<vertical_alignment>1</vertical_alignment>
+					<border_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</border_color>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>mA</text>
+					<x>80</x>
+					<y>88</y>
+					<width>56</width>
+					<height>16</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="12.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Text: FG" red="0" green="0" blue="0"></color>
+					</foreground_color>
+					<background_color>
+						<color name="Canvas" red="200" green="200" blue="200"></color>
+					</background_color>
+					<horizontal_alignment>1</horizontal_alignment>
+					<vertical_alignment>1</vertical_alignment>
+					<border_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</border_color>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>mbar/mA</text>
+					<x>152</x>
+					<y>88</y>
+					<width>56</width>
+					<height>16</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="12.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Text: FG" red="0" green="0" blue="0"></color>
+					</foreground_color>
+					<background_color>
+						<color name="White" red="255" green="255" blue="255"></color>
+					</background_color>
+					<horizontal_alignment>1</horizontal_alignment>
+					<vertical_alignment>1</vertical_alignment>
+					<border_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</border_color>
+				</widget>
+				<widget type="textupdate" version="2.0.0">
+					<name>EDM TextInput</name>
+					<pv_name>BR-VA-MIMG-01:P</pv_name>
+					<x>6</x>
+					<y>40</y>
+					<width>60</width>
+					<height>16</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="12.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+					</foreground_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<format>2</format>
+					<precision>1</precision>
+					<show_units>false</show_units>
+					<horizontal_alignment>1</horizontal_alignment>
+				</widget>
+				<widget type="textupdate" version="2.0.0">
+					<name>EDM TextInput</name>
+					<pv_name>SR-VA-MIMG-01:P</pv_name>
+					<x>6</x>
+					<y>64</y>
+					<width>60</width>
+					<height>16</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="12.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+					</foreground_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<format>2</format>
+					<precision>1</precision>
+					<show_units>false</show_units>
+					<horizontal_alignment>1</horizontal_alignment>
+				</widget>
+				<widget type="textupdate" version="2.0.0">
+					<name>EDM TextInput</name>
+					<pv_name>SR-DI-DCCT-01:SIGNAL</pv_name>
+					<x>78</x>
+					<y>64</y>
+					<width>60</width>
+					<height>16</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="12.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+					</foreground_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<show_units>false</show_units>
+					<horizontal_alignment>1</horizontal_alignment>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>Undefined</text>
+					<x>150</x>
+					<y>64</y>
+					<width>60</width>
+					<height>16</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="12.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</foreground_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<transparent>false</transparent>
+					<horizontal_alignment>1</horizontal_alignment>
+					<vertical_alignment>1</vertical_alignment>
+					<rules>
+						<rule name="visibleRule" prop_id="visible" out_exp="false">
+							<exp bool_exp="pv0&gt;=-100.0&amp;&amp; pv0&lt;1.0">
+								<value>true</value>
+							</exp>
+							<exp bool_exp="true">
+								<value>false</value>
+							</exp>
+							<pv_name>SR-DI-DCCT-01:SIGNAL</pv_name>
+						</rule>
+					</rules>
+					<border_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</border_color>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>Undefined</text>
+					<x>150</x>
+					<y>40</y>
+					<width>60</width>
+					<height>16</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="12.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</foreground_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<transparent>false</transparent>
+					<horizontal_alignment>1</horizontal_alignment>
+					<vertical_alignment>1</vertical_alignment>
+					<rules>
+						<rule name="visibleRule" prop_id="visible" out_exp="false">
+							<exp bool_exp="pv0&gt;=-100.0&amp;&amp; pv0&lt;1.0">
+								<value>true</value>
+							</exp>
+							<exp bool_exp="true">
+								<value>false</value>
+							</exp>
+							<pv_name>BR01C-DI-DCCT-01:SIGNAL</pv_name>
+						</rule>
+					</rules>
+					<border_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</border_color>
+				</widget>
+				<widget type="textupdate" version="2.0.0">
+					<name>EDM TextInput</name>
+					<pv_name>SR-VA-MIMG-01:PDYN</pv_name>
+					<x>150</x>
+					<y>64</y>
+					<width>60</width>
+					<height>16</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="12.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+					</foreground_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<format>2</format>
+					<show_units>false</show_units>
+					<horizontal_alignment>1</horizontal_alignment>
+					<border_alarm_sensitive>false</border_alarm_sensitive>
+				</widget>
+				<widget type="textupdate" version="2.0.0">
+					<name>EDM TextInput</name>
+					<pv_name>BR-VA-MIMG-01:PDYN</pv_name>
+					<x>150</x>
+					<y>40</y>
+					<width>60</width>
+					<height>16</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="12.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+					</foreground_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<format>2</format>
+					<show_units>false</show_units>
+					<horizontal_alignment>1</horizontal_alignment>
+					<border_alarm_sensitive>false</border_alarm_sensitive>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>Integral I.dt</text>
+					<x>216</x>
+					<width>72</width>
+					<height>32</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="12.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</foreground_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<transparent>false</transparent>
+					<horizontal_alignment>1</horizontal_alignment>
+					<vertical_alignment>1</vertical_alignment>
+					<border_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</border_color>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>Beam
+Lifetime</text>
+					<x>288</x>
+					<width>72</width>
+					<height>32</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="12.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</foreground_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<transparent>false</transparent>
+					<horizontal_alignment>1</horizontal_alignment>
+					<vertical_alignment>1</vertical_alignment>
+					<border_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</border_color>
+				</widget>
+				<widget type="textupdate" version="2.0.0">
+					<name>EDM TextInput</name>
+					<pv_name>BR01C-DI-DCCT-01:TOTAL</pv_name>
+					<x>222</x>
+					<y>40</y>
+					<width>60</width>
+					<height>16</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="12.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+					</foreground_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<show_units>false</show_units>
+					<horizontal_alignment>1</horizontal_alignment>
+				</widget>
+				<widget type="textupdate" version="2.0.0">
+					<name>EDM TextInput</name>
+					<pv_name>SR-DI-DCCT-01:TOTAL</pv_name>
+					<x>222</x>
+					<y>64</y>
+					<width>60</width>
+					<height>16</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="12.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+					</foreground_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<show_units>false</show_units>
+					<horizontal_alignment>1</horizontal_alignment>
+					<border_alarm_sensitive>false</border_alarm_sensitive>
+				</widget>
+				<widget type="textupdate" version="2.0.0">
+					<name>EDM TextInput</name>
+					<pv_name>SR-DI-DCCT-01:LIFETIME</pv_name>
+					<x>294</x>
+					<y>64</y>
+					<width>60</width>
+					<height>16</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="12.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+					</foreground_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<show_units>false</show_units>
+					<horizontal_alignment>1</horizontal_alignment>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>mAHours</text>
+					<x>224</x>
+					<y>88</y>
+					<width>56</width>
+					<height>16</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="12.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Text: FG" red="0" green="0" blue="0"></color>
+					</foreground_color>
+					<background_color>
+						<color name="White" red="255" green="255" blue="255"></color>
+					</background_color>
+					<horizontal_alignment>1</horizontal_alignment>
+					<vertical_alignment>1</vertical_alignment>
+					<border_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</border_color>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>Hours</text>
+					<x>296</x>
+					<y>88</y>
+					<width>56</width>
+					<height>16</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="12.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Text: FG" red="0" green="0" blue="0"></color>
+					</foreground_color>
+					<background_color>
+						<color name="White" red="255" green="255" blue="255"></color>
+					</background_color>
+					<horizontal_alignment>1</horizontal_alignment>
+					<vertical_alignment>1</vertical_alignment>
+					<border_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</border_color>
+				</widget>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<x>72</x>
+					<width>73</width>
+					<height>105</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 75%" red="192" green="192" blue="192"></color>
+					</background_color>
+					<transparent>true</transparent>
+				</widget>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<x>144</x>
+					<width>73</width>
+					<height>105</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 75%" red="192" green="192" blue="192"></color>
+					</background_color>
+					<transparent>true</transparent>
+				</widget>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<x>216</x>
+					<width>73</width>
+					<height>105</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 75%" red="192" green="192" blue="192"></color>
+					</background_color>
+					<transparent>true</transparent>
+				</widget>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<x>288</x>
+					<width>73</width>
+					<height>105</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 75%" red="192" green="192" blue="192"></color>
+					</background_color>
+					<transparent>true</transparent>
+				</widget>
+			</widget>
+		</widget>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Linac</description>
+				<file>../vacuumSpace/space.bob</file>
+				<macros>
+					<device>LI-VA-SPACE-99</device>
+				</macros>
+				<target>standalone</target>
+			</action>
+			<action type="open_display">
+				<description>L to B TL</description>
+				<file>../vacuumSpace/space.bob</file>
+				<macros>
+					<device>LB-VA-SPACE-99</device>
+				</macros>
+				<target>standalone</target>
+			</action>
+			<action type="open_display">
+				<description>Booster</description>
+				<file>../vacuumSpace/space.bob</file>
+				<macros>
+					<device>BR-VA-SPACE-01</device>
+				</macros>
+				<target>standalone</target>
+			</action>
+			<action type="open_display">
+				<description>B to SR TL</description>
+				<file>../vacuumSpace/space.bob</file>
+				<macros>
+					<device>BS-VA-SPACE-99</device>
+				</macros>
+				<target>standalone</target>
+			</action>
+			<action type="open_display">
+				<description>Storage Ring</description>
+				<file>../vacuumSpace/space.bob</file>
+				<macros>
+					<device>SR-VA-SPACE-01</device>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>Spaces</text>
+		<x>520</x>
+		<y>800</y>
+		<width>65</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<macros>
+			<pv_name>SR21S-PS-BINTR-01:STA</pv_name>
+		</macros>
+		<x>172</x>
+		<y>492</y>
+		<width>33</width>
+		<height>17</height>
+		<points>
+			<point x="4.0" y="12.0"></point>
+			<point x="28.0" y="4.0"></point>
+		</points>
+		<line_width>9</line_width>
+		<line_color>
+			<color name="Red" red="255" green="0" blue="0"></color>
+		</line_color>
+		<rules>
+			<rule name="visibleRule" prop_id="visible" out_exp="false">
+				<exp bool_exp="pv0&gt;=1.0&amp;&amp; pv0&lt;2.0">
+					<value>false</value>
+				</exp>
+				<exp bool_exp="true">
+					<value>true</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="polyline" version="2.0.0">
+		<name>EDM Line</name>
+		<macros>
+			<pv_name>BR03C-PS-BINTR-01:STA</pv_name>
+		</macros>
+		<x>231</x>
+		<y>403</y>
+		<width>33</width>
+		<height>18</height>
+		<points>
+			<point x="4.0" y="13.0"></point>
+			<point x="28.0" y="4.0"></point>
+		</points>
+		<line_width>9</line_width>
+		<line_color>
+			<color name="Red" red="255" green="0" blue="0"></color>
+		</line_color>
+		<rules>
+			<rule name="visibleRule" prop_id="visible" out_exp="false">
+				<exp bool_exp="pv0&gt;=1.0&amp;&amp; pv0&lt;2.0">
+					<value>false</value>
+				</exp>
+				<exp bool_exp="true">
+					<value>true</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 16 B</command>
+			</action>
+		</actions>
+		<text>FEB</text>
+		<x>204</x>
+		<y>689</y>
+		<width>31</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>./vacuumValveOperations.bob</file>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>Valve Ops</text>
+		<x>591</x>
+		<y>800</y>
+		<width>85</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./srCellVacuum 01</command>
+			</action>
+		</actions>
+		<text>SR</text>
+		<x>350</x>
+		<y>42</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./srCellVacuum 02</command>
+			</action>
+		</actions>
+		<text>SR</text>
+		<x>423</x>
+		<y>37</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./srCellVacuum 03</command>
+			</action>
+		</actions>
+		<text>SR</text>
+		<x>562</x>
+		<y>78</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./srCellVacuum 04</command>
+			</action>
+		</actions>
+		<text>SR</text>
+		<x>644</x>
+		<y>114</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./srCellVacuum 05</command>
+			</action>
+		</actions>
+		<text>SR</text>
+		<x>714</x>
+		<y>172</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./srCellVacuum 06</command>
+			</action>
+		</actions>
+		<text>SR</text>
+		<x>762</x>
+		<y>241</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./srCellVacuum 07</command>
+			</action>
+		</actions>
+		<text>SR</text>
+		<x>795</x>
+		<y>326</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./srCellVacuum 08</command>
+			</action>
+		</actions>
+		<text>SR</text>
+		<x>806</x>
+		<y>414</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./srCellVacuum 09</command>
+			</action>
+		</actions>
+		<text>SR</text>
+		<x>790</x>
+		<y>503</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./srCellVacuum 10</command>
+			</action>
+		</actions>
+		<text>SR</text>
+		<x>760</x>
+		<y>578</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./srCellVacuum 11</command>
+			</action>
+		</actions>
+		<text>SR</text>
+		<x>699</x>
+		<y>647</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./srCellVacuum 12</command>
+			</action>
+		</actions>
+		<text>SR</text>
+		<x>626</x>
+		<y>701</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./srCellVacuum 13</command>
+			</action>
+		</actions>
+		<text>SR</text>
+		<x>493</x>
+		<y>762</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 13 I</command>
+			</action>
+		</actions>
+		<text>FE</text>
+		<x>517</x>
+		<y>762</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./srCellVacuum 14</command>
+			</action>
+		</actions>
+		<text>SR</text>
+		<x>405</x>
+		<y>773</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./srCellVacuum 15</command>
+			</action>
+		</actions>
+		<text>SR</text>
+		<x>318</x>
+		<y>756</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./srCellVacuum 16</command>
+			</action>
+		</actions>
+		<text>SR</text>
+		<x>150</x>
+		<y>689</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./srCellVacuum 17</command>
+			</action>
+		</actions>
+		<text>SR</text>
+		<x>140</x>
+		<y>634</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./srCellVacuum 18</command>
+			</action>
+		</actions>
+		<text>SR</text>
+		<x>31</x>
+		<y>565</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./srCellVacuum 19</command>
+			</action>
+		</actions>
+		<text>SR</text>
+		<x>32</x>
+		<y>483</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./srCellVacuum 20</command>
+			</action>
+		</actions>
+		<text>SR</text>
+		<x>26</x>
+		<y>397</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./srCellVacuum 21</command>
+			</action>
+		</actions>
+		<text>SR</text>
+		<x>8</x>
+		<y>304</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./srCellVacuum 22</command>
+			</action>
+		</actions>
+		<text>SR</text>
+		<x>36</x>
+		<y>224</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./srCellVacuum 23</command>
+			</action>
+		</actions>
+		<text>SR</text>
+		<x>92</x>
+		<y>158</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./srCellVacuum 24</command>
+			</action>
+		</actions>
+		<text>SR</text>
+		<x>201</x>
+		<y>107</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>./diamondVacIlks.bob</file>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>Interlocks</text>
+		<x>680</x>
+		<y>800</y>
+		<width>85</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 22 B</command>
+			</action>
+		</actions>
+		<text>FEB</text>
+		<x>90</x>
+		<y>224</y>
+		<width>31</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 18 B</command>
+			</action>
+		</actions>
+		<text>FEB</text>
+		<x>87</x>
+		<y>565</y>
+		<width>31</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>bash -c "./idVacuum.sh 13 SR13J ID_Vacuum4.edl"</command>
+			</action>
+		</actions>
+		<text>IDJ</text>
+		<x>564</x>
+		<y>762</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Dark Brown" red="128" green="96" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 21 B</command>
+			</action>
+		</actions>
+		<text>FEB</text>
+		<x>63</x>
+		<y>304</y>
+		<width>34</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 05 I</command>
+			</action>
+		</actions>
+		<text>FE</text>
+		<x>738</x>
+		<y>172</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>./feGui 23 I</command>
+			</action>
+		</actions>
+		<text>FEI</text>
+		<x>116</x>
+		<y>158</y>
+		<width>30</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+</display>

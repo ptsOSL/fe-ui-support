@@ -48,7 +48,7 @@
 	<widget type="symbol" version="2.0.0">
 		<name>Icon_1</name>
 		<symbols>
-			<symbol>fe-ui-support/symbols/interlock.png</symbol>
+			<symbol>symbol/interlock.png</symbol>
 		</symbols>
 		<x>2</x>
 		<width>20</width>

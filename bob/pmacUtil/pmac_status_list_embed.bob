@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<width>500</width>
+	<height>60</height>
+	<background_color>
+		<color name="Canvas" red="200" green="200" blue="200"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>5</grid_step_x>
+	<grid_step_y>5</grid_step_y>
+	<widget type="rectangle" version="2.0.0">
+		<name>Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<y>5</y>
+		<width>501</width>
+		<height>51</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Label_1</name>
+		<text>$(DESC)</text>
+		<x>265</x>
+		<y>10</y>
+		<width>236</width>
+		<height>41</height>
+		<font>
+			<font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>Action Button</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>dls-pmac-control.py -o $(CTLMODE) -s $(CTLIP) -p $(CTLPORT)</command>
+			</action>
+		</actions>
+		<text>Console</text>
+		<x>180</x>
+		<y>20</y>
+		<width>76</width>
+		<height>21</height>
+		<font>
+			<font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872"></font>
+		</font>
+		<foreground_color>
+			<color name="Controller: FG" red="0" green="0" blue="196"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Button: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>Action Button_1</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>pmac_status_detail.bob</file>
+				<target>tab</target>
+			</action>
+		</actions>
+		<text>$(DEVICE)</text>
+		<x>10</x>
+		<y>20</y>
+		<width>156</width>
+		<height>21</height>
+		<foreground_color>
+			<color name="Controller: FG" red="0" green="0" blue="196"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Button: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+</display>

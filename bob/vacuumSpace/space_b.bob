@@ -354,14 +354,15 @@
 	<widget type="action_button" version="3.0.0">
 		<name>EDM shell command</name>
 		<actions>
-			<action type="execute">
-				<description>Execute Script</description>
+			<action type="command">
+				<description>Launch databrowser</description>
 				<script file="EmbeddedPy">
 					<text>from org.csstudio.opibuilder.scriptUtil import ScriptUtil
  
 command_id="org.csstudio.trends.databrowser2.newWindow"
 ScriptUtil.executeEclipseCommand(command_id, ['pvnames', '$(device):PLOG'])</text>
 				</script>
+				<command>$(phoebus.install)/../phoebus.sh -resource "pv://?$(device):PLOG&amp;app=databrowser</command>
 			</action>
 		</actions>
 		<text>Graph</text>
@@ -386,8 +387,8 @@ ScriptUtil.executeEclipseCommand(command_id, ['pvnames', '$(device):PLOG'])</tex
 		<actions>
 			<action type="open_display">
 				<description>Open Display</description>
-				<file>spaceIlks_b.bob</file>
-				<target>window</target>
+				<file>./spaceIlks_b.bob</file>
+				<target>standalone</target>
 			</action>
 		</actions>
 		<text>Interlocks</text>

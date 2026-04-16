@@ -11,7 +11,7 @@
 	<widget type="symbol" version="2.0.0">
 		<name>Icon</name>
 		<symbols>
-			<symbol>fe-ui-support/symbols/flow 3.svg</symbol>
+			<symbol>symbol/flow 3.svg</symbol>
 		</symbols>
 		<width>40</width>
 		<height>20</height>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>$(dom)</name>
+	<x>543</x>
+	<y>581</y>
+	<width>120</width>
+	<height>60</height>
+	<background_color>
+		<color name="Canvas" red="200" green="200" blue="200"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>8</grid_step_x>
+	<grid_step_y>8</grid_step_y>
+	<widget type="action_button" version="3.0.0">
+		<name>Action Button_2</name>
+		<actions execute_as_one="true">
+			<action type="command">
+				<description>Execute Command</description>
+				<command>/bin/bash -c "$(configure-ioc s -p srvacuum-wrapper-gui)/scripts/ts_web_gui.sh $(ip) $(host) $(port)"</command>
+			</action>
+		</actions>
+		<text>Web Interface</text>
+		<y>5</y>
+		<width>120</width>
+		<height>25</height>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Button: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>Action Button_2</name>
+		<actions execute_as_one="true">
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>fe-ui-support/bob/terminalServer/terminalServer16Chan.bob</file>
+				<macros>
+					<P>FE$(cell)$(type)-CS-TSERV-01</P>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>EPICS</text>
+		<y>35</y>
+		<width>120</width>
+		<height>25</height>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Button: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+</display>

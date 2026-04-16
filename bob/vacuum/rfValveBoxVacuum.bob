@@ -1,0 +1,1805 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>RF Valve Box - Vacuum</name>
+	<x>294</x>
+	<y>114</y>
+	<width>318</width>
+	<height>375</height>
+	<background_color>
+		<color name="Canvas" red="200" green="200" blue="200"></color>
+	</background_color>
+	<grid_step_x>8</grid_step_x>
+	<grid_step_y>8</grid_step_y>
+	<widget type="action_button" version="2.0.0">
+		<name>EDM related display</name>
+		<x>29</x>
+		<y>290</y>
+		<width>57</width>
+		<height>56</height>
+		<line_width>0</line_width>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../mks937a/mks937aPirg.opi</file>
+				<macros>
+					<device>SR17S-VA-PIRG-31</device>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text></text>
+	</widget>
+	<widget type="action_button" version="2.0.0">
+		<name>EDM related display</name>
+		<x>249</x>
+		<y>290</y>
+		<width>57</width>
+		<height>56</height>
+		<line_width>0</line_width>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../mks937a/mks937aPirg.opi</file>
+				<macros>
+					<device>SR17S-VA-PIRG-33</device>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text></text>
+	</widget>
+	<widget type="action_button" version="2.0.0">
+		<name>EDM related display</name>
+		<x>139</x>
+		<y>290</y>
+		<width>57</width>
+		<height>56</height>
+		<line_width>0</line_width>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../mks937a/mks937aPirg.opi</file>
+				<macros>
+					<device>SR17S-VA-PIRG-32</device>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text></text>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<x>122</x>
+		<y>157</y>
+		<width>5</width>
+		<height>121</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+	</widget>
+	<widget type="action_button" version="2.0.0">
+		<name>EDM related display</name>
+		<x>112</x>
+		<y>180</y>
+		<width>95</width>
+		<height>26</height>
+		<line_width>0</line_width>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../mks937a/mks937aImg.opi</file>
+				<macros>
+					<device>SR17S-VA-IMG-30</device>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text></text>
+	</widget>
+	<widget type="symbol" version="2.0.0">
+		<name>DLS symbol</name>
+		<pv_name>SR17S-VA-IMG-30:STA</pv_name>
+		<symbols>
+			<symbol>../mks937a/mks937aImg-symbol-34.png</symbol>
+		</symbols>
+		<x>112</x>
+		<y>180</y>
+		<width>23</width>
+		<height>24</height>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<rules>
+			<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+				<exp bool_exp="pvSev0==3">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+					<expression>1</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+					<expression>2</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+					<expression>3</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+					<expression>4</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+					<expression>5</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+					<expression>6</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+					<expression>7</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+					<expression>8</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+					<expression>9</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=9.0&amp;&amp;pv0&lt;10.0">
+					<expression>10</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=10.0&amp;&amp;pv0&lt;11.0">
+					<expression>11</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=11.0&amp;&amp;pv0&lt;12.0">
+					<expression>12</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=12.0&amp;&amp;pv0&lt;13.0">
+					<expression>13</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=13.0&amp;&amp;pv0&lt;14.0">
+					<expression>14</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=14.0&amp;&amp;pv0&lt;15.0">
+					<expression>15</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=15.0&amp;&amp;pv0&lt;16.0">
+					<expression>16</expression>
+				</exp>
+				<exp bool_exp="true">
+					<expression>0</expression>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="2.0.0">
+		<name>EDM related display</name>
+		<x>112</x>
+		<y>148</y>
+		<width>95</width>
+		<height>26</height>
+		<line_width>0</line_width>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../mks937a/mks937aPirg.opi</file>
+				<macros>
+					<device>SR17S-VA-PIRG-30</device>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text></text>
+	</widget>
+	<widget type="symbol" version="2.0.0">
+		<name>DLS symbol</name>
+		<pv_name>SR17S-VA-PIRG-30:STA</pv_name>
+		<symbols>
+			<symbol>../mks937a/mks937aPirg-symbol-34.png</symbol>
+		</symbols>
+		<x>112</x>
+		<y>148</y>
+		<width>24</width>
+		<height>24</height>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<rules>
+			<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+				<exp bool_exp="pvSev0==3">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+					<expression>1</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+					<expression>2</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+					<expression>3</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+					<expression>4</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+					<expression>5</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+					<expression>6</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+					<expression>7</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+					<expression>8</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+					<expression>9</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=9.0&amp;&amp;pv0&lt;10.0">
+					<expression>10</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=10.0&amp;&amp;pv0&lt;11.0">
+					<expression>11</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=11.0&amp;&amp;pv0&lt;12.0">
+					<expression>12</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=12.0&amp;&amp;pv0&lt;13.0">
+					<expression>13</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=13.0&amp;&amp;pv0&lt;14.0">
+					<expression>14</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=14.0&amp;&amp;pv0&lt;15.0">
+					<expression>15</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=15.0&amp;&amp;pv0&lt;16.0">
+					<expression>16</expression>
+				</exp>
+				<exp bool_exp="true">
+					<expression>0</expression>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<x>8</x>
+		<y>40</y>
+		<width>65</width>
+		<height>193</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<x>118</x>
+		<y>330</y>
+		<width>31</width>
+		<height>5</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<x>228</x>
+		<y>330</y>
+		<width>31</width>
+		<height>5</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<x>8</x>
+		<y>330</y>
+		<width>31</width>
+		<height>5</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+	</widget>
+	<widget type="action_button" version="2.0.0">
+		<name>EDM related display</name>
+		<x>8</x>
+		<y>40</y>
+		<width>65</width>
+		<height>193</height>
+		<line_width>0</line_width>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../mks937a/mks937aGauge.opi</file>
+				<macros>
+					<dom>SR17S</dom>
+					<id>30</id>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text></text>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>RF Valve Box Vacuum</text>
+		<width>318</width>
+		<height>32</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="VA title" red="202" green="223" blue="159"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>MCL 1</text>
+		<x>30</x>
+		<y>351</y>
+		<width>42</width>
+		<height>16</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="White" red="255" green="255" blue="255"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM Text Update</name>
+		<pv_name>SR17S-VA-PIRG-30:P</pv_name>
+		<x>147</x>
+		<y>147</y>
+		<width>58</width>
+		<height>26</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 25%" red="64" green="64" blue="64"></color>
+		</background_color>
+		<format>2</format>
+		<precision>1</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<border_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM Text Update</name>
+		<pv_name>SR17S-VA-GAUGE-30:P</pv_name>
+		<x>11</x>
+		<y>44</y>
+		<width>58</width>
+		<height>26</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 25%" red="64" green="64" blue="64"></color>
+		</background_color>
+		<format>2</format>
+		<precision>1</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<border_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>0</name>
+		<x>28</x>
+		<y>77</y>
+		<width>39</width>
+		<height>147</height>
+		<style>3</style>
+		<foreground_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</foreground_color>
+		<line_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</line_color>
+		<transparent>true</transparent>
+		<widget type="group" version="3.0.0">
+			<name>0</name>
+			<x>1</x>
+			<y>132</y>
+			<width>39</width>
+			<height>16</height>
+			<style>3</style>
+			<foreground_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</foreground_color>
+			<line_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</line_color>
+			<transparent>true</transparent>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text></text>
+				<x>23</x>
+				<width>2</width>
+				<height>1</height>
+				<font>
+					<font family="liberation sans" style="BOLD" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>-</text>
+				<width>22</width>
+				<height>15</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="12.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>1</name>
+			<x>1</x>
+			<y>123</y>
+			<width>39</width>
+			<height>16</height>
+			<style>3</style>
+			<foreground_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</foreground_color>
+			<line_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</line_color>
+			<transparent>true</transparent>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>-10</text>
+				<x>23</x>
+				<width>16</width>
+				<height>12</height>
+				<font>
+					<font family="liberation sans" style="BOLD" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>- 10</text>
+				<width>22</width>
+				<height>15</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="12.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>2</name>
+			<x>1</x>
+			<y>113</y>
+			<width>39</width>
+			<height>16</height>
+			<style>3</style>
+			<foreground_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</foreground_color>
+			<line_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</line_color>
+			<transparent>true</transparent>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text></text>
+				<x>23</x>
+				<width>2</width>
+				<height>1</height>
+				<font>
+					<font family="liberation sans" style="BOLD" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>-</text>
+				<width>22</width>
+				<height>15</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="12.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>3</name>
+			<x>1</x>
+			<y>104</y>
+			<width>39</width>
+			<height>16</height>
+			<style>3</style>
+			<foreground_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</foreground_color>
+			<line_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</line_color>
+			<transparent>true</transparent>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>-8</text>
+				<x>23</x>
+				<width>10</width>
+				<height>12</height>
+				<font>
+					<font family="liberation sans" style="BOLD" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>- 10</text>
+				<width>22</width>
+				<height>15</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="12.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>4</name>
+			<x>1</x>
+			<y>95</y>
+			<width>39</width>
+			<height>16</height>
+			<style>3</style>
+			<foreground_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</foreground_color>
+			<line_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</line_color>
+			<transparent>true</transparent>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text></text>
+				<x>23</x>
+				<width>2</width>
+				<height>1</height>
+				<font>
+					<font family="liberation sans" style="BOLD" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>-</text>
+				<width>22</width>
+				<height>15</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="12.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>5</name>
+			<x>1</x>
+			<y>85</y>
+			<width>39</width>
+			<height>16</height>
+			<style>3</style>
+			<foreground_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</foreground_color>
+			<line_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</line_color>
+			<transparent>true</transparent>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>-6</text>
+				<x>23</x>
+				<width>11</width>
+				<height>12</height>
+				<font>
+					<font family="liberation sans" style="BOLD" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>- 10</text>
+				<width>22</width>
+				<height>15</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="12.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>6</name>
+			<x>1</x>
+			<y>76</y>
+			<width>39</width>
+			<height>16</height>
+			<style>3</style>
+			<foreground_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</foreground_color>
+			<line_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</line_color>
+			<transparent>true</transparent>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text></text>
+				<x>23</x>
+				<width>2</width>
+				<height>1</height>
+				<font>
+					<font family="liberation sans" style="BOLD" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>-</text>
+				<width>22</width>
+				<height>15</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="12.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>7</name>
+			<x>1</x>
+			<y>66</y>
+			<width>39</width>
+			<height>16</height>
+			<style>3</style>
+			<foreground_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</foreground_color>
+			<line_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</line_color>
+			<transparent>true</transparent>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>-4</text>
+				<x>23</x>
+				<width>9</width>
+				<height>12</height>
+				<font>
+					<font family="liberation sans" style="BOLD" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>- 10</text>
+				<width>22</width>
+				<height>15</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="12.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>8</name>
+			<x>1</x>
+			<y>57</y>
+			<width>39</width>
+			<height>16</height>
+			<style>3</style>
+			<foreground_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</foreground_color>
+			<line_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</line_color>
+			<transparent>true</transparent>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text></text>
+				<x>23</x>
+				<width>2</width>
+				<height>1</height>
+				<font>
+					<font family="liberation sans" style="BOLD" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>-</text>
+				<width>22</width>
+				<height>15</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="12.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>9</name>
+			<x>1</x>
+			<y>48</y>
+			<width>39</width>
+			<height>16</height>
+			<style>3</style>
+			<foreground_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</foreground_color>
+			<line_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</line_color>
+			<transparent>true</transparent>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>-2</text>
+				<x>23</x>
+				<width>10</width>
+				<height>12</height>
+				<font>
+					<font family="liberation sans" style="BOLD" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>- 10</text>
+				<width>22</width>
+				<height>15</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="12.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>10</name>
+			<x>1</x>
+			<y>39</y>
+			<width>39</width>
+			<height>16</height>
+			<style>3</style>
+			<foreground_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</foreground_color>
+			<line_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</line_color>
+			<transparent>true</transparent>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text></text>
+				<x>23</x>
+				<width>2</width>
+				<height>1</height>
+				<font>
+					<font family="liberation sans" style="BOLD" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>-</text>
+				<width>22</width>
+				<height>15</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="12.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>11</name>
+			<x>1</x>
+			<y>29</y>
+			<width>39</width>
+			<height>15</height>
+			<style>3</style>
+			<foreground_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</foreground_color>
+			<line_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</line_color>
+			<transparent>true</transparent>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>0</text>
+				<x>23</x>
+				<width>6</width>
+				<height>12</height>
+				<font>
+					<font family="liberation sans" style="BOLD" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>- 10</text>
+				<width>22</width>
+				<height>14</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="12.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>12</name>
+			<x>1</x>
+			<y>20</y>
+			<width>39</width>
+			<height>16</height>
+			<style>3</style>
+			<foreground_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</foreground_color>
+			<line_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</line_color>
+			<transparent>true</transparent>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text></text>
+				<x>23</x>
+				<width>2</width>
+				<height>1</height>
+				<font>
+					<font family="liberation sans" style="BOLD" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>-</text>
+				<width>22</width>
+				<height>15</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="12.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>13</name>
+			<x>1</x>
+			<y>10</y>
+			<width>39</width>
+			<height>16</height>
+			<style>3</style>
+			<foreground_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</foreground_color>
+			<line_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</line_color>
+			<transparent>true</transparent>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>2</text>
+				<x>23</x>
+				<width>6</width>
+				<height>12</height>
+				<font>
+					<font family="liberation sans" style="BOLD" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>- 10</text>
+				<width>22</width>
+				<height>15</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="12.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>14</name>
+			<x>1</x>
+			<y>1</y>
+			<width>39</width>
+			<height>16</height>
+			<style>3</style>
+			<foreground_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</foreground_color>
+			<line_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</line_color>
+			<transparent>true</transparent>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text></text>
+				<x>23</x>
+				<width>2</width>
+				<height>1</height>
+				<font>
+					<font family="liberation sans" style="BOLD" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>-</text>
+				<width>22</width>
+				<height>15</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="12.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR17S-VA-GAUGE-30:PLOG</pv_name>
+		<x>12</x>
+		<y>77</y>
+		<width>16</width>
+		<height>150</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+		<horizontal>false</horizontal>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>0.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM Text Update</name>
+		<pv_name>SR17S-VA-IMG-30:P</pv_name>
+		<x>147</x>
+		<y>179</y>
+		<width>58</width>
+		<height>26</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 25%" red="64" green="64" blue="64"></color>
+		</background_color>
+		<format>2</format>
+		<precision>1</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<border_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<x>8</x>
+		<y>244</y>
+		<width>13</width>
+		<height>121</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<x>118</x>
+		<y>244</y>
+		<width>13</width>
+		<height>121</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<x>228</x>
+		<y>244</y>
+		<width>13</width>
+		<height>121</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM Text Update</name>
+		<pv_name>SR17S-VA-GAUGE-31:P</pv_name>
+		<x>29</x>
+		<y>290</y>
+		<width>58</width>
+		<height>26</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 25%" red="64" green="64" blue="64"></color>
+		</background_color>
+		<format>2</format>
+		<precision>1</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<border_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM Text Update</name>
+		<pv_name>SR17S-VA-GAUGE-32:P</pv_name>
+		<x>139</x>
+		<y>290</y>
+		<width>58</width>
+		<height>26</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 25%" red="64" green="64" blue="64"></color>
+		</background_color>
+		<format>2</format>
+		<precision>1</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<border_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM Text Update</name>
+		<pv_name>SR17S-VA-GAUGE-33:P</pv_name>
+		<x>249</x>
+		<y>290</y>
+		<width>58</width>
+		<height>26</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 25%" red="64" green="64" blue="64"></color>
+		</background_color>
+		<format>2</format>
+		<precision>1</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<border_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<x>8</x>
+		<y>244</y>
+		<width>233</width>
+		<height>13</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>1</name>
+		<x>89</x>
+		<y>215</y>
+		<width>71</width>
+		<height>71</height>
+		<style>3</style>
+		<foreground_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</foreground_color>
+		<line_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</line_color>
+		<transparent>true</transparent>
+		<widget type="ellipse" version="2.0.0">
+			<name>EDM Ellipse</name>
+			<width>71</width>
+			<height>71</height>
+			<line_width>1</line_width>
+			<line_color>
+				<color name="Grey 50%" red="128" green="128" blue="128"></color>
+			</line_color>
+			<background_color>
+				<color name="Grey 50%" red="128" green="128" blue="128"></color>
+			</background_color>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>EDM Label</name>
+			<text>Valve
+Box</text>
+			<x>16</x>
+			<y>19</y>
+			<width>39</width>
+			<height>32</height>
+			<font>
+				<font family="liberation sans" style="BOLD" size="14.0"></font>
+			</font>
+			<foreground_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</foreground_color>
+			<background_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</background_color>
+			<horizontal_alignment>1</horizontal_alignment>
+			<vertical_alignment>1</vertical_alignment>
+			<auto_size>true</auto_size>
+			<border_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</border_color>
+		</widget>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>MCL 2</text>
+		<x>140</x>
+		<y>351</y>
+		<width>42</width>
+		<height>16</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="White" red="255" green="255" blue="255"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>MCL 3</text>
+		<x>250</x>
+		<y>351</y>
+		<width>42</width>
+		<height>16</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="White" red="255" green="255" blue="255"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="symbol" version="2.0.0">
+		<name>DLS symbol</name>
+		<pv_name>SR17S-VA-PIRG-31:STA</pv_name>
+		<symbols>
+			<symbol>../mks937a/mks937aPirg-symbol-34.png</symbol>
+		</symbols>
+		<x>29</x>
+		<y>320</y>
+		<width>24</width>
+		<height>24</height>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<rules>
+			<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+				<exp bool_exp="pvSev0==3">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+					<expression>1</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+					<expression>2</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+					<expression>3</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+					<expression>4</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+					<expression>5</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+					<expression>6</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+					<expression>7</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+					<expression>8</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+					<expression>9</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=9.0&amp;&amp;pv0&lt;10.0">
+					<expression>10</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=10.0&amp;&amp;pv0&lt;11.0">
+					<expression>11</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=11.0&amp;&amp;pv0&lt;12.0">
+					<expression>12</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=12.0&amp;&amp;pv0&lt;13.0">
+					<expression>13</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=13.0&amp;&amp;pv0&lt;14.0">
+					<expression>14</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=14.0&amp;&amp;pv0&lt;15.0">
+					<expression>15</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=15.0&amp;&amp;pv0&lt;16.0">
+					<expression>16</expression>
+				</exp>
+				<exp bool_exp="true">
+					<expression>0</expression>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="symbol" version="2.0.0">
+		<name>DLS symbol</name>
+		<pv_name>SR17S-VA-PIRG-32:STA</pv_name>
+		<symbols>
+			<symbol>../mks937a/mks937aPirg-symbol-34.png</symbol>
+		</symbols>
+		<x>139</x>
+		<y>320</y>
+		<width>24</width>
+		<height>24</height>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<rules>
+			<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+				<exp bool_exp="pvSev0==3">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+					<expression>1</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+					<expression>2</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+					<expression>3</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+					<expression>4</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+					<expression>5</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+					<expression>6</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+					<expression>7</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+					<expression>8</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+					<expression>9</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=9.0&amp;&amp;pv0&lt;10.0">
+					<expression>10</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=10.0&amp;&amp;pv0&lt;11.0">
+					<expression>11</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=11.0&amp;&amp;pv0&lt;12.0">
+					<expression>12</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=12.0&amp;&amp;pv0&lt;13.0">
+					<expression>13</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=13.0&amp;&amp;pv0&lt;14.0">
+					<expression>14</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=14.0&amp;&amp;pv0&lt;15.0">
+					<expression>15</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=15.0&amp;&amp;pv0&lt;16.0">
+					<expression>16</expression>
+				</exp>
+				<exp bool_exp="true">
+					<expression>0</expression>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="symbol" version="2.0.0">
+		<name>DLS symbol</name>
+		<pv_name>SR17S-VA-PIRG-33:STA</pv_name>
+		<symbols>
+			<symbol>../mks937a/mks937aPirg-symbol-34.png</symbol>
+		</symbols>
+		<x>249</x>
+		<y>320</y>
+		<width>24</width>
+		<height>24</height>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<rules>
+			<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+				<exp bool_exp="pvSev0==3">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+					<expression>1</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+					<expression>2</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+					<expression>3</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+					<expression>4</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+					<expression>5</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+					<expression>6</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+					<expression>7</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+					<expression>8</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+					<expression>9</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=9.0&amp;&amp;pv0&lt;10.0">
+					<expression>10</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=10.0&amp;&amp;pv0&lt;11.0">
+					<expression>11</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=11.0&amp;&amp;pv0&lt;12.0">
+					<expression>12</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=12.0&amp;&amp;pv0&lt;13.0">
+					<expression>13</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=13.0&amp;&amp;pv0&lt;14.0">
+					<expression>14</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=14.0&amp;&amp;pv0&lt;15.0">
+					<expression>15</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=15.0&amp;&amp;pv0&lt;16.0">
+					<expression>16</expression>
+				</exp>
+				<exp bool_exp="true">
+					<expression>0</expression>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+</display>

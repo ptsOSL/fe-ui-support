@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>SR Cell - Insertion Device - Vacuum Control Racks</name>
+	<x>1105</x>
+	<y>140</y>
+	<width>1239</width>
+	<height>816</height>
+	<background_color>
+		<color name="Wid-alt/Anno-sec" red="174" green="174" blue="174"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>8</grid_step_x>
+	<grid_step_y>8</grid_step_y>
+	<widget type="embedded" version="2.0.0">
+		<name>Linking Container</name>
+		<file>srVacRackD2.bob</file>
+		<width>1939</width>
+		<height>818</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Linking Container_1</name>
+		<macros>
+			<dom>$(prefix)$(cell)S</dom>
+			<id>02</id>
+			<mksType>b</mksType>
+		</macros>
+		<file>rackComponents/gaugeController.bob</file>
+		<x>503</x>
+		<y>320</y>
+		<width>1</width>
+		<height>1</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Linking Container_4</name>
+		<macros>
+			<proxy_port>8026</proxy_port>
+			<device>SR$(cell)C-VA-TSERV-01</device>
+		</macros>
+		<file>common/rackComponents/tservk8s.bob</file>
+		<x>88</x>
+		<y>160</y>
+		<width>257</width>
+		<height>18</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Linking Container_2</name>
+		<macros>
+			<proxy_port>8027</proxy_port>
+			<device>SR$(cell)C-VA-TSERV-02</device>
+		</macros>
+		<file>common/rackComponents/tservk8s.bob</file>
+		<x>504</x>
+		<y>192</y>
+		<width>257</width>
+		<height>18</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>355</x>
+		<y>280</y>
+		<width>57</width>
+		<height>66</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color red="174" green="174" blue="174"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>Rectangle_1</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>16</x>
+		<y>408</y>
+		<width>57</width>
+		<height>66</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color red="174" green="174" blue="174"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>Grouping Container_189</name>
+		<macros>
+			<g>A</g>
+			<id>21</id>
+			<c>02</c>
+			<dom>$(prefix)$(cell)$(g)</dom>
+			<GCTLR>$(dom)-VA-GCTLR-$(c)</GCTLR>
+			<mksType>$(ga1)</mksType>
+		</macros>
+		<x>775</x>
+		<y>321</y>
+		<width>24</width>
+		<height>24</height>
+		<style>3</style>
+		<foreground_color>
+			<color red="0" green="128" blue="255"></color>
+		</foreground_color>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color red="174" green="174" blue="174"></color>
+		</background_color>
+		<actions></actions>
+		<widget type="symbol" version="2.0.0">
+			<name>$(dom)-VA-GAUGE-$(id)</name>
+			<pv_name>$(dom)-VA-IMG-$(id):STA</pv_name>
+			<symbols>
+				<symbol>../mks937$(mksType)/mks937$(mksType)Img-symbol-34.png</symbol>
+			</symbols>
+			<width>24</width>
+			<height>24</height>
+			<background_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</background_color>
+			<actions>
+				<action type="open_display">
+					<description>Open Display</description>
+					<file>../mks937$(mksType)/mks937$(mksType)Gauge.bob</file>
+					<target>standalone</target>
+				</action>
+			</actions>
+			<rules>
+				<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+					<exp bool_exp="pvSev0==3">
+						<expression>0</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+						<expression>0</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+						<expression>1</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+						<expression>2</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+						<expression>3</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+						<expression>4</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+						<expression>5</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+						<expression>6</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+						<expression>7</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+						<expression>8</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+						<expression>9</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=9.0&amp;&amp;pv0&lt;10.0">
+						<expression>10</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=10.0&amp;&amp;pv0&lt;11.0">
+						<expression>11</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=11.0&amp;&amp;pv0&lt;12.0">
+						<expression>12</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=12.0&amp;&amp;pv0&lt;13.0">
+						<expression>13</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=13.0&amp;&amp;pv0&lt;14.0">
+						<expression>14</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=14.0&amp;&amp;pv0&lt;15.0">
+						<expression>15</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=15.0&amp;&amp;pv0&lt;16.0">
+						<expression>16</expression>
+					</exp>
+					<exp bool_exp="true">
+						<expression>0</expression>
+					</exp>
+					<pv_name>$(pv_name)</pv_name>
+				</rule>
+			</rules>
+			<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+		</widget>
+	</widget>
+</display>

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>SR Cell - Insertion Device - Vacuum Control Racks</name>
+	<x>163</x>
+	<y>140</y>
+	<width>306</width>
+	<height>362</height>
+	<background_color>
+		<color name="Wid-alt/Anno-sec" red="174" green="174" blue="174"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>8</grid_step_x>
+	<grid_step_y>8</grid_step_y>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM Text Update_3</name>
+		<pv_name>$(GCTLR):DIG0$(chan):BIT0</pv_name>
+		<x>58</x>
+		<y>42</y>
+		<width>80</width>
+		<height>17</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="byte_monitor" version="2.0.0">
+		<name>EDM Byte_1</name>
+		<pv_name>$(GCTLR):DIG0$(chan):RAWBIT</pv_name>
+		<x>10</x>
+		<y>28</y>
+		<width>40</width>
+		<height>250</height>
+		<numBits>6</numBits>
+		<bitReverse>true</bitReverse>
+		<horizontal>false</horizontal>
+		<square>true</square>
+		<off_color>
+			<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+		</off_color>
+		<on_color>
+			<color name="Green LED: On" red="0" green="255" blue="0"></color>
+		</on_color>
+		<foreground_color>
+			<color red="192" green="192" blue="192"></color>
+		</foreground_color>
+		<actions></actions>
+		<rules>
+			<rule name="onColorAlarm" prop_id="on_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(GCTLR):DIG0$(chan):RAWBIT</pv_name>
+			</rule>
+		</rules>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>Progress Bar</name>
+		<pv_name>$(GCTLR):C$(chan)_RAW</pv_name>
+		<x>58</x>
+		<y>337</y>
+		<width>160</width>
+		<height>25</height>
+		<fill_color>
+			<color name="Green LED: On" red="0" green="255" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color red="200" green="200" blue="200"></color>
+		</background_color>
+		<actions></actions>
+		<limits_from_pv>false</limits_from_pv>
+		<maximum>500000.0</maximum>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Label</name>
+		<text>Comb</text>
+		<y>340</y>
+		<width>59</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM Text Update_4</name>
+		<pv_name>$(GCTLR):DIG0$(chan):BIT1</pv_name>
+		<x>58</x>
+		<y>83</y>
+		<width>80</width>
+		<height>17</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM Text Update_5</name>
+		<pv_name>$(GCTLR):DIG0$(chan):BIT2</pv_name>
+		<x>58</x>
+		<y>126</y>
+		<width>80</width>
+		<height>17</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM Text Update_6</name>
+		<pv_name>$(GCTLR):DIG0$(chan):BIT3</pv_name>
+		<x>58</x>
+		<y>168</y>
+		<width>80</width>
+		<height>17</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM Text Update_7</name>
+		<pv_name>$(GCTLR):DIG0$(chan):BIT4</pv_name>
+		<x>58</x>
+		<y>208</y>
+		<width>80</width>
+		<height>17</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM Text Update_8</name>
+		<pv_name>$(GCTLR):DIG0$(chan):BIT5</pv_name>
+		<x>58</x>
+		<y>248</y>
+		<width>80</width>
+		<height>17</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Label</name>
+		<text>Relay Control</text>
+		<x>170</x>
+		<width>120</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Label</name>
+		<text>PLC Feedback</text>
+		<x>10</x>
+		<width>120</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Linking Container</name>
+		<macros>
+			<rly>$(rly1)</rly>
+		</macros>
+		<file>gaugeRelayControlEmbed.bob</file>
+		<x>154</x>
+		<y>38</y>
+		<width>152</width>
+		<height>26</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Linking Container</name>
+		<macros>
+			<rly>$(rly2)</rly>
+		</macros>
+		<file>gaugeRelayControlEmbed.bob</file>
+		<x>154</x>
+		<y>79</y>
+		<width>152</width>
+		<height>26</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Linking Container</name>
+		<macros>
+			<rly>$(rly3)</rly>
+		</macros>
+		<file>gaugeRelayControlEmbed.bob</file>
+		<x>154</x>
+		<y>122</y>
+		<width>152</width>
+		<height>26</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Linking Container</name>
+		<macros>
+			<rly>$(rly4)</rly>
+		</macros>
+		<file>gaugeRelayControlEmbed.bob</file>
+		<x>154</x>
+		<y>164</y>
+		<width>152</width>
+		<height>26</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Linking Container</name>
+		<macros>
+			<rly>$(rly5)</rly>
+		</macros>
+		<file>gaugeRelayControlEmbed.bob</file>
+		<x>154</x>
+		<y>204</y>
+		<width>152</width>
+		<height>26</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Linking Container</name>
+		<macros>
+			<rly>$(rly6)</rly>
+		</macros>
+		<file>gaugeRelayControlEmbed.bob</file>
+		<x>154</x>
+		<y>244</y>
+		<width>152</width>
+		<height>26</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>Progress Bar Label</name>
+		<pv_name>$(GCTLR):C$(chan)_RAW</pv_name>
+		<x>58</x>
+		<y>337</y>
+		<width>160</width>
+		<height>25</height>
+		<transparent>true</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+	</widget>
+</display>

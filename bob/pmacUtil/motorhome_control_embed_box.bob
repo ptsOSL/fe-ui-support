@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<width>300</width>
+	<height>150</height>
+	<background_color>
+		<color name="Canvas" red="200" green="200" blue="200"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>5</grid_step_x>
+	<grid_step_y>5</grid_step_y>
+	<widget type="group" version="3.0.0">
+		<name>$(DESC)</name>
+		<width>298</width>
+		<height>157</height>
+		<widget type="embedded" version="2.0.0">
+			<name>$(DESC)_Content</name>
+			<file>motorhome_control_embed.opi</file>
+			<width>268</width>
+			<height>127</height>
+			<resize>2</resize>
+			<transparent>true</transparent>
+			<actions></actions>
+		</widget>
+	</widget>
+</display>

@@ -424,9 +424,15 @@ $(pv_value)</tooltip>
 		<widget type="action_button" version="3.0.0">
 			<name>EDM shell command</name>
 			<actions>
-				<action type="open_file">
-					<description>Open File</description>
-					<file>$(PLOT_LOC)$(device).plt</file>
+				<action type="command">
+					<description>Launch databrowser</description>
+					<script file="EmbeddedPy">
+						<text>from org.csstudio.opibuilder.scriptUtil import ScriptUtil
+ 
+command_id="org.csstudio.trends.databrowser2.newWindow"
+ScriptUtil.executeEclipseCommand(command_id, ['pvnames', '$(device):PLOG'])</text>
+					</script>
+					<command>$(phoebus.install)/../phoebus.sh -resource "pv://?$(device):PLOG&amp;app=databrowser</command>
 				</action>
 			</actions>
 			<text>Graph</text>

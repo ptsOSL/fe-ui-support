@@ -1142,7 +1142,7 @@ mode:</text>
 			<action type="open_display">
 				<description>Open Display</description>
 				<file>eurotherm2k_conf.bob</file>
-				<target>window</target>
+				<target>standalone</target>
 			</action>
 		</actions>
 		<text>conf</text>

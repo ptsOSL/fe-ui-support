@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>$(dom)</name>
+	<x>543</x>
+	<y>581</y>
+	<width>925</width>
+	<height>20</height>
+	<background_color>
+		<color name="Canvas" red="200" green="200" blue="200"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>8</grid_step_x>
+	<grid_step_y>8</grid_step_y>
+	<widget type="label" version="2.0.0">
+		<name>Label_1</name>
+		<text>Axis $(axis)</text>
+		<width>89</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>Text Update</name>
+		<pv_name>$(device):A$(axis):I_RBV</pv_name>
+		<x>66</x>
+		<width>80</width>
+		<font>
+			<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>Text Update_1</name>
+		<pv_name>$(device):A$(axis):KT_RBV</pv_name>
+		<x>174</x>
+		<width>80</width>
+		<font>
+			<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>Readback</name>
+		<x>290</x>
+		<width>150</width>
+		<font>
+			<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<precision>3</precision>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<scripts>
+			<script file="EmbeddedPy">
+				<text>from org.csstudio.opibuilder.scriptUtil import PVUtil
+
+widget.setPropertyValue("pv_name",PVUtil.getString(pvs[1]) + ".RBV")</text>
+				<pv_name>sim://const(1)</pv_name>
+				<pv_name>$(device):A$(axis):LNK</pv_name>
+			</script>
+		</scripts>
+		<tooltip>Readback
+$(pv_name)
+$(pv_value)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="symbol" version="2.0.0">
+		<name>Symbol</name>
+		<pv_name>$(device):A$(axis).MOVN</pv_name>
+		<symbols>
+			<symbol>../motor/symbol/motor.svg</symbol>
+		</symbols>
+		<x>709</x>
+		<width>40</width>
+		<height>20</height>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<actions execute_as_one="true">
+			<action type="open_display">
+				<description>Open detail screen</description>
+				<file>NX102_plcAxis.bob</file>
+				<macros>
+					<P>Symbol</P>
+					<M></M>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<scripts>
+			<script file="EmbeddedPy">
+				<text>from org.csstudio.opibuilder.scriptUtil import PVUtil
+
+widget.setPropertyValue("name",PVUtil.getString(pvs[1]))</text>
+				<pv_name>sim://const(1)</pv_name>
+				<pv_name>$(device):A$(axis):LNK</pv_name>
+			</script>
+		</scripts>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<preserve_ratio>false</preserve_ratio>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>Text Update_2</name>
+		<pv_name>$(device):A$(axis):LNK</pv_name>
+		<x>482</x>
+		<width>183</width>
+		<font>
+			<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="led" version="2.0.0">
+		<name>LED</name>
+		<pv_name>$(device):A$(axis):PLIM</pv_name>
+		<x>445</x>
+		<off_color>
+			<color name="Red LED: Off" red="96" green="0" blue="0"></color>
+		</off_color>
+		<on_color>
+			<color name="Red LED: On" red="255" green="0" blue="0"></color>
+		</on_color>
+		<foreground_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<line_color>
+			<color red="150" green="150" blue="150"></color>
+		</line_color>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="led" version="2.0.0">
+		<name>LED_1</name>
+		<pv_name>$(device):A$(axis):NLIM</pv_name>
+		<x>265</x>
+		<off_color>
+			<color name="Red LED: Off" red="96" green="0" blue="0"></color>
+		</off_color>
+		<on_color>
+			<color name="Red LED: On" red="255" green="0" blue="0"></color>
+		</on_color>
+		<foreground_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<line_color>
+			<color red="150" green="150" blue="150"></color>
+		</line_color>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Label</name>
+		<text>! Wrong Dir !</text>
+		<x>828</x>
+		<width>97</width>
+		<font>
+			<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Major" red="255" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<rules>
+			<rule name="Visibility Rule" prop_id="visible" out_exp="false">
+				<exp bool_exp="pv0==0 &amp;&amp; pv1==1">
+					<value>true</value>
+				</exp>
+				<exp bool_exp="pv0==1 || pv1==0">
+					<value>false</value>
+				</exp>
+				<pv_name>$(device):A$(axis):PDIR_CORRECT</pv_name>
+				<pv_name>sim://ramp(0,1,1,0.2)</pv_name>
+			</rule>
+		</rules>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="led" version="2.0.0">
+		<name>LED_2</name>
+		<pv_name>$(device):A$(axis):FFE</pv_name>
+		<x>677</x>
+		<off_color>
+			<color name="Red LED: Off" red="96" green="0" blue="0"></color>
+		</off_color>
+		<on_color>
+			<color name="Red LED: On" red="255" green="0" blue="0"></color>
+		</on_color>
+		<foreground_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<line_color>
+			<color red="150" green="150" blue="150"></color>
+		</line_color>
+		<square>true</square>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="byte_monitor" version="2.0.0">
+		<name>Byte Monitor</name>
+		<pv_name>$(device):A$(axis):STATUS</pv_name>
+		<x>748</x>
+		<width>20</width>
+		<startBit>7</startBit>
+		<numBits>1</numBits>
+		<square>true</square>
+		<off_color>
+			<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+		</off_color>
+		<on_color>
+			<color name="Green LED: On" red="0" green="255" blue="0"></color>
+		</on_color>
+		<foreground_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<actions></actions>
+		<rules>
+			<rule name="onColorAlarm" prop_id="on_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+			<rule name="offColorAlarm" prop_id="off_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>Action Button</name>
+		<actions execute_as_one="true">
+			<action type="write_pv">
+				<description>Write PV</description>
+				<pv_name>$(pv_name).PROC</pv_name>
+				<value>1</value>
+			</action>
+		</actions>
+		<pv_name>$(device):A$(axis):HOME</pv_name>
+		<text>Home</text>
+		<x>770</x>
+		<width>55</width>
+		<height>20</height>
+		<foreground_color>
+			<color name="Controller: FG" red="0" green="0" blue="196"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Button: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<show_confirm_dialog>true</show_confirm_dialog>
+		<confirm_message>Are you sure?</confirm_message>
+	</widget>
+</display>

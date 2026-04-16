@@ -1,0 +1,5279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>Vacuum IOCs</name>
+	<x>900</x>
+	<y>157</y>
+	<width>850</width>
+	<height>848</height>
+	<background_color>
+		<color name="Canvas" red="200" green="200" blue="200"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>8</grid_step_x>
+	<grid_step_y>8</grid_step_y>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM Exit Button</name>
+		<actions>
+			<action type="close_display">
+				<description>Close display</description>
+			</action>
+		</actions>
+		<text>Exit</text>
+		<x>744</x>
+		<y>807</y>
+		<width>81</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Exit: FG" red="196" green="0" blue="196"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Vacuum - IOC Configuration</text>
+		<width>850</width>
+		<height>32</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="VA title" red="202" green="223" blue="159"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>mozilla http://serv0002.cs.diamond.ac.uk/</command>
+			</action>
+		</actions>
+		<text>?</text>
+		<x>817</x>
+		<y>3</y>
+		<width>25</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="VA title" red="202" green="223" blue="159"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>8</x>
+		<y>48</y>
+		<width>400</width>
+		<height>793</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>16</x>
+		<y>68</y>
+		<width>380</width>
+		<height>33</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Storage Ring</text>
+		<x>8</x>
+		<y>40</y>
+		<width>112</width>
+		<height>16</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>8</x>
+		<y>40</y>
+		<width>113</width>
+		<height>17</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR01C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR01C-VA-IOC-01</text>
+		<x>56</x>
+		<y>72</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>1</text>
+		<x>24</x>
+		<y>72</y>
+		<width>24</width>
+		<height>24</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>16</x>
+		<y>132</y>
+		<width>380</width>
+		<height>33</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>3</text>
+		<x>24</x>
+		<y>136</y>
+		<width>24</width>
+		<height>24</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR03C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR03C-VA-IOC-01</text>
+		<x>56</x>
+		<y>136</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>16</x>
+		<y>196</y>
+		<width>380</width>
+		<height>33</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>5</text>
+		<x>24</x>
+		<y>200</y>
+		<width>24</width>
+		<height>24</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR05C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR05C-VA-IOC-01</text>
+		<x>56</x>
+		<y>200</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>24</text>
+		<x>24</x>
+		<y>808</y>
+		<width>24</width>
+		<height>24</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR24C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR24C-VA-IOC-01</text>
+		<x>56</x>
+		<y>808</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>16</x>
+		<y>772</y>
+		<width>380</width>
+		<height>33</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>23</text>
+		<x>24</x>
+		<y>776</y>
+		<width>24</width>
+		<height>24</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR23C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR23C-VA-IOC-01</text>
+		<x>56</x>
+		<y>776</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>22</text>
+		<x>24</x>
+		<y>744</y>
+		<width>24</width>
+		<height>24</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR22C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR22C-VA-IOC-01</text>
+		<x>56</x>
+		<y>744</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>16</x>
+		<y>708</y>
+		<width>380</width>
+		<height>33</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>21</text>
+		<x>24</x>
+		<y>712</y>
+		<width>24</width>
+		<height>24</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR21C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR21C-VA-IOC-01</text>
+		<x>56</x>
+		<y>712</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>20</text>
+		<x>24</x>
+		<y>680</y>
+		<width>24</width>
+		<height>24</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR20C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR20C-VA-IOC-01</text>
+		<x>56</x>
+		<y>680</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>16</x>
+		<y>644</y>
+		<width>380</width>
+		<height>33</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>19</text>
+		<x>24</x>
+		<y>648</y>
+		<width>24</width>
+		<height>24</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR19C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR19C-VA-IOC-01</text>
+		<x>56</x>
+		<y>648</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>18</text>
+		<x>24</x>
+		<y>616</y>
+		<width>24</width>
+		<height>24</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR18C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR18C-VA-IOC-01</text>
+		<x>56</x>
+		<y>616</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>16</x>
+		<y>580</y>
+		<width>380</width>
+		<height>33</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>17</text>
+		<x>24</x>
+		<y>584</y>
+		<width>24</width>
+		<height>24</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR17C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR17C-VA-IOC-01</text>
+		<x>56</x>
+		<y>584</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>16</text>
+		<x>24</x>
+		<y>552</y>
+		<width>24</width>
+		<height>24</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR16C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR16C-VA-IOC-01</text>
+		<x>56</x>
+		<y>552</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>16</x>
+		<y>516</y>
+		<width>380</width>
+		<height>33</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>15</text>
+		<x>24</x>
+		<y>520</y>
+		<width>24</width>
+		<height>24</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR15C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR15C-VA-IOC-01</text>
+		<x>56</x>
+		<y>520</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>14</text>
+		<x>24</x>
+		<y>488</y>
+		<width>24</width>
+		<height>24</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR14C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR14C-VA-IOC-01</text>
+		<x>56</x>
+		<y>488</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>16</x>
+		<y>452</y>
+		<width>380</width>
+		<height>33</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>13</text>
+		<x>24</x>
+		<y>456</y>
+		<width>24</width>
+		<height>24</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR13C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR13C-VA-IOC-01</text>
+		<x>56</x>
+		<y>456</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>12</text>
+		<x>24</x>
+		<y>424</y>
+		<width>24</width>
+		<height>24</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR12C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR12C-VA-IOC-01</text>
+		<x>56</x>
+		<y>424</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>16</x>
+		<y>388</y>
+		<width>380</width>
+		<height>33</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>11</text>
+		<x>24</x>
+		<y>392</y>
+		<width>24</width>
+		<height>24</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR11C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR11C-VA-IOC-01</text>
+		<x>56</x>
+		<y>392</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>10</text>
+		<x>24</x>
+		<y>360</y>
+		<width>24</width>
+		<height>24</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR10C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR10C-VA-IOC-01</text>
+		<x>56</x>
+		<y>360</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>16</x>
+		<y>324</y>
+		<width>380</width>
+		<height>33</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>9</text>
+		<x>24</x>
+		<y>328</y>
+		<width>24</width>
+		<height>24</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR09C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR09C-VA-IOC-01</text>
+		<x>56</x>
+		<y>328</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>8</text>
+		<x>24</x>
+		<y>296</y>
+		<width>24</width>
+		<height>24</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR08C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR08C-VA-IOC-01</text>
+		<x>56</x>
+		<y>296</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>16</x>
+		<y>260</y>
+		<width>380</width>
+		<height>33</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>7</text>
+		<x>24</x>
+		<y>264</y>
+		<width>24</width>
+		<height>24</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR07C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR07C-VA-IOC-01</text>
+		<x>56</x>
+		<y>264</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>6</text>
+		<x>24</x>
+		<y>232</y>
+		<width>24</width>
+		<height>24</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR06C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR06C-VA-IOC-01</text>
+		<x>56</x>
+		<y>232</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>4</text>
+		<x>24</x>
+		<y>168</y>
+		<width>24</width>
+		<height>24</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR04C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR04C-VA-IOC-01</text>
+		<x>56</x>
+		<y>168</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>2</text>
+		<x>24</x>
+		<y>104</y>
+		<width>24</width>
+		<height>24</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_softdls.bob</file>
+				<macros>
+					<ioc>SR02C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR02C-VA-IOC-01</text>
+		<x>56</x>
+		<y>104</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR01C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>273</x>
+		<y>72</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR01C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>237</x>
+		<y>72</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR03C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>273</x>
+		<y>136</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR03C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>237</x>
+		<y>136</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR05C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>273</x>
+		<y>200</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR05C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>237</x>
+		<y>200</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR24C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>273</x>
+		<y>808</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR24C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>237</x>
+		<y>808</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR23C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>273</x>
+		<y>776</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR23C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>237</x>
+		<y>776</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR22C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>273</x>
+		<y>744</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR22C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>237</x>
+		<y>744</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR21C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>273</x>
+		<y>712</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR21C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>237</x>
+		<y>712</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR20C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>273</x>
+		<y>680</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR20C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>237</x>
+		<y>680</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR19C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>273</x>
+		<y>648</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR19C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>237</x>
+		<y>648</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR18C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>273</x>
+		<y>616</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR18C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>237</x>
+		<y>616</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR17C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>273</x>
+		<y>584</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR17C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>237</x>
+		<y>584</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR16C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>273</x>
+		<y>552</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR16C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>237</x>
+		<y>552</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR15C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>273</x>
+		<y>520</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR15C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>237</x>
+		<y>520</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR14C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>273</x>
+		<y>488</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR14C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>237</x>
+		<y>488</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR13C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>273</x>
+		<y>456</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR13C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>237</x>
+		<y>456</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR12C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>273</x>
+		<y>424</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR12C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>237</x>
+		<y>424</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR11C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>273</x>
+		<y>392</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR11C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>237</x>
+		<y>392</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR10C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>273</x>
+		<y>360</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR10C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>237</x>
+		<y>360</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR09C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>273</x>
+		<y>328</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR09C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>237</x>
+		<y>328</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR08C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>273</x>
+		<y>296</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR08C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>237</x>
+		<y>296</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR07C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>273</x>
+		<y>264</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR07C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>237</x>
+		<y>264</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR06C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>273</x>
+		<y>232</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR06C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>237</x>
+		<y>232</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR04C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>273</x>
+		<y>168</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR04C-VA-IOC-01:SYSTEMP</pv_name>
+		<x>237</x>
+		<y>168</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR01C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>215</x>
+		<y>77</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR02C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>215</x>
+		<y>109</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR03C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>215</x>
+		<y>141</y>
+		<width>17</width>
+		<height>17</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR04C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>215</x>
+		<y>173</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR05C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>215</x>
+		<y>205</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR06C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>215</x>
+		<y>237</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR07C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>215</x>
+		<y>269</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR08C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>215</x>
+		<y>301</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR09C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>215</x>
+		<y>333</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR10C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>215</x>
+		<y>365</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR11C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>215</x>
+		<y>397</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR12C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>215</x>
+		<y>429</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR13C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>215</x>
+		<y>461</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR14C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>215</x>
+		<y>493</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR15C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>215</x>
+		<y>525</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR16C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>215</x>
+		<y>557</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR17C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>215</x>
+		<y>589</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR18C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>215</x>
+		<y>621</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR19C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>215</x>
+		<y>653</y>
+		<width>17</width>
+		<height>17</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR20C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>215</x>
+		<y>685</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR21C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>215</x>
+		<y>717</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR22C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>215</x>
+		<y>749</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR23C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>215</x>
+		<y>781</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR24C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>215</x>
+		<y>813</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>425</x>
+		<y>176</y>
+		<width>400</width>
+		<height>145</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Booster</text>
+		<x>425</x>
+		<y>168</y>
+		<width>72</width>
+		<height>16</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>425</x>
+		<y>112</y>
+		<width>400</width>
+		<height>49</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Linac to Booster</text>
+		<x>425</x>
+		<y>104</y>
+		<width>104</width>
+		<height>16</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>425</x>
+		<y>104</y>
+		<width>105</width>
+		<height>17</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>425</x>
+		<y>336</y>
+		<width>400</width>
+		<height>49</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>BS-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>BS-VA-IOC-01</text>
+		<x>433</x>
+		<y>352</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>BTS</text>
+		<x>425</x>
+		<y>328</y>
+		<width>72</width>
+		<height>16</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>425</x>
+		<y>328</y>
+		<width>73</width>
+		<height>17</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>425</x>
+		<y>48</y>
+		<width>400</width>
+		<height>49</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>LI-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>LI-VA-IOC-01</text>
+		<x>433</x>
+		<y>64</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Linac</text>
+		<x>425</x>
+		<y>40</y>
+		<width>72</width>
+		<height>16</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>425</x>
+		<y>40</y>
+		<width>73</width>
+		<height>17</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>LB-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>LB-VA-IOC-01</text>
+		<x>433</x>
+		<y>128</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_softdls.bob</file>
+				<macros>
+					<ioc>BR04C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>BR04C-VA-IOC-01</text>
+		<x>433</x>
+		<y>288</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>425</x>
+		<y>168</y>
+		<width>73</width>
+		<height>17</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_softdls.bob</file>
+				<macros>
+					<ioc>BR01C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>BR01C-VA-IOC-01</text>
+		<x>433</x>
+		<y>192</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_softdls.bob</file>
+				<macros>
+					<ioc>BR02C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>BR02C-VA-IOC-01</text>
+		<x>433</x>
+		<y>224</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_softdls.bob</file>
+				<macros>
+					<ioc>BR03C-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>BR03C-VA-IOC-01</text>
+		<x>433</x>
+		<y>256</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>425</x>
+		<y>408</y>
+		<width>400</width>
+		<height>113</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>RF Straight</text>
+		<x>425</x>
+		<y>400</y>
+		<width>104</width>
+		<height>16</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR-RF-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR17S-RF-IOC-01</text>
+		<x>433</x>
+		<y>424</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR-RF-IOC-02</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR17S-RF-IOC-02</text>
+		<x>433</x>
+		<y>456</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_vxworks.bob</file>
+				<macros>
+					<ioc>SR-RF-IOC-03</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR17S-RF-IOC-03</text>
+		<x>433</x>
+		<y>488</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>425</x>
+		<y>400</y>
+		<width>105</width>
+		<height>17</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>425</x>
+		<y>544</y>
+		<width>400</width>
+		<height>113</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Global</text>
+		<x>425</x>
+		<y>536</y>
+		<width>104</width>
+		<height>16</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_softdls.bob</file>
+				<macros>
+					<ioc>SR-VA-IOC-01</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR-VA-IOC-01</text>
+		<x>433</x>
+		<y>560</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_softdls.bob</file>
+				<macros>
+					<ioc>SR-VA-IOC-03</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR-VA-IOC-03</text>
+		<x>433</x>
+		<y>592</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../devIocStats/ioc_stats_softdls.bob</file>
+				<macros>
+					<ioc>SR-VA-IOC-04</ioc>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>SR-VA-IOC-04</text>
+		<x>433</x>
+		<y>624</y>
+		<width>150</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>425</x>
+		<y>536</y>
+		<width>105</width>
+		<height>17</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>BS-VA-IOC-01:SYSTEMP</pv_name>
+		<x>653</x>
+		<y>352</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>BS-VA-IOC-01:SYSTEMP</pv_name>
+		<x>617</x>
+		<y>352</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>LI-VA-IOC-01:SYSTEMP</pv_name>
+		<x>653</x>
+		<y>64</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>LI-VA-IOC-01:SYSTEMP</pv_name>
+		<x>617</x>
+		<y>64</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>LB-VA-IOC-01:SYSTEMP</pv_name>
+		<x>653</x>
+		<y>128</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>LB-VA-IOC-01:SYSTEMP</pv_name>
+		<x>617</x>
+		<y>128</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>LI-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>595</x>
+		<y>69</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>LB-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>595</x>
+		<y>133</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>BS-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>595</x>
+		<y>357</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>BR04C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>595</x>
+		<y>293</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>BR01C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>595</x>
+		<y>197</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>BR02C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>595</x>
+		<y>229</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>BR03C-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>595</x>
+		<y>261</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR-RF-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>595</x>
+		<y>429</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR-RF-IOC-02:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>595</x>
+		<y>461</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR-RF-IOC-03:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>595</x>
+		<y>493</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR-RF-IOC-01:SYSTEMP</pv_name>
+		<x>617</x>
+		<y>424</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR-RF-IOC-02:SYSTEMP</pv_name>
+		<x>617</x>
+		<y>456</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>SR-RF-IOC-03:SYSTEMP</pv_name>
+		<x>617</x>
+		<y>488</y>
+		<width>32</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<format>1</format>
+		<precision>2</precision>
+		<show_units>false</show_units>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR-RF-IOC-01:SYSTEMP</pv_name>
+		<x>653</x>
+		<y>424</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR-RF-IOC-02:SYSTEMP</pv_name>
+		<x>653</x>
+		<y>456</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>SR-RF-IOC-03:SYSTEMP</pv_name>
+		<x>653</x>
+		<y>488</y>
+		<width>120</width>
+		<height>12</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<actions></actions>
+		<border_alarm_sensitive>true</border_alarm_sensitive>
+		<maximum>20.0</maximum>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR-VA-IOC-01:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>595</x>
+		<y>565</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR-VA-IOC-03:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>595</x>
+		<y>597</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="ellipse" version="2.0.0">
+		<name>EDM Ellipse</name>
+		<macros>
+			<pv_name>SR-VA-IOC-04:HEARTBEAT.SEVR</pv_name>
+		</macros>
+		<x>595</x>
+		<y>629</y>
+		<width>16</width>
+		<height>16</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Label</name>
+		<text>Global Device Control</text>
+		<x>619</x>
+		<y>563</y>
+		<width>187</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Label_1</name>
+		<text>MPS Summary (Python)</text>
+		<x>619</x>
+		<y>595</y>
+		<width>187</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Label_2</name>
+		<text>Pressure Sorting (Python)</text>
+		<x>619</x>
+		<y>627</y>
+		<width>187</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+</display>

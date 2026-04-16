@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>Linac Waveguide Vacuum</name>
+	<x>119</x>
+	<y>105</y>
+	<width>350</width>
+	<background_color>
+		<color name="Canvas" red="200" green="200" blue="200"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>8</grid_step_x>
+	<grid_step_y>8</grid_step_y>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle_2</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>149</x>
+		<y>346</y>
+		<width>5</width>
+		<height>50</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="line_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(dom)-VA-SPACE-04:STA</pv_name>
+			</rule>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(dom)-VA-SPACE-04:STA</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle_3</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>224</x>
+		<y>346</y>
+		<width>5</width>
+		<height>50</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="line_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(dom)-VA-SPACE-04:STA</pv_name>
+			</rule>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(dom)-VA-SPACE-04:STA</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle_1</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>185</x>
+		<y>277</y>
+		<width>5</width>
+		<height>90</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="line_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(dom)-VA-SPACE-02:STA</pv_name>
+			</rule>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(dom)-VA-SPACE-02:STA</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM Exit Button</name>
+		<actions>
+			<action type="close_display">
+				<description>Close display</description>
+			</action>
+		</actions>
+		<text>Exit</text>
+		<x>243</x>
+		<y>540</y>
+		<width>65</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Exit: FG" red="196" green="0" blue="196"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Waveguide Vacuum</text>
+		<width>350</width>
+		<height>32</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="VA title" red="202" green="223" blue="159"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Linking Container_8</name>
+		<macros>
+			<id>21</id>
+		</macros>
+		<file>vacuumWidget.bob</file>
+		<x>157</x>
+		<y>46</y>
+		<width>66</width>
+		<height>194</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="symbol" version="2.0.0">
+		<name>DLS symbol</name>
+		<pv_name>$(dom)-VA-IMG-21:STA</pv_name>
+		<symbols>
+			<symbol>../mks937a/mks937aImg-symbol-34.png</symbol>
+		</symbols>
+		<x>176</x>
+		<y>298</y>
+		<width>24</width>
+		<height>24</height>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+				<exp bool_exp="pvSev0==3">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+					<expression>1</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+					<expression>2</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+					<expression>3</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+					<expression>4</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+					<expression>5</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+					<expression>6</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+					<expression>7</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+					<expression>8</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+					<expression>9</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=9.0&amp;&amp;pv0&lt;10.0">
+					<expression>10</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=10.0&amp;&amp;pv0&lt;11.0">
+					<expression>11</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=11.0&amp;&amp;pv0&lt;12.0">
+					<expression>12</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=12.0&amp;&amp;pv0&lt;13.0">
+					<expression>13</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=13.0&amp;&amp;pv0&lt;14.0">
+					<expression>14</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=14.0&amp;&amp;pv0&lt;15.0">
+					<expression>15</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=15.0&amp;&amp;pv0&lt;16.0">
+					<expression>16</expression>
+				</exp>
+				<exp bool_exp="true">
+					<expression>0</expression>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="symbol" version="2.0.0">
+		<name>DLS symbol_1</name>
+		<pv_name>$(dom)-VA-PIRG-21:STA</pv_name>
+		<symbols>
+			<symbol>../mks937a/mks937aPirg-symbol-34.png</symbol>
+		</symbols>
+		<x>176</x>
+		<y>266</y>
+		<width>24</width>
+		<height>24</height>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+				<exp bool_exp="pvSev0==3">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+					<expression>0</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+					<expression>1</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+					<expression>2</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+					<expression>3</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+					<expression>4</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+					<expression>5</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+					<expression>6</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+					<expression>7</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+					<expression>8</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+					<expression>9</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=9.0&amp;&amp;pv0&lt;10.0">
+					<expression>10</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=10.0&amp;&amp;pv0&lt;11.0">
+					<expression>11</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=11.0&amp;&amp;pv0&lt;12.0">
+					<expression>12</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=12.0&amp;&amp;pv0&lt;13.0">
+					<expression>13</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=13.0&amp;&amp;pv0&lt;14.0">
+					<expression>14</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=14.0&amp;&amp;pv0&lt;15.0">
+					<expression>15</expression>
+				</exp>
+				<exp bool_exp="pv0&gt;=15.0&amp;&amp;pv0&lt;16.0">
+					<expression>16</expression>
+				</exp>
+				<exp bool_exp="true">
+					<expression>0</expression>
+				</exp>
+				<pv_name>$(pv_name)</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="2.0.0">
+		<name>EDM related display</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>176</x>
+		<y>266</y>
+		<width>27</width>
+		<height>27</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../mks937a/mks937aPirg.opi</file>
+				<macros>
+					<device>$(dom)-VA-PIRG-21</device>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		<text></text>
+	</widget>
+	<widget type="action_button" version="2.0.0">
+		<name>EDM related display_1</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>176</x>
+		<y>298</y>
+		<width>27</width>
+		<height>27</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../mks937a/mks937aImg.opi</file>
+				<macros>
+					<device>$(dom)-VA-IMG-21</device>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		<text></text>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>139</x>
+		<y>326</y>
+		<width>101</width>
+		<height>41</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</background_color>
+		<actions></actions>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="line_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(dom)-VA-SPACE-02:STA</pv_name>
+			</rule>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>$(dom)-VA-SPACE-02:STA</pv_name>
+			</rule>
+		</rules>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>13</name>
+		<x>139</x>
+		<y>374</y>
+		<width>27</width>
+		<height>27</height>
+		<style>3</style>
+		<foreground_color>
+			<color red="0" green="128" blue="255"></color>
+		</foreground_color>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color red="240" green="240" blue="240"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<widget type="symbol" version="2.0.0">
+			<name>DLS symbol</name>
+			<pv_name>$(dom)-VA-IONP-21:STA</pv_name>
+			<symbols>
+				<symbol>../digitelMpc/digitelMpcIonp-symbol-34.png</symbol>
+			</symbols>
+			<width>24</width>
+			<height>24</height>
+			<background_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</background_color>
+			<actions></actions>
+			<rules>
+				<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+					<exp bool_exp="pvSev0==3">
+						<expression>0</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+						<expression>0</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+						<expression>1</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+						<expression>2</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+						<expression>3</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+						<expression>4</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+						<expression>5</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+						<expression>6</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+						<expression>7</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+						<expression>8</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+						<expression>9</expression>
+					</exp>
+					<exp bool_exp="true">
+						<expression>0</expression>
+					</exp>
+					<pv_name>$(pv_name)</pv_name>
+				</rule>
+			</rules>
+			<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+		</widget>
+		<widget type="action_button" version="2.0.0">
+			<name>EDM related display</name>
+			<macros>
+				<pv_name></pv_name>
+			</macros>
+			<width>27</width>
+			<height>27</height>
+			<line_width>0</line_width>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color name="Grey 75%" red="192" green="192" blue="192"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions>
+				<action type="open_display">
+					<description>Open Display</description>
+					<file>../digitelMpc/digitelMpcIonp2sp.opi</file>
+					<macros>
+						<device>$(dom)-VA-IONP-21</device>
+					</macros>
+					<target>standalone</target>
+				</action>
+			</actions>
+			<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			<text></text>
+		</widget>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>14</name>
+		<x>213</x>
+		<y>374</y>
+		<width>27</width>
+		<height>27</height>
+		<style>3</style>
+		<foreground_color>
+			<color red="0" green="128" blue="255"></color>
+		</foreground_color>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color red="240" green="240" blue="240"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<widget type="symbol" version="2.0.0">
+			<name>DLS symbol</name>
+			<pv_name>$(dom)-VA-IONP-22:STA</pv_name>
+			<symbols>
+				<symbol>../digitelMpc/digitelMpcIonp-symbol-34.png</symbol>
+			</symbols>
+			<width>24</width>
+			<height>24</height>
+			<background_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</background_color>
+			<actions></actions>
+			<rules>
+				<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+					<exp bool_exp="pvSev0==3">
+						<expression>0</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+						<expression>0</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+						<expression>1</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+						<expression>2</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+						<expression>3</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+						<expression>4</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+						<expression>5</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+						<expression>6</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+						<expression>7</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+						<expression>8</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+						<expression>9</expression>
+					</exp>
+					<exp bool_exp="true">
+						<expression>0</expression>
+					</exp>
+					<pv_name>$(pv_name)</pv_name>
+				</rule>
+			</rules>
+			<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+		</widget>
+		<widget type="action_button" version="2.0.0">
+			<name>EDM related display</name>
+			<macros>
+				<pv_name></pv_name>
+			</macros>
+			<width>27</width>
+			<height>27</height>
+			<line_width>0</line_width>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color name="Grey 75%" red="192" green="192" blue="192"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions>
+				<action type="open_display">
+					<description>Open Display</description>
+					<file>../digitelMpc/digitelMpcIonp2sp.opi</file>
+					<macros>
+						<device>$(dom)-VA-IONP-22</device>
+					</macros>
+					<target>standalone</target>
+				</action>
+			</actions>
+			<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			<text></text>
+		</widget>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display_2</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../vacuumSpace/space.bob</file>
+				<macros>
+					<device>$(dom)-VA-SPACE-99</device>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>Space</text>
+		<x>31</x>
+		<y>540</y>
+		<width>61</width>
+		<height>26</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM shell command</name>
+		<actions>
+			<action type="command">
+				<description>Launch databrowser</description>
+				<script file="EmbeddedPy">
+					<text>from org.csstudio.opibuilder.scriptUtil import ScriptUtil
+
+command_id="org.csstudio.trends.databrowser2.newWindow"
+ScriptUtil.executeEclipseCommand(command_id, ['pvnames', '$(dom)-VA-GAUGE-01:PLOG,$(dom)-VA-GAUGE-02:PLOG,$(dom)-VA-GAUGE-03:PLOG,$(dom)-VA-GAUGE-04:PLOG,$(dom)-VA-GAUGE-05:PLOG,$(dom)-VA-GAUGE-06:PLOG,$(dom)-VA-GAUGE-07:PLOG,$(dom)-VA-GAUGE-08:PLOG,$(dom)-VA-GAUGE-09:PLOG'])</text>
+				</script>
+				<command>$(phoebus.install)/../phoebus.sh -resource "pv://?$(dom)-VA-GAUGE-01:PLOG&amp;$(dom)-VA-GAUGE-02:PLOG&amp;$(dom)-VA-GAUGE-03:PLOG&amp;$(dom)-VA-GAUGE-04:PLOG&amp;$(dom)-VA-GAUGE-05:PLOG&amp;$(dom)-VA-GAUGE-06:PLOG&amp;$(dom)-VA-GAUGE-07:PLOG&amp;$(dom)-VA-GAUGE-08:PLOG&amp;$(dom)-VA-GAUGE-09:PLOG&amp;app=databrowser</command>
+			</action>
+		</actions>
+		<text>Graph</text>
+		<x>159</x>
+		<y>540</y>
+		<width>61</width>
+		<height>26</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display_3</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>liVacCtrl.bob</file>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>Racks</text>
+		<x>95</x>
+		<y>540</y>
+		<width>61</width>
+		<height>26</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle_6</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>37</x>
+		<y>412</y>
+		<width>271</width>
+		<height>50</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle_7</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>37</x>
+		<y>412</y>
+		<width>129</width>
+		<height>17</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle_8</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>37</x>
+		<y>470</y>
+		<width>271</width>
+		<height>50</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label_1</name>
+		<text>ACC-01 Override</text>
+		<x>38</x>
+		<y>413</y>
+		<width>128</width>
+		<height>16</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label_2</name>
+		<text>ACC-02 Override</text>
+		<x>37</x>
+		<y>470</y>
+		<width>128</width>
+		<height>16</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>Status</name>
+		<pv_name>LI-VA-ACC-01:OVERRIDE:STA</pv_name>
+		<x>55</x>
+		<y>436</y>
+		<width>131</width>
+		<font>
+			<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>Status_1</name>
+		<pv_name>LI-VA-ACC-02:OVERRIDE:STA</pv_name>
+		<x>55</x>
+		<y>493</y>
+		<width>131</width>
+		<font>
+			<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM Message Button</name>
+		<actions execute_as_one="true">
+			<action type="write_pv">
+				<description>Write PV</description>
+				<pv_name>$(pv_name)</pv_name>
+				<value>1</value>
+			</action>
+		</actions>
+		<pv_name>LI-VA-ACC-01:OVERRIDE:CON</pv_name>
+		<text>NA</text>
+		<x>202</x>
+		<y>436</y>
+		<width>97</width>
+		<height>20</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Controller: FG" red="0" green="0" blue="196"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Button: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<rules>
+			<rule name="updateText" prop_id="text" out_exp="false">
+				<exp bool_exp="pv0==1">
+					<value>Disable</value>
+				</exp>
+				<exp bool_exp="pv0==0">
+					<value>Enable</value>
+				</exp>
+				<pv_name>LI-VA-ACC-01:OVERRIDE:STA</pv_name>
+			</rule>
+		</rules>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM Message Button_1</name>
+		<actions execute_as_one="true">
+			<action type="write_pv">
+				<description>Write PV</description>
+				<pv_name>$(pv_name)</pv_name>
+				<value>1</value>
+			</action>
+		</actions>
+		<pv_name>LI-VA-ACC-02:OVERRIDE:CON</pv_name>
+		<text>NA</text>
+		<x>202</x>
+		<y>493</y>
+		<width>97</width>
+		<height>20</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Controller: FG" red="0" green="0" blue="196"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Button: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<rules>
+			<rule name="updateText" prop_id="text" out_exp="false">
+				<exp bool_exp="pv0==1">
+					<value>Disable</value>
+				</exp>
+				<exp bool_exp="pv0==0">
+					<value>Enable</value>
+				</exp>
+				<pv_name>LI-VA-ACC-02:OVERRIDE:STA</pv_name>
+			</rule>
+		</rules>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+</display>

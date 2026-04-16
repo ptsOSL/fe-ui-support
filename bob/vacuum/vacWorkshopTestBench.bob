@@ -1,0 +1,2411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>SR In Vacuum Insertion Device Cell - Vacuum</name>
+	<x>68</x>
+	<y>125</y>
+	<width>1080</width>
+	<height>500</height>
+	<background_color>
+		<color name="Canvas" red="200" green="200" blue="200"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>8</grid_step_x>
+	<grid_step_y>8</grid_step_y>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Vacuum Workshop Test Bench</text>
+		<width>1080</width>
+		<height>32</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="VA title" red="202" green="223" blue="159"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>Rounded Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>450</x>
+		<y>90</y>
+		<width>396</width>
+		<height>376</height>
+		<line_width>2</line_width>
+		<line_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</line_color>
+		<line_style>1</line_style>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<corner_width>16</corner_width>
+		<corner_height>16</corner_height>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Label</name>
+		<text>MKS397B</text>
+		<x>588</x>
+		<y>59</y>
+		<width>120</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>Relays_1</name>
+		<x>666</x>
+		<y>112</y>
+		<width>149</width>
+		<height>340</height>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<line_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container_3</name>
+			<macros>
+				<rly>RLY01</rly>
+			</macros>
+			<x>2</x>
+			<y>5</y>
+			<width>106</width>
+			<height>20</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="led" version="2.0.0">
+				<name>LED</name>
+				<pv_name>DR192-VA-GCTLR-02:$(rly)</pv_name>
+				<width>19</width>
+				<height>19</height>
+				<off_color>
+					<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+				</off_color>
+				<on_color>
+					<color name="Green LED: On" red="0" green="255" blue="0"></color>
+				</on_color>
+				<foreground_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<line_color>
+					<color red="150" green="150" blue="150"></color>
+				</line_color>
+				<actions></actions>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>Label</name>
+				<text>$(rly)</text>
+				<x>42</x>
+				<width>62</width>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<horizontal_alignment>1</horizontal_alignment>
+				<vertical_alignment>1</vertical_alignment>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container_4</name>
+			<macros>
+				<rly>RLY02</rly>
+			</macros>
+			<x>2</x>
+			<y>25</y>
+			<width>106</width>
+			<height>20</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="led" version="2.0.0">
+				<name>LED</name>
+				<pv_name>DR192-VA-GCTLR-02:$(rly)</pv_name>
+				<width>19</width>
+				<height>19</height>
+				<off_color>
+					<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+				</off_color>
+				<on_color>
+					<color name="Green LED: On" red="0" green="255" blue="0"></color>
+				</on_color>
+				<foreground_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<line_color>
+					<color red="150" green="150" blue="150"></color>
+				</line_color>
+				<actions></actions>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>Label</name>
+				<text>$(rly)</text>
+				<x>42</x>
+				<width>62</width>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<horizontal_alignment>1</horizontal_alignment>
+				<vertical_alignment>1</vertical_alignment>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container_5</name>
+			<macros>
+				<rly>RLY03</rly>
+			</macros>
+			<x>2</x>
+			<y>45</y>
+			<width>106</width>
+			<height>20</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="led" version="2.0.0">
+				<name>LED</name>
+				<pv_name>DR192-VA-GCTLR-02:$(rly)</pv_name>
+				<width>19</width>
+				<height>19</height>
+				<off_color>
+					<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+				</off_color>
+				<on_color>
+					<color name="Green LED: On" red="0" green="255" blue="0"></color>
+				</on_color>
+				<foreground_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<line_color>
+					<color red="150" green="150" blue="150"></color>
+				</line_color>
+				<actions></actions>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>Label</name>
+				<text>$(rly)</text>
+				<x>42</x>
+				<width>62</width>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<horizontal_alignment>1</horizontal_alignment>
+				<vertical_alignment>1</vertical_alignment>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container_6</name>
+			<macros>
+				<rly>RLY04</rly>
+			</macros>
+			<x>2</x>
+			<y>65</y>
+			<width>106</width>
+			<height>20</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="led" version="2.0.0">
+				<name>LED</name>
+				<pv_name>DR192-VA-GCTLR-02:$(rly)</pv_name>
+				<width>19</width>
+				<height>19</height>
+				<off_color>
+					<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+				</off_color>
+				<on_color>
+					<color name="Green LED: On" red="0" green="255" blue="0"></color>
+				</on_color>
+				<foreground_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<line_color>
+					<color red="150" green="150" blue="150"></color>
+				</line_color>
+				<actions></actions>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>Label</name>
+				<text>$(rly)</text>
+				<x>42</x>
+				<width>62</width>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<horizontal_alignment>1</horizontal_alignment>
+				<vertical_alignment>1</vertical_alignment>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container_7</name>
+			<macros>
+				<rly>RLY05</rly>
+			</macros>
+			<x>2</x>
+			<y>85</y>
+			<width>106</width>
+			<height>20</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="led" version="2.0.0">
+				<name>LED</name>
+				<pv_name>DR192-VA-GCTLR-02:$(rly)</pv_name>
+				<width>19</width>
+				<height>19</height>
+				<off_color>
+					<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+				</off_color>
+				<on_color>
+					<color name="Green LED: On" red="0" green="255" blue="0"></color>
+				</on_color>
+				<foreground_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<line_color>
+					<color red="150" green="150" blue="150"></color>
+				</line_color>
+				<actions></actions>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>Label</name>
+				<text>$(rly)</text>
+				<x>42</x>
+				<width>62</width>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<horizontal_alignment>1</horizontal_alignment>
+				<vertical_alignment>1</vertical_alignment>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container_7</name>
+			<macros>
+				<rly>RLY06</rly>
+			</macros>
+			<x>2</x>
+			<y>104</y>
+			<width>106</width>
+			<height>20</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="led" version="2.0.0">
+				<name>LED</name>
+				<pv_name>DR192-VA-GCTLR-02:$(rly)</pv_name>
+				<width>19</width>
+				<height>19</height>
+				<off_color>
+					<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+				</off_color>
+				<on_color>
+					<color name="Green LED: On" red="0" green="255" blue="0"></color>
+				</on_color>
+				<foreground_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<line_color>
+					<color red="150" green="150" blue="150"></color>
+				</line_color>
+				<actions></actions>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>Label</name>
+				<text>$(rly)</text>
+				<x>42</x>
+				<width>62</width>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<horizontal_alignment>1</horizontal_alignment>
+				<vertical_alignment>1</vertical_alignment>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container_1</name>
+			<macros>
+				<rly>RLY07</rly>
+			</macros>
+			<x>2</x>
+			<y>123</y>
+			<width>106</width>
+			<height>20</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="led" version="2.0.0">
+				<name>LED</name>
+				<pv_name>DR192-VA-GCTLR-02:$(rly)</pv_name>
+				<width>19</width>
+				<height>19</height>
+				<off_color>
+					<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+				</off_color>
+				<on_color>
+					<color name="Green LED: On" red="0" green="255" blue="0"></color>
+				</on_color>
+				<foreground_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<line_color>
+					<color red="150" green="150" blue="150"></color>
+				</line_color>
+				<actions></actions>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>Label</name>
+				<text>$(rly)</text>
+				<x>42</x>
+				<width>62</width>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<horizontal_alignment>1</horizontal_alignment>
+				<vertical_alignment>1</vertical_alignment>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container_2</name>
+			<macros>
+				<rly>RLY08</rly>
+			</macros>
+			<x>2</x>
+			<y>142</y>
+			<width>106</width>
+			<height>20</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="led" version="2.0.0">
+				<name>LED</name>
+				<pv_name>DR192-VA-GCTLR-02:$(rly)</pv_name>
+				<width>19</width>
+				<height>19</height>
+				<off_color>
+					<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+				</off_color>
+				<on_color>
+					<color name="Green LED: On" red="0" green="255" blue="0"></color>
+				</on_color>
+				<foreground_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<line_color>
+					<color red="150" green="150" blue="150"></color>
+				</line_color>
+				<actions></actions>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>Label</name>
+				<text>$(rly)</text>
+				<x>42</x>
+				<width>62</width>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<horizontal_alignment>1</horizontal_alignment>
+				<vertical_alignment>1</vertical_alignment>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container_3</name>
+			<macros>
+				<rly>RLY09</rly>
+			</macros>
+			<x>2</x>
+			<y>161</y>
+			<width>106</width>
+			<height>20</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="led" version="2.0.0">
+				<name>LED</name>
+				<pv_name>DR192-VA-GCTLR-02:$(rly)</pv_name>
+				<width>19</width>
+				<height>19</height>
+				<off_color>
+					<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+				</off_color>
+				<on_color>
+					<color name="Green LED: On" red="0" green="255" blue="0"></color>
+				</on_color>
+				<foreground_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<line_color>
+					<color red="150" green="150" blue="150"></color>
+				</line_color>
+				<actions></actions>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>Label</name>
+				<text>$(rly)</text>
+				<x>42</x>
+				<width>62</width>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<horizontal_alignment>1</horizontal_alignment>
+				<vertical_alignment>1</vertical_alignment>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container_4</name>
+			<macros>
+				<rly>RLY10</rly>
+			</macros>
+			<x>2</x>
+			<y>180</y>
+			<width>106</width>
+			<height>20</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="led" version="2.0.0">
+				<name>LED</name>
+				<pv_name>DR192-VA-GCTLR-02:$(rly)</pv_name>
+				<width>19</width>
+				<height>19</height>
+				<off_color>
+					<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+				</off_color>
+				<on_color>
+					<color name="Green LED: On" red="0" green="255" blue="0"></color>
+				</on_color>
+				<foreground_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<line_color>
+					<color red="150" green="150" blue="150"></color>
+				</line_color>
+				<actions></actions>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>Label</name>
+				<text>$(rly)</text>
+				<x>42</x>
+				<width>62</width>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<horizontal_alignment>1</horizontal_alignment>
+				<vertical_alignment>1</vertical_alignment>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container_5</name>
+			<macros>
+				<rly>RLY11</rly>
+			</macros>
+			<x>2</x>
+			<y>199</y>
+			<width>106</width>
+			<height>20</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="led" version="2.0.0">
+				<name>LED</name>
+				<pv_name>DR192-VA-GCTLR-02:$(rly)</pv_name>
+				<width>19</width>
+				<height>19</height>
+				<off_color>
+					<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+				</off_color>
+				<on_color>
+					<color name="Green LED: On" red="0" green="255" blue="0"></color>
+				</on_color>
+				<foreground_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<line_color>
+					<color red="150" green="150" blue="150"></color>
+				</line_color>
+				<actions></actions>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>Label</name>
+				<text>$(rly)</text>
+				<x>42</x>
+				<width>62</width>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<horizontal_alignment>1</horizontal_alignment>
+				<vertical_alignment>1</vertical_alignment>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container_6</name>
+			<macros>
+				<rly>RLY12</rly>
+			</macros>
+			<x>2</x>
+			<y>218</y>
+			<width>106</width>
+			<height>20</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="led" version="2.0.0">
+				<name>LED</name>
+				<pv_name>DR192-VA-GCTLR-02:$(rly)</pv_name>
+				<width>19</width>
+				<height>19</height>
+				<off_color>
+					<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+				</off_color>
+				<on_color>
+					<color name="Green LED: On" red="0" green="255" blue="0"></color>
+				</on_color>
+				<foreground_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<line_color>
+					<color red="150" green="150" blue="150"></color>
+				</line_color>
+				<actions></actions>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>Label</name>
+				<text>$(rly)</text>
+				<x>42</x>
+				<width>62</width>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<horizontal_alignment>1</horizontal_alignment>
+				<vertical_alignment>1</vertical_alignment>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>Gauges</name>
+		<x>477</x>
+		<y>112</y>
+		<width>180</width>
+		<height>340</height>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<line_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container_3</name>
+			<x>77</x>
+			<y>5</y>
+			<width>66</width>
+			<height>288</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="embedded" version="2.0.0">
+				<name>Linking Container_3</name>
+				<macros>
+					<dom>DR192</dom>
+					<id>04</id>
+					<GCTLR>$(dom)-VA-GCTLR-02</GCTLR>
+				</macros>
+				<file>vacuumWidgetB.bob</file>
+				<width>66</width>
+				<height>194</height>
+				<resize>2</resize>
+				<transparent>true</transparent>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>Grouping Container_3</name>
+				<x>15</x>
+				<y>209</y>
+				<width>35</width>
+				<height>79</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="symbol" version="2.0.0">
+					<name>DR192-VA-IMG-04</name>
+					<pv_name>$(name):STA</pv_name>
+					<symbols>
+						<symbol>../mks937a/mks937aImg-symbol-34.png</symbol>
+					</symbols>
+					<y>44</y>
+					<width>35</width>
+					<height>35</height>
+					<background_color>
+						<color name="Canvas" red="200" green="200" blue="200"></color>
+					</background_color>
+					<actions>
+						<action type="open_display">
+							<description>Open Display</description>
+							<file>../mks937b/mks937bImg.bob</file>
+							<macros>
+								<device>DR192-VA-IMG-04</device>
+							</macros>
+							<target>standalone</target>
+						</action>
+					</actions>
+					<rules>
+						<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+							<exp bool_exp="pvSev0==3">
+								<expression>0</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+								<expression>0</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+								<expression>1</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+								<expression>2</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+								<expression>3</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+								<expression>4</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+								<expression>5</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+								<expression>6</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+								<expression>7</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+								<expression>8</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+								<expression>9</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=9.0&amp;&amp;pv0&lt;10.0">
+								<expression>10</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=10.0&amp;&amp;pv0&lt;11.0">
+								<expression>11</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=11.0&amp;&amp;pv0&lt;12.0">
+								<expression>12</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=12.0&amp;&amp;pv0&lt;13.0">
+								<expression>13</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=13.0&amp;&amp;pv0&lt;14.0">
+								<expression>14</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=14.0&amp;&amp;pv0&lt;15.0">
+								<expression>15</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=15.0&amp;&amp;pv0&lt;16.0">
+								<expression>16</expression>
+							</exp>
+							<exp bool_exp="true">
+								<expression>0</expression>
+							</exp>
+							<pv_name>$(pv_name)</pv_name>
+						</rule>
+					</rules>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					<border_alarm_sensitive>false</border_alarm_sensitive>
+				</widget>
+				<widget type="symbol" version="2.0.0">
+					<name>DR192-VA-PIRG-04</name>
+					<pv_name>$(name):STA</pv_name>
+					<symbols>
+						<symbol>../mks937a/mks937aPirg-symbol-34.png</symbol>
+					</symbols>
+					<width>35</width>
+					<height>35</height>
+					<background_color>
+						<color name="Canvas" red="200" green="200" blue="200"></color>
+					</background_color>
+					<actions>
+						<action type="open_display">
+							<description>Open Display</description>
+							<file>../mks937b/mks937bPirg.bob</file>
+							<macros>
+								<device>DR192-VA-PIRG-04</device>
+							</macros>
+							<target>standalone</target>
+						</action>
+					</actions>
+					<rules>
+						<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+							<exp bool_exp="pvSev0==3">
+								<expression>0</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+								<expression>0</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+								<expression>1</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+								<expression>2</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+								<expression>3</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+								<expression>4</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+								<expression>5</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+								<expression>6</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+								<expression>7</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+								<expression>8</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+								<expression>9</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=9.0&amp;&amp;pv0&lt;10.0">
+								<expression>10</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=10.0&amp;&amp;pv0&lt;11.0">
+								<expression>11</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=11.0&amp;&amp;pv0&lt;12.0">
+								<expression>12</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=12.0&amp;&amp;pv0&lt;13.0">
+								<expression>13</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=13.0&amp;&amp;pv0&lt;14.0">
+								<expression>14</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=14.0&amp;&amp;pv0&lt;15.0">
+								<expression>15</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=15.0&amp;&amp;pv0&lt;16.0">
+								<expression>16</expression>
+							</exp>
+							<exp bool_exp="true">
+								<expression>0</expression>
+							</exp>
+							<pv_name>$(pv_name)</pv_name>
+						</rule>
+					</rules>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					<border_alarm_sensitive>false</border_alarm_sensitive>
+				</widget>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container_4</name>
+			<y>5</y>
+			<width>66</width>
+			<height>288</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="embedded" version="2.0.0">
+				<name>Linking Container_1</name>
+				<macros>
+					<dom>DR192</dom>
+					<id>03</id>
+					<GCTLR>$(dom)-VA-GCTLR-02</GCTLR>
+				</macros>
+				<file>vacuumWidgetB.bob</file>
+				<width>66</width>
+				<height>194</height>
+				<resize>2</resize>
+				<transparent>true</transparent>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>Grouping Container_2</name>
+				<x>15</x>
+				<y>209</y>
+				<width>35</width>
+				<height>79</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="symbol" version="2.0.0">
+					<name>DR192-VA-IMG-03</name>
+					<pv_name>$(name):STA</pv_name>
+					<symbols>
+						<symbol>../mks937a/mks937aImg-symbol-34.png</symbol>
+					</symbols>
+					<y>44</y>
+					<width>35</width>
+					<height>35</height>
+					<background_color>
+						<color name="Canvas" red="200" green="200" blue="200"></color>
+					</background_color>
+					<actions>
+						<action type="open_display">
+							<description>Open Display</description>
+							<file>../mks937b/mks937bImg.bob</file>
+							<macros>
+								<device>DR192-VA-IMG-03</device>
+							</macros>
+							<target>standalone</target>
+						</action>
+					</actions>
+					<rules>
+						<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+							<exp bool_exp="pvSev0==3">
+								<expression>0</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+								<expression>0</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+								<expression>1</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+								<expression>2</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+								<expression>3</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+								<expression>4</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+								<expression>5</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+								<expression>6</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+								<expression>7</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+								<expression>8</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+								<expression>9</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=9.0&amp;&amp;pv0&lt;10.0">
+								<expression>10</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=10.0&amp;&amp;pv0&lt;11.0">
+								<expression>11</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=11.0&amp;&amp;pv0&lt;12.0">
+								<expression>12</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=12.0&amp;&amp;pv0&lt;13.0">
+								<expression>13</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=13.0&amp;&amp;pv0&lt;14.0">
+								<expression>14</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=14.0&amp;&amp;pv0&lt;15.0">
+								<expression>15</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=15.0&amp;&amp;pv0&lt;16.0">
+								<expression>16</expression>
+							</exp>
+							<exp bool_exp="true">
+								<expression>0</expression>
+							</exp>
+							<pv_name>$(pv_name)</pv_name>
+						</rule>
+					</rules>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					<border_alarm_sensitive>false</border_alarm_sensitive>
+				</widget>
+				<widget type="symbol" version="2.0.0">
+					<name>DR192-VA-PIRG-03</name>
+					<pv_name>$(name):STA</pv_name>
+					<symbols>
+						<symbol>../mks937a/mks937aPirg-symbol-34.png</symbol>
+					</symbols>
+					<width>35</width>
+					<height>35</height>
+					<background_color>
+						<color name="Canvas" red="200" green="200" blue="200"></color>
+					</background_color>
+					<actions>
+						<action type="open_display">
+							<description>Open Display</description>
+							<file>../mks937b/mks937bPirg.bob</file>
+							<macros>
+								<device>DR192-VA-PIRG-03</device>
+							</macros>
+							<target>standalone</target>
+						</action>
+					</actions>
+					<rules>
+						<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+							<exp bool_exp="pvSev0==3">
+								<expression>0</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+								<expression>0</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+								<expression>1</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+								<expression>2</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+								<expression>3</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+								<expression>4</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+								<expression>5</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+								<expression>6</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+								<expression>7</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+								<expression>8</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+								<expression>9</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=9.0&amp;&amp;pv0&lt;10.0">
+								<expression>10</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=10.0&amp;&amp;pv0&lt;11.0">
+								<expression>11</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=11.0&amp;&amp;pv0&lt;12.0">
+								<expression>12</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=12.0&amp;&amp;pv0&lt;13.0">
+								<expression>13</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=13.0&amp;&amp;pv0&lt;14.0">
+								<expression>14</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=14.0&amp;&amp;pv0&lt;15.0">
+								<expression>15</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=15.0&amp;&amp;pv0&lt;16.0">
+								<expression>16</expression>
+							</exp>
+							<exp bool_exp="true">
+								<expression>0</expression>
+							</exp>
+							<pv_name>$(pv_name)</pv_name>
+						</rule>
+					</rules>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					<border_alarm_sensitive>false</border_alarm_sensitive>
+				</widget>
+			</widget>
+		</widget>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>Rounded Rectangle_1</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>25</x>
+		<y>90</y>
+		<width>371</width>
+		<height>376</height>
+		<line_width>2</line_width>
+		<line_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</line_color>
+		<line_style>1</line_style>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<corner_width>16</corner_width>
+		<corner_height>16</corner_height>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Label_1</name>
+		<text>MKS397A</text>
+		<x>150</x>
+		<y>59</y>
+		<width>120</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>Relays</name>
+		<x>230</x>
+		<y>112</y>
+		<width>149</width>
+		<height>147</height>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<line_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container_3</name>
+			<macros>
+				<rly>CC</rly>
+			</macros>
+			<x>2</x>
+			<y>5</y>
+			<width>106</width>
+			<height>20</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="led" version="2.0.0">
+				<name>LED</name>
+				<pv_name>DR192-VA-GCTLR-01:$(rly)</pv_name>
+				<width>19</width>
+				<height>19</height>
+				<off_color>
+					<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+				</off_color>
+				<on_color>
+					<color name="Green LED: On" red="0" green="255" blue="0"></color>
+				</on_color>
+				<foreground_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<line_color>
+					<color red="150" green="150" blue="150"></color>
+				</line_color>
+				<actions></actions>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>Label</name>
+				<text>$(rly)</text>
+				<x>42</x>
+				<width>62</width>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<horizontal_alignment>1</horizontal_alignment>
+				<vertical_alignment>1</vertical_alignment>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container_4</name>
+			<macros>
+				<rly>A1</rly>
+			</macros>
+			<x>2</x>
+			<y>25</y>
+			<width>106</width>
+			<height>20</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="led" version="2.0.0">
+				<name>LED</name>
+				<pv_name>DR192-VA-GCTLR-01:$(rly)</pv_name>
+				<width>19</width>
+				<height>19</height>
+				<off_color>
+					<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+				</off_color>
+				<on_color>
+					<color name="Green LED: On" red="0" green="255" blue="0"></color>
+				</on_color>
+				<foreground_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<line_color>
+					<color red="150" green="150" blue="150"></color>
+				</line_color>
+				<actions></actions>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>Label</name>
+				<text>$(rly)</text>
+				<x>42</x>
+				<width>62</width>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<horizontal_alignment>1</horizontal_alignment>
+				<vertical_alignment>1</vertical_alignment>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container_5</name>
+			<macros>
+				<rly>A2</rly>
+			</macros>
+			<x>2</x>
+			<y>45</y>
+			<width>106</width>
+			<height>20</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="led" version="2.0.0">
+				<name>LED</name>
+				<pv_name>DR192-VA-GCTLR-01:$(rly)</pv_name>
+				<width>19</width>
+				<height>19</height>
+				<off_color>
+					<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+				</off_color>
+				<on_color>
+					<color name="Green LED: On" red="0" green="255" blue="0"></color>
+				</on_color>
+				<foreground_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<line_color>
+					<color red="150" green="150" blue="150"></color>
+				</line_color>
+				<actions></actions>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>Label</name>
+				<text>$(rly)</text>
+				<x>42</x>
+				<width>62</width>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<horizontal_alignment>1</horizontal_alignment>
+				<vertical_alignment>1</vertical_alignment>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container_6</name>
+			<macros>
+				<rly>B1</rly>
+			</macros>
+			<x>2</x>
+			<y>65</y>
+			<width>106</width>
+			<height>20</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="led" version="2.0.0">
+				<name>LED</name>
+				<pv_name>DR192-VA-GCTLR-01:$(rly)</pv_name>
+				<width>19</width>
+				<height>19</height>
+				<off_color>
+					<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+				</off_color>
+				<on_color>
+					<color name="Green LED: On" red="0" green="255" blue="0"></color>
+				</on_color>
+				<foreground_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<line_color>
+					<color red="150" green="150" blue="150"></color>
+				</line_color>
+				<actions></actions>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>Label</name>
+				<text>$(rly)</text>
+				<x>42</x>
+				<width>62</width>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<horizontal_alignment>1</horizontal_alignment>
+				<vertical_alignment>1</vertical_alignment>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container_7</name>
+			<macros>
+				<rly>B2</rly>
+			</macros>
+			<x>2</x>
+			<y>85</y>
+			<width>106</width>
+			<height>20</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="led" version="2.0.0">
+				<name>LED</name>
+				<pv_name>DR192-VA-GCTLR-01:$(rly)</pv_name>
+				<width>19</width>
+				<height>19</height>
+				<off_color>
+					<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+				</off_color>
+				<on_color>
+					<color name="Green LED: On" red="0" green="255" blue="0"></color>
+				</on_color>
+				<foreground_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<line_color>
+					<color red="150" green="150" blue="150"></color>
+				</line_color>
+				<actions></actions>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>Label</name>
+				<text>$(rly)</text>
+				<x>42</x>
+				<width>62</width>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<horizontal_alignment>1</horizontal_alignment>
+				<vertical_alignment>1</vertical_alignment>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>Gauges</name>
+		<x>42</x>
+		<y>112</y>
+		<width>180</width>
+		<height>340</height>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<line_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container_5</name>
+			<x>77</x>
+			<y>5</y>
+			<width>66</width>
+			<height>288</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="embedded" version="2.0.0">
+				<name>Linking Container_2</name>
+				<macros>
+					<dom>DR192</dom>
+					<id>02</id>
+					<GCTLR>$(dom)-VA-GCTLR-01</GCTLR>
+				</macros>
+				<file>vacuumWidget.bob</file>
+				<width>66</width>
+				<height>194</height>
+				<resize>2</resize>
+				<transparent>true</transparent>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>Grouping Container_1</name>
+				<x>15</x>
+				<y>209</y>
+				<width>35</width>
+				<height>79</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="symbol" version="2.0.0">
+					<name>DR192-VA-IMG-02</name>
+					<pv_name>$(name):STA</pv_name>
+					<symbols>
+						<symbol>../mks937a/mks937aImg-symbol-34.png</symbol>
+					</symbols>
+					<y>44</y>
+					<width>35</width>
+					<height>35</height>
+					<background_color>
+						<color name="Canvas" red="200" green="200" blue="200"></color>
+					</background_color>
+					<actions>
+						<action type="open_display">
+							<description>Open Display</description>
+							<file>../mks937a/mks937aImg.bob</file>
+							<macros>
+								<device>DR192-VA-IMG-02</device>
+							</macros>
+							<target>standalone</target>
+						</action>
+					</actions>
+					<rules>
+						<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+							<exp bool_exp="pvSev0==3">
+								<expression>0</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+								<expression>0</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+								<expression>1</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+								<expression>2</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+								<expression>3</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+								<expression>4</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+								<expression>5</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+								<expression>6</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+								<expression>7</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+								<expression>8</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+								<expression>9</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=9.0&amp;&amp;pv0&lt;10.0">
+								<expression>10</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=10.0&amp;&amp;pv0&lt;11.0">
+								<expression>11</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=11.0&amp;&amp;pv0&lt;12.0">
+								<expression>12</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=12.0&amp;&amp;pv0&lt;13.0">
+								<expression>13</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=13.0&amp;&amp;pv0&lt;14.0">
+								<expression>14</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=14.0&amp;&amp;pv0&lt;15.0">
+								<expression>15</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=15.0&amp;&amp;pv0&lt;16.0">
+								<expression>16</expression>
+							</exp>
+							<exp bool_exp="true">
+								<expression>0</expression>
+							</exp>
+							<pv_name>$(pv_name)</pv_name>
+						</rule>
+					</rules>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					<border_alarm_sensitive>false</border_alarm_sensitive>
+				</widget>
+				<widget type="symbol" version="2.0.0">
+					<name>DR192-VA-PIRG-02</name>
+					<pv_name>$(name):STA</pv_name>
+					<symbols>
+						<symbol>../mks937a/mks937aPirg-symbol-34.png</symbol>
+					</symbols>
+					<width>35</width>
+					<height>35</height>
+					<background_color>
+						<color name="Canvas" red="200" green="200" blue="200"></color>
+					</background_color>
+					<actions>
+						<action type="open_display">
+							<description>Open Display</description>
+							<file>../mks937a/mks937aPirg.bob</file>
+							<macros>
+								<device>DR192-VA-PIRG-02</device>
+							</macros>
+							<target>standalone</target>
+						</action>
+					</actions>
+					<rules>
+						<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+							<exp bool_exp="pvSev0==3">
+								<expression>0</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+								<expression>0</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+								<expression>1</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+								<expression>2</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+								<expression>3</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+								<expression>4</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+								<expression>5</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+								<expression>6</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+								<expression>7</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+								<expression>8</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+								<expression>9</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=9.0&amp;&amp;pv0&lt;10.0">
+								<expression>10</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=10.0&amp;&amp;pv0&lt;11.0">
+								<expression>11</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=11.0&amp;&amp;pv0&lt;12.0">
+								<expression>12</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=12.0&amp;&amp;pv0&lt;13.0">
+								<expression>13</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=13.0&amp;&amp;pv0&lt;14.0">
+								<expression>14</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=14.0&amp;&amp;pv0&lt;15.0">
+								<expression>15</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=15.0&amp;&amp;pv0&lt;16.0">
+								<expression>16</expression>
+							</exp>
+							<exp bool_exp="true">
+								<expression>0</expression>
+							</exp>
+							<pv_name>$(pv_name)</pv_name>
+						</rule>
+					</rules>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					<border_alarm_sensitive>false</border_alarm_sensitive>
+				</widget>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container</name>
+			<y>5</y>
+			<width>66</width>
+			<height>288</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="embedded" version="2.0.0">
+				<name>Linking Container_2</name>
+				<macros>
+					<dom>DR192</dom>
+					<id>01</id>
+					<GCTLR>$(dom)-VA-GCTLR-01</GCTLR>
+				</macros>
+				<file>vacuumWidget.bob</file>
+				<width>66</width>
+				<height>194</height>
+				<resize>2</resize>
+				<transparent>true</transparent>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>Grouping Container</name>
+				<x>15</x>
+				<y>209</y>
+				<width>35</width>
+				<height>79</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="symbol" version="2.0.0">
+					<name>DR192-VA-IMG-01</name>
+					<pv_name>$(name):STA</pv_name>
+					<symbols>
+						<symbol>../mks937a/mks937aImg-symbol-34.png</symbol>
+					</symbols>
+					<y>44</y>
+					<width>35</width>
+					<height>35</height>
+					<background_color>
+						<color name="Canvas" red="200" green="200" blue="200"></color>
+					</background_color>
+					<actions>
+						<action type="open_display">
+							<description>Open Display</description>
+							<file>../mks937a/mks937aImg.bob</file>
+							<macros>
+								<device>DR192-VA-IMG-01</device>
+							</macros>
+							<target>standalone</target>
+						</action>
+					</actions>
+					<rules>
+						<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+							<exp bool_exp="pvSev0==3">
+								<expression>0</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+								<expression>0</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+								<expression>1</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+								<expression>2</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+								<expression>3</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+								<expression>4</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+								<expression>5</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+								<expression>6</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+								<expression>7</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+								<expression>8</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+								<expression>9</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=9.0&amp;&amp;pv0&lt;10.0">
+								<expression>10</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=10.0&amp;&amp;pv0&lt;11.0">
+								<expression>11</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=11.0&amp;&amp;pv0&lt;12.0">
+								<expression>12</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=12.0&amp;&amp;pv0&lt;13.0">
+								<expression>13</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=13.0&amp;&amp;pv0&lt;14.0">
+								<expression>14</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=14.0&amp;&amp;pv0&lt;15.0">
+								<expression>15</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=15.0&amp;&amp;pv0&lt;16.0">
+								<expression>16</expression>
+							</exp>
+							<exp bool_exp="true">
+								<expression>0</expression>
+							</exp>
+							<pv_name>$(pv_name)</pv_name>
+						</rule>
+					</rules>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					<border_alarm_sensitive>false</border_alarm_sensitive>
+				</widget>
+				<widget type="symbol" version="2.0.0">
+					<name>DR192-VA-PIRG-01</name>
+					<pv_name>$(name):STA</pv_name>
+					<symbols>
+						<symbol>../mks937a/mks937aPirg-symbol-34.png</symbol>
+					</symbols>
+					<width>35</width>
+					<height>35</height>
+					<background_color>
+						<color name="Canvas" red="200" green="200" blue="200"></color>
+					</background_color>
+					<actions>
+						<action type="open_display">
+							<description>Open Display</description>
+							<file>../mks937a/mks937aPirg.bob</file>
+							<macros>
+								<device>DR192-VA-PIRG-01</device>
+							</macros>
+							<target>standalone</target>
+						</action>
+					</actions>
+					<rules>
+						<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+							<exp bool_exp="pvSev0==3">
+								<expression>0</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+								<expression>0</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+								<expression>1</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+								<expression>2</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+								<expression>3</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+								<expression>4</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+								<expression>5</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+								<expression>6</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+								<expression>7</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+								<expression>8</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+								<expression>9</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=9.0&amp;&amp;pv0&lt;10.0">
+								<expression>10</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=10.0&amp;&amp;pv0&lt;11.0">
+								<expression>11</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=11.0&amp;&amp;pv0&lt;12.0">
+								<expression>12</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=12.0&amp;&amp;pv0&lt;13.0">
+								<expression>13</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=13.0&amp;&amp;pv0&lt;14.0">
+								<expression>14</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=14.0&amp;&amp;pv0&lt;15.0">
+								<expression>15</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=15.0&amp;&amp;pv0&lt;16.0">
+								<expression>16</expression>
+							</exp>
+							<exp bool_exp="true">
+								<expression>0</expression>
+							</exp>
+							<pv_name>$(pv_name)</pv_name>
+						</rule>
+					</rules>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					<border_alarm_sensitive>false</border_alarm_sensitive>
+				</widget>
+			</widget>
+		</widget>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>Rounded Rectangle_2</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>892</x>
+		<y>90</y>
+		<width>165</width>
+		<height>376</height>
+		<line_width>2</line_width>
+		<line_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</line_color>
+		<line_style>1</line_style>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<corner_width>16</corner_width>
+		<corner_height>16</corner_height>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Label_2</name>
+		<text>MPC</text>
+		<x>915</x>
+		<y>59</y>
+		<width>120</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>Grouping Container</name>
+		<x>920</x>
+		<y>128</y>
+		<width>110</width>
+		<height>115</height>
+		<style>3</style>
+		<foreground_color>
+			<color red="0" green="128" blue="255"></color>
+		</foreground_color>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color red="240" green="240" blue="240"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<widget type="symbol" version="2.0.0">
+			<name>DR192-VA-IONP-01</name>
+			<pv_name>$(name):STA</pv_name>
+			<symbols>
+				<symbol>../digitelMpc/digitelMpcIonp-symbol-34.png</symbol>
+			</symbols>
+			<x>75</x>
+			<y>33</y>
+			<width>35</width>
+			<height>35</height>
+			<background_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</background_color>
+			<actions>
+				<action type="open_display">
+					<description>Open Display</description>
+					<file>../digitelMpc/digitelMpcIonp.bob</file>
+					<macros>
+						<device>DR192-VA-IONP-01</device>
+					</macros>
+					<target>standalone</target>
+				</action>
+			</actions>
+			<rules>
+				<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+					<exp bool_exp="pvSev0==3">
+						<expression>0</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+						<expression>0</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+						<expression>1</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+						<expression>2</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+						<expression>3</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+						<expression>4</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+						<expression>5</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+						<expression>6</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+						<expression>7</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+						<expression>8</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+						<expression>9</expression>
+					</exp>
+					<exp bool_exp="true">
+						<expression>0</expression>
+					</exp>
+					<pv_name>$(pv_name)</pv_name>
+				</rule>
+			</rules>
+			<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+		</widget>
+		<widget type="symbol" version="2.0.0">
+			<name>DR192-VA-IONP-02</name>
+			<pv_name>$(name):STA</pv_name>
+			<symbols>
+				<symbol>../digitelMpc/digitelMpcIonp-symbol-34.png</symbol>
+			</symbols>
+			<x>75</x>
+			<y>80</y>
+			<width>35</width>
+			<height>35</height>
+			<background_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</background_color>
+			<actions>
+				<action type="open_display">
+					<description>Open Display</description>
+					<file>../digitelMpc/digitelMpcIonp.bob</file>
+					<macros>
+						<device>DR192-VA-IONP-02</device>
+					</macros>
+					<target>standalone</target>
+				</action>
+			</actions>
+			<rules>
+				<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+					<exp bool_exp="pvSev0==3">
+						<expression>0</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+						<expression>0</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+						<expression>1</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+						<expression>2</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+						<expression>3</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+						<expression>4</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+						<expression>5</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+						<expression>6</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+						<expression>7</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+						<expression>8</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+						<expression>9</expression>
+					</exp>
+					<exp bool_exp="true">
+						<expression>0</expression>
+					</exp>
+					<pv_name>$(pv_name)</pv_name>
+				</rule>
+			</rules>
+			<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+		</widget>
+		<widget type="action_button" version="3.0.0">
+			<name>Action Button</name>
+			<actions execute_as_one="true">
+				<action type="open_display">
+					<description>Open Display</description>
+					<file>../digitelMpc/digitelMpc.bob</file>
+					<macros>
+						<device>DR192-VA-MPC-01</device>
+					</macros>
+					<target>standalone</target>
+				</action>
+			</actions>
+			<text>MPC</text>
+			<x>12</x>
+			<width>98</width>
+			<height>25</height>
+			<foreground_color>
+				<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Button: BG" red="205" green="205" blue="205"></color>
+			</background_color>
+			<tooltip>$(actions)</tooltip>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>Label_3</name>
+			<text>IONP01</text>
+			<y>41</y>
+			<width>76</width>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</background_color>
+			<horizontal_alignment>1</horizontal_alignment>
+			<vertical_alignment>1</vertical_alignment>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>Label_4</name>
+			<text>IONP02</text>
+			<y>88</y>
+			<width>76</width>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</background_color>
+			<horizontal_alignment>1</horizontal_alignment>
+			<vertical_alignment>1</vertical_alignment>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+	</widget>
+</display>

@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>Relay Summary</name>
+	<x>163</x>
+	<y>140</y>
+	<width>314</width>
+	<height>280</height>
+	<background_color>
+		<color name="Wid-alt/Anno-sec" red="174" green="174" blue="174"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>8</grid_step_x>
+	<grid_step_y>8</grid_step_y>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>SR$(cell)C mks937b Relay Summary</text>
+		<width>314</width>
+		<height>48</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="VA title" red="202" green="223" blue="159"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM Exit Button</name>
+		<actions>
+			<action type="close_display">
+				<description>Close display</description>
+			</action>
+		</actions>
+		<text>Exit</text>
+		<x>249</x>
+		<y>254</y>
+		<width>65</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Exit: FG" red="196" green="0" blue="196"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>Grouping Container</name>
+		<macros>
+			<id>01</id>
+			<g>$(straight1)</g>
+			<GCTLR>SR$(cell)$(g)-VA-GCTLR-$(id)</GCTLR>
+		</macros>
+		<x>45</x>
+		<y>84</y>
+		<width>224</width>
+		<height>20</height>
+		<style>3</style>
+		<foreground_color>
+			<color red="0" green="128" blue="255"></color>
+		</foreground_color>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color red="240" green="240" blue="240"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<widget type="multi_state_led" version="2.0.0">
+			<name>$(GCTLR)</name>
+			<pv_name>$(name):RLY_STAT</pv_name>
+			<x>190</x>
+			<foreground_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<line_color>
+				<color red="150" green="150" blue="150"></color>
+			</line_color>
+			<actions>
+				<action type="open_display">
+					<description>Open Display</description>
+					<file>../rackComponents/gaugeControllerIO.opi</file>
+					<target>standalone</target>
+				</action>
+			</actions>
+			<rules>
+				<rule name="FlashWhenForcedOn" prop_id="state_color_0" out_exp="false">
+					<exp bool_exp="pv0==0">
+						<value>
+							<color name="Yellow LED: On" red="255" green="255" blue="0"></color>
+						</value>
+					</exp>
+					<exp bool_exp="pv0==1">
+						<value>
+							<color name="Yellow LED: Off" red="96" green="96" blue="0"></color>
+						</value>
+					</exp>
+					<pv_name>sim://ramp(0,1,1,0.5)</pv_name>
+				</rule>
+				<rule name="FlashWhenForcedOff" prop_id="state_color_1" out_exp="false">
+					<exp bool_exp="pv0==0">
+						<value>
+							<color name="Yellow LED: On" red="255" green="255" blue="0"></color>
+						</value>
+					</exp>
+					<exp bool_exp="pv0==1">
+						<value>
+							<color name="Yellow LED: Off" red="96" green="96" blue="0"></color>
+						</value>
+					</exp>
+					<pv_name>sim://ramp(0,1,1,0.5)</pv_name>
+				</rule>
+			</rules>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<states>
+				<state>
+					<value>0</value>
+					<label></label>
+					<color>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</color>
+				</state>
+				<state>
+					<value>1</value>
+					<label></label>
+					<color>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</color>
+				</state>
+				<state>
+					<value>2</value>
+					<label></label>
+					<color>
+						<color name="Green LED: On" red="0" green="255" blue="0"></color>
+					</color>
+				</state>
+			</states>
+			<fallback_label>ERR</fallback_label>
+			<fallback_color>
+				<color red="100" green="100" blue="100"></color>
+			</fallback_color>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>Label</name>
+			<text>$(GCTLR)</text>
+			<width>191</width>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</background_color>
+			<vertical_alignment>1</vertical_alignment>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>Grouping Container_1</name>
+		<macros>
+			<id>01</id>
+			<g>S</g>
+			<GCTLR>SR$(cell)$(g)-VA-GCTLR-$(id)</GCTLR>
+		</macros>
+		<x>45</x>
+		<y>109</y>
+		<width>224</width>
+		<height>20</height>
+		<style>3</style>
+		<foreground_color>
+			<color red="0" green="128" blue="255"></color>
+		</foreground_color>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color red="240" green="240" blue="240"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<widget type="multi_state_led" version="2.0.0">
+			<name>$(GCTLR)</name>
+			<pv_name>$(name):RLY_STAT</pv_name>
+			<x>190</x>
+			<foreground_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<line_color>
+				<color red="150" green="150" blue="150"></color>
+			</line_color>
+			<actions>
+				<action type="open_display">
+					<description>Open Display</description>
+					<file>../rackComponents/gaugeControllerIO.opi</file>
+					<target>standalone</target>
+				</action>
+			</actions>
+			<rules>
+				<rule name="FlashWhenForcedOn" prop_id="state_color_0" out_exp="false">
+					<exp bool_exp="pv0==0">
+						<value>
+							<color name="Yellow LED: On" red="255" green="255" blue="0"></color>
+						</value>
+					</exp>
+					<exp bool_exp="pv0==1">
+						<value>
+							<color name="Yellow LED: Off" red="96" green="96" blue="0"></color>
+						</value>
+					</exp>
+					<pv_name>sim://ramp(0,1,1,0.5)</pv_name>
+				</rule>
+				<rule name="FlashWhenForcedOff" prop_id="state_color_1" out_exp="false">
+					<exp bool_exp="pv0==0">
+						<value>
+							<color name="Yellow LED: On" red="255" green="255" blue="0"></color>
+						</value>
+					</exp>
+					<exp bool_exp="pv0==1">
+						<value>
+							<color name="Yellow LED: Off" red="96" green="96" blue="0"></color>
+						</value>
+					</exp>
+					<pv_name>sim://ramp(0,1,1,0.5)</pv_name>
+				</rule>
+			</rules>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<states>
+				<state>
+					<value>0</value>
+					<label></label>
+					<color>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</color>
+				</state>
+				<state>
+					<value>1</value>
+					<label></label>
+					<color>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</color>
+				</state>
+				<state>
+					<value>2</value>
+					<label></label>
+					<color>
+						<color name="Green LED: On" red="0" green="255" blue="0"></color>
+					</color>
+				</state>
+			</states>
+			<fallback_label>ERR</fallback_label>
+			<fallback_color>
+				<color red="100" green="100" blue="100"></color>
+			</fallback_color>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>Label</name>
+			<text>$(GCTLR)</text>
+			<width>191</width>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</background_color>
+			<vertical_alignment>1</vertical_alignment>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>Grouping Container_2</name>
+		<macros>
+			<id>01</id>
+			<g>A</g>
+			<GCTLR>SR$(cell)$(g)-VA-GCTLR-$(id)</GCTLR>
+		</macros>
+		<x>45</x>
+		<y>134</y>
+		<width>224</width>
+		<height>20</height>
+		<style>3</style>
+		<foreground_color>
+			<color red="0" green="128" blue="255"></color>
+		</foreground_color>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color red="240" green="240" blue="240"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<widget type="multi_state_led" version="2.0.0">
+			<name>$(GCTLR)</name>
+			<pv_name>$(name):RLY_STAT</pv_name>
+			<x>190</x>
+			<foreground_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<line_color>
+				<color red="150" green="150" blue="150"></color>
+			</line_color>
+			<actions>
+				<action type="open_display">
+					<description>Open Display</description>
+					<file>../rackComponents/gaugeControllerIO.opi</file>
+					<target>standalone</target>
+				</action>
+			</actions>
+			<rules>
+				<rule name="FlashWhenForcedOn" prop_id="state_color_0" out_exp="false">
+					<exp bool_exp="pv0==0">
+						<value>
+							<color name="Yellow LED: On" red="255" green="255" blue="0"></color>
+						</value>
+					</exp>
+					<exp bool_exp="pv0==1">
+						<value>
+							<color name="Yellow LED: Off" red="96" green="96" blue="0"></color>
+						</value>
+					</exp>
+					<pv_name>sim://ramp(0,1,1,0.5)</pv_name>
+				</rule>
+				<rule name="FlashWhenForcedOff" prop_id="state_color_1" out_exp="false">
+					<exp bool_exp="pv0==0">
+						<value>
+							<color name="Yellow LED: On" red="255" green="255" blue="0"></color>
+						</value>
+					</exp>
+					<exp bool_exp="pv0==1">
+						<value>
+							<color name="Yellow LED: Off" red="96" green="96" blue="0"></color>
+						</value>
+					</exp>
+					<pv_name>sim://ramp(0,1,1,0.5)</pv_name>
+				</rule>
+			</rules>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<states>
+				<state>
+					<value>0</value>
+					<label></label>
+					<color>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</color>
+				</state>
+				<state>
+					<value>1</value>
+					<label></label>
+					<color>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</color>
+				</state>
+				<state>
+					<value>2</value>
+					<label></label>
+					<color>
+						<color name="Green LED: On" red="0" green="255" blue="0"></color>
+					</color>
+				</state>
+			</states>
+			<fallback_label>ERR</fallback_label>
+			<fallback_color>
+				<color red="100" green="100" blue="100"></color>
+			</fallback_color>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>Label</name>
+			<text>$(GCTLR)</text>
+			<width>191</width>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</background_color>
+			<vertical_alignment>1</vertical_alignment>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>Grouping Container_3</name>
+		<macros>
+			<id>01</id>
+			<g>$(straight2)</g>
+			<GCTLR>SR$(cell)$(g)-VA-GCTLR-$(id)</GCTLR>
+		</macros>
+		<x>45</x>
+		<y>159</y>
+		<width>224</width>
+		<height>20</height>
+		<style>3</style>
+		<foreground_color>
+			<color red="0" green="128" blue="255"></color>
+		</foreground_color>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color red="240" green="240" blue="240"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<widget type="multi_state_led" version="2.0.0">
+			<name>$(GCTLR)</name>
+			<pv_name>$(name):RLY_STAT</pv_name>
+			<x>190</x>
+			<foreground_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<line_color>
+				<color red="150" green="150" blue="150"></color>
+			</line_color>
+			<actions>
+				<action type="open_display">
+					<description>Open Display</description>
+					<file>../rackComponents/gaugeControllerIO.opi</file>
+					<target>standalone</target>
+				</action>
+			</actions>
+			<rules>
+				<rule name="FlashWhenForcedOn" prop_id="state_color_0" out_exp="false">
+					<exp bool_exp="pv0==0">
+						<value>
+							<color name="Yellow LED: On" red="255" green="255" blue="0"></color>
+						</value>
+					</exp>
+					<exp bool_exp="pv0==1">
+						<value>
+							<color name="Yellow LED: Off" red="96" green="96" blue="0"></color>
+						</value>
+					</exp>
+					<pv_name>sim://ramp(0,1,1,0.5)</pv_name>
+				</rule>
+				<rule name="FlashWhenForcedOff" prop_id="state_color_1" out_exp="false">
+					<exp bool_exp="pv0==0">
+						<value>
+							<color name="Yellow LED: On" red="255" green="255" blue="0"></color>
+						</value>
+					</exp>
+					<exp bool_exp="pv0==1">
+						<value>
+							<color name="Yellow LED: Off" red="96" green="96" blue="0"></color>
+						</value>
+					</exp>
+					<pv_name>sim://ramp(0,1,1,0.5)</pv_name>
+				</rule>
+			</rules>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<states>
+				<state>
+					<value>0</value>
+					<label></label>
+					<color>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</color>
+				</state>
+				<state>
+					<value>1</value>
+					<label></label>
+					<color>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</color>
+				</state>
+				<state>
+					<value>2</value>
+					<label></label>
+					<color>
+						<color name="Green LED: On" red="0" green="255" blue="0"></color>
+					</color>
+				</state>
+			</states>
+			<fallback_label>ERR</fallback_label>
+			<fallback_color>
+				<color red="100" green="100" blue="100"></color>
+			</fallback_color>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>Label</name>
+			<text>$(GCTLR)</text>
+			<width>191</width>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</background_color>
+			<vertical_alignment>1</vertical_alignment>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>Grouping Container_4</name>
+		<macros>
+			<id>02</id>
+			<g>A</g>
+			<GCTLR>SR$(cell)$(g)-VA-GCTLR-$(id)</GCTLR>
+		</macros>
+		<x>45</x>
+		<y>184</y>
+		<width>224</width>
+		<height>20</height>
+		<style>3</style>
+		<foreground_color>
+			<color red="0" green="128" blue="255"></color>
+		</foreground_color>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color red="240" green="240" blue="240"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<widget type="multi_state_led" version="2.0.0">
+			<name>$(GCTLR)</name>
+			<pv_name>$(name):RLY_STAT</pv_name>
+			<x>190</x>
+			<foreground_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<line_color>
+				<color red="150" green="150" blue="150"></color>
+			</line_color>
+			<actions>
+				<action type="open_display">
+					<description>Open Display</description>
+					<file>../rackComponents/gaugeControllerIO.opi</file>
+					<target>standalone</target>
+				</action>
+			</actions>
+			<rules>
+				<rule name="FlashWhenForcedOn" prop_id="state_color_0" out_exp="false">
+					<exp bool_exp="pv0==0">
+						<value>
+							<color name="Yellow LED: On" red="255" green="255" blue="0"></color>
+						</value>
+					</exp>
+					<exp bool_exp="pv0==1">
+						<value>
+							<color name="Yellow LED: Off" red="96" green="96" blue="0"></color>
+						</value>
+					</exp>
+					<pv_name>sim://ramp(0,1,1,0.5)</pv_name>
+				</rule>
+				<rule name="FlashWhenForcedOff" prop_id="state_color_1" out_exp="false">
+					<exp bool_exp="pv0==0">
+						<value>
+							<color name="Yellow LED: On" red="255" green="255" blue="0"></color>
+						</value>
+					</exp>
+					<exp bool_exp="pv0==1">
+						<value>
+							<color name="Yellow LED: Off" red="96" green="96" blue="0"></color>
+						</value>
+					</exp>
+					<pv_name>sim://ramp(0,1,1,0.5)</pv_name>
+				</rule>
+			</rules>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<states>
+				<state>
+					<value>0</value>
+					<label></label>
+					<color>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</color>
+				</state>
+				<state>
+					<value>1</value>
+					<label></label>
+					<color>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</color>
+				</state>
+				<state>
+					<value>2</value>
+					<label></label>
+					<color>
+						<color name="Green LED: On" red="0" green="255" blue="0"></color>
+					</color>
+				</state>
+			</states>
+			<fallback_label>ERR</fallback_label>
+			<fallback_color>
+				<color red="100" green="100" blue="100"></color>
+			</fallback_color>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>Label</name>
+			<text>$(GCTLR)</text>
+			<width>191</width>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</background_color>
+			<vertical_alignment>1</vertical_alignment>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>Grouping Container_5</name>
+		<macros>
+			<id>03</id>
+			<g>A</g>
+			<GCTLR>SR$(cell)$(g)-VA-GCTLR-$(id)</GCTLR>
+		</macros>
+		<x>45</x>
+		<y>209</y>
+		<width>224</width>
+		<height>20</height>
+		<style>3</style>
+		<foreground_color>
+			<color red="0" green="128" blue="255"></color>
+		</foreground_color>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color red="240" green="240" blue="240"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<widget type="multi_state_led" version="2.0.0">
+			<name>$(GCTLR)</name>
+			<pv_name>$(name):RLY_STAT</pv_name>
+			<x>190</x>
+			<foreground_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<line_color>
+				<color red="150" green="150" blue="150"></color>
+			</line_color>
+			<actions>
+				<action type="open_display">
+					<description>Open Display</description>
+					<file>../rackComponents/gaugeControllerIO.opi</file>
+					<target>standalone</target>
+				</action>
+			</actions>
+			<rules>
+				<rule name="FlashWhenForcedOn" prop_id="state_color_0" out_exp="false">
+					<exp bool_exp="pv0==0">
+						<value>
+							<color name="Yellow LED: On" red="255" green="255" blue="0"></color>
+						</value>
+					</exp>
+					<exp bool_exp="pv0==1">
+						<value>
+							<color name="Yellow LED: Off" red="96" green="96" blue="0"></color>
+						</value>
+					</exp>
+					<pv_name>sim://ramp(0,1,1,0.5)</pv_name>
+				</rule>
+				<rule name="FlashWhenForcedOff" prop_id="state_color_1" out_exp="false">
+					<exp bool_exp="pv0==0">
+						<value>
+							<color name="Yellow LED: On" red="255" green="255" blue="0"></color>
+						</value>
+					</exp>
+					<exp bool_exp="pv0==1">
+						<value>
+							<color name="Yellow LED: Off" red="96" green="96" blue="0"></color>
+						</value>
+					</exp>
+					<pv_name>sim://ramp(0,1,1,0.5)</pv_name>
+				</rule>
+			</rules>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<states>
+				<state>
+					<value>0</value>
+					<label></label>
+					<color>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</color>
+				</state>
+				<state>
+					<value>1</value>
+					<label></label>
+					<color>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</color>
+				</state>
+				<state>
+					<value>2</value>
+					<label></label>
+					<color>
+						<color name="Green LED: On" red="0" green="255" blue="0"></color>
+					</color>
+				</state>
+			</states>
+			<fallback_label>ERR</fallback_label>
+			<fallback_color>
+				<color red="100" green="100" blue="100"></color>
+			</fallback_color>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>Label</name>
+			<text>$(GCTLR)</text>
+			<width>191</width>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</background_color>
+			<vertical_alignment>1</vertical_alignment>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+	</widget>
+</display>

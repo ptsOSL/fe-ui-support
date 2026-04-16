@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>$(dom)</name>
+	<x>543</x>
+	<y>581</y>
+	<width>1000</width>
+	<height>200</height>
+	<background_color>
+		<color name="Canvas" red="200" green="200" blue="200"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>8</grid_step_x>
+	<grid_step_y>8</grid_step_y>
+	<widget type="rectangle" version="2.0.0">
+		<name>Rectangle_2</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<y>9</y>
+		<width>305</width>
+		<height>118</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>$(dom)-CS-IOC-01</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>fe-ui-support/bob/procServControl/procServControl.bob</file>
+				<macros>
+					<PROCSERV>$(name)</PROCSERV>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>$(name)</text>
+		<x>105</x>
+		<y>25</y>
+		<width>155</width>
+		<height>25</height>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Button: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Label</name>
+		<text>CS (main)</text>
+		<x>16</x>
+		<y>28</y>
+		<width>90</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>$(dom)-MO-IOC-01</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>fe-ui-support/bob/procServControl/procServControl.bob</file>
+				<macros>
+					<PROCSERV>$(name)</PROCSERV>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>$(name)</text>
+		<x>105</x>
+		<y>55</y>
+		<width>155</width>
+		<height>25</height>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Button: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Label</name>
+		<text>MO (motion)</text>
+		<x>16</x>
+		<y>58</y>
+		<width>90</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>$(dom)-PY-IOC-01</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>fe-ui-support/bob/procServControl/procServControl.bob</file>
+				<macros>
+					<PROCSERV>$(name)</PROCSERV>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text>$(name)</text>
+		<x>105</x>
+		<y>85</y>
+		<width>155</width>
+		<height>25</height>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Button: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Label</name>
+		<text>PY (Seq)</text>
+		<x>16</x>
+		<y>88</y>
+		<width>90</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Label_5</name>
+		<text>Procserv</text>
+		<width>105</width>
+		<height>18</height>
+		<foreground_color>
+			<color name="Invalid" red="255" green="255" blue="255"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+</display>

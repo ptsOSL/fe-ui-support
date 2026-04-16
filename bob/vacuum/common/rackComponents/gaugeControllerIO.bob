@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>SR Cell - Insertion Device - Vacuum Control Racks</name>
+	<x>163</x>
+	<y>140</y>
+	<width>725</width>
+	<height>510</height>
+	<background_color>
+		<color name="Wid-alt/Anno-sec" red="174" green="174" blue="174"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>8</grid_step_x>
+	<grid_step_y>8</grid_step_y>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>$(GCTLR) PLC IO</text>
+		<width>725</width>
+		<height>48</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="VA title" red="202" green="223" blue="159"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM Exit Button</name>
+		<actions>
+			<action type="close_display">
+				<description>Close display</description>
+			</action>
+		</actions>
+		<text>Exit</text>
+		<x>644</x>
+		<y>474</y>
+		<width>65</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Exit: FG" red="196" green="0" blue="196"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>Channel 1</name>
+		<x>14</x>
+		<y>58</y>
+		<width>343</width>
+		<height>399</height>
+		<widget type="embedded" version="2.0.0">
+			<name>Channel 1_Content</name>
+			<macros>
+				<chan>1</chan>
+				<rly1>1</rly1>
+				<rly2>2</rly2>
+				<rly3>3</rly3>
+				<rly4>4</rly4>
+				<rly5>9</rly5>
+				<rly6>10</rly6>
+				<label>Channel $(chan)</label>
+			</macros>
+			<file>gaugeControllerChannelIO.bob</file>
+			<width>313</width>
+			<height>369</height>
+			<resize>2</resize>
+			<transparent>true</transparent>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>Channel 2</name>
+		<x>366</x>
+		<y>58</y>
+		<width>343</width>
+		<height>399</height>
+		<widget type="embedded" version="2.0.0">
+			<name>Channel 2_Content</name>
+			<macros>
+				<chan>2</chan>
+				<rly1>5</rly1>
+				<rly2>6</rly2>
+				<rly3>7</rly3>
+				<rly4>8</rly4>
+				<rly5>11</rly5>
+				<rly6>12</rly6>
+				<label>Channel $(chan)</label>
+			</macros>
+			<file>gaugeControllerChannelIO.bob</file>
+			<width>313</width>
+			<height>369</height>
+			<resize>2</resize>
+			<transparent>true</transparent>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+	</widget>
+</display>

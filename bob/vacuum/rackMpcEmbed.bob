@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>SR Cell - Insertion Device - Vacuum Control Racks</name>
+	<x>163</x>
+	<y>140</y>
+	<width>256</width>
+	<height>48</height>
+	<background_color>
+		<color name="Wid-alt/Anno-sec" red="174" green="174" blue="174"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>8</grid_step_x>
+	<grid_step_y>8</grid_step_y>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>$(MPC)</text>
+		<width>250</width>
+		<height>48</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="2.0.0">
+		<name>EDM related display</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<width>250</width>
+		<height>48</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../digitelMpc/digitelMpc.opi</file>
+				<macros>
+					<device>$(MPC)</device>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		<text></text>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>9</name>
+		<x>10</x>
+		<y>8</y>
+		<width>33</width>
+		<height>33</height>
+		<style>3</style>
+		<foreground_color>
+			<color red="0" green="128" blue="255"></color>
+		</foreground_color>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color red="240" green="240" blue="240"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<widget type="rectangle" version="2.0.0">
+			<name>EDM Rectangle</name>
+			<macros>
+				<pv_name></pv_name>
+			</macros>
+			<width>33</width>
+			<height>33</height>
+			<line_width>0</line_width>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color name="Grey 90%" red="230" green="230" blue="230"></color>
+			</background_color>
+			<actions></actions>
+			<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		</widget>
+		<widget type="polyline" version="2.0.0">
+			<name>EDM Line</name>
+			<macros>
+				<pv_name></pv_name>
+			</macros>
+			<x>8</x>
+			<width>1</width>
+			<height>33</height>
+			<points>
+				<point x="0.0" y="0.0"></point>
+				<point x="0.0" y="32.0"></point>
+			</points>
+			<line_width>1</line_width>
+			<line_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</line_color>
+			<actions></actions>
+			<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		</widget>
+		<widget type="polyline" version="2.0.0">
+			<name>EDM Line</name>
+			<macros>
+				<pv_name></pv_name>
+			</macros>
+			<x>16</x>
+			<width>1</width>
+			<height>33</height>
+			<points>
+				<point x="0.0" y="0.0"></point>
+				<point x="0.0" y="32.0"></point>
+			</points>
+			<line_width>1</line_width>
+			<line_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</line_color>
+			<actions></actions>
+			<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		</widget>
+		<widget type="polyline" version="2.0.0">
+			<name>EDM Line</name>
+			<macros>
+				<pv_name></pv_name>
+			</macros>
+			<x>24</x>
+			<width>1</width>
+			<height>33</height>
+			<points>
+				<point x="0.0" y="0.0"></point>
+				<point x="0.0" y="32.0"></point>
+			</points>
+			<line_width>1</line_width>
+			<line_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</line_color>
+			<actions></actions>
+			<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		</widget>
+		<widget type="polyline" version="2.0.0">
+			<name>EDM Line</name>
+			<macros>
+				<pv_name></pv_name>
+			</macros>
+			<y>8</y>
+			<width>33</width>
+			<height>1</height>
+			<points>
+				<point x="0.0" y="0.0"></point>
+				<point x="32.0" y="0.0"></point>
+			</points>
+			<line_width>1</line_width>
+			<line_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</line_color>
+			<actions></actions>
+			<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		</widget>
+		<widget type="polyline" version="2.0.0">
+			<name>EDM Line</name>
+			<macros>
+				<pv_name></pv_name>
+			</macros>
+			<y>16</y>
+			<width>33</width>
+			<height>1</height>
+			<points>
+				<point x="0.0" y="0.0"></point>
+				<point x="32.0" y="0.0"></point>
+			</points>
+			<line_width>1</line_width>
+			<line_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</line_color>
+			<actions></actions>
+			<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		</widget>
+		<widget type="polyline" version="2.0.0">
+			<name>EDM Line</name>
+			<macros>
+				<pv_name></pv_name>
+			</macros>
+			<y>24</y>
+			<width>33</width>
+			<height>1</height>
+			<points>
+				<point x="0.0" y="0.0"></point>
+				<point x="32.0" y="0.0"></point>
+			</points>
+			<line_width>1</line_width>
+			<line_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</line_color>
+			<actions></actions>
+			<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		</widget>
+	</widget>
+</display>

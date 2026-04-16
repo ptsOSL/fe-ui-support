@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>SR Cell - Insertion Device - Vacuum Control Racks</name>
+	<x>1105</x>
+	<y>140</y>
+	<width>1239</width>
+	<height>816</height>
+	<background_color>
+		<color name="Wid-alt/Anno-sec" red="174" green="174" blue="174"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>8</grid_step_x>
+	<grid_step_y>8</grid_step_y>
+	<widget type="embedded" version="2.0.0">
+		<name>Linking Container</name>
+		<file>srVacRackD2.bob</file>
+		<width>1939</width>
+		<height>818</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Linking Container_2</name>
+		<macros>
+			<proxy_port>8027</proxy_port>
+			<device>SR$(cell)C-VA-TSERV-02</device>
+		</macros>
+		<file>common/rackComponents/tservk8s.bob</file>
+		<x>504</x>
+		<y>192</y>
+		<width>257</width>
+		<height>18</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Linking Container_4</name>
+		<macros>
+			<proxy_port>8026</proxy_port>
+			<device>SR$(cell)C-VA-TSERV-01</device>
+		</macros>
+		<file>common/rackComponents/tservk8s.bob</file>
+		<x>88</x>
+		<y>160</y>
+		<width>257</width>
+		<height>18</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+</display>

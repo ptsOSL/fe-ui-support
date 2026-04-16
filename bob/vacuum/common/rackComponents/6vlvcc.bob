@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>SR Cell - Insertion Device - Vacuum Control Racks</name>
+	<x>163</x>
+	<y>140</y>
+	<width>256</width>
+	<height>81</height>
+	<background_color>
+		<color name="Wid-alt/Anno-sec" red="174" green="174" blue="174"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>8</grid_step_x>
+	<grid_step_y>8</grid_step_y>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle_57</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<width>256</width>
+		<height>81</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>6 VALVE CONTROL CRATE
+$(dom)-VA-VLVCC-$(id)</text>
+		<width>256</width>
+		<height>81</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="led" version="2.0.0">
+		<name>LED</name>
+		<pv_name>$(dom)-VA-VLVCC-01:PLCHEALTHY</pv_name>
+		<x>12</x>
+		<y>31</y>
+		<off_color>
+			<color name="Red LED: On" red="255" green="0" blue="0"></color>
+		</off_color>
+		<on_color>
+			<color name="Green LED: On" red="0" green="255" blue="0"></color>
+		</on_color>
+		<foreground_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<line_color>
+			<color red="150" green="150" blue="150"></color>
+		</line_color>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../../../dlsPLC/NX102_controller_status_standalone.opi</file>
+				<macros>
+					<device>$(dom)-VA-VLVCC-01</device>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+</display>

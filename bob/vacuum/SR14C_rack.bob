@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>SR Cell - Insertion Device - Vacuum Control Racks</name>
+	<x>1105</x>
+	<y>140</y>
+	<width>1239</width>
+	<height>816</height>
+	<background_color>
+		<color name="Wid-alt/Anno-sec" red="174" green="174" blue="174"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>8</grid_step_x>
+	<grid_step_y>8</grid_step_y>
+	<widget type="embedded" version="2.0.0">
+		<name>Linking Container</name>
+		<file>srVacRackD2.bob</file>
+		<width>1939</width>
+		<height>818</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>Grouping Container_96</name>
+		<macros>
+			<id>07</id>
+			<g>A</g>
+			<dom>$(prefix)$(cell)$(g)</dom>
+		</macros>
+		<x>465</x>
+		<y>513</y>
+		<width>20</width>
+		<height>20</height>
+		<style>3</style>
+		<foreground_color>
+			<color red="0" green="128" blue="255"></color>
+		</foreground_color>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color red="240" green="240" blue="240"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<widget type="symbol" version="2.0.0">
+			<name>$(dom)-VA-IONP-$(id)</name>
+			<pv_name>$(dom)-VA-IONP-$(id):STA</pv_name>
+			<symbols>
+				<symbol>../digitelMpc/digitelMpcIonp-symbol-34.png</symbol>
+			</symbols>
+			<width>20</width>
+			<height>20</height>
+			<background_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</background_color>
+			<actions>
+				<action type="open_display">
+					<description>Open Display</description>
+					<file>../QPC/QPCionp_detail.bob</file>
+					<macros>
+						<device>$(dom)-VA-IONP-$(id)</device>
+					</macros>
+					<target>standalone</target>
+				</action>
+			</actions>
+			<rules>
+				<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+					<exp bool_exp="pvSev0==3">
+						<expression>0</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+						<expression>0</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+						<expression>1</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+						<expression>2</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+						<expression>3</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+						<expression>4</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+						<expression>5</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+						<expression>6</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+						<expression>7</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+						<expression>8</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+						<expression>9</expression>
+					</exp>
+					<exp bool_exp="true">
+						<expression>0</expression>
+					</exp>
+					<pv_name>$(pv_name)</pv_name>
+				</rule>
+			</rules>
+			<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+		</widget>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>Grouping Container_97</name>
+		<macros>
+			<id>08</id>
+			<g>A</g>
+			<dom>$(prefix)$(cell)$(g)</dom>
+		</macros>
+		<x>465</x>
+		<y>542</y>
+		<width>20</width>
+		<height>20</height>
+		<style>3</style>
+		<foreground_color>
+			<color red="0" green="128" blue="255"></color>
+		</foreground_color>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color red="240" green="240" blue="240"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<widget type="symbol" version="2.0.0">
+			<name>$(dom)-VA-IONP-$(id)</name>
+			<pv_name>$(dom)-VA-IONP-$(id):STA</pv_name>
+			<symbols>
+				<symbol>../digitelMpc/digitelMpcIonp-symbol-34.png</symbol>
+			</symbols>
+			<width>20</width>
+			<height>20</height>
+			<background_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</background_color>
+			<actions>
+				<action type="open_display">
+					<description>Open Display</description>
+					<file>../QPC/QPCionp_detail.bob</file>
+					<macros>
+						<device>$(dom)-VA-IONP-$(id)</device>
+					</macros>
+					<target>standalone</target>
+				</action>
+			</actions>
+			<rules>
+				<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+					<exp bool_exp="pvSev0==3">
+						<expression>0</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+						<expression>0</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+						<expression>1</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+						<expression>2</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+						<expression>3</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+						<expression>4</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+						<expression>5</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+						<expression>6</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+						<expression>7</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+						<expression>8</expression>
+					</exp>
+					<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+						<expression>9</expression>
+					</exp>
+					<exp bool_exp="true">
+						<expression>0</expression>
+					</exp>
+					<pv_name>$(pv_name)</pv_name>
+				</rule>
+			</rules>
+			<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+		</widget>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>Grouping Container_37</name>
+		<macros>
+			<dom>$(prefix)$(cell)A</dom>
+			<id>04</id>
+		</macros>
+		<x>503</x>
+		<y>513</y>
+		<width>256</width>
+		<height>49</height>
+		<style>3</style>
+		<foreground_color>
+			<color red="0" green="128" blue="255"></color>
+		</foreground_color>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color red="240" green="240" blue="240"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<widget type="rectangle" version="2.0.0">
+			<name>EDM Rectangle</name>
+			<macros>
+				<pv_name></pv_name>
+			</macros>
+			<width>257</width>
+			<height>49</height>
+			<line_width>0</line_width>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color name="Grey 75%" red="192" green="192" blue="192"></color>
+			</background_color>
+			<actions></actions>
+			<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>EDM Label</name>
+			<text>$(dom)-VA-MPC-$(id) (QPC)</text>
+			<x>80</x>
+			<y>1</y>
+			<width>177</width>
+			<height>48</height>
+			<font>
+				<font family="liberation sans" style="REGULAR" size="12.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Grey 75%" red="192" green="192" blue="192"></color>
+			</background_color>
+			<vertical_alignment>1</vertical_alignment>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="action_button" version="3.0.0">
+			<name>Action Button</name>
+			<actions execute_as_one="true">
+				<action type="open_display">
+					<description>Open Display</description>
+					<file>../QPC/digitelQpc.bob</file>
+					<macros>
+						<device>$(dom)-VA-MPC-$(id)</device>
+					</macros>
+					<target>standalone</target>
+				</action>
+			</actions>
+			<text>EPICS</text>
+			<x>9</x>
+			<y>12</y>
+			<width>50</width>
+			<height>25</height>
+			<foreground_color>
+				<color name="Controller: FG" red="0" green="0" blue="196"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Button: BG" red="205" green="205" blue="205"></color>
+			</background_color>
+			<tooltip>$(actions)</tooltip>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+		</widget>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Linking Container_4</name>
+		<macros>
+			<proxy_port>8026</proxy_port>
+			<device>SR$(cell)C-VA-TSERV-01</device>
+		</macros>
+		<file>common/rackComponents/tservk8s.bob</file>
+		<x>88</x>
+		<y>160</y>
+		<width>257</width>
+		<height>18</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Linking Container_2</name>
+		<macros>
+			<proxy_port>8027</proxy_port>
+			<device>SR$(cell)C-VA-TSERV-02</device>
+		</macros>
+		<file>common/rackComponents/tservk8s.bob</file>
+		<x>504</x>
+		<y>192</y>
+		<width>257</width>
+		<height>18</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+</display>

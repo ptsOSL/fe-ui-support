@@ -141,11 +141,11 @@
 		<actions>
 			<action type="open_display">
 				<description>Open Display</description>
-				<file>temperature-config.bob</file>
+				<file>./temperature-config.bob</file>
 				<macros>
 					<temp>$(temp)</temp>
 				</macros>
-				<target>window</target>
+				<target>standalone</target>
 			</action>
 		</actions>
 		<text>$(label):</text>

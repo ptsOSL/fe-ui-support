@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>$(P)</name>
+	<width>950</width>
+	<height>500</height>
+	<background_color>
+		<color name="Canvas" red="200" green="200" blue="200"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>5</grid_step_x>
+	<grid_step_y>5</grid_step_y>
+	<widget type="embedded" version="2.0.0">
+		<name>auto(TSERV.NT1_top)</name>
+		<file>../terminalServer/terminalServer.bob</file>
+		<width>916</width>
+		<height>92</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>auto(TSERV.NT1_1)</name>
+		<macros>
+			<CHAN>1</CHAN>
+			<name>TSERV.NT1_1</name>
+		</macros>
+		<file>../terminalServer/terminalServerChannel.bob</file>
+		<y>95</y>
+		<width>947</width>
+		<height>23</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>auto(TSERV.NT1_2)</name>
+		<macros>
+			<CHAN>2</CHAN>
+			<name>TSERV.NT1_2</name>
+		</macros>
+		<file>../terminalServer/terminalServerChannel.bob</file>
+		<y>120</y>
+		<width>947</width>
+		<height>23</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>auto(TSERV.NT1_3)</name>
+		<macros>
+			<CHAN>3</CHAN>
+			<name>TSERV.NT1_3</name>
+		</macros>
+		<file>../terminalServer/terminalServerChannel.bob</file>
+		<y>145</y>
+		<width>947</width>
+		<height>23</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>auto(TSERV.NT1_4)</name>
+		<macros>
+			<CHAN>4</CHAN>
+			<name>TSERV.NT1_4</name>
+		</macros>
+		<file>../terminalServer/terminalServerChannel.bob</file>
+		<y>170</y>
+		<width>947</width>
+		<height>23</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>auto(TSERV.NT1_5)</name>
+		<macros>
+			<CHAN>5</CHAN>
+			<name>TSERV.NT1_5</name>
+		</macros>
+		<file>../terminalServer/terminalServerChannel.bob</file>
+		<y>195</y>
+		<width>947</width>
+		<height>23</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>auto(TSERV.NT1_6)</name>
+		<macros>
+			<CHAN>6</CHAN>
+			<name>TSERV.NT1_6</name>
+		</macros>
+		<file>../terminalServer/terminalServerChannel.bob</file>
+		<y>220</y>
+		<width>947</width>
+		<height>23</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>auto(TSERV.NT1_7)</name>
+		<macros>
+			<CHAN>7</CHAN>
+			<name>TSERV.NT1_7</name>
+		</macros>
+		<file>../terminalServer/terminalServerChannel.bob</file>
+		<y>245</y>
+		<width>947</width>
+		<height>23</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>auto(TSERV.NT1_8)</name>
+		<macros>
+			<CHAN>8</CHAN>
+			<name>TSERV.NT1_8</name>
+		</macros>
+		<file>../terminalServer/terminalServerChannel.bob</file>
+		<y>270</y>
+		<width>947</width>
+		<height>23</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>auto(TSERV.NT1_9)</name>
+		<macros>
+			<CHAN>9</CHAN>
+			<name>TSERV.NT1_9</name>
+		</macros>
+		<file>../terminalServer/terminalServerChannel.bob</file>
+		<y>295</y>
+		<width>947</width>
+		<height>23</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>auto(TSERV.NT1_10)</name>
+		<macros>
+			<CHAN>10</CHAN>
+			<name>TSERV.NT1_10</name>
+		</macros>
+		<file>../terminalServer/terminalServerChannel.bob</file>
+		<y>320</y>
+		<width>947</width>
+		<height>23</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>auto(TSERV.NT1_11)</name>
+		<macros>
+			<CHAN>11</CHAN>
+			<name>TSERV.NT1_11</name>
+		</macros>
+		<file>../terminalServer/terminalServerChannel.bob</file>
+		<y>345</y>
+		<width>947</width>
+		<height>23</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>auto(TSERV.NT1_12)</name>
+		<macros>
+			<CHAN>12</CHAN>
+			<name>TSERV.NT1_12</name>
+		</macros>
+		<file>../terminalServer/terminalServerChannel.bob</file>
+		<y>370</y>
+		<width>947</width>
+		<height>23</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>auto(TSERV.NT1_13)</name>
+		<macros>
+			<CHAN>13</CHAN>
+			<name>TSERV.NT1_13</name>
+		</macros>
+		<file>../terminalServer/terminalServerChannel.bob</file>
+		<y>395</y>
+		<width>947</width>
+		<height>23</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>auto(TSERV.NT1_14)</name>
+		<macros>
+			<CHAN>14</CHAN>
+			<name>TSERV.NT1_14</name>
+		</macros>
+		<file>../terminalServer/terminalServerChannel.bob</file>
+		<y>420</y>
+		<width>947</width>
+		<height>23</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>auto(TSERV.NT1_15)</name>
+		<macros>
+			<CHAN>15</CHAN>
+			<name>TSERV.NT1_15</name>
+		</macros>
+		<file>../terminalServer/terminalServerChannel.bob</file>
+		<y>445</y>
+		<width>947</width>
+		<height>23</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>auto(TSERV.NT1_16)</name>
+		<macros>
+			<CHAN>16</CHAN>
+			<name>TSERV.NT1_16</name>
+		</macros>
+		<file>../terminalServer/terminalServerChannel.bob</file>
+		<y>470</y>
+		<width>947</width>
+		<height>23</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+</display>

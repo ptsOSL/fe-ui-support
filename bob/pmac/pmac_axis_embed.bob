@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>$(pmac) axis</name>
+	<width>1151</width>
+	<height>20</height>
+	<background_color>
+		<color name="Canvas" red="200" green="200" blue="200"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>5</grid_step_x>
+	<grid_step_y>5</grid_step_y>
+	<widget type="label" version="2.0.0">
+		<name>AxisLabel</name>
+		<text>$(axis)</text>
+		<width>46</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>Grouping Container</name>
+		<x>45</x>
+		<width>1106</width>
+		<height>20</height>
+		<visible>false</visible>
+		<style>3</style>
+		<foreground_color>
+			<color red="0" green="128" blue="255"></color>
+		</foreground_color>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<rules>
+			<rule name="Visibility" prop_id="visible" out_exp="false">
+				<exp bool_exp="pv0&gt;=0">
+					<value>true</value>
+				</exp>
+				<pv_name>$(pmac):M$(axis):CsRaw_RBV</pv_name>
+			</rule>
+		</rules>
+		<widget type="textupdate" version="2.0.0">
+			<name>AxisDescription</name>
+			<pv_name>$(pmac):AXIS$(axis):DESC</pv_name>
+			<width>241</width>
+			<font>
+				<font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+			</background_color>
+			<horizontal_alignment>1</horizontal_alignment>
+			<vertical_alignment>1</vertical_alignment>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<border_color>
+				<color name="Mid Green" red="0" green="196" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="textupdate" version="2.0.0">
+			<name>AxisRawCS</name>
+			<pv_name>$(pmac):M$(axis):CsRaw_RBV</pv_name>
+			<x>255</x>
+			<width>46</width>
+			<font>
+				<font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+			</background_color>
+			<horizontal_alignment>1</horizontal_alignment>
+			<vertical_alignment>1</vertical_alignment>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<border_color>
+				<color name="Mid Green" red="0" green="196" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="combo" version="2.0.0">
+			<name>AxisCSPort</name>
+			<pv_name>$(pmac):M$(axis):CsPort</pv_name>
+			<x>315</x>
+			<height>20</height>
+			<font>
+				<font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Controller: FG" red="0" green="0" blue="196"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Button: BG" red="205" green="205" blue="205"></color>
+			</background_color>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+		</widget>
+		<widget type="textupdate" version="2.0.0">
+			<name>AxisCSPortRBV</name>
+			<pv_name>$(pmac):M$(axis):CsPort_RBV</pv_name>
+			<x>420</x>
+			<width>90</width>
+			<font>
+				<font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+			</background_color>
+			<horizontal_alignment>1</horizontal_alignment>
+			<vertical_alignment>1</vertical_alignment>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<border_color>
+				<color name="Mid Green" red="0" green="196" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="textentry" version="3.0.0">
+			<name>AxisCsAxis</name>
+			<pv_name>$(pmac):M$(axis):CsAxis</pv_name>
+			<x>525</x>
+			<width>60</width>
+			<font>
+				<font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Controller: FG" red="0" green="0" blue="196"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</background_color>
+			<horizontal_alignment>1</horizontal_alignment>
+			<actions></actions>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="textupdate" version="2.0.0">
+			<name>AxisCsAxisRBV</name>
+			<pv_name>$(pmac):M$(axis):CsAxis_RBV</pv_name>
+			<x>590</x>
+			<width>60</width>
+			<font>
+				<font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+			</background_color>
+			<horizontal_alignment>1</horizontal_alignment>
+			<vertical_alignment>1</vertical_alignment>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<border_color>
+				<color name="Mid Green" red="0" green="196" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="textentry" version="3.0.0">
+			<name>AxisDirectDemand</name>
+			<pv_name>$(pmac):M$(axis):DirectDemand</pv_name>
+			<x>665</x>
+			<font>
+				<font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Controller: FG" red="0" green="0" blue="196"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Canvas" red="200" green="200" blue="200"></color>
+			</background_color>
+			<horizontal_alignment>1</horizontal_alignment>
+			<actions></actions>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="textupdate" version="2.0.0">
+			<name>AxisCsAxisRBV</name>
+			<pv_name>$(pmac):M$(axis).RBV</pv_name>
+			<x>770</x>
+			<font>
+				<font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+			</background_color>
+			<horizontal_alignment>1</horizontal_alignment>
+			<vertical_alignment>1</vertical_alignment>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<border_color>
+				<color name="Mid Green" red="0" green="196" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="action_button" version="3.0.0">
+			<name>AxisKill</name>
+			<actions>
+				<action type="write_pv">
+					<description>Write PV</description>
+					<pv_name>$(pv_name)</pv_name>
+					<value>1</value>
+				</action>
+			</actions>
+			<pv_name>$(pmac):M$(axis):KILL.PROC</pv_name>
+			<text>Kill</text>
+			<x>910</x>
+			<width>69</width>
+			<height>20</height>
+			<font>
+				<font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Major" red="255" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Button: BG" red="205" green="205" blue="205"></color>
+			</background_color>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+		</widget>
+		<widget type="led" version="2.0.0">
+			<name>AxisStatusLED</name>
+			<pv_name>$(pmac):AXIS$(axis):status1</pv_name>
+			<bit>11</bit>
+			<x>985</x>
+			<off_color>
+				<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+			</off_color>
+			<on_color>
+				<color name="Green LED: On" red="0" green="255" blue="0"></color>
+			</on_color>
+			<foreground_color>
+				<color red="192" green="192" blue="192"></color>
+			</foreground_color>
+			<line_color>
+				<color red="150" green="150" blue="150"></color>
+			</line_color>
+			<actions></actions>
+			<tooltip>Amplifier enabled?
+$(pv_name)
+$(pv_value)</tooltip>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+		</widget>
+		<widget type="action_button" version="3.0.0">
+			<name>AxisStatusButton</name>
+			<actions>
+				<action type="open_display">
+					<description>Open axis status</description>
+					<file>pmac_status_axis.bob</file>
+					<target>tab</target>
+				</action>
+			</actions>
+			<text>Status</text>
+			<x>1020</x>
+			<width>41</width>
+			<height>20</height>
+			<font>
+				<font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Button: BG" red="205" green="205" blue="205"></color>
+			</background_color>
+			<tooltip>$(actions)</tooltip>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+		</widget>
+		<widget type="action_button" version="3.0.0">
+			<name>MotorButton</name>
+			<actions>
+				<action type="open_display">
+					<description>Open motor detail</description>
+					<file>../motorApp_opi/motor_detail.bob</file>
+					<macros>
+						<DESC>$(P):AXIS$(axis)</DESC>
+						<P>$(P)</P>
+						<M>:M$(axis)</M>
+						<name>$(P):$(axis)</name>
+					</macros>
+					<target>tab</target>
+				</action>
+			</actions>
+			<text>Motor</text>
+			<x>1065</x>
+			<width>41</width>
+			<height>20</height>
+			<font>
+				<font name="Fine Print" family="Liberation Sans" style="REGULAR" size="12.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Button: BG" red="205" green="205" blue="205"></color>
+			</background_color>
+			<tooltip>$(actions)</tooltip>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+		</widget>
+		<widget type="led" version="2.0.0">
+			<name>AxisDoneMoving</name>
+			<pv_name>$(pmac):M$(axis).DMOV</pv_name>
+			<bit>11</bit>
+			<x>875</x>
+			<off_color>
+				<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+			</off_color>
+			<on_color>
+				<color name="Green LED: On" red="0" green="255" blue="0"></color>
+			</on_color>
+			<foreground_color>
+				<color red="192" green="192" blue="192"></color>
+			</foreground_color>
+			<line_color>
+				<color red="150" green="150" blue="150"></color>
+			</line_color>
+			<actions></actions>
+			<tooltip>Moving?
+$(pv_name)
+$(pv_value)</tooltip>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+		</widget>
+	</widget>
+</display>

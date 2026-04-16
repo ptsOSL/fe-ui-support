@@ -1,0 +1,1323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>$(dom)</name>
+	<x>543</x>
+	<y>581</y>
+	<height>400</height>
+	<background_color>
+		<color name="Canvas" red="200" green="200" blue="200"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>8</grid_step_x>
+	<grid_step_y>8</grid_step_y>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>FE$(cell)$(type) Beam</text>
+		<width>800</width>
+		<height>32</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="VA title" red="202" green="223" blue="159"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="tabs" version="2.0.0">
+		<name>Tabbed Container</name>
+		<tabs>
+			<tab>
+				<name>Temperatures</name>
+				<children>
+					<widget type="rectangle" version="2.0.0">
+						<name>Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>307</x>
+						<y>18</y>
+						<width>258</width>
+						<height>124</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Grey 40%" red="102" green="102" blue="102"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 75%" red="192" green="192" blue="192"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="label" version="2.0.0">
+						<name>Label_5</name>
+						<text>PBPM-02</text>
+						<x>307</x>
+						<y>10</y>
+						<width>105</width>
+						<height>17</height>
+						<foreground_color>
+							<color name="Invalid" red="255" green="255" blue="255"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Grey 40%" red="102" green="102" blue="102"></color>
+						</background_color>
+						<transparent>false</transparent>
+						<horizontal_alignment>1</horizontal_alignment>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="label" version="2.0.0">
+						<name>Label</name>
+						<text>Aperture</text>
+						<x>323</x>
+						<y>45</y>
+						<foreground_color>
+							<color name="Text: FG" red="0" green="0" blue="0"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Canvas" red="200" green="200" blue="200"></color>
+						</background_color>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="led" version="2.0.0">
+						<name>LED</name>
+						<pv_name>$(dom)-DI-PBPM-02:TMPALM01</pv_name>
+						<x>525</x>
+						<y>42</y>
+						<width>25</width>
+						<height>25</height>
+						<off_color>
+							<color name="Red LED: On" red="255" green="0" blue="0"></color>
+						</off_color>
+						<on_color>
+							<color name="Green LED: On" red="0" green="255" blue="0"></color>
+						</on_color>
+						<foreground_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</foreground_color>
+						<line_color>
+							<color red="150" green="150" blue="150"></color>
+						</line_color>
+						<square>true</square>
+						<actions></actions>
+						<border_alarm_sensitive>false</border_alarm_sensitive>
+					</widget>
+					<widget type="textupdate" version="2.0.0">
+						<name>Text Update</name>
+						<pv_name>$(dom)-DI-PBPM-02:TMON01:C</pv_name>
+						<x>440</x>
+						<y>45</y>
+						<width>71</width>
+						<font>
+							<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+						</font>
+						<foreground_color>
+							<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+						</background_color>
+						<precision>3</precision>
+						<show_units>false</show_units>
+						<horizontal_alignment>1</horizontal_alignment>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_alarm_sensitive>false</border_alarm_sensitive>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="label" version="2.0.0">
+						<name>Label_4</name>
+						<text>Celsius</text>
+						<x>440</x>
+						<y>110</y>
+						<foreground_color>
+							<color name="Text: FG" red="0" green="0" blue="0"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Canvas" red="200" green="200" blue="200"></color>
+						</background_color>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="rectangle" version="2.0.0">
+						<name>Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>20</x>
+						<y>18</y>
+						<width>258</width>
+						<height>124</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Grey 40%" red="102" green="102" blue="102"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 75%" red="192" green="192" blue="192"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="label" version="2.0.0">
+						<name>Label_5</name>
+						<text>PBPM-01</text>
+						<x>20</x>
+						<y>10</y>
+						<width>105</width>
+						<height>17</height>
+						<foreground_color>
+							<color name="Invalid" red="255" green="255" blue="255"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Grey 40%" red="102" green="102" blue="102"></color>
+						</background_color>
+						<transparent>false</transparent>
+						<horizontal_alignment>1</horizontal_alignment>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="label" version="2.0.0">
+						<name>Label</name>
+						<text>Aperture</text>
+						<x>36</x>
+						<y>45</y>
+						<foreground_color>
+							<color name="Text: FG" red="0" green="0" blue="0"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Canvas" red="200" green="200" blue="200"></color>
+						</background_color>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="led" version="2.0.0">
+						<name>LED</name>
+						<pv_name>$(dom)-DI-PBPM-01:TMPALM01</pv_name>
+						<x>238</x>
+						<y>42</y>
+						<width>25</width>
+						<height>25</height>
+						<off_color>
+							<color name="Red LED: On" red="255" green="0" blue="0"></color>
+						</off_color>
+						<on_color>
+							<color name="Green LED: On" red="0" green="255" blue="0"></color>
+						</on_color>
+						<foreground_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</foreground_color>
+						<line_color>
+							<color red="150" green="150" blue="150"></color>
+						</line_color>
+						<square>true</square>
+						<actions></actions>
+						<border_alarm_sensitive>false</border_alarm_sensitive>
+					</widget>
+					<widget type="textupdate" version="2.0.0">
+						<name>Text Update</name>
+						<pv_name>$(dom)-DI-PBPM-01:TMON01:C</pv_name>
+						<x>153</x>
+						<y>45</y>
+						<width>71</width>
+						<font>
+							<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+						</font>
+						<foreground_color>
+							<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+						</background_color>
+						<precision>3</precision>
+						<show_units>false</show_units>
+						<horizontal_alignment>1</horizontal_alignment>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_alarm_sensitive>false</border_alarm_sensitive>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="label" version="2.0.0">
+						<name>Label_4</name>
+						<text>Celsius</text>
+						<x>153</x>
+						<y>110</y>
+						<foreground_color>
+							<color name="Text: FG" red="0" green="0" blue="0"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Canvas" red="200" green="200" blue="200"></color>
+						</background_color>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+				</children>
+			</tab>
+			<tab>
+				<name>Stats PBPM-01</name>
+				<children>
+					<widget type="rectangle" version="2.0.0">
+						<name>Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>31</x>
+						<y>61</y>
+						<width>278</width>
+						<height>132</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Grey 40%" red="102" green="102" blue="102"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 75%" red="192" green="192" blue="192"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="label" version="2.0.0">
+						<name>Label_5</name>
+						<text>Blade Signals</text>
+						<x>31</x>
+						<y>53</y>
+						<width>153</width>
+						<height>17</height>
+						<foreground_color>
+							<color name="Invalid" red="255" green="255" blue="255"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Grey 40%" red="102" green="102" blue="102"></color>
+						</background_color>
+						<transparent>false</transparent>
+						<horizontal_alignment>1</horizontal_alignment>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="textupdate" version="2.0.0">
+						<name>Text Update</name>
+						<pv_name>$(dom)-DI-PBPM-01:BLADEA</pv_name>
+						<x>84</x>
+						<y>99</y>
+						<width>71</width>
+						<font>
+							<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+						</font>
+						<foreground_color>
+							<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+						</background_color>
+						<precision>3</precision>
+						<show_units>false</show_units>
+						<horizontal_alignment>1</horizontal_alignment>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_alarm_sensitive>false</border_alarm_sensitive>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="textupdate" version="2.0.0">
+						<name>Text Update</name>
+						<pv_name>$(dom)-DI-PBPM-01:BLADEB</pv_name>
+						<x>207</x>
+						<y>99</y>
+						<width>71</width>
+						<font>
+							<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+						</font>
+						<foreground_color>
+							<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+						</background_color>
+						<precision>3</precision>
+						<show_units>false</show_units>
+						<horizontal_alignment>1</horizontal_alignment>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_alarm_sensitive>false</border_alarm_sensitive>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="textupdate" version="2.0.0">
+						<name>Text Update</name>
+						<pv_name>$(dom)-DI-PBPM-01:BLADEC</pv_name>
+						<x>207</x>
+						<y>150</y>
+						<width>71</width>
+						<font>
+							<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+						</font>
+						<foreground_color>
+							<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+						</background_color>
+						<precision>3</precision>
+						<show_units>false</show_units>
+						<horizontal_alignment>1</horizontal_alignment>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_alarm_sensitive>false</border_alarm_sensitive>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="textupdate" version="2.0.0">
+						<name>Text Update</name>
+						<pv_name>$(dom)-DI-PBPM-01:BLADED</pv_name>
+						<x>84</x>
+						<y>150</y>
+						<width>71</width>
+						<font>
+							<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+						</font>
+						<foreground_color>
+							<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+						</background_color>
+						<precision>3</precision>
+						<show_units>false</show_units>
+						<horizontal_alignment>1</horizontal_alignment>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_alarm_sensitive>false</border_alarm_sensitive>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="label" version="2.0.0">
+						<name>Label_4</name>
+						<text>A</text>
+						<x>51</x>
+						<y>99</y>
+						<width>34</width>
+						<foreground_color>
+							<color name="Text: FG" red="0" green="0" blue="0"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Canvas" red="200" green="200" blue="200"></color>
+						</background_color>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="label" version="2.0.0">
+						<name>Label_4</name>
+						<text>D</text>
+						<x>51</x>
+						<y>150</y>
+						<width>34</width>
+						<foreground_color>
+							<color name="Text: FG" red="0" green="0" blue="0"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Canvas" red="200" green="200" blue="200"></color>
+						</background_color>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="label" version="2.0.0">
+						<name>Label_4</name>
+						<text>C</text>
+						<x>174</x>
+						<y>150</y>
+						<width>34</width>
+						<foreground_color>
+							<color name="Text: FG" red="0" green="0" blue="0"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Canvas" red="200" green="200" blue="200"></color>
+						</background_color>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="label" version="2.0.0">
+						<name>Label_4</name>
+						<text>B</text>
+						<x>174</x>
+						<y>99</y>
+						<width>34</width>
+						<foreground_color>
+							<color name="Text: FG" red="0" green="0" blue="0"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Canvas" red="200" green="200" blue="200"></color>
+						</background_color>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="tabs" version="2.0.0">
+						<name>Tabbed Container_1</name>
+						<tabs>
+							<tab>
+								<name>Y Component</name>
+								<children>
+									<widget type="rectangle" version="2.0.0">
+										<name>Rectangle</name>
+										<macros>
+											<pv_name></pv_name>
+										</macros>
+										<x>4</x>
+										<y>12</y>
+										<width>413</width>
+										<height>138</height>
+										<line_width>1</line_width>
+										<line_color>
+											<color name="Grey 40%" red="102" green="102" blue="102"></color>
+										</line_color>
+										<background_color>
+											<color name="Grey 75%" red="192" green="192" blue="192"></color>
+										</background_color>
+										<actions></actions>
+										<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+									</widget>
+									<widget type="label" version="2.0.0">
+										<name>Label_5</name>
+										<text>Beam X</text>
+										<x>4</x>
+										<y>4</y>
+										<width>105</width>
+										<height>17</height>
+										<foreground_color>
+											<color name="Invalid" red="255" green="255" blue="255"></color>
+										</foreground_color>
+										<background_color>
+											<color name="Grey 40%" red="102" green="102" blue="102"></color>
+										</background_color>
+										<transparent>false</transparent>
+										<horizontal_alignment>1</horizontal_alignment>
+										<vertical_alignment>1</vertical_alignment>
+										<wrap_words>false</wrap_words>
+										<actions></actions>
+										<border_color>
+											<color name="Black" red="0" green="0" blue="0"></color>
+										</border_color>
+									</widget>
+									<widget type="textupdate" version="2.0.0">
+										<name>Text Update</name>
+										<pv_name>$(dom)-DI-PBPM-01:BEAMY</pv_name>
+										<x>13</x>
+										<y>89</y>
+										<width>235</width>
+										<font>
+											<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+										</font>
+										<foreground_color>
+											<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+										</foreground_color>
+										<background_color>
+											<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+										</background_color>
+										<precision>3</precision>
+										<show_units>false</show_units>
+										<horizontal_alignment>1</horizontal_alignment>
+										<vertical_alignment>1</vertical_alignment>
+										<wrap_words>false</wrap_words>
+										<actions></actions>
+										<border_alarm_sensitive>false</border_alarm_sensitive>
+										<border_color>
+											<color name="Black" red="0" green="0" blue="0"></color>
+										</border_color>
+									</widget>
+									<widget type="label" version="2.0.0">
+										<name>Label</name>
+										<text>Mean</text>
+										<x>102</x>
+										<y>23</y>
+										<width>54</width>
+										<foreground_color>
+											<color name="Text: FG" red="0" green="0" blue="0"></color>
+										</foreground_color>
+										<background_color>
+											<color name="Canvas" red="200" green="200" blue="200"></color>
+										</background_color>
+										<horizontal_alignment>1</horizontal_alignment>
+										<vertical_alignment>1</vertical_alignment>
+										<wrap_words>false</wrap_words>
+										<actions></actions>
+										<border_color>
+											<color name="Black" red="0" green="0" blue="0"></color>
+										</border_color>
+									</widget>
+									<widget type="label" version="2.0.0">
+										<name>Label</name>
+										<text>X</text>
+										<x>22</x>
+										<y>23</y>
+										<width>54</width>
+										<foreground_color>
+											<color name="Text: FG" red="0" green="0" blue="0"></color>
+										</foreground_color>
+										<background_color>
+											<color name="Canvas" red="200" green="200" blue="200"></color>
+										</background_color>
+										<horizontal_alignment>1</horizontal_alignment>
+										<vertical_alignment>1</vertical_alignment>
+										<wrap_words>false</wrap_words>
+										<actions></actions>
+										<border_color>
+											<color name="Black" red="0" green="0" blue="0"></color>
+										</border_color>
+									</widget>
+									<widget type="textupdate" version="2.0.0">
+										<name>Text Update</name>
+										<pv_name>$(dom)-DI-PBPM-01:Y:K</pv_name>
+										<x>253</x>
+										<y>89</y>
+										<width>71</width>
+										<font>
+											<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+										</font>
+										<foreground_color>
+											<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+										</foreground_color>
+										<background_color>
+											<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+										</background_color>
+										<precision>3</precision>
+										<show_units>false</show_units>
+										<horizontal_alignment>1</horizontal_alignment>
+										<vertical_alignment>1</vertical_alignment>
+										<wrap_words>false</wrap_words>
+										<actions></actions>
+										<border_alarm_sensitive>false</border_alarm_sensitive>
+										<border_color>
+											<color name="Black" red="0" green="0" blue="0"></color>
+										</border_color>
+									</widget>
+									<widget type="textupdate" version="2.0.0">
+										<name>Text Update</name>
+										<pv_name>$(dom)-DI-PBPM-01:Y:OFFSET</pv_name>
+										<x>333</x>
+										<y>89</y>
+										<width>71</width>
+										<font>
+											<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+										</font>
+										<foreground_color>
+											<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+										</foreground_color>
+										<background_color>
+											<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+										</background_color>
+										<precision>3</precision>
+										<show_units>false</show_units>
+										<horizontal_alignment>1</horizontal_alignment>
+										<vertical_alignment>1</vertical_alignment>
+										<wrap_words>false</wrap_words>
+										<actions></actions>
+										<border_alarm_sensitive>false</border_alarm_sensitive>
+										<border_color>
+											<color name="Black" red="0" green="0" blue="0"></color>
+										</border_color>
+									</widget>
+									<widget type="label" version="2.0.0">
+										<name>Label</name>
+										<text>SD</text>
+										<x>182</x>
+										<y>23</y>
+										<width>54</width>
+										<foreground_color>
+											<color name="Text: FG" red="0" green="0" blue="0"></color>
+										</foreground_color>
+										<background_color>
+											<color name="Canvas" red="200" green="200" blue="200"></color>
+										</background_color>
+										<horizontal_alignment>1</horizontal_alignment>
+										<vertical_alignment>1</vertical_alignment>
+										<wrap_words>false</wrap_words>
+										<actions></actions>
+										<border_color>
+											<color name="Black" red="0" green="0" blue="0"></color>
+										</border_color>
+									</widget>
+									<widget type="label" version="2.0.0">
+										<name>Label</name>
+										<text>Xk</text>
+										<x>262</x>
+										<y>23</y>
+										<width>54</width>
+										<foreground_color>
+											<color name="Text: FG" red="0" green="0" blue="0"></color>
+										</foreground_color>
+										<background_color>
+											<color name="Canvas" red="200" green="200" blue="200"></color>
+										</background_color>
+										<horizontal_alignment>1</horizontal_alignment>
+										<vertical_alignment>1</vertical_alignment>
+										<wrap_words>false</wrap_words>
+										<actions></actions>
+										<border_color>
+											<color name="Black" red="0" green="0" blue="0"></color>
+										</border_color>
+									</widget>
+									<widget type="label" version="2.0.0">
+										<name>Label</name>
+										<text>Xoffset</text>
+										<x>342</x>
+										<y>23</y>
+										<width>54</width>
+										<foreground_color>
+											<color name="Text: FG" red="0" green="0" blue="0"></color>
+										</foreground_color>
+										<background_color>
+											<color name="Canvas" red="200" green="200" blue="200"></color>
+										</background_color>
+										<horizontal_alignment>1</horizontal_alignment>
+										<vertical_alignment>1</vertical_alignment>
+										<wrap_words>false</wrap_words>
+										<actions></actions>
+										<border_color>
+											<color name="Black" red="0" green="0" blue="0"></color>
+										</border_color>
+									</widget>
+									<widget type="textentry" version="3.0.0">
+										<name>Text Input</name>
+										<pv_name>$(dom)-DI-PBPM-01:Y:OFFSET</pv_name>
+										<x>333</x>
+										<y>59</y>
+										<width>71</width>
+										<height>25</height>
+										<foreground_color>
+											<color name="Controller: FG" red="0" green="0" blue="196"></color>
+										</foreground_color>
+										<background_color>
+											<color name="Canvas" red="200" green="200" blue="200"></color>
+										</background_color>
+										<horizontal_alignment>1</horizontal_alignment>
+										<actions></actions>
+										<border_alarm_sensitive>false</border_alarm_sensitive>
+										<border_color>
+											<color name="Black" red="0" green="0" blue="0"></color>
+										</border_color>
+									</widget>
+									<widget type="textentry" version="3.0.0">
+										<name>Text Input</name>
+										<pv_name>$(dom)-DI-PBPM-01:Y:K</pv_name>
+										<x>253</x>
+										<y>59</y>
+										<width>71</width>
+										<height>25</height>
+										<foreground_color>
+											<color name="Controller: FG" red="0" green="0" blue="196"></color>
+										</foreground_color>
+										<background_color>
+											<color name="Canvas" red="200" green="200" blue="200"></color>
+										</background_color>
+										<format>1</format>
+										<horizontal_alignment>1</horizontal_alignment>
+										<actions></actions>
+										<border_alarm_sensitive>false</border_alarm_sensitive>
+										<border_color>
+											<color name="Black" red="0" green="0" blue="0"></color>
+										</border_color>
+									</widget>
+								</children>
+							</tab>
+						</tabs>
+						<x>316</x>
+						<y>5</y>
+						<width>420</width>
+						<height>211</height>
+						<background_color>
+							<color name="Canvas" red="200" green="200" blue="200"></color>
+						</background_color>
+						<tab_height>10</tab_height>
+						<actions></actions>
+					</widget>
+				</children>
+			</tab>
+			<tab>
+				<name>Stats PBPM-02</name>
+				<children>
+					<widget type="rectangle" version="2.0.0">
+						<name>Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>31</x>
+						<y>61</y>
+						<width>278</width>
+						<height>132</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Grey 40%" red="102" green="102" blue="102"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 75%" red="192" green="192" blue="192"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="label" version="2.0.0">
+						<name>Label_5</name>
+						<text>Blade Signals</text>
+						<x>31</x>
+						<y>53</y>
+						<width>153</width>
+						<height>17</height>
+						<foreground_color>
+							<color name="Invalid" red="255" green="255" blue="255"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Grey 40%" red="102" green="102" blue="102"></color>
+						</background_color>
+						<transparent>false</transparent>
+						<horizontal_alignment>1</horizontal_alignment>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="textupdate" version="2.0.0">
+						<name>Text Update</name>
+						<pv_name>$(dom)-DI-PBPM-02:BLADEA</pv_name>
+						<x>84</x>
+						<y>99</y>
+						<width>71</width>
+						<font>
+							<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+						</font>
+						<foreground_color>
+							<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+						</background_color>
+						<precision>3</precision>
+						<show_units>false</show_units>
+						<horizontal_alignment>1</horizontal_alignment>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_alarm_sensitive>false</border_alarm_sensitive>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="textupdate" version="2.0.0">
+						<name>Text Update</name>
+						<pv_name>$(dom)-DI-PBPM-02:BLADEB</pv_name>
+						<x>207</x>
+						<y>99</y>
+						<width>71</width>
+						<font>
+							<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+						</font>
+						<foreground_color>
+							<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+						</background_color>
+						<precision>3</precision>
+						<show_units>false</show_units>
+						<horizontal_alignment>1</horizontal_alignment>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_alarm_sensitive>false</border_alarm_sensitive>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="textupdate" version="2.0.0">
+						<name>Text Update</name>
+						<pv_name>$(dom)-DI-PBPM-02:BLADEC</pv_name>
+						<x>207</x>
+						<y>150</y>
+						<width>71</width>
+						<font>
+							<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+						</font>
+						<foreground_color>
+							<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+						</background_color>
+						<precision>3</precision>
+						<show_units>false</show_units>
+						<horizontal_alignment>1</horizontal_alignment>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_alarm_sensitive>false</border_alarm_sensitive>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="textupdate" version="2.0.0">
+						<name>Text Update</name>
+						<pv_name>$(dom)-DI-PBPM-02:BLADED</pv_name>
+						<x>84</x>
+						<y>150</y>
+						<width>71</width>
+						<font>
+							<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+						</font>
+						<foreground_color>
+							<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+						</background_color>
+						<precision>3</precision>
+						<show_units>false</show_units>
+						<horizontal_alignment>1</horizontal_alignment>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_alarm_sensitive>false</border_alarm_sensitive>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="label" version="2.0.0">
+						<name>Label_4</name>
+						<text>A</text>
+						<x>51</x>
+						<y>99</y>
+						<width>34</width>
+						<foreground_color>
+							<color name="Text: FG" red="0" green="0" blue="0"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Canvas" red="200" green="200" blue="200"></color>
+						</background_color>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="label" version="2.0.0">
+						<name>Label_4</name>
+						<text>D</text>
+						<x>51</x>
+						<y>150</y>
+						<width>34</width>
+						<foreground_color>
+							<color name="Text: FG" red="0" green="0" blue="0"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Canvas" red="200" green="200" blue="200"></color>
+						</background_color>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="label" version="2.0.0">
+						<name>Label_4</name>
+						<text>C</text>
+						<x>174</x>
+						<y>150</y>
+						<width>34</width>
+						<foreground_color>
+							<color name="Text: FG" red="0" green="0" blue="0"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Canvas" red="200" green="200" blue="200"></color>
+						</background_color>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="label" version="2.0.0">
+						<name>Label_4</name>
+						<text>B</text>
+						<x>174</x>
+						<y>99</y>
+						<width>34</width>
+						<foreground_color>
+							<color name="Text: FG" red="0" green="0" blue="0"></color>
+						</foreground_color>
+						<background_color>
+							<color name="Canvas" red="200" green="200" blue="200"></color>
+						</background_color>
+						<vertical_alignment>1</vertical_alignment>
+						<wrap_words>false</wrap_words>
+						<actions></actions>
+						<border_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</border_color>
+					</widget>
+					<widget type="tabs" version="2.0.0">
+						<name>Tabbed Container_1</name>
+						<tabs>
+							<tab>
+								<name>Y Component</name>
+								<children>
+									<widget type="rectangle" version="2.0.0">
+										<name>Rectangle</name>
+										<macros>
+											<pv_name></pv_name>
+										</macros>
+										<x>4</x>
+										<y>12</y>
+										<width>413</width>
+										<height>138</height>
+										<line_width>1</line_width>
+										<line_color>
+											<color name="Grey 40%" red="102" green="102" blue="102"></color>
+										</line_color>
+										<background_color>
+											<color name="Grey 75%" red="192" green="192" blue="192"></color>
+										</background_color>
+										<actions></actions>
+										<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+									</widget>
+									<widget type="label" version="2.0.0">
+										<name>Label_5</name>
+										<text>Beam X</text>
+										<x>4</x>
+										<y>4</y>
+										<width>105</width>
+										<height>17</height>
+										<foreground_color>
+											<color name="Invalid" red="255" green="255" blue="255"></color>
+										</foreground_color>
+										<background_color>
+											<color name="Grey 40%" red="102" green="102" blue="102"></color>
+										</background_color>
+										<transparent>false</transparent>
+										<horizontal_alignment>1</horizontal_alignment>
+										<vertical_alignment>1</vertical_alignment>
+										<wrap_words>false</wrap_words>
+										<actions></actions>
+										<border_color>
+											<color name="Black" red="0" green="0" blue="0"></color>
+										</border_color>
+									</widget>
+									<widget type="textupdate" version="2.0.0">
+										<name>Text Update</name>
+										<pv_name>$(dom)-DI-PBPM-02:BEAMY</pv_name>
+										<x>13</x>
+										<y>89</y>
+										<width>235</width>
+										<font>
+											<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+										</font>
+										<foreground_color>
+											<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+										</foreground_color>
+										<background_color>
+											<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+										</background_color>
+										<precision>3</precision>
+										<show_units>false</show_units>
+										<horizontal_alignment>1</horizontal_alignment>
+										<vertical_alignment>1</vertical_alignment>
+										<wrap_words>false</wrap_words>
+										<actions></actions>
+										<border_alarm_sensitive>false</border_alarm_sensitive>
+										<border_color>
+											<color name="Black" red="0" green="0" blue="0"></color>
+										</border_color>
+									</widget>
+									<widget type="label" version="2.0.0">
+										<name>Label</name>
+										<text>Mean</text>
+										<x>102</x>
+										<y>23</y>
+										<width>54</width>
+										<foreground_color>
+											<color name="Text: FG" red="0" green="0" blue="0"></color>
+										</foreground_color>
+										<background_color>
+											<color name="Canvas" red="200" green="200" blue="200"></color>
+										</background_color>
+										<horizontal_alignment>1</horizontal_alignment>
+										<vertical_alignment>1</vertical_alignment>
+										<wrap_words>false</wrap_words>
+										<actions></actions>
+										<border_color>
+											<color name="Black" red="0" green="0" blue="0"></color>
+										</border_color>
+									</widget>
+									<widget type="label" version="2.0.0">
+										<name>Label</name>
+										<text>X</text>
+										<x>22</x>
+										<y>23</y>
+										<width>54</width>
+										<foreground_color>
+											<color name="Text: FG" red="0" green="0" blue="0"></color>
+										</foreground_color>
+										<background_color>
+											<color name="Canvas" red="200" green="200" blue="200"></color>
+										</background_color>
+										<horizontal_alignment>1</horizontal_alignment>
+										<vertical_alignment>1</vertical_alignment>
+										<wrap_words>false</wrap_words>
+										<actions></actions>
+										<border_color>
+											<color name="Black" red="0" green="0" blue="0"></color>
+										</border_color>
+									</widget>
+									<widget type="textupdate" version="2.0.0">
+										<name>Text Update</name>
+										<pv_name>$(dom)-DI-PBPM-02:Y:K</pv_name>
+										<x>253</x>
+										<y>89</y>
+										<width>71</width>
+										<font>
+											<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+										</font>
+										<foreground_color>
+											<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+										</foreground_color>
+										<background_color>
+											<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+										</background_color>
+										<precision>3</precision>
+										<show_units>false</show_units>
+										<horizontal_alignment>1</horizontal_alignment>
+										<vertical_alignment>1</vertical_alignment>
+										<wrap_words>false</wrap_words>
+										<actions></actions>
+										<border_alarm_sensitive>false</border_alarm_sensitive>
+										<border_color>
+											<color name="Black" red="0" green="0" blue="0"></color>
+										</border_color>
+									</widget>
+									<widget type="textupdate" version="2.0.0">
+										<name>Text Update</name>
+										<pv_name>$(dom)-DI-PBPM-02:Y:OFFSET</pv_name>
+										<x>333</x>
+										<y>89</y>
+										<width>71</width>
+										<font>
+											<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+										</font>
+										<foreground_color>
+											<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+										</foreground_color>
+										<background_color>
+											<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+										</background_color>
+										<precision>3</precision>
+										<show_units>false</show_units>
+										<horizontal_alignment>1</horizontal_alignment>
+										<vertical_alignment>1</vertical_alignment>
+										<wrap_words>false</wrap_words>
+										<actions></actions>
+										<border_alarm_sensitive>false</border_alarm_sensitive>
+										<border_color>
+											<color name="Black" red="0" green="0" blue="0"></color>
+										</border_color>
+									</widget>
+									<widget type="label" version="2.0.0">
+										<name>Label</name>
+										<text>SD</text>
+										<x>182</x>
+										<y>23</y>
+										<width>54</width>
+										<foreground_color>
+											<color name="Text: FG" red="0" green="0" blue="0"></color>
+										</foreground_color>
+										<background_color>
+											<color name="Canvas" red="200" green="200" blue="200"></color>
+										</background_color>
+										<horizontal_alignment>1</horizontal_alignment>
+										<vertical_alignment>1</vertical_alignment>
+										<wrap_words>false</wrap_words>
+										<actions></actions>
+										<border_color>
+											<color name="Black" red="0" green="0" blue="0"></color>
+										</border_color>
+									</widget>
+									<widget type="label" version="2.0.0">
+										<name>Label</name>
+										<text>Xk</text>
+										<x>262</x>
+										<y>23</y>
+										<width>54</width>
+										<foreground_color>
+											<color name="Text: FG" red="0" green="0" blue="0"></color>
+										</foreground_color>
+										<background_color>
+											<color name="Canvas" red="200" green="200" blue="200"></color>
+										</background_color>
+										<horizontal_alignment>1</horizontal_alignment>
+										<vertical_alignment>1</vertical_alignment>
+										<wrap_words>false</wrap_words>
+										<actions></actions>
+										<border_color>
+											<color name="Black" red="0" green="0" blue="0"></color>
+										</border_color>
+									</widget>
+									<widget type="label" version="2.0.0">
+										<name>Label</name>
+										<text>Xoffset</text>
+										<x>342</x>
+										<y>23</y>
+										<width>54</width>
+										<foreground_color>
+											<color name="Text: FG" red="0" green="0" blue="0"></color>
+										</foreground_color>
+										<background_color>
+											<color name="Canvas" red="200" green="200" blue="200"></color>
+										</background_color>
+										<horizontal_alignment>1</horizontal_alignment>
+										<vertical_alignment>1</vertical_alignment>
+										<wrap_words>false</wrap_words>
+										<actions></actions>
+										<border_color>
+											<color name="Black" red="0" green="0" blue="0"></color>
+										</border_color>
+									</widget>
+									<widget type="textentry" version="3.0.0">
+										<name>Text Input</name>
+										<pv_name>$(dom)-DI-PBPM-02:Y:OFFSET</pv_name>
+										<x>333</x>
+										<y>59</y>
+										<width>71</width>
+										<height>25</height>
+										<foreground_color>
+											<color name="Controller: FG" red="0" green="0" blue="196"></color>
+										</foreground_color>
+										<background_color>
+											<color name="Canvas" red="200" green="200" blue="200"></color>
+										</background_color>
+										<horizontal_alignment>1</horizontal_alignment>
+										<actions></actions>
+										<border_alarm_sensitive>false</border_alarm_sensitive>
+										<border_color>
+											<color name="Black" red="0" green="0" blue="0"></color>
+										</border_color>
+									</widget>
+									<widget type="textentry" version="3.0.0">
+										<name>Text Input</name>
+										<pv_name>$(dom)-DI-PBPM-02:Y:K</pv_name>
+										<x>253</x>
+										<y>59</y>
+										<width>71</width>
+										<height>25</height>
+										<foreground_color>
+											<color name="Controller: FG" red="0" green="0" blue="196"></color>
+										</foreground_color>
+										<background_color>
+											<color name="Canvas" red="200" green="200" blue="200"></color>
+										</background_color>
+										<format>1</format>
+										<horizontal_alignment>1</horizontal_alignment>
+										<actions></actions>
+										<border_alarm_sensitive>false</border_alarm_sensitive>
+										<border_color>
+											<color name="Black" red="0" green="0" blue="0"></color>
+										</border_color>
+									</widget>
+								</children>
+							</tab>
+						</tabs>
+						<x>316</x>
+						<y>5</y>
+						<width>420</width>
+						<height>211</height>
+						<background_color>
+							<color name="Canvas" red="200" green="200" blue="200"></color>
+						</background_color>
+						<tab_height>10</tab_height>
+						<actions></actions>
+					</widget>
+				</children>
+			</tab>
+		</tabs>
+		<x>19</x>
+		<y>54</y>
+		<width>744</width>
+		<height>250</height>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<tab_height>10</tab_height>
+		<actions></actions>
+	</widget>
+</display>

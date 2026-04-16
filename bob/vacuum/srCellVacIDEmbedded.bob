@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>SR 8m Straight Cell - Vacuum</name>
+	<x>1740</x>
+	<y>614</y>
+	<width>114</width>
+	<height>367</height>
+	<background_color>
+		<color name="Canvas" red="200" green="200" blue="200"></color>
+	</background_color>
+	<grid_step_x>4</grid_step_x>
+	<grid_step_y>4</grid_step_y>
+	<widget type="action_button" version="2.0.0">
+		<name>EDM related display</name>
+		<y>280</y>
+		<width>113</width>
+		<height>29</height>
+		<line_width>0</line_width>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>../vacuumSpace/space.opi</file>
+				<macros>
+					<device>SR$(cell)S-VA-SPACE-01</device>
+				</macros>
+				<target>standalone</target>
+			</action>
+		</actions>
+		<text></text>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>In-Vacuum ID</text>
+		<y>348</y>
+		<width>116</width>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="White" red="255" green="255" blue="255"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<y>288</y>
+		<width>109</width>
+		<height>9</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</background_color>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="line_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>SR$(cell)S-VA-SPACE-01:STA</pv_name>
+			</rule>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>SR$(cell)S-VA-SPACE-01:STA</pv_name>
+			</rule>
+		</rules>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM related display</name>
+		<actions>
+			<action type="command">
+				<description>Execute Command</description>
+				<command>bash -c "./idVacuum.sh $(cell) SR$(cell)I ID_Vacuum4.edl"</command>
+			</action>
+		</actions>
+		<text>SR$(cell)I</text>
+		<x>24</x>
+		<y>232</y>
+		<width>55</width>
+		<height>27</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="32"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<x>24</x>
+		<y>281</y>
+		<width>55</width>
+		<height>25</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</line_color>
+		<background_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</background_color>
+		<rules>
+			<rule name="lineColorAlarmRule" prop_id="line_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>SR$(cell)I-VA-SPACE-01:STA</pv_name>
+			</rule>
+			<rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+				<exp bool_exp="pvSev0==3">
+					<value>
+						<color name="Invalid" red="255" green="255" blue="255"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==2">
+					<value>
+						<color name="Major" red="255" green="0" blue="0"></color>
+					</value>
+				</exp>
+				<exp bool_exp="pvSev0==1">
+					<value>
+						<color name="Minor" red="255" green="241" blue="0"></color>
+					</value>
+				</exp>
+				<pv_name>SR$(cell)I-VA-SPACE-01:STA</pv_name>
+			</rule>
+		</rules>
+	</widget>
+</display>

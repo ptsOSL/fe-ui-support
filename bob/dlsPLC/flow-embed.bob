@@ -21,12 +21,12 @@
 		<actions>
 			<action type="open_display">
 				<description>Open Display</description>
-				<file>flow-tooltip.opi</file>
+				<file>./flow-tooltip.opi</file>
 				<macros>
 					<flow>$(flow)</flow>
 					<label>$(label)</label>
 				</macros>
-				<target>window</target>
+				<target>standalone</target>
 			</action>
 		</actions>
 		<text></text>
@@ -66,13 +66,13 @@
 		<actions>
 			<action type="open_display">
 				<description>Open Display</description>
-				<file>flow-config.bob</file>
+				<file>./flow-config.bob</file>
 				<macros>
 					<flow>$(flow)</flow>
 					<label>$(label)</label>
 					<P>$(P)</P>
 				</macros>
-				<target>window</target>
+				<target>standalone</target>
 			</action>
 		</actions>
 		<text>$(label):</text>

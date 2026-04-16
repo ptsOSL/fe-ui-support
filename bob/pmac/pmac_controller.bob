@@ -1,0 +1,3436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>$(pmac) status</name>
+	<width>875</width>
+	<height>640</height>
+	<background_color>
+		<color name="Canvas" red="200" green="200" blue="200"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>5</grid_step_x>
+	<grid_step_y>5</grid_step_y>
+	<widget type="rectangle" version="2.0.0">
+		<name>PmacStatus:Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>5</x>
+		<y>189</y>
+		<width>543</width>
+		<height>212</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Title</name>
+		<text>$(pmac) status</text>
+		<x>1</x>
+		<y>1</y>
+		<width>874</width>
+		<height>29</height>
+		<font>
+			<font name="Header 3" family="Liberation Sans" style="BOLD" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_width>1</border_width>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>Info:Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>5</x>
+		<y>74</y>
+		<width>256</width>
+		<height>86</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Info:Title</name>
+		<text>Info</text>
+		<x>6</x>
+		<y>56</y>
+		<width>59</width>
+		<height>18</height>
+		<font>
+			<font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_width>1</border_width>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>Info:Type</name>
+		<pv_name>$(pmac):PMACTYPE</pv_name>
+		<x>100</x>
+		<y>84</y>
+		<width>156</width>
+		<font>
+			<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Info:TypeLabel</name>
+		<text>Type</text>
+		<x>10</x>
+		<y>84</y>
+		<width>91</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>Info:CPULoad</name>
+		<pv_name>$(pmac):CPULOAD</pv_name>
+		<x>100</x>
+		<y>109</y>
+		<width>156</width>
+		<font>
+			<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Info:CPULoadLabel</name>
+		<text>CPU load</text>
+		<x>10</x>
+		<y>109</y>
+		<width>91</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>Info:ServoFreq</name>
+		<pv_name>$(pmac):SERVO_FREQ</pv_name>
+		<x>100</x>
+		<y>134</y>
+		<width>156</width>
+		<font>
+			<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Info:ServoFreqLabel</name>
+		<text>Servo Freq</text>
+		<x>10</x>
+		<y>134</y>
+		<width>91</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>ErrorStatus:Title</name>
+		<text>Error status</text>
+		<x>278</x>
+		<y>56</y>
+		<width>83</width>
+		<height>18</height>
+		<font>
+			<font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_width>1</border_width>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>ErrorStatus:Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>277</x>
+		<y>74</y>
+		<width>271</width>
+		<height>86</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="led" version="2.0.0">
+		<name>ErrorStatus:ControllerProblem</name>
+		<pv_name>$(pmac):GLOBAL_PROBLEM_RBV</pv_name>
+		<x>417</x>
+		<y>84</y>
+		<off_color>
+			<color name="Red LED: Off" red="96" green="0" blue="0"></color>
+		</off_color>
+		<on_color>
+			<color name="Major" red="255" green="0" blue="0"></color>
+		</on_color>
+		<foreground_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<line_color>
+			<color red="150" green="150" blue="150"></color>
+		</line_color>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>ErrorStatus:ControllerProblemLabel</name>
+		<text>Controller problem</text>
+		<x>287</x>
+		<y>84</y>
+		<width>131</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>ErrorStatus:MacroRingErrorsLabel</name>
+		<text>Macro ring errors</text>
+		<x>287</x>
+		<y>109</y>
+		<width>131</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>ErrorStatus:MacroRingErrors</name>
+		<pv_name>$(pmac):MACROERRS</pv_name>
+		<x>417</x>
+		<y>109</y>
+		<width>126</width>
+		<font>
+			<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>PmacStatus</name>
+		<x>10</x>
+		<y>196</y>
+		<width>550</width>
+		<height>194</height>
+		<style>3</style>
+		<foreground_color>
+			<color red="0" green="128" blue="255"></color>
+		</foreground_color>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color red="240" green="240" blue="240"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<widget type="label" version="2.0.0">
+			<name>EDM Label</name>
+			<text>Illegal L variable definition</text>
+			<x>13</x>
+			<y>179</y>
+			<width>121</width>
+			<height>13</height>
+			<font>
+				<font family="liberation sans" style="REGULAR" size="10.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</background_color>
+			<vertical_alignment>1</vertical_alignment>
+			<auto_size>true</auto_size>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>EDM Label</name>
+			<text>Real-Time Interrupt Warning</text>
+			<x>13</x>
+			<y>167</y>
+			<width>137</width>
+			<height>13</height>
+			<font>
+				<font family="liberation sans" style="REGULAR" size="10.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</background_color>
+			<vertical_alignment>1</vertical_alignment>
+			<auto_size>true</auto_size>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>EDM Label</name>
+			<text>Flash error</text>
+			<x>13</x>
+			<y>155</y>
+			<width>53</width>
+			<height>13</height>
+			<font>
+				<font family="liberation sans" style="REGULAR" size="10.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</background_color>
+			<vertical_alignment>1</vertical_alignment>
+			<auto_size>true</auto_size>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>EDM Label</name>
+			<text>DPRAM error</text>
+			<x>13</x>
+			<y>143</y>
+			<width>66</width>
+			<height>13</height>
+			<font>
+				<font family="liberation sans" style="REGULAR" size="10.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</background_color>
+			<vertical_alignment>1</vertical_alignment>
+			<auto_size>true</auto_size>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>EDM Label</name>
+			<text>PROM checksum active</text>
+			<x>13</x>
+			<y>131</y>
+			<width>112</width>
+			<height>13</height>
+			<font>
+				<font family="liberation sans" style="REGULAR" size="10.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</background_color>
+			<vertical_alignment>1</vertical_alignment>
+			<auto_size>true</auto_size>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>EDM Label</name>
+			<text>Any memory checksum error</text>
+			<x>13</x>
+			<y>119</y>
+			<width>137</width>
+			<height>13</height>
+			<font>
+				<font family="liberation sans" style="REGULAR" size="10.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</background_color>
+			<vertical_alignment>1</vertical_alignment>
+			<auto_size>true</auto_size>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>EDM Label</name>
+			<text>Leadscrew compensation on</text>
+			<x>13</x>
+			<y>107</y>
+			<width>136</width>
+			<height>13</height>
+			<font>
+				<font family="liberation sans" style="REGULAR" size="10.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</background_color>
+			<vertical_alignment>1</vertical_alignment>
+			<auto_size>true</auto_size>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>EDM Label</name>
+			<text>Watchdog timer</text>
+			<x>13</x>
+			<y>95</y>
+			<width>75</width>
+			<height>13</height>
+			<font>
+				<font family="liberation sans" style="REGULAR" size="10.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</background_color>
+			<vertical_alignment>1</vertical_alignment>
+			<auto_size>true</auto_size>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>EDM Label</name>
+			<text>Servo Request</text>
+			<x>13</x>
+			<y>83</y>
+			<width>71</width>
+			<height>13</height>
+			<font>
+				<font family="liberation sans" style="REGULAR" size="10.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</background_color>
+			<vertical_alignment>1</vertical_alignment>
+			<auto_size>true</auto_size>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>EDM Label</name>
+			<text>Data gather start on trigger</text>
+			<x>13</x>
+			<y>71</y>
+			<width>130</width>
+			<height>13</height>
+			<font>
+				<font family="liberation sans" style="REGULAR" size="10.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</background_color>
+			<vertical_alignment>1</vertical_alignment>
+			<auto_size>true</auto_size>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>EDM Label</name>
+			<text>(Reserved for future use)</text>
+			<x>13</x>
+			<y>59</y>
+			<width>121</width>
+			<height>13</height>
+			<font>
+				<font family="liberation sans" style="REGULAR" size="10.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</background_color>
+			<vertical_alignment>1</vertical_alignment>
+			<auto_size>true</auto_size>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>EDM Label</name>
+			<text>Data Gathering Function On</text>
+			<x>13</x>
+			<y>47</y>
+			<width>134</width>
+			<height>13</height>
+			<font>
+				<font family="liberation sans" style="REGULAR" size="10.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</background_color>
+			<vertical_alignment>1</vertical_alignment>
+			<auto_size>true</auto_size>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>EDM Label</name>
+			<text>Servo Error</text>
+			<x>13</x>
+			<y>35</y>
+			<width>56</width>
+			<height>13</height>
+			<font>
+				<font family="liberation sans" style="REGULAR" size="10.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</background_color>
+			<vertical_alignment>1</vertical_alignment>
+			<auto_size>true</auto_size>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>EDM Label</name>
+			<text>CPU Type Bit 1</text>
+			<x>13</x>
+			<y>23</y>
+			<width>73</width>
+			<height>13</height>
+			<font>
+				<font family="liberation sans" style="REGULAR" size="10.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</background_color>
+			<vertical_alignment>1</vertical_alignment>
+			<auto_size>true</auto_size>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="byte_monitor" version="2.0.0">
+			<name>EDM Byte</name>
+			<pv_name>$(pmac):CTRLSTAT:status1</pv_name>
+			<width>11</width>
+			<height>194</height>
+			<numBits>16</numBits>
+			<horizontal>false</horizontal>
+			<square>true</square>
+			<off_color>
+				<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+			</off_color>
+			<on_color>
+				<color name="Green LED: On" red="0" green="255" blue="0"></color>
+			</on_color>
+			<foreground_color>
+				<color red="192" green="192" blue="192"></color>
+			</foreground_color>
+			<actions></actions>
+			<rules>
+				<rule name="onColorAlarm" prop_id="on_color" out_exp="false">
+					<exp bool_exp="pvSev0==3">
+						<value>
+							<color name="Invalid" red="255" green="255" blue="255"></color>
+						</value>
+					</exp>
+					<exp bool_exp="pvSev0==2">
+						<value>
+							<color name="Major" red="255" green="0" blue="0"></color>
+						</value>
+					</exp>
+					<exp bool_exp="pvSev0==1">
+						<value>
+							<color name="Minor" red="255" green="241" blue="0"></color>
+						</value>
+					</exp>
+					<pv_name>$(pmac):CTRLSTAT:status1</pv_name>
+				</rule>
+			</rules>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>EDM Label</name>
+			<text>Real-time interrupt re-entry</text>
+			<x>13</x>
+			<y>11</y>
+			<width>130</width>
+			<height>13</height>
+			<font>
+				<font family="liberation sans" style="REGULAR" size="10.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</background_color>
+			<vertical_alignment>1</vertical_alignment>
+			<auto_size>true</auto_size>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>EDM Label</name>
+			<text>(Reserved for future use)</text>
+			<x>13</x>
+			<width>121</width>
+			<height>13</height>
+			<font>
+				<font family="liberation sans" style="REGULAR" size="10.0"></font>
+			</font>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="White" red="255" green="255" blue="255"></color>
+			</background_color>
+			<vertical_alignment>1</vertical_alignment>
+			<auto_size>true</auto_size>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>0</name>
+			<x>179</x>
+			<width>362</width>
+			<height>194</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>UMAC System</text>
+				<x>13</x>
+				<y>179</y>
+				<width>70</width>
+				<height>13</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="White" red="255" green="255" blue="255"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>PLC buffer open</text>
+				<x>13</x>
+				<y>167</y>
+				<width>79</width>
+				<height>13</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="White" red="255" green="255" blue="255"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>ASCII rotary buffer open</text>
+				<x>13</x>
+				<y>155</y>
+				<width>117</width>
+				<height>13</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="White" red="255" green="255" blue="255"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>Motion buffer open</text>
+				<x>13</x>
+				<y>143</y>
+				<width>90</width>
+				<height>13</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="White" red="255" green="255" blue="255"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>Binary rotary buffers open</text>
+				<x>13</x>
+				<y>131</y>
+				<width>124</width>
+				<height>13</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="White" red="255" green="255" blue="255"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>CPU Type Bit 0</text>
+				<x>13</x>
+				<y>119</y>
+				<width>73</width>
+				<height>13</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="White" red="255" green="255" blue="255"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>Turbo VME</text>
+				<x>13</x>
+				<y>107</y>
+				<width>55</width>
+				<height>13</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="White" red="255" green="255" blue="255"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>Turbo Ultralite</text>
+				<x>13</x>
+				<y>95</y>
+				<width>68</width>
+				<height>13</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="White" red="255" green="255" blue="255"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>This card addressed</text>
+				<x>13</x>
+				<y>83</y>
+				<width>97</width>
+				<height>13</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="White" red="255" green="255" blue="255"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>All cards addressed</text>
+				<x>13</x>
+				<y>71</y>
+				<width>93</width>
+				<height>13</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="White" red="255" green="255" blue="255"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>(Reserved for future use)</text>
+				<x>13</x>
+				<y>59</y>
+				<width>121</width>
+				<height>13</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="White" red="255" green="255" blue="255"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>Phase clock missing</text>
+				<x>13</x>
+				<y>47</y>
+				<width>94</width>
+				<height>13</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="White" red="255" green="255" blue="255"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>MACRO ring check error</text>
+				<x>13</x>
+				<y>35</y>
+				<width>118</width>
+				<height>13</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="White" red="255" green="255" blue="255"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>TWS variable parity error</text>
+				<x>13</x>
+				<y>11</y>
+				<width>120</width>
+				<height>13</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="White" red="255" green="255" blue="255"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>Configuration error</text>
+				<x>13</x>
+				<width>91</width>
+				<height>13</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="White" red="255" green="255" blue="255"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="byte_monitor" version="2.0.0">
+				<name>EDM Byte</name>
+				<pv_name>$(pmac):CTRLSTAT:status2</pv_name>
+				<width>11</width>
+				<height>194</height>
+				<numBits>16</numBits>
+				<horizontal>false</horizontal>
+				<square>true</square>
+				<off_color>
+					<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+				</off_color>
+				<on_color>
+					<color name="Green LED: On" red="0" green="255" blue="0"></color>
+				</on_color>
+				<foreground_color>
+					<color red="192" green="192" blue="192"></color>
+				</foreground_color>
+				<actions></actions>
+				<rules>
+					<rule name="onColorAlarm" prop_id="on_color" out_exp="false">
+						<exp bool_exp="pvSev0==3">
+							<value>
+								<color name="Invalid" red="255" green="255" blue="255"></color>
+							</value>
+						</exp>
+						<exp bool_exp="pvSev0==2">
+							<value>
+								<color name="Major" red="255" green="0" blue="0"></color>
+							</value>
+						</exp>
+						<exp bool_exp="pvSev0==1">
+							<value>
+								<color name="Minor" red="255" green="241" blue="0"></color>
+							</value>
+						</exp>
+						<pv_name>$(pmac):CTRLSTAT:status2</pv_name>
+					</rule>
+				</rules>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label</name>
+				<text>MACRO aux. communication error</text>
+				<x>13</x>
+				<y>23</y>
+				<width>164</width>
+				<height>13</height>
+				<font>
+					<font family="liberation sans" style="REGULAR" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="White" red="255" green="255" blue="255"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>0</name>
+				<x>194</x>
+				<width>159</width>
+				<height>194</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>(Reserved for future use)</text>
+					<x>12</x>
+					<y>180</y>
+					<width>121</width>
+					<height>13</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="10.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Text: FG" red="0" green="0" blue="0"></color>
+					</foreground_color>
+					<background_color>
+						<color name="White" red="255" green="255" blue="255"></color>
+					</background_color>
+					<vertical_alignment>1</vertical_alignment>
+					<auto_size>true</auto_size>
+					<wrap_words>false</wrap_words>
+					<actions></actions>
+					<border_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</border_color>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>(Reserved for future use)</text>
+					<x>12</x>
+					<y>167</y>
+					<width>121</width>
+					<height>13</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="10.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Text: FG" red="0" green="0" blue="0"></color>
+					</foreground_color>
+					<background_color>
+						<color name="White" red="255" green="255" blue="255"></color>
+					</background_color>
+					<vertical_alignment>1</vertical_alignment>
+					<auto_size>true</auto_size>
+					<wrap_words>false</wrap_words>
+					<actions></actions>
+					<border_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</border_color>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>(Reserved for future use)</text>
+					<x>12</x>
+					<y>155</y>
+					<width>121</width>
+					<height>13</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="10.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Text: FG" red="0" green="0" blue="0"></color>
+					</foreground_color>
+					<background_color>
+						<color name="White" red="255" green="255" blue="255"></color>
+					</background_color>
+					<vertical_alignment>1</vertical_alignment>
+					<auto_size>true</auto_size>
+					<wrap_words>false</wrap_words>
+					<actions></actions>
+					<border_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</border_color>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>(Reserved for future use)</text>
+					<x>12</x>
+					<y>143</y>
+					<width>121</width>
+					<height>13</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="10.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Text: FG" red="0" green="0" blue="0"></color>
+					</foreground_color>
+					<background_color>
+						<color name="White" red="255" green="255" blue="255"></color>
+					</background_color>
+					<vertical_alignment>1</vertical_alignment>
+					<auto_size>true</auto_size>
+					<wrap_words>false</wrap_words>
+					<actions></actions>
+					<border_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</border_color>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>(Reserved for future use)</text>
+					<x>12</x>
+					<y>131</y>
+					<width>121</width>
+					<height>13</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="10.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Text: FG" red="0" green="0" blue="0"></color>
+					</foreground_color>
+					<background_color>
+						<color name="White" red="255" green="255" blue="255"></color>
+					</background_color>
+					<vertical_alignment>1</vertical_alignment>
+					<auto_size>true</auto_size>
+					<wrap_words>false</wrap_words>
+					<actions></actions>
+					<border_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</border_color>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>(Reserved for future use)</text>
+					<x>12</x>
+					<y>119</y>
+					<width>121</width>
+					<height>13</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="10.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Text: FG" red="0" green="0" blue="0"></color>
+					</foreground_color>
+					<background_color>
+						<color name="White" red="255" green="255" blue="255"></color>
+					</background_color>
+					<vertical_alignment>1</vertical_alignment>
+					<auto_size>true</auto_size>
+					<wrap_words>false</wrap_words>
+					<actions></actions>
+					<border_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</border_color>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>(Reserved for future use)</text>
+					<x>12</x>
+					<y>107</y>
+					<width>121</width>
+					<height>13</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="10.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Text: FG" red="0" green="0" blue="0"></color>
+					</foreground_color>
+					<background_color>
+						<color name="White" red="255" green="255" blue="255"></color>
+					</background_color>
+					<vertical_alignment>1</vertical_alignment>
+					<auto_size>true</auto_size>
+					<wrap_words>false</wrap_words>
+					<actions></actions>
+					<border_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</border_color>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>(Reserved for future use)</text>
+					<x>12</x>
+					<y>95</y>
+					<width>121</width>
+					<height>13</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="10.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Text: FG" red="0" green="0" blue="0"></color>
+					</foreground_color>
+					<background_color>
+						<color name="White" red="255" green="255" blue="255"></color>
+					</background_color>
+					<vertical_alignment>1</vertical_alignment>
+					<auto_size>true</auto_size>
+					<wrap_words>false</wrap_words>
+					<actions></actions>
+					<border_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</border_color>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>(Reserved for future use)</text>
+					<x>12</x>
+					<y>83</y>
+					<width>121</width>
+					<height>13</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="10.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Text: FG" red="0" green="0" blue="0"></color>
+					</foreground_color>
+					<background_color>
+						<color name="White" red="255" green="255" blue="255"></color>
+					</background_color>
+					<vertical_alignment>1</vertical_alignment>
+					<auto_size>true</auto_size>
+					<wrap_words>false</wrap_words>
+					<actions></actions>
+					<border_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</border_color>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>(Reserved for future use)</text>
+					<x>12</x>
+					<y>71</y>
+					<width>121</width>
+					<height>13</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="10.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Text: FG" red="0" green="0" blue="0"></color>
+					</foreground_color>
+					<background_color>
+						<color name="White" red="255" green="255" blue="255"></color>
+					</background_color>
+					<vertical_alignment>1</vertical_alignment>
+					<auto_size>true</auto_size>
+					<wrap_words>false</wrap_words>
+					<actions></actions>
+					<border_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</border_color>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>(Reserved for future use)</text>
+					<x>12</x>
+					<y>59</y>
+					<width>121</width>
+					<height>13</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="10.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Text: FG" red="0" green="0" blue="0"></color>
+					</foreground_color>
+					<background_color>
+						<color name="White" red="255" green="255" blue="255"></color>
+					</background_color>
+					<vertical_alignment>1</vertical_alignment>
+					<auto_size>true</auto_size>
+					<wrap_words>false</wrap_words>
+					<actions></actions>
+					<border_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</border_color>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>(Reserved for future use)</text>
+					<x>12</x>
+					<y>47</y>
+					<width>121</width>
+					<height>13</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="10.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Text: FG" red="0" green="0" blue="0"></color>
+					</foreground_color>
+					<background_color>
+						<color name="White" red="255" green="255" blue="255"></color>
+					</background_color>
+					<vertical_alignment>1</vertical_alignment>
+					<auto_size>true</auto_size>
+					<wrap_words>false</wrap_words>
+					<actions></actions>
+					<border_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</border_color>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>Fixed buffer full</text>
+					<x>12</x>
+					<y>35</y>
+					<width>73</width>
+					<height>13</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="10.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Text: FG" red="0" green="0" blue="0"></color>
+					</foreground_color>
+					<background_color>
+						<color name="White" red="255" green="255" blue="255"></color>
+					</background_color>
+					<vertical_alignment>1</vertical_alignment>
+					<auto_size>true</auto_size>
+					<wrap_words>false</wrap_words>
+					<actions></actions>
+					<border_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</border_color>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>Ring master-to-master comms</text>
+					<x>12</x>
+					<y>23</y>
+					<width>145</width>
+					<height>13</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="10.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Text: FG" red="0" green="0" blue="0"></color>
+					</foreground_color>
+					<background_color>
+						<color name="White" red="255" green="255" blue="255"></color>
+					</background_color>
+					<vertical_alignment>1</vertical_alignment>
+					<auto_size>true</auto_size>
+					<wrap_words>false</wrap_words>
+					<actions></actions>
+					<border_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</border_color>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>Kinematics active</text>
+					<x>12</x>
+					<y>11</y>
+					<width>81</width>
+					<height>13</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="10.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Text: FG" red="0" green="0" blue="0"></color>
+					</foreground_color>
+					<background_color>
+						<color name="White" red="255" green="255" blue="255"></color>
+					</background_color>
+					<vertical_alignment>1</vertical_alignment>
+					<auto_size>true</auto_size>
+					<wrap_words>false</wrap_words>
+					<actions></actions>
+					<border_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</border_color>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>EDM Label</name>
+					<text>Kinematics active</text>
+					<x>12</x>
+					<width>81</width>
+					<height>13</height>
+					<font>
+						<font family="liberation sans" style="REGULAR" size="10.0"></font>
+					</font>
+					<foreground_color>
+						<color name="Text: FG" red="0" green="0" blue="0"></color>
+					</foreground_color>
+					<background_color>
+						<color name="White" red="255" green="255" blue="255"></color>
+					</background_color>
+					<vertical_alignment>1</vertical_alignment>
+					<auto_size>true</auto_size>
+					<wrap_words>false</wrap_words>
+					<actions></actions>
+					<border_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</border_color>
+				</widget>
+				<widget type="byte_monitor" version="2.0.0">
+					<name>EDM Byte</name>
+					<pv_name>$(pmac):CTRLSTAT:status3</pv_name>
+					<width>11</width>
+					<height>194</height>
+					<numBits>16</numBits>
+					<horizontal>false</horizontal>
+					<square>true</square>
+					<off_color>
+						<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+					</off_color>
+					<on_color>
+						<color name="Green LED: On" red="0" green="255" blue="0"></color>
+					</on_color>
+					<foreground_color>
+						<color red="192" green="192" blue="192"></color>
+					</foreground_color>
+					<actions></actions>
+					<rules>
+						<rule name="onColorAlarm" prop_id="on_color" out_exp="false">
+							<exp bool_exp="pvSev0==3">
+								<value>
+									<color name="Invalid" red="255" green="255" blue="255"></color>
+								</value>
+							</exp>
+							<exp bool_exp="pvSev0==2">
+								<value>
+									<color name="Major" red="255" green="0" blue="0"></color>
+								</value>
+							</exp>
+							<exp bool_exp="pvSev0==1">
+								<value>
+									<color name="Minor" red="255" green="241" blue="0"></color>
+								</value>
+							</exp>
+							<pv_name>$(pmac):CTRLSTAT:status3</pv_name>
+						</rule>
+					</rules>
+					<border_alarm_sensitive>false</border_alarm_sensitive>
+				</widget>
+			</widget>
+		</widget>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>PmacStatus:Title</name>
+		<text>PMAC status</text>
+		<x>6</x>
+		<y>171</y>
+		<width>94</width>
+		<height>18</height>
+		<font>
+			<font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_width>1</border_width>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>PmacSettings:Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>559</x>
+		<y>74</y>
+		<width>317</width>
+		<height>132</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>PmacSettings:Title</name>
+		<text>PMAC settings</text>
+		<x>560</x>
+		<y>56</y>
+		<width>115</width>
+		<height>18</height>
+		<font>
+			<font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_width>1</border_width>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput</name>
+		<pv_name>$(pmac):VME_ADDR_MODE</pv_name>
+		<x>750</x>
+		<y>158</y>
+		<width>120</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<show_units>false</show_units>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>VME Address Modifier (I90)</text>
+		<x>565</x>
+		<y>157</y>
+		<width>131</width>
+		<height>13</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label_1</name>
+		<text>VME Interrupt Level (I95)</text>
+		<x>565</x>
+		<y>172</y>
+		<width>121</width>
+		<height>13</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput_1</name>
+		<pv_name>$(pmac):VME_INTLVL</pv_name>
+		<x>750</x>
+		<y>173</y>
+		<width>120</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<show_units>false</show_units>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label_2</name>
+		<text>PLC Program Control (I5)</text>
+		<x>565</x>
+		<y>82</y>
+		<width>124</width>
+		<height>13</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput_2</name>
+		<pv_name>$(pmac):PLC_CONTROL</pv_name>
+		<x>750</x>
+		<y>83</y>
+		<width>120</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<show_units>false</show_units>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput_3</name>
+		<pv_name>$(pmac):ERRREPMODE</pv_name>
+		<x>750</x>
+		<y>113</y>
+		<width>120</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<show_units>false</show_units>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput_4</name>
+		<pv_name>$(pmac):IO_HANDSHAKE</pv_name>
+		<x>750</x>
+		<y>98</y>
+		<width>120</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<show_units>false</show_units>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label_3</name>
+		<text>I/O Handshake Control (I3)</text>
+		<x>565</x>
+		<y>97</y>
+		<width>129</width>
+		<height>13</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label_4</name>
+		<text>Error Reporting Mode (I6)</text>
+		<x>565</x>
+		<y>112</y>
+		<width>125</width>
+		<height>13</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput_5</name>
+		<pv_name>$(pmac):DPRAM_COMMS_INT</pv_name>
+		<x>750</x>
+		<y>128</y>
+		<width>120</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<show_units>false</show_units>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput_6</name>
+		<pv_name>$(pmac):DPRAM_COMMS</pv_name>
+		<x>750</x>
+		<y>143</y>
+		<width>120</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<show_units>false</show_units>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label_5</name>
+		<text>DPRAM ASCII Comms (I58)</text>
+		<x>565</x>
+		<y>142</y>
+		<width>135</width>
+		<height>13</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label_6</name>
+		<text>DPRAM ASCII Comms Interrupt (I56)</text>
+		<x>565</x>
+		<y>127</y>
+		<width>179</width>
+		<height>13</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>EDM TextInput_7</name>
+		<pv_name>$(pmac):VME_DPRAMBASE</pv_name>
+		<x>750</x>
+		<y>188</y>
+		<width>120</width>
+		<height>12</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<format>4</format>
+		<show_units>false</show_units>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label_8</name>
+		<text>VME DPRAM Base Address (I97)</text>
+		<x>565</x>
+		<y>187</y>
+		<width>159</width>
+		<height>13</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="10.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>Feedrate:Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>5</x>
+		<y>425</y>
+		<width>256</width>
+		<height>111</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Feedrate:Title</name>
+		<text>Feedrate</text>
+		<x>6</x>
+		<y>407</y>
+		<width>59</width>
+		<height>18</height>
+		<font>
+			<font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_width>1</border_width>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="led" version="2.0.0">
+		<name>Feedrate:Problem</name>
+		<pv_name>$(pmac):FEEDRATE_PROBLEM_RBV</pv_name>
+		<x>170</x>
+		<y>433</y>
+		<off_color>
+			<color name="Red LED: Off" red="96" green="0" blue="0"></color>
+		</off_color>
+		<on_color>
+			<color name="Major" red="255" green="0" blue="0"></color>
+		</on_color>
+		<foreground_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<line_color>
+			<color red="150" green="150" blue="150"></color>
+		</line_color>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Feedrate:ProblemLabel</name>
+		<text>Feedrate problem</text>
+		<x>10</x>
+		<y>433</y>
+		<width>146</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Feedrate:SetFeedrateLabel</name>
+		<text>Set feedrate for all CS</text>
+		<x>10</x>
+		<y>458</y>
+		<width>146</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textentry" version="3.0.0">
+		<name>Feedrate:SetFeedrate</name>
+		<pv_name>$(pmac):FEEDRATE</pv_name>
+		<x>170</x>
+		<y>458</y>
+		<width>86</width>
+		<foreground_color>
+			<color name="Controller: FG" red="0" green="0" blue="196"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Feedrate:CurrentLowestFeedrateLabel</name>
+		<text>Current lowest feedrate</text>
+		<x>10</x>
+		<y>483</y>
+		<width>151</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>Feedrate:CurrentLowestFeedrate</name>
+		<pv_name>$(pmac):FEEDRATE_RBV</pv_name>
+		<x>170</x>
+		<y>483</y>
+		<width>86</width>
+		<font>
+			<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Feedrate:MinimumAllowedLabel</name>
+		<text>Minimum allowed</text>
+		<x>10</x>
+		<y>508</y>
+		<width>146</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textentry" version="3.0.0">
+		<name>Feedrate:MinimumAllowed</name>
+		<pv_name>$(pmac):FEEDRATE_LIMIT</pv_name>
+		<x>170</x>
+		<y>508</y>
+		<width>86</width>
+		<foreground_color>
+			<color name="Controller: FG" red="0" green="0" blue="196"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>Grouping Container</name>
+		<x>559</x>
+		<y>506</y>
+		<width>306</width>
+		<height>75</height>
+		<style>3</style>
+		<foreground_color>
+			<color red="0" green="128" blue="255"></color>
+		</foreground_color>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color red="240" green="240" blue="240"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<widget type="rectangle" version="2.0.0">
+			<name>EDM Rectangle_3</name>
+			<macros>
+				<pv_name></pv_name>
+			</macros>
+			<y>19</y>
+			<width>306</width>
+			<height>56</height>
+			<line_width>0</line_width>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color name="Grey 65%" red="166" green="166" blue="166"></color>
+			</background_color>
+			<actions></actions>
+			<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>EDM Label_16</name>
+			<text>General purpose outputs</text>
+			<x>1</x>
+			<y>1</y>
+			<width>164</width>
+			<height>18</height>
+			<font>
+				<font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872"></font>
+			</font>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Grey 50%" red="128" green="128" blue="128"></color>
+			</background_color>
+			<transparent>false</transparent>
+			<horizontal_alignment>1</horizontal_alignment>
+			<vertical_alignment>1</vertical_alignment>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_width>1</border_width>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container</name>
+			<x>8</x>
+			<y>29</y>
+			<width>290</width>
+			<height>36</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="byte_monitor" version="2.0.0">
+				<name>EDM Byte_4</name>
+				<pv_name>$(pmac):GPIO_OP_BITS</pv_name>
+				<y>14</y>
+				<width>290</width>
+				<height>22</height>
+				<numBits>16</numBits>
+				<bitReverse>true</bitReverse>
+				<square>true</square>
+				<off_color>
+					<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+				</off_color>
+				<on_color>
+					<color name="Green LED: On" red="0" green="255" blue="0"></color>
+				</on_color>
+				<foreground_color>
+					<color red="192" green="192" blue="192"></color>
+				</foreground_color>
+				<actions></actions>
+				<rules>
+					<rule name="onColorAlarm" prop_id="on_color" out_exp="false">
+						<exp bool_exp="pvSev0==3">
+							<value>
+								<color name="Invalid" red="255" green="255" blue="255"></color>
+							</value>
+						</exp>
+						<exp bool_exp="pvSev0==2">
+							<value>
+								<color name="Major" red="255" green="0" blue="0"></color>
+							</value>
+						</exp>
+						<exp bool_exp="pvSev0==1">
+							<value>
+								<color name="Minor" red="255" green="241" blue="0"></color>
+							</value>
+						</exp>
+						<pv_name>$(pmac):GPIO_OP_BITS</pv_name>
+					</rule>
+				</rules>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label_17</name>
+				<text>1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16</text>
+				<x>7</x>
+				<width>276</width>
+				<height>13</height>
+				<font>
+					<font family="monospace" style="BOLD" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="White" red="255" green="255" blue="255"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>Grouping Container_1</name>
+		<x>559</x>
+		<y>425</y>
+		<width>306</width>
+		<height>75</height>
+		<style>3</style>
+		<foreground_color>
+			<color red="0" green="128" blue="255"></color>
+		</foreground_color>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color red="240" green="240" blue="240"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<widget type="rectangle" version="2.0.0">
+			<name>EDM Rectangle_2</name>
+			<macros>
+				<pv_name></pv_name>
+			</macros>
+			<y>19</y>
+			<width>306</width>
+			<height>56</height>
+			<line_width>0</line_width>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color name="Grey 65%" red="166" green="166" blue="166"></color>
+			</background_color>
+			<actions></actions>
+			<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>EDM Label_14</name>
+			<text>General purpose inputs</text>
+			<x>1</x>
+			<y>1</y>
+			<width>164</width>
+			<height>18</height>
+			<font>
+				<font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872"></font>
+			</font>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Grey 50%" red="128" green="128" blue="128"></color>
+			</background_color>
+			<transparent>false</transparent>
+			<horizontal_alignment>1</horizontal_alignment>
+			<vertical_alignment>1</vertical_alignment>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_width>1</border_width>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container_1</name>
+			<x>8</x>
+			<y>29</y>
+			<width>290</width>
+			<height>36</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="byte_monitor" version="2.0.0">
+				<name>EDM Byte_3</name>
+				<pv_name>$(pmac):GPIO_INP_BITS</pv_name>
+				<y>14</y>
+				<width>290</width>
+				<height>22</height>
+				<numBits>16</numBits>
+				<bitReverse>true</bitReverse>
+				<square>true</square>
+				<off_color>
+					<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+				</off_color>
+				<on_color>
+					<color name="Green LED: On" red="0" green="255" blue="0"></color>
+				</on_color>
+				<foreground_color>
+					<color red="192" green="192" blue="192"></color>
+				</foreground_color>
+				<actions></actions>
+				<rules>
+					<rule name="onColorAlarm" prop_id="on_color" out_exp="false">
+						<exp bool_exp="pvSev0==3">
+							<value>
+								<color name="Invalid" red="255" green="255" blue="255"></color>
+							</value>
+						</exp>
+						<exp bool_exp="pvSev0==2">
+							<value>
+								<color name="Major" red="255" green="0" blue="0"></color>
+							</value>
+						</exp>
+						<exp bool_exp="pvSev0==1">
+							<value>
+								<color name="Minor" red="255" green="241" blue="0"></color>
+							</value>
+						</exp>
+						<pv_name>$(pmac):GPIO_INP_BITS</pv_name>
+					</rule>
+				</rules>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label_15</name>
+				<text>1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16</text>
+				<x>6</x>
+				<width>276</width>
+				<height>13</height>
+				<font>
+					<font family="monospace" style="BOLD" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="White" red="255" green="255" blue="255"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>Grouping Container_2</name>
+		<x>559</x>
+		<y>342</y>
+		<width>306</width>
+		<height>75</height>
+		<style>3</style>
+		<foreground_color>
+			<color red="0" green="128" blue="255"></color>
+		</foreground_color>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color red="240" green="240" blue="240"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<widget type="rectangle" version="2.0.0">
+			<name>EDM Rectangle</name>
+			<macros>
+				<pv_name></pv_name>
+			</macros>
+			<y>19</y>
+			<width>306</width>
+			<height>56</height>
+			<line_width>0</line_width>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color name="Grey 65%" red="166" green="166" blue="166"></color>
+			</background_color>
+			<actions></actions>
+			<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>EDM Label_9</name>
+			<text>CS motion program activity</text>
+			<x>1</x>
+			<y>1</y>
+			<width>187</width>
+			<height>18</height>
+			<font>
+				<font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872"></font>
+			</font>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Grey 50%" red="128" green="128" blue="128"></color>
+			</background_color>
+			<transparent>false</transparent>
+			<horizontal_alignment>1</horizontal_alignment>
+			<vertical_alignment>1</vertical_alignment>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_width>1</border_width>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container_2</name>
+			<x>8</x>
+			<y>29</y>
+			<width>290</width>
+			<height>36</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="byte_monitor" version="2.0.0">
+				<name>EDM Byte</name>
+				<pv_name>$(pmac):PROGBITS</pv_name>
+				<y>14</y>
+				<width>290</width>
+				<height>22</height>
+				<numBits>16</numBits>
+				<bitReverse>true</bitReverse>
+				<square>true</square>
+				<off_color>
+					<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+				</off_color>
+				<on_color>
+					<color name="Green LED: On" red="0" green="255" blue="0"></color>
+				</on_color>
+				<foreground_color>
+					<color red="192" green="192" blue="192"></color>
+				</foreground_color>
+				<actions></actions>
+				<rules>
+					<rule name="onColorAlarm" prop_id="on_color" out_exp="false">
+						<exp bool_exp="pvSev0==3">
+							<value>
+								<color name="Invalid" red="255" green="255" blue="255"></color>
+							</value>
+						</exp>
+						<exp bool_exp="pvSev0==2">
+							<value>
+								<color name="Major" red="255" green="0" blue="0"></color>
+							</value>
+						</exp>
+						<exp bool_exp="pvSev0==1">
+							<value>
+								<color name="Minor" red="255" green="241" blue="0"></color>
+							</value>
+						</exp>
+						<pv_name>$(pmac):PROGBITS</pv_name>
+					</rule>
+				</rules>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label_13</name>
+				<text>1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16</text>
+				<x>6</x>
+				<width>276</width>
+				<height>13</height>
+				<font>
+					<font family="monospace" style="BOLD" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="White" red="255" green="255" blue="255"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>Grouping Container_3</name>
+		<x>559</x>
+		<y>215</y>
+		<width>306</width>
+		<height>120</height>
+		<style>3</style>
+		<foreground_color>
+			<color red="0" green="128" blue="255"></color>
+		</foreground_color>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color red="240" green="240" blue="240"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<widget type="rectangle" version="2.0.0">
+			<name>EDM Rectangle_1</name>
+			<macros>
+				<pv_name></pv_name>
+			</macros>
+			<y>19</y>
+			<width>306</width>
+			<height>101</height>
+			<line_width>0</line_width>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color name="Grey 65%" red="166" green="166" blue="166"></color>
+			</background_color>
+			<actions></actions>
+			<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		</widget>
+		<widget type="label" version="2.0.0">
+			<name>EDM Label_10</name>
+			<text>PLCs disabled</text>
+			<x>1</x>
+			<y>1</y>
+			<width>115</width>
+			<height>18</height>
+			<font>
+				<font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872"></font>
+			</font>
+			<foreground_color>
+				<color name="Text: FG" red="0" green="0" blue="0"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Grey 50%" red="128" green="128" blue="128"></color>
+			</background_color>
+			<transparent>false</transparent>
+			<horizontal_alignment>1</horizontal_alignment>
+			<vertical_alignment>1</vertical_alignment>
+			<wrap_words>false</wrap_words>
+			<actions></actions>
+			<border_width>1</border_width>
+			<border_color>
+				<color name="Black" red="0" green="0" blue="0"></color>
+			</border_color>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container_3</name>
+			<x>8</x>
+			<y>29</y>
+			<width>290</width>
+			<height>81</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="byte_monitor" version="2.0.0">
+				<name>EDM Byte_1</name>
+				<pv_name>$(pmac):PLCDISBITS00</pv_name>
+				<y>14</y>
+				<width>290</width>
+				<height>22</height>
+				<numBits>16</numBits>
+				<bitReverse>true</bitReverse>
+				<square>true</square>
+				<off_color>
+					<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+				</off_color>
+				<on_color>
+					<color name="Green LED: On" red="0" green="255" blue="0"></color>
+				</on_color>
+				<foreground_color>
+					<color red="192" green="192" blue="192"></color>
+				</foreground_color>
+				<actions></actions>
+				<rules>
+					<rule name="onColorAlarm" prop_id="on_color" out_exp="false">
+						<exp bool_exp="pvSev0==3">
+							<value>
+								<color name="Invalid" red="255" green="255" blue="255"></color>
+							</value>
+						</exp>
+						<exp bool_exp="pvSev0==2">
+							<value>
+								<color name="Major" red="255" green="0" blue="0"></color>
+							</value>
+						</exp>
+						<exp bool_exp="pvSev0==1">
+							<value>
+								<color name="Minor" red="255" green="241" blue="0"></color>
+							</value>
+						</exp>
+						<pv_name>$(pmac):PLCDISBITS00</pv_name>
+					</rule>
+				</rules>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label_11</name>
+				<text>0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15</text>
+				<x>6</x>
+				<width>276</width>
+				<height>13</height>
+				<font>
+					<font family="monospace" style="BOLD" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="White" red="255" green="255" blue="255"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+			<widget type="byte_monitor" version="2.0.0">
+				<name>EDM Byte_2</name>
+				<pv_name>$(pmac):PLCDISBITS01</pv_name>
+				<y>59</y>
+				<width>290</width>
+				<height>22</height>
+				<numBits>16</numBits>
+				<bitReverse>true</bitReverse>
+				<square>true</square>
+				<off_color>
+					<color name="Green LED: Off" red="0" green="96" blue="0"></color>
+				</off_color>
+				<on_color>
+					<color name="Green LED: On" red="0" green="255" blue="0"></color>
+				</on_color>
+				<foreground_color>
+					<color red="192" green="192" blue="192"></color>
+				</foreground_color>
+				<actions></actions>
+				<rules>
+					<rule name="onColorAlarm" prop_id="on_color" out_exp="false">
+						<exp bool_exp="pvSev0==3">
+							<value>
+								<color name="Invalid" red="255" green="255" blue="255"></color>
+							</value>
+						</exp>
+						<exp bool_exp="pvSev0==2">
+							<value>
+								<color name="Major" red="255" green="0" blue="0"></color>
+							</value>
+						</exp>
+						<exp bool_exp="pvSev0==1">
+							<value>
+								<color name="Minor" red="255" green="241" blue="0"></color>
+							</value>
+						</exp>
+						<pv_name>$(pmac):PLCDISBITS01</pv_name>
+					</rule>
+				</rules>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>EDM Label_12</name>
+				<text>16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31</text>
+				<x>1</x>
+				<y>45</y>
+				<width>282</width>
+				<height>13</height>
+				<font>
+					<font family="monospace" style="BOLD" size="10.0"></font>
+				</font>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="White" red="255" green="255" blue="255"></color>
+				</background_color>
+				<vertical_alignment>1</vertical_alignment>
+				<auto_size>true</auto_size>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>AllMotors:Title</name>
+		<text>All motors</text>
+		<x>293</x>
+		<y>407</y>
+		<width>69</width>
+		<height>18</height>
+		<font>
+			<font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_width>1</border_width>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>AllMotors:Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>292</x>
+		<y>425</y>
+		<width>256</width>
+		<height>84</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>AllMotors:KillAll</name>
+		<actions>
+			<action type="write_pv">
+				<description>Write PV</description>
+				<pv_name>$(pv_name)</pv_name>
+				<value>1</value>
+			</action>
+		</actions>
+		<pv_name>$(pmac):KillAll</pv_name>
+		<text>KILL</text>
+		<x>329</x>
+		<y>471</y>
+		<width>182</width>
+		<height>26</height>
+		<font>
+			<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Major" red="255" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Button: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>AllMotors:StopAll</name>
+		<actions>
+			<action type="write_pv">
+				<description>Write PV</description>
+				<pv_name>$(pv_name)</pv_name>
+				<value>1</value>
+			</action>
+		</actions>
+		<pv_name>$(pmac):StopAll</pv_name>
+		<text>STOP</text>
+		<x>329</x>
+		<y>433</y>
+		<width>182</width>
+		<height>26</height>
+		<font>
+			<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Major" red="255" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Button: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>DeferMove:Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>292</x>
+		<y>535</y>
+		<width>256</width>
+		<height>41</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>DeferMove:Title</name>
+		<text>Defer moves</text>
+		<x>293</x>
+		<y>517</y>
+		<width>94</width>
+		<height>18</height>
+		<font>
+			<font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_width>1</border_width>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="combo" version="2.0.0">
+		<name>DeferredMove:DeferMoves</name>
+		<pv_name>$(pmac):DeferMoves</pv_name>
+		<x>337</x>
+		<y>546</y>
+		<width>174</width>
+		<height>20</height>
+		<foreground_color>
+			<color name="Controller: FG" red="0" green="0" blue="196"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Button: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>CSGroup:Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>292</x>
+		<y>600</y>
+		<width>256</width>
+		<height>41</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>CSGroup:Title</name>
+		<text>CS group</text>
+		<x>293</x>
+		<y>582</y>
+		<width>94</width>
+		<height>18</height>
+		<font>
+			<font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_width>1</border_width>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="combo" version="2.0.0">
+		<name>CSGroup:Group</name>
+		<pv_name>$(pmac):COORDINATE_SYS_GROUP</pv_name>
+		<x>337</x>
+		<y>611</y>
+		<width>174</width>
+		<height>20</height>
+		<foreground_color>
+			<color name="Controller: FG" red="0" green="0" blue="196"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Button: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>AdditionalScreens:Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>5</x>
+		<y>560</y>
+		<width>256</width>
+		<height>81</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>AdditionalScreens:Title</name>
+		<text>Additional screens</text>
+		<x>6</x>
+		<y>542</y>
+		<width>124</width>
+		<height>18</height>
+		<font>
+			<font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_width>1</border_width>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>AdditionalScreens:Axes</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>pmac_axes.bob</file>
+				<target>tab</target>
+			</action>
+		</actions>
+		<text>Axes</text>
+		<x>12</x>
+		<y>575</y>
+		<width>111</width>
+		<height>25</height>
+		<font>
+			<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Button: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>AdditionalScreens:Trajectory</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>pmac_trajectory.bob</file>
+				<target>tab</target>
+			</action>
+		</actions>
+		<text>Trajectory</text>
+		<x>140</x>
+		<y>575</y>
+		<width>111</width>
+		<height>25</height>
+		<font>
+			<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Button: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>AdditionalScreens:Debugging</name>
+		<actions>
+			<action type="open_display">
+				<description>Open Display</description>
+				<file>pmac_debug.bob</file>
+				<target>tab</target>
+			</action>
+		</actions>
+		<text>Debugging</text>
+		<x>140</x>
+		<y>607</y>
+		<width>111</width>
+		<height>25</height>
+		<font>
+			<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Button: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>AdditionalScreens:CoordSys</name>
+		<actions>
+			<action type="open_display">
+				<description>CS1</description>
+				<file>pmac_cs_axes.bob</file>
+				<macros>
+					<CS>1</CS>
+				</macros>
+				<target>tab</target>
+			</action>
+			<action type="open_display">
+				<description>CS2</description>
+				<file>pmac_cs_axes.bob</file>
+				<macros>
+					<CS>2</CS>
+				</macros>
+				<target>tab</target>
+			</action>
+			<action type="open_display">
+				<description>CS3</description>
+				<file>pmac_cs_axes.bob</file>
+				<macros>
+					<CS>3</CS>
+				</macros>
+				<target>tab</target>
+			</action>
+			<action type="open_display">
+				<description>CS4</description>
+				<file>pmac_cs_axes.bob</file>
+				<macros>
+					<CS>4</CS>
+				</macros>
+				<target>tab</target>
+			</action>
+			<action type="open_display">
+				<description>CS5</description>
+				<file>pmac_cs_axes.bob</file>
+				<macros>
+					<CS>5</CS>
+				</macros>
+				<target>tab</target>
+			</action>
+			<action type="open_display">
+				<description>CS6</description>
+				<file>pmac_cs_axes.bob</file>
+				<macros>
+					<CS>6</CS>
+				</macros>
+				<target>tab</target>
+			</action>
+			<action type="open_display">
+				<description>CS7</description>
+				<file>pmac_cs_axes.bob</file>
+				<macros>
+					<CS>7</CS>
+				</macros>
+				<target>tab</target>
+			</action>
+			<action type="open_display">
+				<description>CS8</description>
+				<file>pmac_cs_axes.bob</file>
+				<macros>
+					<CS>8</CS>
+				</macros>
+				<target>tab</target>
+			</action>
+		</actions>
+		<text>Coord sys</text>
+		<x>12</x>
+		<y>607</y>
+		<width>111</width>
+		<height>25</height>
+		<font>
+			<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Related Display: FG" red="128" green="64" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Button: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+</display>

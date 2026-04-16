@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>Diamond 2 Vacuum Pump Cart</name>
+	<x>68</x>
+	<y>125</y>
+	<width>300</width>
+	<height>200</height>
+	<background_color>
+		<color name="Canvas" red="200" green="200" blue="200"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>8</grid_step_x>
+	<grid_step_y>8</grid_step_y>
+	<widget type="group" version="3.0.0">
+		<name>Grouping Container</name>
+		<x>90</x>
+		<y>55</y>
+		<width>120</width>
+		<height>124</height>
+		<style>3</style>
+		<foreground_color>
+			<color red="0" green="128" blue="255"></color>
+		</foreground_color>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color red="240" green="240" blue="240"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<widget type="action_button" version="3.0.0">
+			<name>Action Button</name>
+			<actions execute_as_one="true">
+				<action type="open_display">
+					<description>Open Display</description>
+					<file>../mks937a/mks937a.bob</file>
+					<macros>
+						<device>$(dom)-VA-GCTLR-01</device>
+					</macros>
+					<target>standalone</target>
+				</action>
+			</actions>
+			<text>GCTLR</text>
+			<width>120</width>
+			<height>25</height>
+			<foreground_color>
+				<color name="Controller: FG" red="0" green="0" blue="196"></color>
+			</foreground_color>
+			<background_color>
+				<color name="Button: BG" red="205" green="205" blue="205"></color>
+			</background_color>
+			<tooltip>$(actions)</tooltip>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container</name>
+			<y>30</y>
+			<width>34</width>
+			<height>94</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="symbol" version="2.0.0">
+				<name>$(dom)-VA-PIRG-01</name>
+				<pv_name>$(name):STA</pv_name>
+				<symbols>
+					<symbol>../mks937a/mks937aPirg-symbol-34.png</symbol>
+				</symbols>
+				<y>27</y>
+				<width>34</width>
+				<height>34</height>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<actions>
+					<action type="open_display">
+						<description>Open Display</description>
+						<file>../mks937a/mks937aPirg.bob</file>
+						<macros>
+							<device>$(dom)-VA-PIRG-01</device>
+						</macros>
+						<target>standalone</target>
+					</action>
+				</actions>
+				<rules>
+					<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+						<exp bool_exp="pvSev0==3">
+							<expression>0</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+							<expression>0</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+							<expression>1</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+							<expression>2</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+							<expression>3</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+							<expression>4</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+							<expression>5</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+							<expression>6</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+							<expression>7</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+							<expression>8</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+							<expression>9</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=9.0&amp;&amp;pv0&lt;10.0">
+							<expression>10</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=10.0&amp;&amp;pv0&lt;11.0">
+							<expression>11</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=11.0&amp;&amp;pv0&lt;12.0">
+							<expression>12</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=12.0&amp;&amp;pv0&lt;13.0">
+							<expression>13</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=13.0&amp;&amp;pv0&lt;14.0">
+							<expression>14</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=14.0&amp;&amp;pv0&lt;15.0">
+							<expression>15</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=15.0&amp;&amp;pv0&lt;16.0">
+							<expression>16</expression>
+						</exp>
+						<exp bool_exp="true">
+							<expression>0</expression>
+						</exp>
+						<pv_name>$(pv_name)</pv_name>
+					</rule>
+				</rules>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="symbol" version="2.0.0">
+				<name>$(dom)-VA-IMG-01</name>
+				<pv_name>$(name):STA</pv_name>
+				<symbols>
+					<symbol>../mks937a/mks937aImg-symbol-34.png</symbol>
+				</symbols>
+				<y>60</y>
+				<width>34</width>
+				<height>34</height>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<actions>
+					<action type="open_display">
+						<description>Open Display</description>
+						<file>../mks937a/mks937aPirg.bob</file>
+						<macros>
+							<device>$(dom)-VA-IMG-01</device>
+						</macros>
+						<target>standalone</target>
+					</action>
+				</actions>
+				<rules>
+					<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+						<exp bool_exp="pvSev0==3">
+							<expression>0</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+							<expression>0</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+							<expression>1</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+							<expression>2</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+							<expression>3</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+							<expression>4</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+							<expression>5</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+							<expression>6</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+							<expression>7</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+							<expression>8</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+							<expression>9</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=9.0&amp;&amp;pv0&lt;10.0">
+							<expression>10</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=10.0&amp;&amp;pv0&lt;11.0">
+							<expression>11</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=11.0&amp;&amp;pv0&lt;12.0">
+							<expression>12</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=12.0&amp;&amp;pv0&lt;13.0">
+							<expression>13</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=13.0&amp;&amp;pv0&lt;14.0">
+							<expression>14</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=14.0&amp;&amp;pv0&lt;15.0">
+							<expression>15</expression>
+						</exp>
+						<exp bool_exp="pv0&gt;=15.0&amp;&amp;pv0&lt;16.0">
+							<expression>16</expression>
+						</exp>
+						<exp bool_exp="true">
+							<expression>0</expression>
+						</exp>
+						<pv_name>$(pv_name)</pv_name>
+					</rule>
+				</rules>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				<border_alarm_sensitive>false</border_alarm_sensitive>
+			</widget>
+			<widget type="label" version="2.0.0">
+				<name>Label</name>
+				<text>1</text>
+				<width>34</width>
+				<foreground_color>
+					<color name="Text: FG" red="0" green="0" blue="0"></color>
+				</foreground_color>
+				<background_color>
+					<color name="Canvas" red="200" green="200" blue="200"></color>
+				</background_color>
+				<horizontal_alignment>1</horizontal_alignment>
+				<vertical_alignment>1</vertical_alignment>
+				<wrap_words>false</wrap_words>
+				<actions></actions>
+				<border_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</border_color>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>Grouping Container_1</name>
+			<x>86</x>
+			<y>30</y>
+			<width>34</width>
+			<height>94</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="group" version="3.0.0">
+				<name>Grouping Container_1</name>
+				<width>34</width>
+				<height>94</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="symbol" version="2.0.0">
+					<name>$(dom)-VA-PIRG-02</name>
+					<pv_name>$(name):STA</pv_name>
+					<symbols>
+						<symbol>../mks937a/mks937aPirg-symbol-34.png</symbol>
+					</symbols>
+					<y>27</y>
+					<width>34</width>
+					<height>34</height>
+					<background_color>
+						<color name="Canvas" red="200" green="200" blue="200"></color>
+					</background_color>
+					<actions>
+						<action type="open_display">
+							<description>Open Display</description>
+							<file>../mks937a/mks937aPirg.bob</file>
+							<macros>
+								<device>$(dom)-VA-PIRG-02</device>
+							</macros>
+							<target>standalone</target>
+						</action>
+					</actions>
+					<rules>
+						<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+							<exp bool_exp="pvSev0==3">
+								<expression>0</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+								<expression>0</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+								<expression>1</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+								<expression>2</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+								<expression>3</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+								<expression>4</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+								<expression>5</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+								<expression>6</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+								<expression>7</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+								<expression>8</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+								<expression>9</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=9.0&amp;&amp;pv0&lt;10.0">
+								<expression>10</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=10.0&amp;&amp;pv0&lt;11.0">
+								<expression>11</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=11.0&amp;&amp;pv0&lt;12.0">
+								<expression>12</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=12.0&amp;&amp;pv0&lt;13.0">
+								<expression>13</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=13.0&amp;&amp;pv0&lt;14.0">
+								<expression>14</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=14.0&amp;&amp;pv0&lt;15.0">
+								<expression>15</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=15.0&amp;&amp;pv0&lt;16.0">
+								<expression>16</expression>
+							</exp>
+							<exp bool_exp="true">
+								<expression>0</expression>
+							</exp>
+							<pv_name>$(pv_name)</pv_name>
+						</rule>
+					</rules>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					<border_alarm_sensitive>false</border_alarm_sensitive>
+				</widget>
+				<widget type="symbol" version="2.0.0">
+					<name>$(dom)-VA-IMG-02</name>
+					<pv_name>$(name):STA</pv_name>
+					<symbols>
+						<symbol>../mks937a/mks937aImg-symbol-34.png</symbol>
+					</symbols>
+					<y>60</y>
+					<width>34</width>
+					<height>34</height>
+					<background_color>
+						<color name="Canvas" red="200" green="200" blue="200"></color>
+					</background_color>
+					<actions>
+						<action type="open_display">
+							<description>Open Display</description>
+							<file>../mks937a/mks937aPirg.bob</file>
+							<macros>
+								<device>$(dom)-VA-IMG-02</device>
+							</macros>
+							<target>standalone</target>
+						</action>
+					</actions>
+					<rules>
+						<rule name="symbol_single_pv" prop_id="image_index" out_exp="true">
+							<exp bool_exp="pvSev0==3">
+								<expression>0</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;0.0">
+								<expression>0</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=0.0&amp;&amp;pv0&lt;1.0">
+								<expression>1</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=1.0&amp;&amp;pv0&lt;2.0">
+								<expression>2</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=2.0&amp;&amp;pv0&lt;3.0">
+								<expression>3</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=3.0&amp;&amp;pv0&lt;4.0">
+								<expression>4</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=4.0&amp;&amp;pv0&lt;5.0">
+								<expression>5</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=5.0&amp;&amp;pv0&lt;6.0">
+								<expression>6</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=6.0&amp;&amp;pv0&lt;7.0">
+								<expression>7</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=7.0&amp;&amp;pv0&lt;8.0">
+								<expression>8</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=8.0&amp;&amp;pv0&lt;9.0">
+								<expression>9</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=9.0&amp;&amp;pv0&lt;10.0">
+								<expression>10</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=10.0&amp;&amp;pv0&lt;11.0">
+								<expression>11</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=11.0&amp;&amp;pv0&lt;12.0">
+								<expression>12</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=12.0&amp;&amp;pv0&lt;13.0">
+								<expression>13</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=13.0&amp;&amp;pv0&lt;14.0">
+								<expression>14</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=14.0&amp;&amp;pv0&lt;15.0">
+								<expression>15</expression>
+							</exp>
+							<exp bool_exp="pv0&gt;=15.0&amp;&amp;pv0&lt;16.0">
+								<expression>16</expression>
+							</exp>
+							<exp bool_exp="true">
+								<expression>0</expression>
+							</exp>
+							<pv_name>$(pv_name)</pv_name>
+						</rule>
+					</rules>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					<border_alarm_sensitive>false</border_alarm_sensitive>
+				</widget>
+				<widget type="label" version="2.0.0">
+					<name>Label</name>
+					<text>2</text>
+					<width>34</width>
+					<foreground_color>
+						<color name="Text: FG" red="0" green="0" blue="0"></color>
+					</foreground_color>
+					<background_color>
+						<color name="Canvas" red="200" green="200" blue="200"></color>
+					</background_color>
+					<horizontal_alignment>1</horizontal_alignment>
+					<vertical_alignment>1</vertical_alignment>
+					<wrap_words>false</wrap_words>
+					<actions></actions>
+					<border_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</border_color>
+				</widget>
+			</widget>
+		</widget>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>$(dom) Pump Cart Eng</text>
+		<width>300</width>
+		<height>32</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="VA title" red="202" green="223" blue="159"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+</display>

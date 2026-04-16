@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>$(pmac) axes</name>
+	<width>1165</width>
+	<height>520</height>
+	<background_color>
+		<color name="Canvas" red="200" green="200" blue="200"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>5</grid_step_x>
+	<grid_step_y>5</grid_step_y>
+	<widget type="label" version="2.0.0">
+		<name>Title</name>
+		<text>$(pmac) axes</text>
+		<x>1</x>
+		<y>1</y>
+		<width>1164</width>
+		<height>29</height>
+		<font>
+			<font name="Header 3" family="Liberation Sans" style="BOLD" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_width>1</border_width>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>Axes:Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>5</x>
+		<y>74</y>
+		<width>1161</width>
+		<height>447</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Axes:Title</name>
+		<text>Axes</text>
+		<x>6</x>
+		<y>56</y>
+		<width>59</width>
+		<height>18</height>
+		<font>
+			<font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_width>1</border_width>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Axes:DescriptionHeading</name>
+		<text>Description</text>
+		<x>55</x>
+		<y>85</y>
+		<width>91</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Axes:CSNoHeading</name>
+		<text>CS No</text>
+		<x>310</x>
+		<y>85</y>
+		<width>51</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Axes:CSPortNameHeading</name>
+		<text>CS port name</text>
+		<x>370</x>
+		<y>85</y>
+		<width>91</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Axies:CSAssignmentHeading</name>
+		<text>CS assignment</text>
+		<x>580</x>
+		<y>85</y>
+		<width>101</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Axes:DirectDemandHeading</name>
+		<text>Direct demand</text>
+		<x>720</x>
+		<y>85</y>
+		<width>101</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Axes:AmplifierHeading</name>
+		<text>Amplifier</text>
+		<x>965</x>
+		<y>85</y>
+		<width>66</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Axes:Axis1</name>
+		<macros>
+			<axis>1</axis>
+		</macros>
+		<file>pmac_axis_embed.bob</file>
+		<x>10</x>
+		<y>115</y>
+		<width>1152</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Axes:Axis2</name>
+		<macros>
+			<axis>2</axis>
+		</macros>
+		<file>pmac_axis_embed.bob</file>
+		<x>10</x>
+		<y>140</y>
+		<width>1152</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Axes:Axis3</name>
+		<macros>
+			<axis>3</axis>
+		</macros>
+		<file>pmac_axis_embed.bob</file>
+		<x>10</x>
+		<y>165</y>
+		<width>1152</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Axes:Axis4</name>
+		<macros>
+			<axis>4</axis>
+		</macros>
+		<file>pmac_axis_embed.bob</file>
+		<x>10</x>
+		<y>190</y>
+		<width>1152</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Axes:Axis5</name>
+		<macros>
+			<axis>5</axis>
+		</macros>
+		<file>pmac_axis_embed.bob</file>
+		<x>10</x>
+		<y>215</y>
+		<width>1152</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Axes:Axis6</name>
+		<macros>
+			<axis>6</axis>
+		</macros>
+		<file>pmac_axis_embed.bob</file>
+		<x>10</x>
+		<y>240</y>
+		<width>1152</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Axes:Axis7</name>
+		<macros>
+			<axis>7</axis>
+		</macros>
+		<file>pmac_axis_embed.bob</file>
+		<x>10</x>
+		<y>265</y>
+		<width>1152</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Axes:Axis8</name>
+		<macros>
+			<axis>8</axis>
+		</macros>
+		<file>pmac_axis_embed.bob</file>
+		<x>10</x>
+		<y>290</y>
+		<width>1152</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Axes:Axis9</name>
+		<macros>
+			<axis>9</axis>
+		</macros>
+		<file>pmac_axis_embed.bob</file>
+		<x>10</x>
+		<y>314</y>
+		<width>1152</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Axes:Axis10</name>
+		<macros>
+			<axis>10</axis>
+		</macros>
+		<file>pmac_axis_embed.bob</file>
+		<x>10</x>
+		<y>339</y>
+		<width>1152</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Axes:Axis11</name>
+		<macros>
+			<axis>11</axis>
+		</macros>
+		<file>pmac_axis_embed.bob</file>
+		<x>10</x>
+		<y>364</y>
+		<width>1152</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Axes:Axis12</name>
+		<macros>
+			<axis>12</axis>
+		</macros>
+		<file>pmac_axis_embed.bob</file>
+		<x>10</x>
+		<y>389</y>
+		<width>1152</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Axes:Axis13</name>
+		<macros>
+			<axis>13</axis>
+		</macros>
+		<file>pmac_axis_embed.bob</file>
+		<x>10</x>
+		<y>414</y>
+		<width>1152</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Axes:Axis14</name>
+		<macros>
+			<axis>14</axis>
+		</macros>
+		<file>pmac_axis_embed.bob</file>
+		<x>10</x>
+		<y>439</y>
+		<width>1152</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Axes:Axis15</name>
+		<macros>
+			<axis>15</axis>
+		</macros>
+		<file>pmac_axis_embed.bob</file>
+		<x>10</x>
+		<y>464</y>
+		<width>1152</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Axes:Axis16</name>
+		<macros>
+			<axis>16</axis>
+		</macros>
+		<file>pmac_axis_embed.bob</file>
+		<x>10</x>
+		<y>489</y>
+		<width>1152</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+</display>

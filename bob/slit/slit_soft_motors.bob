@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>slitSizeCenter</name>
+	<x>234</x>
+	<y>34</y>
+	<width>730</width>
+	<height>170</height>
+	<background_color>
+		<color name="Gray_4" red="187" green="187" blue="187"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>5</grid_step_x>
+	<grid_step_y>5</grid_step_y>
+	<widget type="embedded" version="2.0.0">
+		<name>link1.pitch_1</name>
+		<macros>
+			<M>$(SLIT):POS</M>
+			<DESC>$(SLIT) Positive</DESC>
+		</macros>
+		<file>../motorApp_opi/motor_soft_embed_box.bob</file>
+		<width>361</width>
+		<height>83</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>link1.pitch_1</name>
+		<macros>
+			<M>$(SLIT):NEG</M>
+			<DESC>$(SLIT) Negative</DESC>
+		</macros>
+		<file>../motorApp_opi/motor_soft_embed_box.bob</file>
+		<y>85</y>
+		<width>361</width>
+		<height>83</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>link1.pitch_2</name>
+		<macros>
+			<M>$(SLIT):SIZE</M>
+			<DESC>$(SLIT) Size</DESC>
+		</macros>
+		<file>../motorApp_opi/motor_soft_embed_box.bob</file>
+		<x>367</x>
+		<y>85</y>
+		<width>361</width>
+		<height>83</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>link1.pitch_3</name>
+		<macros>
+			<M>$(SLIT):CENTER</M>
+			<DESC>$(SLIT) Center</DESC>
+		</macros>
+		<file>../motorApp_opi/motor_soft_embed_box.bob</file>
+		<x>367</x>
+		<width>361</width>
+		<height>83</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color red="0" green="128" blue="255"></color>
+		</border_color>
+	</widget>
+</display>

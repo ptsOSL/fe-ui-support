@@ -33,7 +33,7 @@
 					<box-label>$(box-label)</box-label>
 					<device>$(device)</device>
 				</macros>
-				<target>window</target>
+				<target>standalone</target>
 			</action>
 		</actions>
 		<tooltip>$(pv_name)
@@ -257,7 +257,7 @@ $(pv_value)</tooltip>
 					<device>$(device)</device>
 					<BL>$(BL)</BL>
 				</macros>
-				<target>window</target>
+				<target>standalone</target>
 			</action>
 		</actions>
 		<text>Interlocks</text>

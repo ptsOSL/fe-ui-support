@@ -280,7 +280,7 @@ $(pv_value)</tooltip>
 				<macros>
 					<device>$(device)</device>
 				</macros>
-				<target>window</target>
+				<target>standalone</target>
 			</action>
 		</actions>
 		<text>Detail</text>
@@ -422,7 +422,7 @@ $(pv_value)</tooltip>
 			<action type="open_display">
 				<description>Open Display</description>
 				<file>vacuumValveInterlocks.bob</file>
-				<target>window</target>
+				<target>standalone</target>
 			</action>
 		</actions>
 		<text>Interlocks</text>

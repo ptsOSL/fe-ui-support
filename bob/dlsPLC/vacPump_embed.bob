@@ -12,7 +12,7 @@
 		<name>Symbol</name>
 		<pv_name>$(device):STA</pv_name>
 		<symbols>
-			<symbol>fe-ui-support/symbols/$(pumptype) 1.svg</symbol>
+			<symbol>symbol/$(pumptype) 1.svg</symbol>
 		</symbols>
 		<width>20</width>
 		<height>20</height>

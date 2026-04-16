@@ -75,7 +75,7 @@
 	<widget type="symbol" version="2.0.0">
 		<name>Icon</name>
 		<symbols>
-			<symbol>fe-ui-support/symbols/PID.svg</symbol>
+			<symbol>symbol/PID.svg</symbol>
 		</symbols>
 		<x>5</x>
 		<y>5</y>

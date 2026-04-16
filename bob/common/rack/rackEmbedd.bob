@@ -1,0 +1,6245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>SR Cell - Insertion Device - Vacuum Control Racks</name>
+	<x>1105</x>
+	<y>140</y>
+	<width>1239</width>
+	<height>705</height>
+	<background_color>
+		<color name="Wid-alt/Anno-sec" red="174" green="174" blue="174"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>8</grid_step_x>
+	<grid_step_y>8</grid_step_y>
+	<widget type="group" version="3.0.0">
+		<name>Grouping Container</name>
+		<width>273</width>
+		<height>705</height>
+		<style>3</style>
+		<foreground_color>
+			<color red="0" green="128" blue="255"></color>
+		</foreground_color>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color red="240" green="240" blue="240"></color>
+		</background_color>
+		<actions></actions>
+		<widget type="group" version="3.0.0">
+			<name>8</name>
+			<x>264</x>
+			<width>9</width>
+			<height>705</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>2</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>10</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>96</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>240</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>242</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>250</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>224</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>226</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>234</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>208</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>210</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>218</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>192</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>194</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>202</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>176</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>178</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>186</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>0</name>
+				<y>656</y>
+				<width>9</width>
+				<height>49</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="group" version="3.0.0">
+					<name>0</name>
+					<width>9</width>
+					<height>17</height>
+					<style>3</style>
+					<foreground_color>
+						<color red="0" green="128" blue="255"></color>
+					</foreground_color>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color red="240" green="240" blue="240"></color>
+					</background_color>
+					<transparent>true</transparent>
+					<actions></actions>
+					<widget type="rectangle" version="2.0.0">
+						<name>EDM Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<width>9</width>
+						<height>17</height>
+						<line_width>0</line_width>
+						<line_color>
+							<color red="0" green="128" blue="255"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 25%" red="64" green="64" blue="64"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>2</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>10</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+				</widget>
+				<widget type="group" version="3.0.0">
+					<name>1</name>
+					<y>16</y>
+					<width>9</width>
+					<height>17</height>
+					<style>3</style>
+					<foreground_color>
+						<color red="0" green="128" blue="255"></color>
+					</foreground_color>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color red="240" green="240" blue="240"></color>
+					</background_color>
+					<transparent>true</transparent>
+					<actions></actions>
+					<widget type="rectangle" version="2.0.0">
+						<name>EDM Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<width>9</width>
+						<height>17</height>
+						<line_width>0</line_width>
+						<line_color>
+							<color red="0" green="128" blue="255"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 25%" red="64" green="64" blue="64"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>2</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>10</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+				</widget>
+				<widget type="group" version="3.0.0">
+					<name>2</name>
+					<y>32</y>
+					<width>9</width>
+					<height>17</height>
+					<style>3</style>
+					<foreground_color>
+						<color red="0" green="128" blue="255"></color>
+					</foreground_color>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color red="240" green="240" blue="240"></color>
+					</background_color>
+					<transparent>true</transparent>
+					<actions></actions>
+					<widget type="rectangle" version="2.0.0">
+						<name>EDM Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<width>9</width>
+						<height>17</height>
+						<line_width>0</line_width>
+						<line_color>
+							<color red="0" green="128" blue="255"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 25%" red="64" green="64" blue="64"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>2</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>10</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+				</widget>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>1</name>
+				<y>608</y>
+				<width>9</width>
+				<height>49</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="group" version="3.0.0">
+					<name>0</name>
+					<width>9</width>
+					<height>17</height>
+					<style>3</style>
+					<foreground_color>
+						<color red="0" green="128" blue="255"></color>
+					</foreground_color>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color red="240" green="240" blue="240"></color>
+					</background_color>
+					<transparent>true</transparent>
+					<actions></actions>
+					<widget type="rectangle" version="2.0.0">
+						<name>EDM Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<width>9</width>
+						<height>17</height>
+						<line_width>0</line_width>
+						<line_color>
+							<color red="0" green="128" blue="255"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 25%" red="64" green="64" blue="64"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>2</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>10</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+				</widget>
+				<widget type="group" version="3.0.0">
+					<name>1</name>
+					<y>16</y>
+					<width>9</width>
+					<height>17</height>
+					<style>3</style>
+					<foreground_color>
+						<color red="0" green="128" blue="255"></color>
+					</foreground_color>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color red="240" green="240" blue="240"></color>
+					</background_color>
+					<transparent>true</transparent>
+					<actions></actions>
+					<widget type="rectangle" version="2.0.0">
+						<name>EDM Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<width>9</width>
+						<height>17</height>
+						<line_width>0</line_width>
+						<line_color>
+							<color red="0" green="128" blue="255"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 25%" red="64" green="64" blue="64"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>2</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>10</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+				</widget>
+				<widget type="group" version="3.0.0">
+					<name>2</name>
+					<y>32</y>
+					<width>9</width>
+					<height>17</height>
+					<style>3</style>
+					<foreground_color>
+						<color red="0" green="128" blue="255"></color>
+					</foreground_color>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color red="240" green="240" blue="240"></color>
+					</background_color>
+					<transparent>true</transparent>
+					<actions></actions>
+					<widget type="rectangle" version="2.0.0">
+						<name>EDM Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<width>9</width>
+						<height>17</height>
+						<line_width>0</line_width>
+						<line_color>
+							<color red="0" green="128" blue="255"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 25%" red="64" green="64" blue="64"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>2</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>10</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+				</widget>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>544</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>546</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>528</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>530</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>538</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>336</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>338</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>346</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>2</name>
+				<y>480</y>
+				<width>9</width>
+				<height>17</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<width>9</width>
+					<height>17</height>
+					<line_width>0</line_width>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>2</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>10</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>3</name>
+				<y>496</y>
+				<width>9</width>
+				<height>17</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<width>9</width>
+					<height>17</height>
+					<line_width>0</line_width>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>2</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>10</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>4</name>
+				<y>512</y>
+				<width>9</width>
+				<height>17</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<width>9</width>
+					<height>17</height>
+					<line_width>0</line_width>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>2</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>10</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>400</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>402</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>410</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>464</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>466</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>474</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>5</name>
+				<y>416</y>
+				<width>9</width>
+				<height>49</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="group" version="3.0.0">
+					<name>0</name>
+					<width>9</width>
+					<height>17</height>
+					<style>3</style>
+					<foreground_color>
+						<color red="0" green="128" blue="255"></color>
+					</foreground_color>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color red="240" green="240" blue="240"></color>
+					</background_color>
+					<transparent>true</transparent>
+					<actions></actions>
+					<widget type="rectangle" version="2.0.0">
+						<name>EDM Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<width>9</width>
+						<height>17</height>
+						<line_width>0</line_width>
+						<line_color>
+							<color red="0" green="128" blue="255"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 25%" red="64" green="64" blue="64"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>2</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>10</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+				</widget>
+				<widget type="group" version="3.0.0">
+					<name>1</name>
+					<y>16</y>
+					<width>9</width>
+					<height>17</height>
+					<style>3</style>
+					<foreground_color>
+						<color red="0" green="128" blue="255"></color>
+					</foreground_color>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color red="240" green="240" blue="240"></color>
+					</background_color>
+					<transparent>true</transparent>
+					<actions></actions>
+					<widget type="rectangle" version="2.0.0">
+						<name>EDM Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<width>9</width>
+						<height>17</height>
+						<line_width>0</line_width>
+						<line_color>
+							<color red="0" green="128" blue="255"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 25%" red="64" green="64" blue="64"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>2</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>10</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+				</widget>
+				<widget type="group" version="3.0.0">
+					<name>2</name>
+					<y>32</y>
+					<width>9</width>
+					<height>17</height>
+					<style>3</style>
+					<foreground_color>
+						<color red="0" green="128" blue="255"></color>
+					</foreground_color>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color red="240" green="240" blue="240"></color>
+					</background_color>
+					<transparent>true</transparent>
+					<actions></actions>
+					<widget type="rectangle" version="2.0.0">
+						<name>EDM Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<width>9</width>
+						<height>17</height>
+						<line_width>0</line_width>
+						<line_color>
+							<color red="0" green="128" blue="255"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 25%" red="64" green="64" blue="64"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>2</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>10</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+				</widget>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>6</name>
+				<y>352</y>
+				<width>9</width>
+				<height>49</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="group" version="3.0.0">
+					<name>0</name>
+					<width>9</width>
+					<height>17</height>
+					<style>3</style>
+					<foreground_color>
+						<color red="0" green="128" blue="255"></color>
+					</foreground_color>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color red="240" green="240" blue="240"></color>
+					</background_color>
+					<transparent>true</transparent>
+					<actions></actions>
+					<widget type="rectangle" version="2.0.0">
+						<name>EDM Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<width>9</width>
+						<height>17</height>
+						<line_width>0</line_width>
+						<line_color>
+							<color red="0" green="128" blue="255"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 25%" red="64" green="64" blue="64"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>2</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>10</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+				</widget>
+				<widget type="group" version="3.0.0">
+					<name>1</name>
+					<y>16</y>
+					<width>9</width>
+					<height>17</height>
+					<style>3</style>
+					<foreground_color>
+						<color red="0" green="128" blue="255"></color>
+					</foreground_color>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color red="240" green="240" blue="240"></color>
+					</background_color>
+					<transparent>true</transparent>
+					<actions></actions>
+					<widget type="rectangle" version="2.0.0">
+						<name>EDM Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<width>9</width>
+						<height>17</height>
+						<line_width>0</line_width>
+						<line_color>
+							<color red="0" green="128" blue="255"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 25%" red="64" green="64" blue="64"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>2</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>10</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+				</widget>
+				<widget type="group" version="3.0.0">
+					<name>2</name>
+					<y>32</y>
+					<width>9</width>
+					<height>17</height>
+					<style>3</style>
+					<foreground_color>
+						<color red="0" green="128" blue="255"></color>
+					</foreground_color>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color red="240" green="240" blue="240"></color>
+					</background_color>
+					<transparent>true</transparent>
+					<actions></actions>
+					<widget type="rectangle" version="2.0.0">
+						<name>EDM Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<width>9</width>
+						<height>17</height>
+						<line_width>0</line_width>
+						<line_color>
+							<color red="0" green="128" blue="255"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 25%" red="64" green="64" blue="64"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>2</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>10</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+				</widget>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>7</name>
+				<y>288</y>
+				<width>9</width>
+				<height>17</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<width>9</width>
+					<height>17</height>
+					<line_width>0</line_width>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>2</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>10</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>8</name>
+				<y>304</y>
+				<width>9</width>
+				<height>17</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<width>9</width>
+					<height>17</height>
+					<line_width>0</line_width>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>2</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>10</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>9</name>
+				<y>320</y>
+				<width>9</width>
+				<height>17</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<width>9</width>
+					<height>17</height>
+					<line_width>0</line_width>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>2</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>10</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>10</name>
+				<y>272</y>
+				<width>9</width>
+				<height>17</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<width>9</width>
+					<height>17</height>
+					<line_width>0</line_width>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>2</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>10</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>11</name>
+				<y>256</y>
+				<width>9</width>
+				<height>17</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<width>9</width>
+					<height>17</height>
+					<line_width>0</line_width>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>2</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>10</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>12</name>
+				<y>80</y>
+				<width>9</width>
+				<height>17</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<width>9</width>
+					<height>17</height>
+					<line_width>0</line_width>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>2</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>10</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>160</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>162</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>170</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>96</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>98</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>106</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>144</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>146</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>154</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>128</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>130</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>138</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>112</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>114</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>122</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>48</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>50</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>58</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>64</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>66</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>74</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>32</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>34</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>42</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>16</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>18</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>26</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>13</name>
+				<y>560</y>
+				<width>9</width>
+				<height>17</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<width>9</width>
+					<height>17</height>
+					<line_width>0</line_width>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>2</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>10</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>14</name>
+				<y>576</y>
+				<width>9</width>
+				<height>17</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<width>9</width>
+					<height>17</height>
+					<line_width>0</line_width>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>2</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>10</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>15</name>
+				<y>592</y>
+				<width>9</width>
+				<height>17</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<width>9</width>
+					<height>17</height>
+					<line_width>0</line_width>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>2</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>10</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>554</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+		</widget>
+		<widget type="group" version="3.0.0">
+			<name>12</name>
+			<width>9</width>
+			<height>705</height>
+			<style>3</style>
+			<foreground_color>
+				<color red="0" green="128" blue="255"></color>
+			</foreground_color>
+			<line_color>
+				<color red="0" green="128" blue="255"></color>
+			</line_color>
+			<background_color>
+				<color red="240" green="240" blue="240"></color>
+			</background_color>
+			<transparent>true</transparent>
+			<actions></actions>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>2</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>10</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>96</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>240</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>242</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>250</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>224</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>226</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>234</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>208</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>210</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>218</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>192</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>194</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>202</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>176</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>178</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>186</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>0</name>
+				<y>656</y>
+				<width>9</width>
+				<height>49</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="group" version="3.0.0">
+					<name>0</name>
+					<width>9</width>
+					<height>17</height>
+					<style>3</style>
+					<foreground_color>
+						<color red="0" green="128" blue="255"></color>
+					</foreground_color>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color red="240" green="240" blue="240"></color>
+					</background_color>
+					<transparent>true</transparent>
+					<actions></actions>
+					<widget type="rectangle" version="2.0.0">
+						<name>EDM Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<width>9</width>
+						<height>17</height>
+						<line_width>0</line_width>
+						<line_color>
+							<color red="0" green="128" blue="255"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 25%" red="64" green="64" blue="64"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>2</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>10</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+				</widget>
+				<widget type="group" version="3.0.0">
+					<name>1</name>
+					<y>16</y>
+					<width>9</width>
+					<height>17</height>
+					<style>3</style>
+					<foreground_color>
+						<color red="0" green="128" blue="255"></color>
+					</foreground_color>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color red="240" green="240" blue="240"></color>
+					</background_color>
+					<transparent>true</transparent>
+					<actions></actions>
+					<widget type="rectangle" version="2.0.0">
+						<name>EDM Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<width>9</width>
+						<height>17</height>
+						<line_width>0</line_width>
+						<line_color>
+							<color red="0" green="128" blue="255"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 25%" red="64" green="64" blue="64"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>2</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>10</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+				</widget>
+				<widget type="group" version="3.0.0">
+					<name>2</name>
+					<y>32</y>
+					<width>9</width>
+					<height>17</height>
+					<style>3</style>
+					<foreground_color>
+						<color red="0" green="128" blue="255"></color>
+					</foreground_color>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color red="240" green="240" blue="240"></color>
+					</background_color>
+					<transparent>true</transparent>
+					<actions></actions>
+					<widget type="rectangle" version="2.0.0">
+						<name>EDM Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<width>9</width>
+						<height>17</height>
+						<line_width>0</line_width>
+						<line_color>
+							<color red="0" green="128" blue="255"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 25%" red="64" green="64" blue="64"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>2</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>10</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+				</widget>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>1</name>
+				<y>608</y>
+				<width>9</width>
+				<height>49</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="group" version="3.0.0">
+					<name>0</name>
+					<width>9</width>
+					<height>17</height>
+					<style>3</style>
+					<foreground_color>
+						<color red="0" green="128" blue="255"></color>
+					</foreground_color>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color red="240" green="240" blue="240"></color>
+					</background_color>
+					<transparent>true</transparent>
+					<actions></actions>
+					<widget type="rectangle" version="2.0.0">
+						<name>EDM Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<width>9</width>
+						<height>17</height>
+						<line_width>0</line_width>
+						<line_color>
+							<color red="0" green="128" blue="255"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 25%" red="64" green="64" blue="64"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>2</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>10</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+				</widget>
+				<widget type="group" version="3.0.0">
+					<name>1</name>
+					<y>16</y>
+					<width>9</width>
+					<height>17</height>
+					<style>3</style>
+					<foreground_color>
+						<color red="0" green="128" blue="255"></color>
+					</foreground_color>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color red="240" green="240" blue="240"></color>
+					</background_color>
+					<transparent>true</transparent>
+					<actions></actions>
+					<widget type="rectangle" version="2.0.0">
+						<name>EDM Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<width>9</width>
+						<height>17</height>
+						<line_width>0</line_width>
+						<line_color>
+							<color red="0" green="128" blue="255"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 25%" red="64" green="64" blue="64"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>2</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>10</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+				</widget>
+				<widget type="group" version="3.0.0">
+					<name>2</name>
+					<y>32</y>
+					<width>9</width>
+					<height>17</height>
+					<style>3</style>
+					<foreground_color>
+						<color red="0" green="128" blue="255"></color>
+					</foreground_color>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color red="240" green="240" blue="240"></color>
+					</background_color>
+					<transparent>true</transparent>
+					<actions></actions>
+					<widget type="rectangle" version="2.0.0">
+						<name>EDM Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<width>9</width>
+						<height>17</height>
+						<line_width>0</line_width>
+						<line_color>
+							<color red="0" green="128" blue="255"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 25%" red="64" green="64" blue="64"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>2</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>10</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+				</widget>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>544</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>546</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>528</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>530</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>538</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>336</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>338</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>346</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>2</name>
+				<y>480</y>
+				<width>9</width>
+				<height>17</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<width>9</width>
+					<height>17</height>
+					<line_width>0</line_width>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>2</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>10</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>3</name>
+				<y>496</y>
+				<width>9</width>
+				<height>17</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<width>9</width>
+					<height>17</height>
+					<line_width>0</line_width>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>2</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>10</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>4</name>
+				<y>512</y>
+				<width>9</width>
+				<height>17</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<width>9</width>
+					<height>17</height>
+					<line_width>0</line_width>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>2</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>10</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>400</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>402</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>410</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>464</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>466</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>474</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>5</name>
+				<y>416</y>
+				<width>9</width>
+				<height>49</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="group" version="3.0.0">
+					<name>0</name>
+					<width>9</width>
+					<height>17</height>
+					<style>3</style>
+					<foreground_color>
+						<color red="0" green="128" blue="255"></color>
+					</foreground_color>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color red="240" green="240" blue="240"></color>
+					</background_color>
+					<transparent>true</transparent>
+					<actions></actions>
+					<widget type="rectangle" version="2.0.0">
+						<name>EDM Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<width>9</width>
+						<height>17</height>
+						<line_width>0</line_width>
+						<line_color>
+							<color red="0" green="128" blue="255"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 25%" red="64" green="64" blue="64"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>2</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>10</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+				</widget>
+				<widget type="group" version="3.0.0">
+					<name>1</name>
+					<y>16</y>
+					<width>9</width>
+					<height>17</height>
+					<style>3</style>
+					<foreground_color>
+						<color red="0" green="128" blue="255"></color>
+					</foreground_color>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color red="240" green="240" blue="240"></color>
+					</background_color>
+					<transparent>true</transparent>
+					<actions></actions>
+					<widget type="rectangle" version="2.0.0">
+						<name>EDM Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<width>9</width>
+						<height>17</height>
+						<line_width>0</line_width>
+						<line_color>
+							<color red="0" green="128" blue="255"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 25%" red="64" green="64" blue="64"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>2</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>10</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+				</widget>
+				<widget type="group" version="3.0.0">
+					<name>2</name>
+					<y>32</y>
+					<width>9</width>
+					<height>17</height>
+					<style>3</style>
+					<foreground_color>
+						<color red="0" green="128" blue="255"></color>
+					</foreground_color>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color red="240" green="240" blue="240"></color>
+					</background_color>
+					<transparent>true</transparent>
+					<actions></actions>
+					<widget type="rectangle" version="2.0.0">
+						<name>EDM Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<width>9</width>
+						<height>17</height>
+						<line_width>0</line_width>
+						<line_color>
+							<color red="0" green="128" blue="255"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 25%" red="64" green="64" blue="64"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>2</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>10</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+				</widget>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>6</name>
+				<y>352</y>
+				<width>9</width>
+				<height>49</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="group" version="3.0.0">
+					<name>0</name>
+					<width>9</width>
+					<height>17</height>
+					<style>3</style>
+					<foreground_color>
+						<color red="0" green="128" blue="255"></color>
+					</foreground_color>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color red="240" green="240" blue="240"></color>
+					</background_color>
+					<transparent>true</transparent>
+					<actions></actions>
+					<widget type="rectangle" version="2.0.0">
+						<name>EDM Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<width>9</width>
+						<height>17</height>
+						<line_width>0</line_width>
+						<line_color>
+							<color red="0" green="128" blue="255"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 25%" red="64" green="64" blue="64"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>2</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>10</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+				</widget>
+				<widget type="group" version="3.0.0">
+					<name>1</name>
+					<y>16</y>
+					<width>9</width>
+					<height>17</height>
+					<style>3</style>
+					<foreground_color>
+						<color red="0" green="128" blue="255"></color>
+					</foreground_color>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color red="240" green="240" blue="240"></color>
+					</background_color>
+					<transparent>true</transparent>
+					<actions></actions>
+					<widget type="rectangle" version="2.0.0">
+						<name>EDM Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<width>9</width>
+						<height>17</height>
+						<line_width>0</line_width>
+						<line_color>
+							<color red="0" green="128" blue="255"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 25%" red="64" green="64" blue="64"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>2</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>10</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+				</widget>
+				<widget type="group" version="3.0.0">
+					<name>2</name>
+					<y>32</y>
+					<width>9</width>
+					<height>17</height>
+					<style>3</style>
+					<foreground_color>
+						<color red="0" green="128" blue="255"></color>
+					</foreground_color>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color red="240" green="240" blue="240"></color>
+					</background_color>
+					<transparent>true</transparent>
+					<actions></actions>
+					<widget type="rectangle" version="2.0.0">
+						<name>EDM Rectangle</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<width>9</width>
+						<height>17</height>
+						<line_width>0</line_width>
+						<line_color>
+							<color red="0" green="128" blue="255"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 25%" red="64" green="64" blue="64"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>2</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+					<widget type="ellipse" version="2.0.0">
+						<name>EDM Ellipse</name>
+						<macros>
+							<pv_name></pv_name>
+						</macros>
+						<x>2</x>
+						<y>10</y>
+						<width>5</width>
+						<height>5</height>
+						<line_width>1</line_width>
+						<line_color>
+							<color name="Black" red="0" green="0" blue="0"></color>
+						</line_color>
+						<background_color>
+							<color name="Grey 90%" red="230" green="230" blue="230"></color>
+						</background_color>
+						<actions></actions>
+						<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+					</widget>
+				</widget>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>7</name>
+				<y>288</y>
+				<width>9</width>
+				<height>17</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<width>9</width>
+					<height>17</height>
+					<line_width>0</line_width>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>2</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>10</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>8</name>
+				<y>304</y>
+				<width>9</width>
+				<height>17</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<width>9</width>
+					<height>17</height>
+					<line_width>0</line_width>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>2</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>10</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>9</name>
+				<y>320</y>
+				<width>9</width>
+				<height>17</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<width>9</width>
+					<height>17</height>
+					<line_width>0</line_width>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>2</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>10</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>10</name>
+				<y>272</y>
+				<width>9</width>
+				<height>17</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<width>9</width>
+					<height>17</height>
+					<line_width>0</line_width>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>2</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>10</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>11</name>
+				<y>256</y>
+				<width>9</width>
+				<height>17</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<width>9</width>
+					<height>17</height>
+					<line_width>0</line_width>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>2</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>10</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>12</name>
+				<y>80</y>
+				<width>9</width>
+				<height>17</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<width>9</width>
+					<height>17</height>
+					<line_width>0</line_width>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>2</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>10</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>160</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>162</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>170</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>96</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>98</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>106</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>144</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>146</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>154</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>128</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>130</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>138</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>112</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>114</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>122</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>48</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>50</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>58</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>64</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>66</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>74</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>32</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>34</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>42</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="rectangle" version="2.0.0">
+				<name>EDM Rectangle</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<y>16</y>
+				<width>9</width>
+				<height>17</height>
+				<line_width>0</line_width>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 25%" red="64" green="64" blue="64"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>18</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>26</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>13</name>
+				<y>560</y>
+				<width>9</width>
+				<height>17</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<width>9</width>
+					<height>17</height>
+					<line_width>0</line_width>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>2</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>10</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>14</name>
+				<y>576</y>
+				<width>9</width>
+				<height>17</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<width>9</width>
+					<height>17</height>
+					<line_width>0</line_width>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>2</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>10</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+			</widget>
+			<widget type="group" version="3.0.0">
+				<name>15</name>
+				<y>592</y>
+				<width>9</width>
+				<height>17</height>
+				<style>3</style>
+				<foreground_color>
+					<color red="0" green="128" blue="255"></color>
+				</foreground_color>
+				<line_color>
+					<color red="0" green="128" blue="255"></color>
+				</line_color>
+				<background_color>
+					<color red="240" green="240" blue="240"></color>
+				</background_color>
+				<transparent>true</transparent>
+				<actions></actions>
+				<widget type="rectangle" version="2.0.0">
+					<name>EDM Rectangle</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<width>9</width>
+					<height>17</height>
+					<line_width>0</line_width>
+					<line_color>
+						<color red="0" green="128" blue="255"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 25%" red="64" green="64" blue="64"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>2</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+				<widget type="ellipse" version="2.0.0">
+					<name>EDM Ellipse</name>
+					<macros>
+						<pv_name></pv_name>
+					</macros>
+					<x>2</x>
+					<y>10</y>
+					<width>5</width>
+					<height>5</height>
+					<line_width>1</line_width>
+					<line_color>
+						<color name="Black" red="0" green="0" blue="0"></color>
+					</line_color>
+					<background_color>
+						<color name="Grey 90%" red="230" green="230" blue="230"></color>
+					</background_color>
+					<actions></actions>
+					<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+				</widget>
+			</widget>
+			<widget type="ellipse" version="2.0.0">
+				<name>EDM Ellipse</name>
+				<macros>
+					<pv_name></pv_name>
+				</macros>
+				<x>2</x>
+				<y>554</y>
+				<width>5</width>
+				<height>5</height>
+				<line_width>1</line_width>
+				<line_color>
+					<color name="Black" red="0" green="0" blue="0"></color>
+				</line_color>
+				<background_color>
+					<color name="Grey 90%" red="230" green="230" blue="230"></color>
+				</background_color>
+				<actions></actions>
+				<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+			</widget>
+		</widget>
+	</widget>
+</display>

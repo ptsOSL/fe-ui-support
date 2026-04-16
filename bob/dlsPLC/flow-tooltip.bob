@@ -334,7 +334,7 @@ Status</text>
 				<macros>
 					<flow>$(flow)</flow>
 				</macros>
-				<target>window</target>
+				<target>standalone</target>
 			</action>
 		</actions>
 		<text>$(label):</text>

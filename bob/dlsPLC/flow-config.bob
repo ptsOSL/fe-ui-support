@@ -164,7 +164,7 @@
 			<action type="open_display">
 				<description>Open Display</description>
 				<file>$(dom)-interlocks.bob</file>
-				<target>window</target>
+				<target>standalone</target>
 			</action>
 		</actions>
 		<text>Interlocks</text>
@@ -241,7 +241,7 @@
 				<action type="open_display">
 					<description>Open Display</description>
 					<file>generic-tooltip.opi</file>
-					<target>window</target>
+					<target>standalone</target>
 				</action>
 			</actions>
 			<text></text>

@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>$(pmac) CS$(CS)</name>
+	<width>400</width>
+	<height>520</height>
+	<background_color>
+		<color name="Canvas" red="200" green="200" blue="200"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>5</grid_step_x>
+	<grid_step_y>5</grid_step_y>
+	<widget type="label" version="2.0.0">
+		<name>Title</name>
+		<text>$(pmac) CS$(CS) axes</text>
+		<x>1</x>
+		<y>1</y>
+		<width>399</width>
+		<height>29</height>
+		<font>
+			<font name="Header 3" family="Liberation Sans" style="BOLD" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_width>1</border_width>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>Info:Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>5</x>
+		<y>74</y>
+		<width>396</width>
+		<height>42</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Info:Title</name>
+		<text>Info</text>
+		<x>6</x>
+		<y>56</y>
+		<width>59</width>
+		<height>18</height>
+		<font>
+			<font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_width>1</border_width>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>Info:PortName</name>
+		<pv_name>$(pmac):CS$(CS):Port</pv_name>
+		<x>110</x>
+		<y>84</y>
+		<width>166</width>
+		<font>
+			<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Info:PortNameLabel</name>
+		<text>Port name</text>
+		<x>10</x>
+		<y>84</y>
+		<width>91</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>Trajectory:Abort</name>
+		<actions>
+			<action type="write_pv">
+				<description>Write PV</description>
+				<pv_name>$(pv_name)</pv_name>
+				<value>1</value>
+			</action>
+		</actions>
+		<pv_name>$(pmac):CS$(CS):Abort</pv_name>
+		<text>Abort motion</text>
+		<x>303</x>
+		<y>84</y>
+		<width>92</width>
+		<height>20</height>
+		<foreground_color>
+			<color name="Major" red="255" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Button: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>DeferMoves:Title</name>
+		<text>Defer moves</text>
+		<x>6</x>
+		<y>126</y>
+		<width>89</width>
+		<height>18</height>
+		<font>
+			<font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_width>1</border_width>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>DeferMoves:Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>5</x>
+		<y>144</y>
+		<width>186</width>
+		<height>42</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="combo" version="2.0.0">
+		<name>DeferredMove:DeferMoves</name>
+		<pv_name>$(pmac):CS$(CS):DeferMoves</pv_name>
+		<x>20</x>
+		<y>155</y>
+		<width>156</width>
+		<height>20</height>
+		<foreground_color>
+			<color name="Controller: FG" red="0" green="0" blue="196"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Button: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>MoveTime:Title</name>
+		<text>Move time (ms)</text>
+		<x>201</x>
+		<y>126</y>
+		<width>104</width>
+		<height>18</height>
+		<font>
+			<font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_width>1</border_width>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>MoveTime:Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>200</x>
+		<y>144</y>
+		<width>201</width>
+		<height>42</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="textupdate" version="2.0.0">
+		<name>MoveTime:CsMoveTimeRBV</name>
+		<pv_name>$(pmac):CS$(CS):CsMoveTime_RBV</pv_name>
+		<x>305</x>
+		<y>155</y>
+		<width>88</width>
+		<font>
+			<font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Monitor: FG" red="96" green="255" blue="96"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Monitor: BG" red="64" green="64" blue="64"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Mid Green" red="0" green="196" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="textentry" version="3.0.0">
+		<name>MoveTime:CSMoveTime</name>
+		<pv_name>$(pmac):CS$(CS):CsMoveTime</pv_name>
+		<x>209</x>
+		<y>155</y>
+		<width>88</width>
+		<foreground_color>
+			<color name="Controller: FG" red="0" green="0" blue="196"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<actions></actions>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>AxisStatus:Title</name>
+		<text>Axis status</text>
+		<x>6</x>
+		<y>201</y>
+		<width>89</width>
+		<height>18</height>
+		<font>
+			<font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_width>1</border_width>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>AxisStatus:Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>5</x>
+		<y>219</y>
+		<width>396</width>
+		<height>302</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 65%" red="166" green="166" blue="166"></color>
+		</background_color>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>AxisStatus:Axis1</name>
+		<macros>
+			<axis>1</axis>
+		</macros>
+		<file>pmac_cs_axis_embed.bob</file>
+		<x>17</x>
+		<y>255</y>
+		<width>367</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>AxisStatus:AxisHeading</name>
+		<text>Axis</text>
+		<x>17</x>
+		<y>230</y>
+		<width>38</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>AxisStatus:DirectDemandHeading</name>
+		<text>Direct demand</text>
+		<x>72</x>
+		<y>230</y>
+		<width>97</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>AxisStatus:MresHeading</name>
+		<text>Mres</text>
+		<x>192</x>
+		<y>230</y>
+		<width>76</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>AxisStatus:OffsetHeading</name>
+		<text>Offset</text>
+		<x>294</x>
+		<y>230</y>
+		<width>56</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>AxisStatus:Axis2</name>
+		<macros>
+			<axis>2</axis>
+		</macros>
+		<file>pmac_cs_axis_embed.bob</file>
+		<x>17</x>
+		<y>285</y>
+		<width>367</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>AxisStatus:Axis3</name>
+		<macros>
+			<axis>3</axis>
+		</macros>
+		<file>pmac_cs_axis_embed.bob</file>
+		<x>17</x>
+		<y>315</y>
+		<width>367</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>AxisStatus:Axis4</name>
+		<macros>
+			<axis>4</axis>
+		</macros>
+		<file>pmac_cs_axis_embed.bob</file>
+		<x>17</x>
+		<y>345</y>
+		<width>367</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>AxisStatus:Axis5</name>
+		<macros>
+			<axis>5</axis>
+		</macros>
+		<file>pmac_cs_axis_embed.bob</file>
+		<x>17</x>
+		<y>375</y>
+		<width>367</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>AxisStatus:Axis6</name>
+		<macros>
+			<axis>6</axis>
+		</macros>
+		<file>pmac_cs_axis_embed.bob</file>
+		<x>17</x>
+		<y>405</y>
+		<width>367</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>AxisStatus:Axis7</name>
+		<macros>
+			<axis>7</axis>
+		</macros>
+		<file>pmac_cs_axis_embed.bob</file>
+		<x>17</x>
+		<y>435</y>
+		<width>367</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>AxisStatus:Axis8</name>
+		<macros>
+			<axis>8</axis>
+		</macros>
+		<file>pmac_cs_axis_embed.bob</file>
+		<x>17</x>
+		<y>465</y>
+		<width>367</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>AxisStatus:Axis9</name>
+		<macros>
+			<axis>9</axis>
+		</macros>
+		<file>pmac_cs_axis_embed.bob</file>
+		<x>17</x>
+		<y>495</y>
+		<width>367</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+</display>

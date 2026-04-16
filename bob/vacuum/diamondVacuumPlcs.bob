@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>Valve Control PLC Systems Information</name>
+	<x>65</x>
+	<y>101</y>
+	<width>596</width>
+	<height>968</height>
+	<background_color>
+		<color name="Canvas" red="200" green="200" blue="200"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>8</grid_step_x>
+	<grid_step_y>8</grid_step_y>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Diamond Vacuum Valve Control PLCs</text>
+		<width>599</width>
+		<height>32</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="16.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="VA title" red="202" green="223" blue="159"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>EDM Exit Button</name>
+		<actions>
+			<action type="close_display">
+				<description>Close display</description>
+			</action>
+		</actions>
+		<text>Exit</text>
+		<x>519</x>
+		<y>934</y>
+		<width>65</width>
+		<height>25</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Exit: FG" red="196" green="0" blue="196"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Controller: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Details</text>
+		<x>8</x>
+		<y>40</y>
+		<width>72</width>
+		<height>16</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="12.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Grey 50%" red="128" green="128" blue="128"></color>
+		</background_color>
+		<transparent>false</transparent>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Grey 90%" red="230" green="230" blue="230"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<macros>
+			<pv_name></pv_name>
+		</macros>
+		<x>8</x>
+		<y>40</y>
+		<width>73</width>
+		<height>17</height>
+		<line_width>0</line_width>
+		<line_color>
+			<color red="0" green="128" blue="255"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+		<transparent>true</transparent>
+		<actions></actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>LI</name>
+		<macros>
+			<device>LI-VA-VLVCC-01</device>
+			<mode>SR03A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>80</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>Linking Container_2</name>
+		<file>plcStatusEmbedHeader.bob</file>
+		<x>16</x>
+		<y>56</y>
+		<width>519</width>
+		<height>25</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>LB</name>
+		<macros>
+			<device>LB-VA-VLVCC-01</device>
+			<mode>SR03A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>102</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>BR01</name>
+		<macros>
+			<device>BR01C-VA-VLVCC-01</device>
+			<mode>BR01C-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>124</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>BR02</name>
+		<macros>
+			<device>BR02C-VA-VLVCC-01</device>
+			<mode>BR02C-VA-VALVE-03:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>146</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>BR03</name>
+		<macros>
+			<device>BR03C-VA-VLVCC-01</device>
+			<mode>BR03C-VA-VALVE-08:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>168</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>BR04</name>
+		<macros>
+			<device>BR04C-VA-VLVCC-01</device>
+			<mode>BR04C-VA-VALVE-06:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>190</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>BS</name>
+		<macros>
+			<device>BS-VA-VLVCC-01</device>
+			<mode>SR03A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>212</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>SR01</name>
+		<macros>
+			<device>SR01C-VA-VLVCC-01</device>
+			<mode>SR01A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>234</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>SR02</name>
+		<macros>
+			<device>SR02C-VA-VLVCC-01</device>
+			<mode>SR02A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>256</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>SR03</name>
+		<macros>
+			<device>SR03C-VA-VLVCC-01</device>
+			<mode>SR03A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>278</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>SR04</name>
+		<macros>
+			<device>SR04C-VA-VLVCC-01</device>
+			<mode>SR04A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>300</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>SR05</name>
+		<macros>
+			<device>SR05C-VA-VLVCC-01</device>
+			<mode>SR05A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>322</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>SR06</name>
+		<macros>
+			<device>SR06C-VA-VLVCC-01</device>
+			<mode>SR06A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>344</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>SR07</name>
+		<macros>
+			<device>SR07C-VA-VLVCC-01</device>
+			<mode>SR07A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>366</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>SR08</name>
+		<macros>
+			<device>SR08C-VA-VLVCC-01</device>
+			<mode>SR08A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>388</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>SR09</name>
+		<macros>
+			<device>SR09C-VA-VLVCC-01</device>
+			<mode>SR09A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>410</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>SR10</name>
+		<macros>
+			<device>SR10C-VA-VLVCC-01</device>
+			<mode>SR10A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>432</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>SR11</name>
+		<macros>
+			<device>SR11C-VA-VLVCC-01</device>
+			<mode>SR11A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>454</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>SR12</name>
+		<macros>
+			<device>SR12C-VA-VLVCC-01</device>
+			<mode>SR12A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>476</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>SR13</name>
+		<macros>
+			<device>SR13C-VA-VLVCC-01</device>
+			<mode>SR13A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>498</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>SR14</name>
+		<macros>
+			<device>SR14C-VA-VLVCC-01</device>
+			<mode>SR14A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>520</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>SR15</name>
+		<macros>
+			<device>SR15C-VA-VLVCC-01</device>
+			<mode>SR15A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>542</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>SR16</name>
+		<macros>
+			<device>SR16C-VA-VLVCC-01</device>
+			<mode>SR16A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>564</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>SR17</name>
+		<macros>
+			<device>SR17C-VA-VLVCC-01</device>
+			<mode>SR17A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>586</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>SR18</name>
+		<macros>
+			<device>SR18C-VA-VLVCC-01</device>
+			<mode>SR18A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>608</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>SR19</name>
+		<macros>
+			<device>SR19C-VA-VLVCC-01</device>
+			<mode>SR19A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>630</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>SR20</name>
+		<macros>
+			<device>SR20C-VA-VLVCC-01</device>
+			<mode>SR20A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>652</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>SR21</name>
+		<macros>
+			<device>SR21C-VA-VLVCC-01</device>
+			<mode>SR21A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>674</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>SR22</name>
+		<macros>
+			<device>SR22C-VA-VLVCC-01</device>
+			<mode>SR22A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>696</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>SR23</name>
+		<macros>
+			<device>SR23C-VA-VLVCC-01</device>
+			<mode>SR23A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>718</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="embedded" version="2.0.0">
+		<name>SR24</name>
+		<macros>
+			<device>SR24C-VA-VLVCC-01</device>
+			<mode>SR24A-VA-VALVE-01:MODE</mode>
+		</macros>
+		<file>plcStatusEmbed.bob</file>
+		<x>16</x>
+		<y>740</y>
+		<width>519</width>
+		<height>21</height>
+		<resize>2</resize>
+		<transparent>true</transparent>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+</display>

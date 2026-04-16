@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<width>325</width>
+	<height>60</height>
+	<background_color>
+		<color name="Canvas" red="200" green="200" blue="200"></color>
+	</background_color>
+	<actions></actions>
+	<grid_step_x>5</grid_step_x>
+	<grid_step_y>5</grid_step_y>
+	<widget type="symbol" version="2.0.0">
+		<name>Symbol</name>
+		<pv_name>$(DEVICE):CPULOAD.SEVR</pv_name>
+		<symbols>
+			<symbol>symbol/rack.png</symbol>
+		</symbols>
+		<width>21</width>
+		<height>20</height>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<actions execute_as_one="true">
+			<action type="open_display">
+				<description>Open detail screen</description>
+				<file>pmac_status_detail.bob</file>
+				<target>tab</target>
+			</action>
+		</actions>
+		<tooltip>$(pv_name)
+$(pv_value)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<preserve_ratio>false</preserve_ratio>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Label</name>
+		<text>$(DEVICE)</text>
+		<x>26</x>
+		<width>220</width>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>Label_1</name>
+		<text>$(DESC)</text>
+		<y>20</y>
+		<width>326</width>
+		<height>41</height>
+		<font>
+			<font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<wrap_words>false</wrap_words>
+		<actions></actions>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="action_button" version="3.0.0">
+		<name>Action Button</name>
+		<actions></actions>
+		<text>PMAC</text>
+		<x>245</x>
+		<width>76</width>
+		<height>21</height>
+		<font>
+			<font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872"></font>
+		</font>
+		<foreground_color>
+			<color name="Controller: FG" red="0" green="0" blue="196"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Button: BG" red="205" green="205" blue="205"></color>
+		</background_color>
+		<tooltip>$(actions)</tooltip>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+	</widget>
+</display>

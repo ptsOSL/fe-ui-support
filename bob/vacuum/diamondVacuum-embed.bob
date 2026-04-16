@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display version="2.0.0">
+	<name>Pressure Histogram</name>
+	<x>896</x>
+	<y>116</y>
+	<width>325</width>
+	<height>235</height>
+	<background_color>
+		<color name="Monitor BG" red="105" green="105" blue="105"></color>
+	</background_color>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<width>326</width>
+		<height>236</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 75%" red="192" green="192" blue="192"></color>
+		</background_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<width>326</width>
+		<height>28</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="VA title" red="202" green="223" blue="159"></color>
+		</line_color>
+		<background_color>
+			<color name="VA title" red="202" green="223" blue="159"></color>
+		</background_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Pressure</text>
+		<width>325</width>
+		<height>27</height>
+		<font>
+			<font family="liberation sans" style="BOLD" size="18.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="White" red="255" green="255" blue="255"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="rectangle" version="2.0.0">
+		<name>EDM Rectangle</name>
+		<x>10</x>
+		<y>40</y>
+		<width>306</width>
+		<height>176</height>
+		<line_width>1</line_width>
+		<line_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</line_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>0</name>
+		<x>11</x>
+		<y>40</y>
+		<width>28</width>
+		<height>176</height>
+		<style>3</style>
+		<foreground_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</foreground_color>
+		<line_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</line_color>
+		<transparent>true</transparent>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>LI-VA-SPACE-04:PLOG</pv_name>
+			<x>21</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>LI-VA-SPACE-03:PLOG</pv_name>
+			<x>14</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>LI-VA-SPACE-02:PLOG</pv_name>
+			<x>7</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>LI-VA-SPACE-01:PLOG</pv_name>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>1</name>
+		<x>288</x>
+		<y>40</y>
+		<width>28</width>
+		<height>176</height>
+		<style>3</style>
+		<foreground_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</foreground_color>
+		<line_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</line_color>
+		<transparent>true</transparent>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>SR24C-VA-SPACE-01:PLOG</pv_name>
+			<x>21</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>SR23C-VA-SPACE-01:PLOG</pv_name>
+			<x>14</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>SR22C-VA-SPACE-01:PLOG</pv_name>
+			<x>7</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>SR21C-VA-SPACE-01:PLOG</pv_name>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>2</name>
+		<x>260</x>
+		<y>40</y>
+		<width>28</width>
+		<height>176</height>
+		<style>3</style>
+		<foreground_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</foreground_color>
+		<line_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</line_color>
+		<transparent>true</transparent>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>SR20C-VA-SPACE-01:PLOG</pv_name>
+			<x>21</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>SR19C-VA-SPACE-01:PLOG</pv_name>
+			<x>14</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>SR18C-VA-SPACE-01:PLOG</pv_name>
+			<x>7</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>SR17C-VA-SPACE-01:PLOG</pv_name>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>3</name>
+		<x>232</x>
+		<y>40</y>
+		<width>28</width>
+		<height>176</height>
+		<style>3</style>
+		<foreground_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</foreground_color>
+		<line_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</line_color>
+		<transparent>true</transparent>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>SR16C-VA-SPACE-01:PLOG</pv_name>
+			<x>21</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>SR15C-VA-SPACE-01:PLOG</pv_name>
+			<x>14</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>SR14C-VA-SPACE-01:PLOG</pv_name>
+			<x>7</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>SR13C-VA-SPACE-01:PLOG</pv_name>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>4</name>
+		<x>204</x>
+		<y>40</y>
+		<width>28</width>
+		<height>176</height>
+		<style>3</style>
+		<foreground_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</foreground_color>
+		<line_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</line_color>
+		<transparent>true</transparent>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>SR12C-VA-SPACE-01:PLOG</pv_name>
+			<x>21</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>SR11C-VA-SPACE-01:PLOG</pv_name>
+			<x>14</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>SR10C-VA-SPACE-01:PLOG</pv_name>
+			<x>7</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>SR09C-VA-SPACE-01:PLOG</pv_name>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>5</name>
+		<x>176</x>
+		<y>40</y>
+		<width>28</width>
+		<height>176</height>
+		<style>3</style>
+		<foreground_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</foreground_color>
+		<line_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</line_color>
+		<transparent>true</transparent>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>SR08C-VA-SPACE-01:PLOG</pv_name>
+			<x>21</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>SR07C-VA-SPACE-01:PLOG</pv_name>
+			<x>14</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>SR06C-VA-SPACE-01:PLOG</pv_name>
+			<x>7</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>SR05C-VA-SPACE-01:PLOG</pv_name>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>6</name>
+		<x>148</x>
+		<y>40</y>
+		<width>28</width>
+		<height>176</height>
+		<style>3</style>
+		<foreground_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</foreground_color>
+		<line_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</line_color>
+		<transparent>true</transparent>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>SR04C-VA-SPACE-01:PLOG</pv_name>
+			<x>21</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>SR03C-VA-SPACE-01:PLOG</pv_name>
+			<x>14</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>SR02C-VA-SPACE-01:PLOG</pv_name>
+			<x>7</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>SR01C-VA-SPACE-01:PLOG</pv_name>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>BS-VA-SPACE-01:PLOG</pv_name>
+		<x>130</x>
+		<y>40</y>
+		<width>6</width>
+		<height>175</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+		<horizontal>false</horizontal>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<maximum>0.0</maximum>
+	</widget>
+	<widget type="group" version="3.0.0">
+		<name>7</name>
+		<x>69</x>
+		<y>40</y>
+		<width>49</width>
+		<height>176</height>
+		<style>3</style>
+		<foreground_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</foreground_color>
+		<line_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</line_color>
+		<transparent>true</transparent>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>BR04C-VA-SPACE-07:PLOG</pv_name>
+			<x>42</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>BR04C-VA-SPACE-06:PLOG</pv_name>
+			<x>35</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>BR03C-VA-SPACE-05:PLOG</pv_name>
+			<x>28</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>BR02C-VA-SPACE-04:PLOG</pv_name>
+			<x>21</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>BR02C-VA-SPACE-03:PLOG</pv_name>
+			<x>14</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>BR01C-VA-SPACE-02:PLOG</pv_name>
+			<x>7</x>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+		<widget type="progressbar" version="2.0.0">
+			<name>EDM progressbar</name>
+			<pv_name>BR01C-VA-SPACE-01:PLOG</pv_name>
+			<width>6</width>
+			<height>175</height>
+			<fill_color>
+				<color name="Mid Green" red="0" green="192" blue="0"></color>
+			</fill_color>
+			<background_color>
+				<color name="Grey 40%" red="102" green="102" blue="102"></color>
+			</background_color>
+			<horizontal>false</horizontal>
+			<border_alarm_sensitive>false</border_alarm_sensitive>
+			<maximum>0.0</maximum>
+		</widget>
+	</widget>
+	<widget type="progressbar" version="2.0.0">
+		<name>EDM progressbar</name>
+		<pv_name>LB-VA-SPACE-01:PLOG</pv_name>
+		<x>50</x>
+		<y>40</y>
+		<width>6</width>
+		<height>175</height>
+		<fill_color>
+			<color name="Mid Green" red="0" green="192" blue="0"></color>
+		</fill_color>
+		<background_color>
+			<color name="Grey 40%" red="102" green="102" blue="102"></color>
+		</background_color>
+		<horizontal>false</horizontal>
+		<border_alarm_sensitive>false</border_alarm_sensitive>
+		<maximum>0.0</maximum>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Linac</text>
+		<x>9</x>
+		<y>216</y>
+		<width>35</width>
+		<height>17</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Booster</text>
+		<x>68</x>
+		<y>216</y>
+		<width>51</width>
+		<height>17</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<vertical_alignment>1</vertical_alignment>
+		<auto_size>true</auto_size>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+	<widget type="label" version="2.0.0">
+		<name>EDM Label</name>
+		<text>Storage Ring</text>
+		<x>147</x>
+		<y>216</y>
+		<width>169</width>
+		<height>17</height>
+		<font>
+			<font family="liberation sans" style="REGULAR" size="14.0"></font>
+		</font>
+		<foreground_color>
+			<color name="Text: FG" red="0" green="0" blue="0"></color>
+		</foreground_color>
+		<background_color>
+			<color name="Canvas" red="200" green="200" blue="200"></color>
+		</background_color>
+		<horizontal_alignment>1</horizontal_alignment>
+		<vertical_alignment>1</vertical_alignment>
+		<border_color>
+			<color name="Black" red="0" green="0" blue="0"></color>
+		</border_color>
+	</widget>
+</display>

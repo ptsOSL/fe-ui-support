@@ -105,11 +105,11 @@
 		<actions>
 			<action type="open_display">
 				<description>Open Display</description>
-				<file>override.bob</file>
+				<file>./override.bob</file>
 				<macros>
 					<P>$(P)</P>
 				</macros>
-				<target>window</target>
+				<target>standalone</target>
 			</action>
 		</actions>
 		<text>Setup</text>
